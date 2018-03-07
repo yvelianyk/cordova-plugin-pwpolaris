@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:state_focused="true" android:drawable="@drawable/popover_ico_annotation_n"/> <!-- [2013.11.19][hjlee] Modify focus image for BT keybroad -->
+	<item android:state_pressed="true" android:drawable="@drawable/popover_ico_annotation_p"/>
+	<item android:state_enabled="false" android:drawable="@drawable/popover_ico_annotation_d"/>
+    <item android:state_hovered="true" android:drawable="@drawable/popover_ico_annotation_sp"/>
+	<item android:drawable="@drawable/popover_ico_annotation_n" />   <!-- default --> 
+</selector>

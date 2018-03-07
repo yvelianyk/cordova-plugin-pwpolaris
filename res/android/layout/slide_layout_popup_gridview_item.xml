@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_attach_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@drawable/panel_titlesub_bg"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="6.67dp"
+        android:textColor="#626870"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11.67dip"
+        android:layout_marginLeft="5.00dip"
+        android:layout_marginRight="5.00dip"
+        android:layout_marginTop="11.67dip"
+        android:orientation="vertical" >
+
+        <com.infraware.polarisoffice6.common.SymbolGridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:listSelector="@drawable/slide_layout_add_selector"
+            android:numColumns="3"/>
+    </LinearLayout>
+
+</LinearLayout>

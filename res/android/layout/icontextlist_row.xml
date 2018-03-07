@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:focusable="false"
+	android:clickable="false">
+	<ImageView android:id="@+id/listitem_icon"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="5dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:focusable="false"
+		android:clickable="false"/>
+	<TextView android:id="@+id/listitem_text"
+		android:textColor="@color/common_base_list_item_text"
+		android:layout_marginLeft="5dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:focusable="false"
+		android:clickable="false"
+		android:layout_toRightOf="@+id/listitem_icon"/>
+	<com.infraware.polarisoffice6.common.ExEditText android:id="@+id/listitem_edittext"
+		android:visibility="invisible"
+		android:singleLine="true"
+		android:layout_marginLeft="5dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@color/cm_edit_text_normal"
+        android:textCursorDrawable="@null"
+		android:focusable="false"
+		android:clickable="false"
+		android:layout_toRightOf="@+id/listitem_text"/>
+	<RadioButton android:id="@+id/listitem_radiobutton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="5dp"
+		android:visibility="invisible"
+		android:focusable="false"
+		android:clickable="false"
+		android:layout_alignParentRight="true"
+		android:text="@null">
+	</RadioButton>
+</RelativeLayout>
+
+

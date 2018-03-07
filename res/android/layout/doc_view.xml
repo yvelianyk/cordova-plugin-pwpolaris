@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/EvBaseViewLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.infraware.office.docview.EvBaseView
+            android:id="@+id/EvBaseView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <ImageView
+            android:id="@+id/EvBaseView_dummy_imgview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" />
+    </FrameLayout>
+    
+    <com.infraware.sdk.UserWaterMarkImageView android:id="@+id/userWaterMarkImageView"
+	    android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+	    android:visibility="gone"
+	    />
+
+    <com.infraware.office.docview.view.PointerDrawView
+        android:id="@+id/pointer_draw_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/pageinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible" >
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/transform_info"
+        android:layout_width="@dimen/transform_info_width"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:visibility="gone" >
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/shape_drawing_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/bottom_shadow_view"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_shadow"
+        android:visibility="gone" />
+
+</merge>

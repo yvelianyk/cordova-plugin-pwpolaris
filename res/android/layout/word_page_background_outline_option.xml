@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_common_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/actiontitlebar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+	
+    <ScrollView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_marginLeft="@dimen/page_background_margin_left_right"
+	        android:layout_marginRight="@dimen/page_background_margin_left_right"
+	        android:orientation="vertical" >
+	
+	        <TextView
+	            android:id="@+id/option_title"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="14sp"
+	            android:textColor="@color/panel_sub_title_tcolor"
+	            android:layout_marginBottom="@dimen/page_background_user_watermark_tb_margin"
+	            android:layout_marginTop="@dimen/page_background_user_watermark_tb_margin" />
+	
+	        <TextView
+	            android:id="@+id/outline_top_title"
+	            android:layout_width="fill_parent"
+	            android:layout_height="25dip"
+	            android:gravity="top|left"
+	            android:singleLine="true"
+	            android:textColor="@color/panel_sub_title_tcolor"
+	            android:textSize="14sp" />
+	
+	        <com.infraware.common.widget.WheelButton
+	            android:id="@+id/outline_top"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="22dip"
+	            android:gravity="center_horizontal" />
+	
+	        <TextView
+	            android:id="@+id/outline_left_title"
+	            android:layout_width="fill_parent"
+	            android:layout_height="25dip"
+	            android:gravity="top|left"
+	            android:singleLine="true"
+	            android:textColor="@color/panel_sub_title_tcolor"
+	            android:textSize="14sp" />
+	
+	        <com.infraware.common.widget.WheelButton
+	            android:id="@+id/outline_left"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="22.67dip"
+	            android:gravity="center_horizontal" />
+	
+	        <TextView
+	            android:id="@+id/outline_bottom_title"
+	            android:layout_width="fill_parent"
+	            android:layout_height="25dip"
+	            android:gravity="top|left"
+	            android:singleLine="true"
+	            android:textColor="@color/panel_sub_title_tcolor"
+	            android:textSize="14sp" />
+	
+	        <com.infraware.common.widget.WheelButton
+	            android:id="@+id/outline_bottom"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="22.67dip"
+	            android:gravity="center_horizontal" />
+	
+	        <TextView
+	            android:id="@+id/outline_right_title"
+	            android:layout_width="fill_parent"
+	            android:layout_height="25dip"
+	            android:gravity="top|left"
+	            android:singleLine="true"
+	            android:textColor="@color/panel_sub_title_tcolor"
+	            android:textSize="14sp" />
+	
+	        <com.infraware.common.widget.WheelButton
+	            android:id="@+id/outline_right"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="center_horizontal" />
+	    </LinearLayout>
+	</ScrollView>
+</LinearLayout>

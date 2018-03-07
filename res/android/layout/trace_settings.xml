@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/actiontitlebar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/base_common_bg"
+            android:orientation="vertical"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:scrollbars="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dip"
+                android:layout_height="199dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/title_for_review"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:gravity="left|top"
+                    android:text="@string/word_trace_settings_title_for_review"
+                    android:textColor="#646464"
+                    android:textSize="14sp" />
+
+                <RadioGroup
+                    android:id="@+id/for_review_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RadioButton
+                        android:id="@+id/simple_show"
+                        style="@style/SelectionListItem.RadioButton.Top"
+                        android:paddingLeft="17dp"
+                        android:paddingRight="17dp"
+                        android:text="@string/word_trace_settings_simple_show" />
+
+                    <RadioButton
+                        android:id="@+id/all_show"
+                        style="@style/SelectionListItem.RadioButton.Middle"
+                        android:paddingLeft="17dp"
+                        android:paddingRight="17dp"
+                        android:text="@string/word_trace_settings_all_show" />
+
+                    <RadioButton
+                        android:id="@+id/all_not_show"
+                        style="@style/SelectionListItem.RadioButton.Middle"
+                        android:paddingLeft="17dp"
+                        android:paddingRight="17dp"
+                        android:text="@string/word_trace_settings_all_not_show" />
+
+                    <RadioButton
+                        android:id="@+id/original_show"
+                        style="@style/SelectionListItem.RadioButton.Bottom"
+                        android:paddingLeft="17dp"
+                        android:paddingRight="17dp"
+                        android:text="@string/dm_send_email_original" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.67dip"
+                android:layout_marginBottom="14.33dp"
+                android:layout_marginTop="14.33dp"
+                android:background="@drawable/pagelayout_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="112.33dp"
+                android:layout_marginBottom="15dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/title_changes_content_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:gravity="left|top"
+                    android:text="@string/word_trace_settings_title_changes_content_show"
+                    android:textColor="#646464"
+                    android:textSize="14sp" />
+
+                <com.infraware.common.control.custom.CheckedTextView
+                    android:id="@+id/memo"
+                    style="@style/SelectionListItem.CheckedTextView.Top"
+                    android:paddingLeft="17dp"
+                    android:paddingRight="17dp"
+                    android:focusable="true"
+                    android:text="@string/dm_memo" />
+
+                <com.infraware.common.control.custom.CheckedTextView
+                    android:id="@+id/add_and_delete"
+                    style="@style/SelectionListItem.CheckedTextView.Bottom"
+                    android:paddingLeft="17dp"
+                    android:paddingRight="17dp"
+                    android:focusable="true"
+                    android:text="@string/word_trace_settings_add_and_delete" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="7dip"
+                android:layout_marginBottom="15dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/title_display_reviewer"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:gravity="left|top"
+                    android:text="@string/word_trace_settings_display_reviewer"
+                    android:textColor="#646464"
+                    android:textSize="14sp" />
+                <ListView
+			    	android:id="@+id/list_reviewer"
+			       	android:layout_width="fill_parent" 
+			   		android:layout_height="wrap_content" />
+            </LinearLayout>
+		
+		</LinearLayout>
+    </ScrollView>
+</LinearLayout>

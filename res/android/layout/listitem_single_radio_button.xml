@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:focusable="false"
+        android:background="@drawable/btn_multi_middle_selector_common" >
+
+        <ImageView
+            android:id="@+id/radio_btn"
+            style="@style/SelectionCustomListItem.View.ImageView"
+            android:layout_width="43.33dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="18dp"
+            android:clickable="false"
+            android:duplicateParentState="true"
+            android:singleLine="true"
+            android:textColor="@color/btn_selection_tcolor_selector"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

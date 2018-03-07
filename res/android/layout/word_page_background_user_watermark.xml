@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_common_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/actiontitlebar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/user_watermark_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="17dip"
+        android:layout_marginRight="17dip"
+        android:layout_marginBottom="15dip"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/user_none"
+            style="@style/SelectionListItem.RadioButton.Top"
+            android:checked="true"
+            android:text="@string/dm_none" 
+            android:paddingRight="9.00dip"/>
+
+        <RadioButton
+            android:id="@+id/user_text"
+            style="@style/SelectionListItem.RadioButton.Middle"
+            android:text="@string/dm_word_page_background_text_watermark" 
+            android:paddingRight="9.00dip"/>
+
+        <RadioButton
+            android:id="@+id/user_image"
+            style="@style/SelectionListItem.RadioButton.Bottom"
+            android:text="@string/dm_word_page_background_image_watermark" 
+            android:paddingRight="9.00dip"/>
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+
+</LinearLayout>

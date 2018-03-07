@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_common_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/actiontitlebar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/page_background_margin_left_right"
+            android:layout_marginRight="@dimen/page_background_margin_left_right"
+            android:orientation="vertical" >
+
+            <CheckBox
+                android:id="@+id/column_border"
+                style="@style/PanelCheckBoxRight"
+                android:layout_width="fill_parent"
+                android:layout_height="34.67dip"
+                android:layout_marginTop="@dimen/page_background_user_watermark_tb_margin"
+                android:text="@string/dm_wrod_pagelayout_etc_column_border"
+                android:textColor="@color/panel_default_text" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.67dip"
+                android:layout_marginBottom="10.67dip"
+                android:layout_marginTop="10.67dip"
+                android:background="@drawable/img_divider_repeat" />
+
+            <LinearLayout
+                android:id="@+id/column_item_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.67dip"
+                android:layout_marginBottom="10.67dip"
+                android:layout_marginTop="10.67dip"
+                android:background="@drawable/img_divider_repeat" />
+            
+            <CheckBox
+                android:id="@+id/equal_column_width"
+                style="@style/PanelCheckBoxRight"
+                android:layout_width="fill_parent"
+                android:layout_height="34.67dip"
+                android:layout_marginBottom="15dip"
+                android:text="@string/dm_distribute_columns"
+                android:textColor="@color/panel_default_text" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

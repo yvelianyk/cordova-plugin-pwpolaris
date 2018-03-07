@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="42.67dip"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_sheet_list_popup"
+        android:layout_width="match_parent"
+        android:layout_height="42.67dip"
+        android:background="@drawable/popover_bg_selector_sheet" >
+
+        <RelativeLayout
+            android:layout_width="39dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:id="@+id/icon_sheet_list_popup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/titlesub_ico_move_n" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_sheet_list_popup"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dip"
+            android:gravity="left|center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/popover_list_tcolor_selector"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</FrameLayout>

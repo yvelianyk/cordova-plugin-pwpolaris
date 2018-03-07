@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cm_popup_title_tsize">17sp</dimen>
+    <dimen name="cm_popup_btn_tsize">17sp</dimen>
+	<!-- B.DocView -->
+    <dimen name="transform_info_width">230dip</dimen>
+	<!-- Base -->
+
+    <!-- Action bar -->
+    <dimen name="ab_height">48dp</dimen>
+    <dimen name="ab_doc_ico_w">42dip</dimen>
+    
+    <dimen name="ab_ico_title_width">113.5dip</dimen>
+ <!-- 161.5dip -->
+
+    <dimen name="ab_toolbar_h">39dip</dimen>
+    <dimen name="ab_toolbar_h_land">32.5dip</dimen>
+    <dimen name="ab_toolbar_ico_padding">17dp</dimen>
+
+
+
+
+    <!-- Common -->
+    <dimen name="shadow_height">5dip</dimen>
+
+    <!-- Panel Common -->
+    <dimen name="panel_title_h">41dip</dimen>
+    
+    <dimen name="panel_subtitle_margin_bottom_h">7dip</dimen>
+    
+ <!-- //20130818 khchoi To change edit panel gui from 7.5dip to 7 dip -->
+    <dimen name="panel_subtitle_margin_left_right">10.67dip</dimen>
+    <dimen name="panel_subtitle_devider_h">7.5dip</dimen>
+    
+    <dimen name="panel_check_box_width2">36dip</dimen>
+    <dimen name="panel_check_box_margin_left">4dip</dimen>
+    <dimen name="panel_check_box_margin_right">4dip</dimen>
+    <dimen name="panel_check_text_size">14sp</dimen>
+    <dimen name="panel_check_text_size2">11sp</dimen>
+    <dimen name="panel_common_content_area_margin_horizontal">10dip</dimen>
+    <dimen name="panel_common_content_area_margin_vertical">7.67dip</dimen>
+    <dimen name="panel_common_content_button_vertical_space">5dip</dimen>
+    <dimen name="panel_common_content_line_vertical_space">3dip</dimen>
+    <dimen name="panel_check_box_margin_left2">10dp</dimen>
+    
+    <!-- Panel Image Style -->
+    <dimen name="panel_image_style_width_height">78dip</dimen>
+    <dimen name="panel_image_style_horizontal_space">27dip</dimen>
+    <dimen name="panel_image_style_vertical_space">2dip</dimen>
+    
+    <!-- Panel Icon -->
+    <dimen name="panel_common_icon_title_text_size">12dip</dimen>
+    <dimen name="panel_common_icon_item_height">40dip</dimen>
+    <dimen name="panel_icon_3d_effect_item_vertical_space">6.67dip</dimen>
+
+    <!-- Panel Color Gradient -->
+    <dimen name="panel_color_gradient_texture_item_space">2dip</dimen>
+    <dimen name="panel_color_gradient_item_height">40dip</dimen>
+    <dimen name="panel_color_gradient_item_width">40.67dip</dimen>
+    <dimen name="panel_texture_item_height">83dip</dimen>
+    <dimen name="panel_texture_left_right_margin">11dip</dimen>
+
+    <!-- Panel Tab -->
+    <dimen name="panel_tab_height">51dip</dimen>
+    <dimen name="panel_tab_item_image_height">35.67dip</dimen>
+    <dimen name="panel_tab_item_text_size">9dip</dimen>
+    
+    <!-- Panel Chart > Chart -->
+    <dimen name="panel_chart_item_width_height">78dip</dimen>
+    <dimen name="panel_chart_vertical_space">2dip</dimen>
+    <dimen name="panel_chart_horizontal_space">27dip</dimen>
+    <dimen name="panel_chart_style_land_horizontal_space">27dip</dimen>
+    <dimen name="panel_chart_style_port_horizontal_space">6dip</dimen>
+    
+    <dimen name="panel_button_title_h">22.5dip</dimen>
+    <dimen name="panel_list_button_margin_top">2.27dip</dimen>
+    <dimen name="panel_list_button_width">251.97dip</dimen>
+    <dimen name="panel_list_button_height">43dip</dimen>
+    <dimen name="panel_list_button_height_half">25dip</dimen>
+    <dimen name="panel_list_button_height_half_half">10dip</dimen>
+    <dimen name="panel_button_text_size">16.00sp</dimen>
+    <dimen name="panel_button_height">41.00dip</dimen>
+    <dimen name="panel_color_button_margin">2dip</dimen>
+    <dimen name="panel_color_button_height">40dip</dimen>
+    
+    
+ <!-- //20130819 khchoi To change insert table activity gui [start] -->
+    <dimen name="panel_height_between_next_title">3.33dip</dimen>
+    <dimen name="panel_slide_button_width">130.00dip</dimen>
+    <dimen name="panel_underline_animation_height">209dip</dimen>
+    <dimen name="style_icon_w">78dip</dimen>
+    <dimen name="style_icon_h">78dip</dimen>
+    <dimen name="style_icon_margin">27dip</dimen>
+    <dimen name="style_icon_margin_land">17dip</dimen>
+    <dimen name="style_icon_for_table_margin_land">23dip</dimen>
+ <!-- //20130819 khchoi To change insert table activity gui [start] -->
+     
+    <!-- Title Sub -->
+    <dimen name="ts_h">48dip</dimen>
+    
+ <!-- //20130819 khchoi To change edit move bar gui from 40dip to 48dip -->
+    <dimen name="ts_left_w">53dip</dimen>
+    <dimen name="ts_right_w">46dip</dimen>
+
+    <!-- Insert Shape/shape -->
+    <dimen name="iss_w">50.67dip</dimen>
+    <dimen name="iss_h">50.67dip</dimen>
+    <dimen name="iss_line_tmargin">6.67dip</dimen>
+    <dimen name="iss_line_lmargin">20.00dip</dimen>
+    <dimen name="iss_line_rmargin">20.00dip</dimen>
+    <dimen name="iss_line_gap">6.67dip</dimen>
+    <dimen name="iss_line_gap_half">3.335dip</dimen>
+    <dimen name="iss_seperator_h">1.33dip</dimen>
+    <dimen name="iss_button_r_margin">6.00dip</dimen>
+    <dimen name="insert_shape_w">50dip</dimen>
+    <dimen name="insert_shape_h">48dip</dimen>
+    <dimen name="insert_shape_margin_top_bottom">10dip</dimen>
+    <dimen name="insert_shape_margin_v">12dip</dimen>
+    <dimen name="insert_shape_margin_h">15dip</dimen>
+    <dimen name="insert_shape_margin_h_land">20dip</dimen>
+    <dimen name="insert_shape_margin_left_right">25dip</dimen>
+    <dimen name="insert_shape_margin_left_right_land">29dip</dimen>
+    <dimen name="insert_shape_devider_margin">10.5dip</dimen>
+    <dimen name="insert_shape_devider">0.5dip</dimen>
+
+    <dimen name="insert_shape_horizontal_space_port">7.67dip</dimen>
+    <dimen name="insert_shape_horizontal_space_land">11dip</dimen>
+    
+    <dimen name="insert_shape_divider_height">15.33dip</dimen>
+    <dimen name="insert_shape_divider_margin_left_right">17dip</dimen>
+    
+    <!-- (insert_shape_h +  insert_shape_margin_v)* count  + (devider + devider_margin*2) *devider*count + topMargin -->
+    <!-- (48 + 12)*39 +  21.5* 8 + 10  = 18902 -->
+    <dimen name="insert_shape_height">18902dp</dimen>
+    <!-- (48 + 12)*26 +  21.5* 8 + 10  = 12662 -->
+    <dimen name="insert_shape_land_height">12662dp</dimen>
+
+    <!-- PageLayot -->
+    <dimen name="pl_button_w">62dip</dimen>
+    <dimen name="pl_button_h">59.5dip</dimen>
+    <dimen name="pl_button_right_margin">10.00dip</dimen>
+    <dimen name="pl_left_margin">8.67dip</dimen>
+    <dimen name="pl_right_margin">9.33dip</dimen>
+    <dimen name="pl_top_margin">7.33dip</dimen>
+    <dimen name="pl_button_gap">14.67dip</dimen>
+    <dimen name="pl_title_text_size">14.00dip</dimen>
+    <dimen name="pl_sub_title_text_size">12.00dip</dimen>
+    <dimen name="pl_title_text_bottm_margin">2.67dip</dimen>
+    <dimen name="pl_custom_text_size">10.67dip</dimen>
+    <dimen name="pl_size_text_size">14.67dip</dimen>
+    <dimen name="pl_title_left_margin">13.34dip</dimen>
+
+    <!-- Panel list sheet -->
+    <dimen name="panel_list_sheet_button_margin_left">10.00dip</dimen>
+    <dimen name="panel_list_sheet_button_width">292.00dip</dimen>
+    <dimen name="panel_list_sheet_button_height">43.00dip</dimen>
+    <dimen name="panel_list_sheet_button_width_land">293.34dip</dimen>
+
+    <!-- Keypad font size [2012.04.16][shjeong] -->
+    <dimen name="keypad_text_size">20sp</dimen>
+    <dimen name="keypad_symbol_size">22sp</dimen>
+    <dimen name="keypad_celltext_size">14sp</dimen>
+    <dimen name="keypad_changetext_size">16dip</dimen>
+
+    <!-- slide show size -->
+    <dimen name="slide_show_transition_text">8dip</dimen>
+    <dimen name="slide_show_transition_title">14dip</dimen>
+    <dimen name="toast_text_size">12sp</dimen>
+
+    <!-- disable opacity rate -->
+    <dimen name="popup_text_size_row_gap">20sp</dimen>
+
+    <!-- Sheet number format activity -->
+    <dimen name="sheet_format_activity_margin_top">15dip</dimen>
+    <dimen name="sheet_format_activity_margin_left_right">17dip</dimen>
+    <dimen name="sheet_format_activity_sub_text_height">18.67dip</dimen>
+    <dimen name="sheet_format_activity_sub_text_margin_bottom">6.33dip</dimen>
+    <dimen name="sheet_format_activity_layout_margin_vertical_11_33">11.33dip</dimen>
+    
+    <!-- Page background -->
+    <dimen name="page_background_sub_title_height">20dip</dimen>
+    <dimen name="page_background_margin_left_right">17dip</dimen>
+    <dimen name="page_background_title_text_size">14sp</dimen>
+    <dimen name="page_background_button_text_size">16sp</dimen>
+    <dimen name="page_background_text_size_auto">13sp</dimen>
+    
+    <dimen name="page_background_watermark_space">26dip</dimen>
+    
+    <dimen name="page_background_color_gradient_corner">2dip</dimen> 
+    
+    <dimen name="page_background_user_watermark_tb_margin">15dip</dimen>
+
+    <dimen name="page_layout_land_item_space">17.67dip</dimen>
+    <dimen name="page_layout_margins_custom">10sp</dimen>
+    
+    <dimen name ="slidemaster_layout_item_padding">2.7dip</dimen>
+    <dimen name ="slidemaster_layout_item_width">86dip</dimen>
+    <dimen name ="slidemaster_layout_item_height">66dip</dimen>
+    
+    <dimen name ="text_actionbar_height">48dip</dimen>
+    
+    <dimen name="dialog_common_gallery_picker_item_height">85dp</dimen>
+    <dimen name="common_property_content_title_textsize">14sp</dimen>
+    <dimen name="common_insert_dialog_table_width">200dp</dimen>
+    <dimen name="common_insert_dialog_table_height">200dp</dimen>
+    <dimen name="dialog_common_footer_layout_height">54dp</dimen>
+    
+    <dimen name="dialog_memo_width">362dp</dimen>
+    <dimen name="dialog_memo_height">252dp</dimen>
+    <dimen name="dialog_memo_text_padding_width">19dp</dimen>
+    <dimen name="dialog_memo_text_padding_top">46dp</dimen>
+    <dimen name="dialog_memo_text_padding_bottom">25dp</dimen>
+    <dimen name="memo_tsize">14sp</dimen>
+    
+    <dimen name="common_notification_top_margin">6dp</dimen>
+    <dimen name="actionbar_file_sliding_menu_width">290dp</dimen>
+    <dimen name="common_text_left_padding">11dp</dimen>
+    <dimen name="dialog_common_button_text_size">17sp</dimen>
+    <dimen name="sheet_selected_function_list_width">242.33dp</dimen>
+    
+    <dimen name="sdk_common_preference_dialog_actionbar_height">38dp</dimen>
+	<dimen name="sdk_common_preference_dialog_height_portrait">66dp</dimen>
+	
+	<dimen name="outline_btn_text_size">8sp</dimen>
+    <dimen name="outline_btn_size">13dp</dimen>
+    
+    <dimen name="tab_outline_btn_text_size">13sp</dimen>
+    <dimen name="tab_outline_btn_size">20dp</dimen>
+
+    <dimen name="cm_tab_left_text_size">15sp</dimen>
+    <dimen name="cm_tab_right_text_size">15sp</dimen>
+    <dimen name="cm_tab_center_text_size">15sp</dimen>
+
+    <dimen name="list_item_checkbox_text_size">14sp</dimen>
+</resources>

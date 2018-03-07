@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dialog_folder_select_width"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/popup_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/popup_title" >
+
+        <TextView
+            android:id="@+id/storage_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="14dp"
+            android:gravity="center_vertical"
+            android:text="@string/sd_card"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+		<ImageButton
+            android:id="@+id/new_folder_button"
+            android:layout_width="43dp"
+            android:layout_height="43dp" />
+        
+        <ImageButton
+            android:id="@+id/select_button"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:visibility="gone" />
+        
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/default_folder_text"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@drawable/filemanager_settings_msg_bar_bg"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:textColor="#282828" />
+
+    <ListView
+        android:id="@+id/select_folder_listview"
+        android:layout_width="match_parent"
+        android:layout_height="528dp"
+        android:divider="@color/sdk_fm_list_divider_color"
+        android:dividerHeight="0.5dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_file_save_select_folder_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+          <Button
+            android:id="@+id/bt_cancel_file_save_select_folder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/cm_popup_btn_selector"
+            android:text="@string/cm_btn_cancel"
+            android:textColor="#282828"
+            android:textSize="17sp"/>
+         <Button
+            android:id="@+id/bt_confirm_file_save_select_folder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/cm_popup_btn_selector"
+            android:text="@string/cm_btn_ok"
+            android:textColor="#282828"
+            android:textSize="17sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/actiontitlebar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/base_common_bg" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingBottom="24.67dip"
+            android:paddingTop="24.67dip" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25.33dip"
+                android:orientation="vertical" >
+
+                <com.infraware.document.slide.SlideLayoutImageView
+                    android:id="@+id/slide_layout_template01"
+                    android:layout_width="154.8dip"
+                    android:layout_height="117dip"
+                    android:layout_marginBottom="30.00dip"
+                    android:focusable="true"
+                    android:onClick="onClick"
+                    android:src="@drawable/slidelayout_01_selector" />
+
+                <com.infraware.document.slide.SlideLayoutImageView
+                    android:id="@+id/slide_layout_template06"
+                    android:layout_width="154.8dip"
+                    android:layout_height="117dip"
+                    android:layout_marginBottom="30.00dip"
+                    android:focusable="true"
+                    android:onClick="onClick"
+                    android:src="@drawable/slidelayout_06_selector" />
+
+                <com.infraware.document.slide.SlideLayoutImageView
+                    android:id="@+id/slide_layout_template11"
+                    android:layout_width="154.8dip"
+                    android:layout_height="117dip"
+                    android:focusable="true"
+                    android:onClick="onClick"
+                    android:src="@drawable/slidelayout_11_selector" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25.33dip"
+                android:orientation="vertical" >
+
+                <com.infraware.document.slide.SlideLayoutImageView
+                    android:id="@+id/slide_layout_template02"
+                    android:layout_width="154.8dip"
+                    android:layout_height="117dip"
+                    android:layout_marginBottom="30.00dip"
+                    android:focusable="true"
+                    android:onClick="onClick"
+                    android:src="@drawable/slidelayout_02_selector" />
+
+                <com.infraware.document.slide.SlideLayoutImageView
+                    android:id="@+id/slide_layout_template07"
+                    android:layout_width="154.8dip"
+                    android:layout_height="117dip"
+                    android:focusable="true"
+                    android:onClick="onClick"
+                    android:src="@drawable/slidelayout_07_selector" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25.33dip"
+                android:orientation="vertical" >
+
+                <com.infraware.document.slide.SlideLayoutImageView
+                    android:id="@+id/slide_layout_template03"
+                    android:layout_width="154.8dip"
+                    android:layout_height="117dip"
+                    android:layout_marginBottom="30.00dip"
+                    android:focusable="true"
+                    android:onClick="onClick"
+                    android:src="@drawable/slidelayout_03_selector" />
+
+                <com.infraware.document.slide.SlideLayoutImageView
+                    android:id="@+id/slide_layout_template08"
+                    android:layout_width="154.8dip"
+                    android:layout_height="117dip"
+                    android:focusable="true"
+                    android:onClick="onClick"
+                    android:src="@drawable/slidelayout_08_selector" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25.33dip"
+                android:orientation="vertical" >
+
+                <com.infraware.document.slide.SlideLayoutImageView
+                    android:id="@+id/slide_layout_template04"
+                    android:layout_width="154.8dip"
+                    android:layout_height="117dip"
+                    android:layout_marginBottom="30.00dip"
+                    android:focusable="true"
+                    android:onClick="onClick"
+                    android:src="@drawable/slidelayout_04_selector" />
+
+                <com.infraware.document.slide.SlideLayoutImageView
+                    android:id="@+id/slide_layout_template09"
+                    android:layout_width="154.8dip"
+                    android:layout_height="117dip"
+                    android:focusable="true"
+                    android:onClick="onClick"
+                    android:src="@drawable/slidelayout_09_selector" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.infraware.document.slide.SlideLayoutImageView
+                    android:id="@+id/slide_layout_template05"
+                    android:layout_width="154.8dip"
+                    android:layout_height="117dip"
+                    android:layout_marginBottom="30.00dip"
+                    android:focusable="true"
+                    android:onClick="onClick"
+                    android:src="@drawable/slidelayout_05_selector" />
+
+                <com.infraware.document.slide.SlideLayoutImageView
+                    android:id="@+id/slide_layout_template10"
+                    android:layout_width="154.8dip"
+                    android:layout_height="117dip"
+                    android:focusable="true"
+                    android:onClick="onClick"
+                    android:src="@drawable/slidelayout_10_selector" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

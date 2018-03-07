@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="181dip"
+	android:layout_height="wrap_content"
+	android:background="@drawable/popover_bg"
+	android:orientation="vertical">
+
+	<LinearLayout 
+		android:id="@+id/llMatchCase"
+		android:layout_width="fill_parent"
+		android:layout_height="42.5dip"
+		android:layout_marginLeft="10dip"
+		android:focusable="true"
+		android:orientation="horizontal">
+		<TextView
+		    android:id="@+id/tvMatchCase"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:layout_marginRight="11dip" 
+			android:text="@string/dm_searchdlg_matchcase"
+			android:textSize="14sp"
+			android:textColor="@color/te_find_options_tv"
+			android:gravity="left|center_vertical"/>
+		<CheckBox 
+			android:id="@+id/chkMatchCase"
+			android:layout_width="37.5dip" 
+			android:layout_height="wrap_content"
+			android:gravity="center_vertical" 
+			android:button="@drawable/btn_check_popover_selector"/>
+	</LinearLayout>
+	
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="0.5dip"
+		android:background="@color/te_menu_divider">
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:id="@+id/llMatchWholeWord"
+		android:layout_width="fill_parent"
+		android:layout_height="42.5dip"
+		android:layout_marginLeft="10dip"
+		android:focusable="true"
+		android:orientation="horizontal">
+		<TextView
+			android:id="@+id/tvMatchWholeWord"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:layout_marginRight="11dip" 
+			android:text="@string/dm_searchdlg_wholeword"
+			android:textSize="14sp"
+			android:textColor="@color/te_find_options_tv"
+			android:gravity="left|center_vertical"/>
+		<CheckBox 
+			android:id="@+id/chkMatchWholeWord"
+			android:layout_width="37.5dip" 
+			android:layout_height="wrap_content"
+			android:gravity="center_vertical" 
+			android:button="@drawable/btn_check_popover_selector"/>
+	</LinearLayout>
+		
+	<Button 
+		android:id="@+id/btnReplaceMode"
+		android:layout_width="fill_parent"
+        android:layout_height="48.00dip"
+		android:background="@drawable/btn_default_selector_common"
+		android:text="@string/dm_replace_mode"
+		android:textSize="14sp"
+		android:textColor="@color/actionbar_menu_text_color"/>
+	
+</LinearLayout>

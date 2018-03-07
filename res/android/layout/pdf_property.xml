@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pdf_property_main"
+   android:layout_width="fill_parent"
+   android:layout_height="match_parent"
+   android:layout_alignParentBottom="true"
+   android:background="@color/panel_bg_full"
+   android:orientation="vertical"
+   android:visibility="gone" >
+   
+   <ImageView 
+      android:id="@+id/bottom_shadow"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/shadow_height"
+      android:background="@drawable/bottom_shadow"
+      android:layout_gravity="bottom" />
+
+   <TextView
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/tab_bg"
+       android:gravity="center"
+       android:text="@string/dm_format"
+       android:textColor="@color/panel_tab_tcolor_selector_pdf"
+       android:textSize="15sp" />
+
+   <ScrollView
+       android:id="@+id/panel_edit_scroll_view"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent" >
+
+       <LinearLayout
+           android:id="@+id/panel_edit_content_linear"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical" >
+
+           <!-- content start -->
+
+           <TextView
+               android:id="@+id/anchor_pdf_fill"
+               style="@style/PanelAnchorTitle"
+               android:layout_width="fill_parent"
+               android:layout_height="@dimen/panel_subtitle_h"
+               android:layout_marginBottom="@dimen/panel_subtitle_margin_bottom_h"
+               android:text="@string/dm_color" />
+
+           <com.infraware.polarisoffice6.panel.kit.CommonPanelColor
+               android:id="@+id/FillColorSelection"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="@dimen/panel_subtitle_margin_bottom_h"
+               android:layout_marginLeft="@dimen/panel_subtitle_margin_left_right"
+               android:layout_marginRight="@dimen/panel_subtitle_margin_left_right"
+               android:layout_marginTop="@dimen/panel_subtitle_margin_bottom_h" />
+
+           <TextView
+               android:id="@+id/anchor_pdf_pen"
+               style="@style/PanelAnchorTitle"
+               android:layout_width="fill_parent"
+               android:layout_height="@dimen/panel_subtitle_h"
+               android:layout_marginBottom="@dimen/panel_subtitle_margin_bottom_h"
+               android:text="@string/dm_line" />
+
+           <TextView
+               android:id="@+id/anchor_pdf_annot_thickness"
+               style="@style/PanelButtonTitleText"
+               android:layout_width="fill_parent"
+               android:layout_height="@dimen/panel_button_title_h"
+               android:paddingLeft="@dimen/panel_subtitle_margin_left_right"
+               android:paddingRight="@dimen/panel_subtitle_margin_left_right"
+               android:text="@string/dm_width" />
+
+           <com.infraware.common.widget.WheelButton
+               android:id="@+id/ThicknessButton"
+               android:layout_width="fill_parent"
+               android:layout_height="40dip"
+               android:layout_marginLeft="@dimen/panel_subtitle_margin_left_right"
+               android:layout_marginRight="@dimen/panel_subtitle_margin_left_right"
+               />
+
+           <com.infraware.polarisoffice6.panel.kit.CommonPanelColor
+               android:id="@+id/ColorSelection"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="@dimen/panel_subtitle_margin_bottom_h"
+               android:layout_marginLeft="@dimen/panel_subtitle_margin_left_right"
+               android:layout_marginRight="@dimen/panel_subtitle_margin_left_right"
+               android:layout_marginTop="@dimen/panel_subtitle_margin_bottom_h" />
+
+           <!-- content end -->
+       </LinearLayout>
+   </ScrollView>
+</LinearLayout>  

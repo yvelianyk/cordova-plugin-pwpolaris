@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="41dip"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/text_size_auto"
+            style="@style/PageBGWaterMark.TextSizeCheckBox.left"
+            android:textSize="@dimen/page_background_text_size_auto"
+            android:checked="true" />
+
+        <CheckBox
+            android:id="@+id/text_size_02"
+            style="@style/PageBGWaterMark.TextSizeCheckBox.center"
+            android:text="@string/size_36" />
+
+        <CheckBox
+            android:id="@+id/text_size_03"
+            style="@style/PageBGWaterMark.TextSizeCheckBox.center"
+            android:text="@string/size_40" />
+
+        <CheckBox
+            android:id="@+id/text_size_04"
+            style="@style/PageBGWaterMark.TextSizeCheckBox.center"
+            android:text="@string/size_44" />
+
+        <CheckBox
+            android:id="@+id/text_size_05"
+            style="@style/PageBGWaterMark.TextSizeCheckBox.right"
+            android:text="@string/size_48" />
+    </LinearLayout>
+
+    <Space style="@style/PageBGPageColor.lineLayoutSpace" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="41dip"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/text_size_06"
+            style="@style/PageBGWaterMark.TextSizeCheckBox.left"
+            android:text="@string/size_54" />
+
+        <CheckBox
+            android:id="@+id/text_size_07"
+            style="@style/PageBGWaterMark.TextSizeCheckBox.center"
+            android:text="@string/size_60" />
+
+        <CheckBox
+            android:id="@+id/text_size_08"
+            style="@style/PageBGWaterMark.TextSizeCheckBox.center"
+            android:text="@string/size_66" />
+
+        <CheckBox
+            android:id="@+id/text_size_09"
+            style="@style/PageBGWaterMark.TextSizeCheckBox.center"
+            android:text="@string/size_72" />
+
+        <CheckBox
+            android:id="@+id/text_size_10"
+            style="@style/PageBGWaterMark.TextSizeCheckBox.right"
+            android:text="@string/size_80" />
+    </LinearLayout>
+
+    <Space style="@style/PageBGPageColor.lineLayoutSpace" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="41dip"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/text_size_11"
+            style="@style/PageBGWaterMark.TextSizeCheckBox.left"
+            android:text="@string/size_90" />
+
+        <CheckBox
+            android:id="@+id/text_size_12"
+            style="@style/PageBGWaterMark.TextSizeCheckBox.center"
+            android:text="@string/size_96" />
+
+        <CheckBox
+            android:id="@+id/text_size_13"
+            style="@style/PageBGWaterMark.TextSizeCheckBox.center"
+            android:text="@string/size_105" />
+
+        <CheckBox
+            android:id="@+id/text_size_14"
+            style="@style/PageBGWaterMark.TextSizeCheckBox.center"
+            android:text="@string/size_120" />
+
+        <CheckBox
+            android:id="@+id/text_size_15"
+            style="@style/PageBGWaterMark.TextSizeCheckBox.right"
+            android:text="@string/size_144" />
+    </LinearLayout>
+
+</LinearLayout>

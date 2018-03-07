@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="@color/base_common_bg">
+	<LinearLayout
+		android:layout_width = "fill_parent"
+		android:layout_height = "wrap_content"
+		android:orientation="horizontal"
+		android:id = "@+id/actiontitlebar_layout">
+	</LinearLayout>
+	<!-- 
+	<RelativeLayout
+    	android:layout_width="wrap_content"
+    	android:layout_height="@dimen/ts_h"
+    	android:id="@+id/relative_chart_style" >
+    	
+	    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/cm_titlesub_bg"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="onClickChartStyle" >
+
+	        <ImageView
+				android:id="@+id/ImgChartStyle"
+				android:layout_width="@dimen/ts_left_w"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:duplicateParentState="true"
+				android:src="@drawable/ico_insert_chart_style_05" />
+	        	    
+	        <LinearLayout 
+	            android:layout_width="wrap_content"
+	            android:layout_height="fill_parent"
+	            android:orientation="horizontal"
+	            android:duplicateParentState="true"
+	            android:layout_alignParentRight="true" >
+		        <ImageButton
+					android:id="@+id/BtnChartStyle_MoveIcon"
+					android:layout_width="@dimen/ts_right_w"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:duplicateParentState="true"
+					android:clickable="false"
+					android:src="@drawable/titlesub_ico_select"
+					android:background="@android:color/transparent"	/>    
+	        </LinearLayout>
+		
+		</RelativeLayout>
+	</RelativeLayout>
+	 -->
+	<!-- chart style list -->
+	<!-- 
+	<RelativeLayout
+		android:id="@+id/grid_chart_top_style"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center_horizontal"
+    	android:layout_weight="1"
+    	android:visibility="gone" 
+    	android:background="@color/base_common_bg"
+    	android:focusable="true">
+		<GridView android:id="@+id/grid_chart_style_list"
+			android:layout_width="fill_parent" 
+	    	android:layout_height="fill_parent"
+	    	android:layout_marginTop="26dip"
+	    	android:layout_marginBottom="26dip"
+	    	android:verticalSpacing="22dp"
+	   	 	android:numColumns="4"
+	   	 	android:columnWidth="78dp"
+			android:stretchMode="spacingWidthUniform" 
+			android:gravity="center"
+			android:scrollbars="horizontal|vertical"
+			android:listSelector="@drawable/chart_grideview_list_selector"
+			android:focusable="true"/>
+			
+		<GridView android:id="@+id/grid_chart_style_list_land"
+			android:layout_width="fill_parent" 
+	    	android:layout_height="fill_parent" 
+	    	android:layout_marginTop="26dip"
+	    	android:layout_marginBottom="26dip" 
+	    	android:verticalSpacing="22dp"  
+	   	 	android:numColumns="4"
+	   	 	android:columnWidth="78dp"
+	   	 	android:stretchMode="spacingWidthUniform" 
+			android:gravity="center"
+			android:scrollbars="horizontal|vertical"
+			android:visibility="gone"
+			android:listSelector="@drawable/chart_grideview_list_selector"
+			android:focusable="true"/>
+	</RelativeLayout>
+	 -->
+	<!-- chart type list -->
+<RelativeLayout
+		android:id="@+id/grid_chart_main_list"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_weight="1" 
+    	android:background="@color/base_common_bg">
+
+    	<!-- //20130819 khchoi To change insert chart activity gui [start] -->
+		<GridView
+		    android:id="@+id/grid_chart_list"
+            android:paddingLeft="36dp"
+            android:paddingRight="0dp"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"		    
+		    android:layout_alignParentBottom="true"
+		    android:layout_alignParentTop="true"
+		    android:columnWidth="78dp"
+		    android:gravity="center"		    
+		    android:numColumns="3"
+		    android:scrollbars="horizontal|vertical"
+		    android:stretchMode="none"
+		    android:listSelector="@color/transparent"
+            android:horizontalSpacing="27dp"
+		    android:verticalSpacing="22dp" />
+		<GridView
+            android:id="@+id/grid_chart_list_land"
+            android:paddingLeft="18.33dp"
+            android:paddingRight="0dp"
+			android:layout_width="fill_parent" 
+	    	android:layout_height="fill_parent"
+		    android:layout_alignParentBottom="true"
+		    android:layout_alignParentTop="true"
+	   		android:verticalSpacing="22dip"
+            android:horizontalSpacing="27dp"
+	   	 	android:numColumns="5"
+	   	 	android:columnWidth="78dp"
+			android:stretchMode="none"
+			android:gravity="center"
+			android:scrollbars="horizontal|vertical"
+			android:listSelector="@color/transparent"
+			android:visibility="gone"/>
+	</RelativeLayout>
+</LinearLayout>

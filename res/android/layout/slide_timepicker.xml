@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="8.33dp"
+    android:paddingLeft="22dp"
+    android:paddingRight="22dp"
+    android:paddingTop="8.67dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal" >
+
+        <LinearLayout
+            android:id="@+id/hour_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/time_plus_btn1"
+                android:layout_width="80dp"
+                android:layout_height="56.33dp"
+                android:background="@drawable/timepicker_plus_btn" 
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/hour_display1"
+                android:layout_width="80dp"
+                android:layout_height="57.33dp"
+                android:background="@drawable/popup_wheel_btn"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textSize="21sp"
+                android:textColor="#ff9b3c"
+                android:layout_weight="1">
+            </TextView>
+
+            <Button
+                android:id="@+id/time_minus_btn1"
+                android:layout_width="80dp"
+                android:layout_height="57.33dp"
+                android:background="@drawable/timepicker_minus_btn" 
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hour_container2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/time_plus_btn2"
+                android:layout_width="80dp"
+                android:layout_height="56.33dp"
+                android:background="@drawable/timepicker_plus_btn" 
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/hour_display2"
+                android:layout_width="80dp"
+                android:layout_height="57.33dp"
+                android:background="@drawable/popup_wheel_btn"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textSize="21sp"
+                android:textColor="#ff9b3c" 
+                android:layout_weight="1">
+            </TextView>
+
+            <Button
+                android:id="@+id/time_minus_btn2"
+                android:layout_width="80dp"
+                android:layout_height="57.33dp"
+                android:background="@drawable/timepicker_minus_btn" 
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hour_container3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/time_plus_btn3"
+                android:layout_width="80dp"
+                android:layout_height="56.33dp"
+                android:background="@drawable/timepicker_plus_btn" 
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/hour_display3"
+                android:layout_width="80dp"
+                android:layout_height="57.33dp"
+                android:background="@drawable/popup_wheel_btn"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textSize="21sp"
+                android:textColor="#ff9b3c" 
+                android:layout_weight="1">
+            </TextView>
+
+            <Button
+                android:id="@+id/time_minus_btn3"
+                android:layout_width="80dp"
+                android:layout_height="57.33dp"
+                android:background="@drawable/timepicker_minus_btn" 
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

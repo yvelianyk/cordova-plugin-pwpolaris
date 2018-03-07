@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_common_bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/mainLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/anchor_watermark_text_title"
+                style="@style/PanelAnchorTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/page_background_sub_title_height" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginBottom="@dimen/page_background_user_watermark_tb_margin"
+                android:layout_marginLeft="@dimen/page_background_margin_left_right"
+                android:layout_marginRight="@dimen/page_background_margin_left_right"
+                android:layout_marginTop="@dimen/page_background_user_watermark_tb_margin"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/watermark_text_sub_text"
+                    style="@style/PageBGWaterMark.subTitle"
+                    android:layout_width="65dip"
+                    android:layout_height="fill_parent" />
+
+                <com.infraware.polarisoffice6.common.ExEditText
+                    android:id="@+id/watermark_text_inputfield"
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/textfield_selector_common"
+                    android:gravity="center"
+                    android:imeOptions="flagNoFullscreen"
+                    android:maxLength="200"
+                    android:singleLine="true"
+                    android:textColor="@color/common_inputbox_text"
+                    android:textColorHighlight="@color/cm_edit_text_highlight"
+                    android:textSize="16.00sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/anchor_watermark_font_title"
+                style="@style/PanelAnchorTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/page_background_sub_title_height"
+                android:layout_marginBottom="@dimen/page_background_user_watermark_tb_margin" />
+
+            <com.infraware.polarisoffice6.panel.kit.PanelList
+                android:id="@+id/fontfaceListView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/page_background_user_watermark_tb_margin"
+                android:layout_marginLeft="@dimen/page_background_margin_left_right"
+                android:layout_marginRight="@dimen/page_background_margin_left_right" />
+
+            <TextView
+                android:id="@+id/anchor_watermark_size_title"
+                style="@style/PanelAnchorTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/page_background_sub_title_height" />
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/page_background_user_watermark_tb_margin"
+                android:layout_marginLeft="@dimen/page_background_margin_left_right"
+                android:layout_marginRight="@dimen/page_background_margin_left_right"
+                android:layout_marginTop="@dimen/page_background_user_watermark_tb_margin"
+                layout="@layout/word_page_background_watermark_size" />
+
+            <TextView
+                android:id="@+id/anchor_watermark_color_title"
+                style="@style/PanelAnchorTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/page_background_sub_title_height" />
+
+            <CheckBox
+                android:id="@+id/translucent_checkbox"
+                style="@style/PanelCheckBoxRight"
+                android:layout_width="fill_parent"
+                android:layout_height="34.67dip"
+                android:layout_marginLeft="@dimen/page_background_margin_left_right"
+                android:layout_marginRight="@dimen/page_background_margin_left_right"
+                android:layout_marginTop="@dimen/page_background_user_watermark_tb_margin"
+                android:text="@string/dm_word_page_background_text_translucent" />
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.67dip"
+                android:layout_marginLeft="@dimen/page_background_margin_left_right"
+                android:layout_marginRight="@dimen/page_background_margin_left_right"
+                android:layout_marginTop="10.67dip"
+                layout="@layout/cm_panel_divider" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginBottom="2dip"
+                android:layout_marginLeft="10.33dip"
+                android:layout_marginRight="10.33dip"
+                android:orientation="horizontal" >
+
+                <com.infraware.common.control.custom.CheckImageView
+                    android:id="@+id/color_select_auto_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="2dip"
+                    android:button="@null"
+                    android:clickable="true"
+                    android:padding="0dip"
+                    android:src="@drawable/color_chip_selector" />
+
+                <TextView
+                    android:id="@+id/color_select_auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical|left"
+                    android:text="@string/dm_word_auto"
+                    android:textColor="@color/panel_default_text"
+                    android:textSize="@dimen/panel_check_text_size" />
+            </LinearLayout>
+
+            <com.infraware.polarisoffice6.panel.kit.CommonPanelColor
+                android:id="@+id/PageColorSelection"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/page_background_user_watermark_tb_margin"
+                android:layout_marginLeft="10.33dip"
+                android:layout_marginRight="10.33dip" />
+
+            <TextView
+                android:id="@+id/anchor_watermark_layout_title"
+                style="@style/PanelAnchorTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/page_background_sub_title_height" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="41dip"
+                android:layout_marginBottom="@dimen/page_background_user_watermark_tb_margin"
+                android:layout_marginLeft="@dimen/page_background_margin_left_right"
+                android:layout_marginRight="@dimen/page_background_margin_left_right"
+                android:layout_marginTop="@dimen/page_background_user_watermark_tb_margin"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/watermark_layout_sub_text"
+                    style="@style/PageBGWaterMark.subTitle"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" />
+
+                <RadioGroup
+                    android:id="@+id/layout_radio_group"
+                    android:layout_width="196dip"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/layout_diagonal"
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_multi_left_selector_common"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:padding="0dip"
+                        android:textColor="@color/btn_default_tcolor_selector"
+                        android:textSize="@dimen/panel_check_text_size" />
+
+                    <RadioButton
+                        android:id="@+id/layout_horizontal"
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_multi_right_selector_common"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="0dip"
+                        android:textColor="@color/btn_default_tcolor_selector"
+                        android:textSize="@dimen/panel_check_text_size" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

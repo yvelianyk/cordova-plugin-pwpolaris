@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/rg_apply_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/button_01"
+            style="@style/SelectionListItem.RadioButton.Top" 
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/button_02"
+            style="@style/SelectionListItem.RadioButton.Bottom" />
+    </RadioGroup>
+
+    <!--
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/panel_list_button_height"
+        android:background="@null"
+        android:clickable="true" >
+
+        <Button
+            android:id="@+id/button_01"
+            style="@style/PanelListSheetBlackText"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/panel_list_sheet_button_height"
+            android:background="@drawable/number_list_selector" />
+
+        <ImageView
+            android:id="@+id/button_01_check"
+            android:layout_width="36.5dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ico_selection" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/panel_list_button_height"
+        android:background="@null"
+        android:clickable="true" >
+
+        <Button
+            android:id="@+id/button_02"
+            style="@style/PanelListSheetBlackText"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/panel_list_sheet_button_height"
+            android:background="@drawable/number_list_selector" />
+
+        <ImageView
+            android:id="@+id/button_02_check"
+            android:layout_width="36.5dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ico_selection" />
+    </RelativeLayout>
+    -->
+
+</LinearLayout>

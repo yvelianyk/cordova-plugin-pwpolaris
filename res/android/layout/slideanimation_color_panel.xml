@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width= "match_parent"
+  android:layout_height="match_parent"
+  >
+        <RadioGroup
+            android:id="@+id/RadioGroup0"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/panel_color_button_height"
+            android:orientation="horizontal" >
+
+            <com.infraware.polarisoffice6.panel.kit.CommonColorRadioButton
+                android:id="@+id/CommonColorRadioButton0"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/panel_color_button_margin"
+                android:layout_weight="1"
+                android:button="@null" />
+
+            <com.infraware.polarisoffice6.panel.kit.CommonColorRadioButton
+                android:id="@+id/CommonColorRadioButton1"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/panel_color_button_margin"
+                android:layout_weight="1"
+                android:button="@null" />
+
+            <com.infraware.polarisoffice6.panel.kit.CommonColorRadioButton
+                android:id="@+id/CommonColorRadioButton2"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/panel_color_button_margin"
+                android:layout_weight="1"
+                android:button="@null" />
+
+            <com.infraware.polarisoffice6.panel.kit.CommonColorRadioButton
+                android:id="@+id/CommonColorRadioButton3"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/panel_color_button_margin"
+                android:layout_weight="1"
+                android:button="@null" />
+
+            <com.infraware.polarisoffice6.panel.kit.CommonColorRadioButton
+                android:id="@+id/CommonColorRadioButton4"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/panel_color_button_margin"
+                android:layout_weight="1"
+                android:button="@null" />
+
+            <com.infraware.polarisoffice6.panel.kit.CommonColorRadioButton
+                android:id="@+id/CommonColorRadioButton5"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/panel_color_button_margin"
+                android:layout_weight="1"
+                android:button="@null" />
+
+            <com.infraware.polarisoffice6.panel.kit.CommonColorRadioButton
+                android:id="@+id/CommonColorRadioButton6"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/panel_color_button_margin"
+                android:layout_weight="1"
+                android:button="@null" />
+
+            <com.infraware.polarisoffice6.panel.kit.CommonColorRadioButton
+                android:id="@+id/CommonColorRadioButton7"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/panel_color_button_height"
+            android:layout_marginTop="@dimen/panel_color_button_margin"
+            android:orientation="horizontal" >
+
+            <com.infraware.polarisoffice6.panel.kit.CommonColorRadioButton
+                android:id="@+id/CommonColorRadioButton8"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/panel_color_button_margin"
+                android:layout_weight="1"
+                android:button="@null" />
+
+            <com.infraware.polarisoffice6.panel.kit.CommonColorRadioButton
+                android:id="@+id/CommonColorRadioButton9"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/panel_color_button_margin"
+                android:layout_weight="1"
+                android:button="@null" />
+
+            <com.infraware.polarisoffice6.panel.kit.CommonColorRadioButton
+                android:id="@+id/CommonColorRadioButton10"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/panel_color_button_margin"
+                android:layout_weight="1"
+                android:button="@null" />
+
+            <com.infraware.polarisoffice6.panel.kit.CommonColorRadioButton
+                android:id="@+id/CommonColorRadioButton11"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/panel_color_button_margin"
+                android:layout_weight="1"
+                android:button="@null" />
+
+            <com.infraware.polarisoffice6.panel.kit.CommonColorRadioButton
+                android:id="@+id/CommonColorRadioButton12"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/panel_color_button_margin"
+                android:layout_weight="1"
+                android:button="@null" />
+
+            <com.infraware.polarisoffice6.panel.kit.CommonColorRadioButton
+                android:id="@+id/CommonColorRadioButton13"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/panel_color_button_margin"
+                android:layout_weight="1"
+                android:button="@null" />
+
+            <com.infraware.polarisoffice6.panel.kit.CommonColorRadioButton
+                android:id="@+id/CommonColorRadioButton14"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/panel_color_button_margin"
+                android:layout_weight="1"
+                android:button="@null" />
+
+            <com.infraware.polarisoffice6.panel.kit.CommonColorRadioButton
+                android:id="@+id/CommonColorRadioButton15"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null" />
+        </RadioGroup>
+        
+        <RadioGroup
+            android:id="@+id/RadioGroup2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/panel_color_button_height"
+            android:layout_marginTop="@dimen/panel_color_button_margin"
+            android:orientation="horizontal" >
+
+            <com.infraware.polarisoffice6.panel.kit.CommonColorRadioButton
+                android:id="@+id/CommonColorRadioButton16"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/panel_color_button_margin"
+                android:layout_weight="1"
+                android:button="@null" />
+
+            <com.infraware.polarisoffice6.panel.kit.CommonColorRadioButton
+                android:id="@+id/CommonColorRadioButton17"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/panel_color_button_margin"
+                android:layout_weight="1"
+                android:button="@null" />
+
+            <com.infraware.polarisoffice6.panel.kit.CommonColorRadioButton
+                android:id="@+id/CommonColorRadioButton18"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/panel_color_button_margin"
+                android:layout_weight="1"
+                android:button="@null" />
+
+            <com.infraware.polarisoffice6.panel.kit.CommonColorRadioButton
+                android:id="@+id/CommonColorRadioButton19"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/panel_color_button_margin"
+                android:layout_weight="1"
+                android:button="@null" />
+
+            <com.infraware.polarisoffice6.panel.kit.CommonColorRadioButton
+                android:id="@+id/CommonColorRadioButton20"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/panel_color_button_margin"
+                android:layout_weight="1"
+                android:button="@null" />
+
+            <com.infraware.polarisoffice6.panel.kit.CommonColorRadioButton
+                android:id="@+id/CommonColorRadioButton21"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/panel_color_button_margin"
+                android:layout_weight="1"
+                android:button="@null" />
+
+            <com.infraware.polarisoffice6.panel.kit.CommonColorRadioButton
+                android:id="@+id/CommonColorRadioButton22"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/panel_color_button_margin"
+                android:layout_weight="1"
+                android:button="@null" />
+			
+			<com.infraware.polarisoffice6.panel.kit.CommonColorRadioButton
+                android:id="@+id/CommonColorRadioButton23"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null" />
+        </RadioGroup>
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/slide_listitem_master_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/slide_thumb_list_land_selector"
+        android:paddingBottom="2.33dp"
+        android:paddingRight="2.33dp"
+        android:paddingTop="2.33dp"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/slide_master_info"
+            android:layout_width="22.33dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="21.33dp"
+                android:layout_height="13.00dp" >
+
+                <TextView
+                    android:id="@+id/slide_listitem_pagenum"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/panel_cm_sub_title_text"
+                    android:textSize="9sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/slide_listitem_image"
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:layout_toRightOf="@+id/slide_master_info" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/slide_listitem_master_layout_view"
+        android:layout_width="wrap_content"
+        android:layout_height="78.33dp"
+        android:visibility="visible" >
+
+
+		<LinearLayout
+		    android:id="@+id/slide_listitem_master_sub_layout"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/slide_mastersub_thumb_list_land_selector"
+		    android:paddingTop="2.33dp"
+		    android:paddingBottom="2.33dp"
+		    android:gravity="right|center"
+		    android:layout_alignParentRight="true"
+		    android:layout_centerInParent="true"
+		    android:paddingRight="2.67dp">
+
+		    <ImageView
+		        android:id="@+id/slide_listitem_layoutimage"
+		        android:layout_width="85.33dp"
+		        android:layout_height="64dp"
+		        android:layout_gravity="right|center" />
+		</LinearLayout>
+		
+		<LinearLayout
+            android:id="@+id/slide_layout_info"
+            android:layout_width="33.33dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:background="@drawable/slide_master_treeline_landscape" />
+
+            <ImageView
+                android:id="@+id/tree_line_hide"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:background="@drawable/slide_master_treeline_landscape02"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

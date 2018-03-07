@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+        android:background="@drawable/panel_btn_list_normal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/b1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/panel_list_button_height"
+        android:background="@drawable/panel_btn_list"
+        android:clickable="true" >
+
+        <Button
+            android:id="@+id/b1c"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="11dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:clickable="false"
+            android:drawableLeft="@drawable/panel_icon_line_style01"
+            android:duplicateParentState="true" />
+
+        <ImageView
+            android:id="@+id/b1ck"
+            android:layout_width="36.5dip"
+            android:layout_height="fill_parent"
+            android:clickable="false"
+            android:duplicateParentState="true"
+            android:src="@drawable/ico_selection" />
+    </LinearLayout>
+    
+        <View   
+        	android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/cm_list_divider"
+      />
+
+    <LinearLayout
+        android:id="@+id/b2"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/panel_list_button_height"
+        android:background="@drawable/panel_btn_list"
+        android:clickable="true" >
+
+        <Button
+            android:id="@+id/b2c"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="11dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:clickable="false"
+            android:drawableLeft="@drawable/panel_icon_line_style02"
+            android:duplicateParentState="true" />
+
+        <ImageView
+            android:id="@+id/b2ck"
+            android:layout_width="36.5dip"
+            android:layout_height="fill_parent"
+            android:clickable="false"
+            android:duplicateParentState="true"
+            android:src="@drawable/ico_selection" />
+    </LinearLayout>
+
+        <View   
+        	android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/cm_list_divider"
+      />
+    <LinearLayout
+        android:id="@+id/b3"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/panel_list_button_height"
+        android:background="@drawable/panel_btn_list"
+        android:clickable="true" >
+
+        <Button
+            android:id="@+id/b3c"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="11dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:clickable="false"
+            android:drawableLeft="@drawable/panel_icon_line_style03"
+            android:duplicateParentState="true" />
+
+        <ImageView
+            android:id="@+id/b3ck"
+            android:layout_width="36.5dip"
+            android:layout_height="fill_parent"
+            android:clickable="false"
+            android:duplicateParentState="true"
+            android:src="@drawable/ico_selection" />
+    </LinearLayout>
+    <View   
+        	android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/cm_list_divider"
+      />
+    <LinearLayout
+        android:id="@+id/b4"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/panel_list_button_height"
+        android:background="@drawable/panel_btn_list"
+        android:clickable="true" >
+
+        <Button
+            android:id="@+id/b4c"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="11dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:clickable="false"
+            android:drawableLeft="@drawable/panel_icon_line_style04"
+            android:duplicateParentState="true" />
+
+        <ImageView
+            android:id="@+id/b4ck"
+            android:layout_width="36.5dip"
+            android:layout_height="fill_parent"
+            android:clickable="false"
+            android:duplicateParentState="true"
+            android:src="@drawable/ico_selection" />
+    </LinearLayout>
+    <View   
+        	android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/cm_list_divider"
+      />
+    <LinearLayout
+        android:id="@+id/b5"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/panel_list_button_height"
+        android:background="@drawable/panel_btn_list"
+        android:clickable="true" >
+
+        <Button
+            android:id="@+id/b5c"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="11dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:clickable="false"
+            android:drawableLeft="@drawable/panel_icon_line_style05"
+            android:duplicateParentState="true" />
+
+        <ImageView
+            android:id="@+id/b5ck"
+            android:layout_width="36.5dip"
+            android:layout_height="fill_parent"
+            android:clickable="false"
+            android:duplicateParentState="true"
+            android:src="@drawable/ico_selection" />
+    </LinearLayout>
+    <View   
+        	android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/cm_list_divider"
+      />
+    <LinearLayout
+        android:id="@+id/b6"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/panel_list_button_height"
+        android:background="@drawable/panel_btn_list"
+        android:clickable="true" >
+
+        <Button
+            android:id="@+id/b6c"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="11dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:clickable="false"
+            android:drawableLeft="@drawable/panel_icon_line_style09"
+            android:duplicateParentState="true" />
+
+        <ImageView
+            android:id="@+id/b6ck"
+            android:layout_width="36.5dip"
+            android:layout_height="fill_parent"
+            android:clickable="false"
+            android:duplicateParentState="true"
+            android:src="@drawable/ico_selection" />
+    </LinearLayout>
+    <View   
+        	android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/cm_list_divider"
+      />
+    <LinearLayout
+        android:id="@+id/b7"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/panel_list_button_height"
+        android:background="@drawable/panel_btn_list"
+        android:clickable="true" >
+
+        <Button
+            android:id="@+id/b7c"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="11dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:clickable="false"
+            android:drawableLeft="@drawable/panel_icon_line_style08"
+            android:duplicateParentState="true" />
+
+        <ImageView
+            android:id="@+id/b7ck"
+            android:layout_width="36.5dip"
+            android:layout_height="fill_parent"
+            android:clickable="false"
+            android:duplicateParentState="true"
+            android:src="@drawable/ico_selection" />
+    </LinearLayout>
+    <View   
+        	android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/cm_list_divider"
+      />
+    <LinearLayout
+        android:id="@+id/b8"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/panel_list_button_height"
+        android:background="@drawable/panel_btn_list"
+        android:clickable="true" >
+
+        <Button
+            android:id="@+id/b8c"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="11dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:clickable="false"
+            android:drawableLeft="@drawable/panel_icon_line_style07"
+            android:duplicateParentState="true" />
+
+        <ImageView
+            android:id="@+id/b8ck"
+            android:layout_width="36.5dip"
+            android:layout_height="fill_parent"
+            android:clickable="false"
+            android:duplicateParentState="true"
+            android:src="@drawable/ico_selection" />
+    </LinearLayout>
+
+</LinearLayout>

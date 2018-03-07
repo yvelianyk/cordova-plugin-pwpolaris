@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+	<ImageButton
+	    android:background="@drawable/memo_bg_pressed_selector"
+		android:src="@drawable/ico_memo_delete_selector"
+		android:id="@+id/delete_btn"
+		android:layout_height="match_parent"
+		android:layout_width="48dp" />
+	
+	 <ImageButton
+		android:background="@drawable/memo_bg_pressed_selector"
+		android:src="@drawable/ico_memo_prev_selector"
+		android:id="@+id/prev_btn"
+		android:layout_height="match_parent"
+		android:layout_width="48dp" />
+	 
+    <ImageButton
+		android:background="@drawable/memo_bg_pressed_selector"
+		android:src="@drawable/ico_memo_next_selector"
+		android:id="@+id/next_btn"
+		android:layout_height="match_parent"
+		android:layout_width="48dp" />
+</LinearLayout>

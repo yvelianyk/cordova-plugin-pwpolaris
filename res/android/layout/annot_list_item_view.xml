@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.infraware.document.pdf.PdfAnnotListItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/annot_item_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:background="@drawable/list_item_pressed_selector_pdf" >
+
+                <ImageView
+                    android:id="@+id/annot_icon"
+                    android:layout_width="42.67dip"
+                    android:layout_height="42.67dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5.67dip"
+                    android:layout_marginLeft="6dip"
+                    android:layout_marginRight="7.67dip"
+                    android:layout_marginTop="5.67dip"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5.67dip"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="5.67dip"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/annot_item_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/cm_list_item_main_tcolor"
+                        android:textSize="16sp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="17dp"                  
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/annot_item_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:singleLine="true"
+                            android:textColor="@color/cm_list_item_sub_tcolor"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/annot_item_page"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:paddingLeft="0dip"
+                            android:paddingRight="3dip"
+                            android:singleLine="true"
+                            android:textColor="@color/cm_list_item_sub_tcolor"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/annot_check"
+                    android:layout_width="48dip"
+                    android:layout_height="42.67dip"
+                    android:visibility="gone"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5.67dip"                    
+                    android:layout_marginTop="5.67dip"
+                    android:gravity="center"
+                    android:button="@drawable/checkbox_selector_pdf"                
+                    android:focusable="false"
+                    android:enabled="true"
+                     />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.67dp"
+                android:layout_gravity="top"
+                android:orientation="vertical"
+                android:src="@color/cm_list_line_color" >
+            </ImageView>
+        </LinearLayout>
+    </FrameLayout>
+
+</com.infraware.document.pdf.PdfAnnotListItemView>

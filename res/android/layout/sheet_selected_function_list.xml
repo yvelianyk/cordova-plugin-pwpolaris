@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="@dimen/sheet_selected_function_list_width"
+        android:layout_height="50.67dp"
+        android:gravity="center_vertical" >
+
+        <com.infraware.polarisoffice6.common.ExEditText
+            android:id="@+id/EditFunction"
+            android:layout_width="match_parent"
+            android:layout_height="40.00dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5.33dip"
+            android:layout_marginLeft="4.67dip"
+            android:layout_marginRight="4.67dip"
+            android:layout_marginTop="5.33dip"
+            android:background="@drawable/textfield_selector_sheet"
+            android:hint="@string/dm_search_functions"
+            android:textColorHint="@color/cm_edit_text_hint"
+            android:imeOptions="flagNoExtractUi|actionDone"
+            android:paddingLeft="8dip"
+            android:singleLine="true"
+            android:textColor="@color/common_inputbox_text"
+            android:textColorHighlight="@color/cm_edit_text_highlight"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/sheet_selected_function_list_width"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/TextNoItem"
+             android:layout_width="match_parent"
+            android:layout_height="42.5dp"
+            android:layout_marginLeft="5dip"
+            android:gravity="center"
+            android:text="@string/dm_empty"
+            android:textColor="@color/popover_list_tcolor_selector"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <ExpandableListView
+            android:id="@+id/ListFunction"
+             android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/transparent"
+            android:childDivider="@color/po_sheet_selected_function_list_child_divider"
+            android:listSelector="@android:color/transparent"
+            android:divider="@null"
+            android:padding="0dp" />
+    </LinearLayout>
+
+</LinearLayout>

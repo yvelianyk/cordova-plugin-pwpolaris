@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<ListView android:id="@+id/cm_menu_list"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:dividerHeight="0.67dp"
+		android:divider="@color/cm_menu_divider"
+		android:cacheColorHint="@color/transparent"
+		android:drawSelectorOnTop="false"
+		android:listSelector="@drawable/cm_bg01_pressed_selector"/>
+</LinearLayout>

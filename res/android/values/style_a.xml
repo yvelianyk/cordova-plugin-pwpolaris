@@ -1,0 +1,7 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Theme.PolarisDefault" parent="android:Theme.DeviceDefault.NoActionBar">
+        <item name="android:textColorHighlight">@color/cm_edit_text_highlight</item>
+    </style>
+
+</resources>

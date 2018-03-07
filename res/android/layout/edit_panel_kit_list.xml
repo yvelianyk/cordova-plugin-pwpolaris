@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/ibtnNone"
+        android:layout_width="49dip"
+        android:layout_height="@dimen/panel_button_height"
+        android:layout_gravity="left"
+        android:background="@drawable/panel_btn_selector_common"
+        android:src="@drawable/panel_ico_none"
+        android:layout_marginBottom="@dimen/panel_common_content_button_vertical_space" />
+
+   <!--  <View
+        android:id="@+id/separate_line_01"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="@dimen/panel_subtitle_margin_left_right"
+        android:layout_marginRight="@dimen/panel_subtitle_margin_left_right"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/img_divider_repeat" /> -->
+
+    <com.infraware.polarisoffice6.panel.kit.PanelButtonImage
+        android:id="@+id/fontParaListBullet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.infraware.polarisoffice6.panel.kit.PanelButtonImage
+        android:id="@+id/fontParaListNumbering"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/panel_common_content_button_vertical_space" />
+    
+    <com.infraware.polarisoffice6.panel.kit.PanelButtonImage
+        android:id="@+id/fontParaListNumbering2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/panel_common_content_button_vertical_space"
+        android:visibility="gone" />
+    
+    <com.infraware.polarisoffice6.panel.kit.PanelButtonImage
+        android:id="@+id/fontParaListMultiLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/panel_common_content_button_vertical_space"
+        android:visibility="gone" />
+    
+    <include 
+        layout="@layout/cm_panel_divider"/>
+    <!-- 
+    <CheckBox
+        android:id="@+id/fontParaList_renumber"
+        style="@style/PanelCheckBoxRight"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/panel_button_height"
+        android:layout_gravity="left"
+        android:text="@string/dm_init_numbering" />
+ -->
+ 	<com.infraware.common.widget.WheelButton
+		android:id="@+id/fontParaList_start_number" 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical" /> 
+</LinearLayout>

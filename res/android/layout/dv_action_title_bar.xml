@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/dv_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_bg"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10.5dp"
+            android:layout_weight="1" >
+
+            <ImageButton
+                android:id="@+id/dv_title_image"
+                android:layout_width="44dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/title_bg"
+                android:clickable="false"
+                android:gravity="center_vertical"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/dv_title_layout_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/cm_bg_pressed_selector" >
+
+                <TextView
+                    android:id="@+id/dv_title_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/cm_title_text"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dv_title_menu_button"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+            <ImageButton
+                android:id="@+id/title_menu_ok"
+                android:layout_width="48dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/cm_title_bg_pressed_selector"
+                android:contentDescription="@string/cm_btn_ok"
+                android:onClick="onButtonClick"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/dv_title_button"
+            android:layout_width="74.67dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/cm_title_button_bg"
+            android:singleLine="true"
+            android:textColor="@color/cm_title_button_text"
+            android:textSize="17.33sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

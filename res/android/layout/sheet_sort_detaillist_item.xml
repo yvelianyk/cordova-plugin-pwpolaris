@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"  
+	android:layout_height="52.67dip">
+	<RelativeLayout
+		android:layout_width="fill_parent"  
+		android:layout_height="52.67dip">
+		
+		<TextView android:id="@+id/text_sort_detail"
+			android:layout_width="wrap_content"
+			android:layout_height="52.67dip"
+			android:layout_margin="10dip"
+			android:singleLine="true"
+			android:textSize ="14sp"
+			android:textColor="@color/cm_list_item_main_tcolor_selector"
+		    android:layout_alignParentLeft="true"
+		    android:layout_marginLeft="14.67dip"
+			android:gravity="left|center_vertical"/>
+			
+	</RelativeLayout>
+</FrameLayout>

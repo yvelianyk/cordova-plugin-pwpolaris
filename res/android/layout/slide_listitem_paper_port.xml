@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/slide_listitem_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/slide_thumb_list_port_paper_port_selector"
+        android:paddingBottom="2.67dp"
+        android:paddingLeft="2.67dp"
+        android:paddingRight="2.67dp"
+        android:paddingTop="2.33dp" >
+
+        <LinearLayout
+            android:id="@+id/slide_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="21.33dp"
+                android:layout_height="13.00dp" >
+
+                <TextView
+                    android:id="@+id/slide_listitem_pagenum"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/panel_cm_sub_title_text"
+                    android:textSize="9sp" />
+
+                <ImageView
+                    android:id="@+id/slide_listitem_ishidepage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:src="@drawable/slide_ico_hide"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/slide_listitem_animation"
+                android:layout_width="21.33dp"
+                android:layout_height="13.00dp"
+                android:src="@drawable/slide_ico_changescreen" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/slide_listitem_image"
+            android:layout_width="75dp"
+            android:layout_height="90dp"
+            android:layout_below="@+id/slide_info"
+            android:layout_marginTop="7dp" />
+        
+    </RelativeLayout>
+
+    <View
+        android:layout_width="4.83dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@+id/slide_listitem_view" />
+
+</RelativeLayout>

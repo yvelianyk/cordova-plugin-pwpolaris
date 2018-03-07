@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5.00dp"
+        android:layout_marginLeft="27.33dp"
+        android:layout_marginRight="27.33dp"
+        android:layout_marginTop="20.67dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_guide_first_bi"
+            android:layout_width="match_parent"
+            android:layout_height="32.33dp"
+            android:layout_gravity="center"
+            android:src="@drawable/polaris_bi" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="74.67dp"
+            android:layout_marginTop="18.67dp" >
+
+            <TextView
+                android:id="@+id/tv_guide_first_msg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:lineSpacingExtra="6.77dp"
+                android:text="@string/fm_office_guide_msg"
+                android:textColor="@color/cm_user_register_text"
+                android:textSize="11sp" />
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/iv_guide_first_img"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="12.00dp"
+            android:src="@drawable/img_introduce_01" />
+    </LinearLayout>
+
+</RelativeLayout>

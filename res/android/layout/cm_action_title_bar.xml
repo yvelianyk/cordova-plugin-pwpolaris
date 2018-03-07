@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/cm_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_bg_common"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:id="@+id/cm_title_navigation"
+                android:layout_width="43dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/cm_title_bg_pressed_selector"
+                android:focusable="true"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="9dp"
+                    android:layout_height="fill_parent"
+                    android:scaleType="center"
+                    android:src="@drawable/fm_ico_navigation" />
+
+                <ImageView
+                    android:id="@+id/cm_title_image_navigation"
+                    android:layout_width="34dp"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/cm_title_image"
+                android:layout_width="43dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/title_bg"
+                android:clickable="false"
+                android:gravity="center_vertical"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/cm_title_layout_text"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/cm_title_bg_pressed_selector"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/cm_title_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/title_ico_back"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/cm_title_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/actionbar_tcolor"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/cm_title_progress"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="13dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/cm_title_menu_button"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/title_menu_new"
+                android:layout_width="48dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/cm_title_bg_pressed_selector"
+                android:contentDescription="@string/cm_default_file_name_doc"
+                android:onClick="onButtonClick"
+                android:src="@drawable/fm_actionbar_newform"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/title_menu_new_folder"
+                android:layout_width="48dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/cm_title_bg_pressed_selector"
+                android:contentDescription="@string/cm_btn_new_folder"
+                android:onClick="onButtonClick"
+                android:src="@drawable/fm_actionbar_newfolder"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/title_menu_search"
+                android:layout_width="48dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/cm_title_bg_pressed_selector"
+                android:contentDescription="@string/string_filemanager_search_hint"
+                android:onClick="onButtonClick"
+                android:src="@drawable/fm_actionbar_search"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/title_menu_sort"
+                android:layout_width="48dp"
+                android:layout_height="fill_parent"
+                android:onClick="onButtonClick"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/title_menu_more"
+                android:layout_width="48dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/cm_title_bg_pressed_selector"
+                android:contentDescription="@string/cm_action_bar_menu"
+                android:onClick="onButtonClick"
+                android:src="@drawable/fm_actionbar_more"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/title_menu_compress"
+                android:layout_width="48dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/cm_title_bg_pressed_selector"
+                android:onClick="onButtonClick"
+                android:src="@drawable/fm_actionbar_compress"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/title_menu_select_all"
+                android:layout_width="48dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/cm_title_bg_pressed_selector"
+                android:contentDescription="@string/dm_select_all"
+                android:onClick="onButtonClick"
+                android:src="@drawable/title_ico_uncheck_selector"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/title_menu_copy"
+                android:layout_width="48dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/cm_title_bg_pressed_selector"
+                android:contentDescription="@string/cm_btn_copy"
+                android:onClick="onButtonClick"
+                android:src="@drawable/fm_actionbar_copy"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/title_menu_move"
+                android:layout_width="48dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/cm_title_bg_pressed_selector"
+                android:contentDescription="@string/cm_btn_move"
+                android:onClick="onButtonClick"
+                android:src="@drawable/cm_title_ico_move_selector"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/title_menu_save"
+                android:layout_width="48dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/cm_title_bg_pressed_selector"
+                android:contentDescription="@string/dm_save"
+                android:onClick="onButtonClick"
+                android:src="@drawable/fm_actionbar_save"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/title_menu_setting"
+                android:layout_width="48dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/cm_title_bg_pressed_selector"
+                android:onClick="onButtonClick"
+                android:src="@drawable/fm_actionbar_setting"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/title_menu_ok"
+                android:layout_width="48dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/cm_title_bg_pressed_selector"
+                android:contentDescription="@string/cm_btn_ok"
+                android:onClick="onButtonClick"
+                android:src="@drawable/fm_actionbar_ok"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/title_menu_refresh"
+                android:layout_width="48dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/cm_title_bg_pressed_selector"
+                android:contentDescription="@string/bc_tooltip_refresh"
+                android:onClick="onButtonClick"
+                android:src="@drawable/bc_actionbar_refresh"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/title_menu_room"
+                android:layout_width="48dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/cm_title_bg_pressed_selector"
+                android:contentDescription="@string/bc_title_create_room"
+                android:onClick="onButtonClick"
+                android:src="@drawable/bc_actionbar_room"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/cm_title_button"
+            android:layout_width="74.67dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/cm_title_button_bg"
+            android:singleLine="true"
+            android:textColor="@color/cm_title_button_text"
+            android:textSize="17.33sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

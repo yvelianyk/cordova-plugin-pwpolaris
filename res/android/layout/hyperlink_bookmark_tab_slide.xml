@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/slide_bookmark_tab_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/slide_if_insert_text_hyperlink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10.33dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/slide_text_showing_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dm_text"
+                android:textColor="@color/panel_sub_title_tcolor"
+                android:textSize="14sp" />
+
+            <com.infraware.polarisoffice6.common.ExEditText
+                android:id="@+id/slide_text_showing_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="40.00dip"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/textfield_selector_slide"
+                android:inputType="text"
+                android:maxLength="@integer/dm_hyperlink_max"
+                android:paddingLeft="11.50dip"
+                android:paddingRight="11.50dip"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textColor="@color/cm_edit_text_normal"
+                android:textColorHighlight="@color/cm_edit_text_highlight"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/slide_go_select_list_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/dm_slide"
+                android:textColor="@color/panel_sub_title_tcolor"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/slide_item1_selected"
+                android:layout_width="34.67dp"
+                android:layout_height="34.67dp"
+                android:layout_gravity="right"
+                android:button="@drawable/checkbox_selector_slide"
+                android:focusable="false" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/slide_go_select_list_button"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginBottom="9.33dp"
+            android:background="@drawable/btn_more_selector_slide"
+            android:enabled="true"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="11.50dp"
+            android:paddingRight="39dp"
+            android:textColor="@color/btn_more_tcolor_selector"
+            android:textSize="16sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/slide_go_select_number_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/dm_slide_number"
+                android:textColor="@color/panel_sub_title_tcolor"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/slide_item2_selected"
+                android:layout_width="34.67dp"
+                android:layout_height="34.67dp"
+                android:layout_gravity="right"
+                android:button="@drawable/checkbox_selector_slide"
+                android:focusable="false" />
+        </FrameLayout>
+
+        <com.infraware.polarisoffice6.common.ExEditText
+            android:id="@+id/slide_text_number_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="40.00dip"
+            android:background="@drawable/textfield_selector_slide"
+            android:enabled="false"
+            android:inputType="numberSigned"
+            android:maxLength="@integer/dm_hyperlink_max"
+            android:paddingLeft="11.50dip"
+            android:paddingRight="11.50dip"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textColor="@color/cm_edit_text_normal"
+            android:textColorHighlight="@color/cm_edit_text_highlight"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp" >
+
+            <Button
+                android:id="@+id/hyperlink_tab_delete_button"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginTop="23.33dp"
+                android:background="@drawable/btn_default_selector_slide"
+                android:text="@string/dm_remove_hyperlink"
+                android:textColor="@color/btn_default_tcolor_selector"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

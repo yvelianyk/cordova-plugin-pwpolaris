@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/tab_bg_common_s" android:state_pressed="true"/>
+    <item android:drawable="@drawable/tab_bg_common_s" android:state_focused="true"/> <!-- [2013.11.25][hjlee] focus image 요청하여 변경필요함 -->
+    <item android:drawable="@drawable/tab_bg_common_s" android:state_selected="true"/>
+    <item android:drawable="@drawable/tab_bg_common_s" android:state_checked="true"/>
+    <item android:drawable="@drawable/tab_bg_left_n"/>
+
+</selector>

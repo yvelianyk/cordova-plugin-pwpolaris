@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.infraware.common.event.OfficeRootFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.infraware.office.baseframe.MainLinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/doc_bg_color"
+        android:orientation="vertical" >
+	   <RelativeLayout
+	       android:id="@+id/docViewLayout"
+	       android:layout_width="fill_parent"
+	       android:layout_height="0px"
+	       android:layout_weight="1"
+	       android:background="@color/doc_bg_color"
+	       android:gravity="bottom" >
+	
+	       <FrameLayout
+	           android:id="@+id/EvBaseViewLayout"
+	           android:layout_width="fill_parent"
+	           android:layout_height="fill_parent" >
+	
+	           <com.infraware.office.docview.EvBaseView
+	               android:id="@+id/EvBaseView"
+	               android:layout_width="fill_parent"
+	               android:layout_height="fill_parent"/>
+	
+	           <ImageView
+	               android:id="@+id/EvBaseView_dummy_imgview"
+	               android:layout_width="fill_parent"
+	               android:layout_height="fill_parent"
+	               android:visibility="gone" />
+	       </FrameLayout>
+	       
+	       <com.infraware.sdk.UserWaterMarkImageView android:id="@+id/userWaterMarkImageView"
+			    android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+			    android:visibility="gone"
+			    />
+	
+	       <FrameLayout
+	           android:id="@+id/pageinfo"
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:layout_alignParentLeft="true"
+	           android:layout_alignParentTop="true"
+	           android:layout_marginLeft="10dp"
+	           android:layout_marginTop="10dp"
+	           android:visibility="invisible" >
+	       </FrameLayout>
+		</RelativeLayout>
+    </com.infraware.office.baseframe.MainLinearLayout>
+
+</com.infraware.common.event.OfficeRootFrameLayout>

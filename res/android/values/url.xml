@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="base_url_help_redirection">"https://usermgr1.polarisoffice.com/dmweb/GoHelpUrl.aspx?device_type=%1$s&amp;product_code=%2$s&amp;lang=%3$s&amp;model=%4$s"</string>
+
+</resources>

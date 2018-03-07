@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/line_spacing_uint_textview"
+            style="@style/PanelCommonSubTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="21.67dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/dm_line_spacing" />
+
+        <LinearLayout
+            android:id="@+id/line_space_button_group"
+            android:layout_width="fill_parent"
+            android:layout_height="41dip"
+            android:layout_below="@id/line_spacing_uint_textview" >
+
+            <Button
+                android:id="@+id/button_single"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_multi_left_selector_common"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/string_text_linespace_1_line"
+                android:textColor="@color/btn_multi_tcolor_selector"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/button_single_half"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_multi_center_selector_common"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/string_text_linespace_1_5_line"
+                android:textColor="@color/btn_multi_tcolor_selector"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/button_double"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_multi_right_selector_common"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/string_text_linespace_2_line"
+                android:textColor="@color/btn_multi_tcolor_selector"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/rg_line_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line_space_button_group"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dip"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/line_type_percentage"
+                style="@style/SelectionListItem.RadioButton.Top"
+                android:text="@string/string_text_linespace_type_percentage" />
+            
+            <RadioButton
+                android:id="@+id/line_type_min"
+                style="@style/SelectionListItem.RadioButton.Middle"
+                android:text="@string/string_text_linespace_type_min" />
+
+            <RadioButton
+                android:id="@+id/line_type_fix"
+                style="@style/SelectionListItem.RadioButton.Middle"
+                android:text="@string/string_text_linespace_type_fix" />
+
+            <RadioButton
+                android:id="@+id/line_type_multiple"
+                style="@style/SelectionListItem.RadioButton.Bottom"
+                android:text="@string/string_text_linespace_type_multiple" />
+            
+        </RadioGroup>
+        
+    </RelativeLayout>
+    
+	<TextView
+        android:id="@+id/line_type_values"
+        style="@style/PanelCommonSubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="21.67dip"
+        android:text="@string/string_editpanel_value_line"
+        android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical" />
+
+    <com.infraware.polarisoffice6.common.WheelButtonColumnCustom
+        android:id="@+id/fontParaSpacing_linespacing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.infraware.common.widget.WheelButton
+        android:id="@+id/fontParaSpacing_before"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical" />
+
+    <com.infraware.common.widget.WheelButton
+        android:id="@+id/fontParaSpacing_after"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical" />
+
+</LinearLayout>

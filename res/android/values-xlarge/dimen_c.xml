@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="popup_text_size">14sp</dimen>
+    
+    <dimen name="home_thumbnail_type_port_width">34dp</dimen>
+    <dimen name="home_thumbnail_type_port_height">39.5dp</dimen>
+    <dimen name="home_thumbnail_name_height">60dp</dimen>
+    <dimen name="home_thumbnail_port_height">176dp</dimen>
+    <dimen name="home_thumbnail_layout">236dp</dimen>
+    
+    <dimen name="home_thumbnail_layout_land">236dp</dimen>
+    <dimen name="home_thumbnail_land">176dp</dimen>
+
+     <dimen name="home_thumbnail_land_columWidth">191dp</dimen>
+     <dimen name="home_thumbnail_port_columWidth">191dp</dimen>
+     <dimen name="home_recent_pager_land_height">482dip</dimen>
+     <dimen name="home_recent_pager_port_height">970dip</dimen>
+     
+     <dimen name="home_thumbnail_name">15sp</dimen>
+     <dimen name="home_thumbnail_port_padding_left_right">32.5dp</dimen>
+     <dimen name="home_thumbnail_image_port_padding_top">1dp</dimen>
+     <dimen name="home_thumbnail_image_port_padding_bottom">6dp</dimen>
+     
+     <dimen name="home_thumbnail_land_padding_left_right">7dp</dimen>
+     <dimen name="home_thumbnail_land_padding_top">40dp</dimen>
+	 
+	 <dimen name="findbar_replace_editbox_width">200dp</dimen>
+	 <dimen name="findbar_editbox_width">399dp</dimen>
+	 
+	<dimen name="fx_toolbar_height">42dp</dimen>
+	<dimen name="fx_toolbar_btn_width">41.5dp</dimen>
+	<dimen name="fx_toolbar_btn_text_size">18sp</dimen>
+	<dimen name="fx_toolbar_more_width">15dp</dimen>
+	<dimen name="sheet_selected_function_list_width">340dp</dimen>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="ab_ico_w">46dip</dimen>
+    <dimen name="ationbar_height">48.00dp</dimen>
+    <dimen name="ationbar_ico_doc_width">45.00dp</dimen>
+    <dimen name="ationbar_ico_func_width">48.00dp</dimen>
+    <dimen name="actionbar_subbar_height">40.00dp</dimen>
+    <dimen name="actionbar_subbar_text_size">14.00dp</dimen>
+    
+    <dimen name="pendraw_preview_h">52.5dip</dimen>
+	<dimen name="pendraw_preview_h_land">45dip</dimen>
+    <dimen name="pop_over_check_margin_left">11dp</dimen>
+	<dimen name="pop_over_check_width">37.33dp</dimen>
+    <dimen name="pop_over_margin_left">10dp</dimen>
+	
+    <dimen name="toolbar_ico_func_width">60.00dp</dimen>
+    <dimen name="panel_subtitle_h">21.67dip</dimen>
+    <dimen name="panel_wheel_height">41dip</dimen>
+    <dimen name="panel_check_box_width">35dip</dimen>
+    
+    <dimen name="memo_layout_landscape_height">131dip</dimen>
+    <dimen name="memo_layout_portrait_height">252dip</dimen>
+    <dimen name="memo_small_layout_portrait_height">212.66dip</dimen>
+    
+    <dimen name="panel_popup_width">370dip</dimen>
+    <dimen name="panel_popup_height">626dip</dimen>
+    
+</resources>

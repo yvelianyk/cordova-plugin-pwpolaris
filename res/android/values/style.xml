@@ -1,0 +1,382 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Theme.DocMaster" parent="android:Theme.DeviceDefault">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/dlg_bg_color</item>
+        <item name="android:colorBackground">@color/dlg_bg_color</item>
+    </style>
+
+    <style name="NormalTextStyle">
+        <item name="android:textColor">@color/normal_text_style_text_color</item>
+        <item name="android:textSize">14.67dip</item>
+    </style>
+
+    <style name="Title1">
+        <item name="android:textColor">@color/title1_text_color</item>
+        <item name="android:textSize">20.00dip</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Title2">
+        <item name="android:textColor">@color/title2_text_color</item>
+        <item name="android:textSize">18.67dip</item>
+        <item name="android:textStyle">bold</item>
+    </style>    
+
+    <style name="StrongHighlight">
+        <item name="android:textColor">@color/strong_highlight_text_color</item>
+        <item name="android:textSize">14.67dip</item>
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+
+    <style name="StrongReference">
+        <item name="android:textColor">@color/strong_reference_text_color</item>
+        <item name="android:textSize">14.67dip</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- //20130818 khchoi To change edit panel gui [start] -->
+    <style name="PanelAnchorTitle">        
+        <item name="android:background">@drawable/panel_titlesub_bg</item>
+        <item name="android:paddingLeft">@dimen/panel_subtitle_margin_left_right</item>
+        <item name="android:paddingRight">@dimen/panel_subtitle_margin_left_right</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/panel_anchor_title_tcolor</item>
+        <item name="android:textSize">12sp</item>
+        <!-- <item name="android:shadowColor">@color/panel_anchor_title_shdow_color</item>
+        <item name="android:shadowDy">2</item>   -->      
+    </style>
+    
+     <style name="PanelButtonTitleText">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/panel_sub_title_tcolor</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+   
+     <style name="PanelButtonTextSize">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/panel_item_tcolor_selector</item>
+        <item name="android:textSize">21sp</item>
+    </style>
+   
+     <style name="PanelButtonText">
+        <item name="android:background">@drawable/bg_pressed_selector</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/btn_default_tcolor_selector</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+       
+    <style name="PanelButtonImage">
+        <item name="android:background">@drawable/bg_pressed_selector</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    
+     <style name="PanelCheckBoxLeft">
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableLeft">@drawable/cm_checkbox_selector_common</item>
+        <item name="android:textColor">@color/panel_sub_title_tcolor</item>
+        <item name="android:textSize">@dimen/panel_check_text_size</item>
+     </style>
+    
+     <style name="PanelCheckBoxRight">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableRight">@drawable/cm_checkbox_selector_common</item>
+        <item name="android:textColor">@color/panel_sub_title_tcolor</item>
+        <item name="android:textSize">@dimen/panel_check_text_size</item>
+    </style>
+     
+     <style name="PanelSelectImage">
+        <item name="android:background">@drawable/bg_pressed_selector</item>
+    </style>
+    
+    <style name="PanelListSheetBlackText">
+        <item name="android:paddingLeft">10.00dip</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/panel_list_black_text_color</item>
+        <item name="android:textSize">14.00dip</item>
+    </style>
+
+<!--     <style name="Keypad">
+        <item name="android:background">@drawable/keypad_selector</item>
+        <item name="android:textColor">@drawable/keypad_textcolor_selector</item>
+        <item name="android:textSize">17.33dp</item>
+        <item name="android:shadowColor">@color/keypad_shadow_color</item>
+        <item name="android:shadowDy">@integer/shadow_dy_keypad</item>
+        <item name="android:shadowRadius">0.5</item>
+    </style> -->
+    
+    <style name="ChartPanelBlackText">
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">5.33dip</item>
+        <item name="android:textSize">16.00sp</item>
+        <item name="android:textColor">@color/panel_default_text</item>
+        
+    </style>
+    
+    <style name="PenMainBar">
+	    <item name="android:background">@drawable/bg_pressed_selector</item>
+	    <item name="android:textColor">@drawable/bg_textcolor_selector</item>
+	    <item name="android:padding">0dip</item>
+	    <item name="android:drawablePadding">-5dip</item>
+	    <item name="android:textSize">9sp</item>
+   	</style>
+    
+	<style name="PolarisDialog" parent="@android:style/Theme.DeviceDefault.Dialog"></style>
+
+    <style name="PolarisNoTitleBar" parent="@android:style/Theme.DeviceDefault.NoActionBar"></style>
+
+    <style name="Theme.Translucent" parent="android:style/Theme.Translucent">
+        <item name="android:windowBackground">@drawable/translucent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorForeground">#fff</item>
+    </style>
+    
+    <style name="SubTitle">
+        <item name="android:layout_height">20dp</item>
+        <item name="android:paddingLeft">10.67dp</item>
+        <item name="android:paddingRight">10.67dp</item>
+        <item name="android:background">@drawable/panel_titlesub_bg</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/sut_title_text_color</item>
+<!--         <item name="android:shadowColor">#ffffff</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item> -->
+        <item name="android:textSize">12sp</item>
+    </style>
+    
+    <style name="PanelCommonImageButton">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">@dimen/panel_button_height</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/panel_btn_selector_common</item>
+    </style>
+    
+    <style name="PanelCommonImageButton.Left">
+        <item name="android:background">@drawable/btn_multi_left_selector_common</item>
+    </style>
+    
+    <style name="PanelCommonImageButton.Center">
+        <item name="android:background">@drawable/btn_multi_center_selector_common</item>
+    </style>
+    
+    <style name="PanelCommonImageButton.Right">
+        <item name="android:background">@drawable/btn_multi_right_selector_common</item>
+    </style>
+    
+    <!-- Panel Common Icon Style -->
+    <style name="PanelIconTitle">
+        <item name="android:textSize">@dimen/panel_common_icon_title_text_size</item>
+        <item name="android:textColor">@color/panel_sub_title_tcolor</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+    
+    <style name="PanelIconItem">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">@dimen/panel_common_icon_item_height</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/bg_pressed_selector</item>
+        <item name="android:clickable">true</item>
+    </style>
+    
+    <!-- Panel tab item style -->
+    <style name="PanelTab"/>
+    
+    <style name="PanelTab.LinearLayout">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">@dimen/panel_tab_height</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:clickable">true</item>
+    </style>
+    
+    <style name="PanelTab.Item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:clickable">false</item>
+    </style>
+    
+    <style name="PanelTab.Item.ImageView">
+        <item name="android:layout_height">@dimen/panel_tab_item_image_height</item>
+    </style>
+    
+    <style name="PanelTab.Item.TextView">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_horizontal|top</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/panel_tab_item_text_size</item>
+        <item name="android:textColor">@color/panel_item_tcolor_selector</item>
+    </style>
+    <!-- Panel tab item style end-->
+    
+    <!-- Panel Insert Shape SymbolGirdView -->
+    <style name="ShapeSymbolGridView">
+        <!-- SymbolGridView class custom -->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:columnWidth">50dip</item>
+        <item name="android:stretchMode">none</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:listSelector">@drawable/panel_item_bg_selector_common</item><!--//[2013.11.21][ghchoi] To debug shape item focus about bt key-->
+        <item name="android:numColumns">6</item> <!-- Code port: 6 land : 10 -->
+        <item name="android:horizontalSpacing">@dimen/insert_shape_horizontal_space_port</item>
+        <item name="android:verticalSpacing">7dip</item>
+    </style>
+    
+    <style name="ShapeInsertDividerLinearlayout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/insert_shape_divider_height</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/insert_shape_divider_margin_left_right</item>
+        <item name="android:layout_marginRight">@dimen/insert_shape_divider_margin_left_right</item>
+    </style>
+    
+    <!-- Page BackGround watermark style -->
+    <style name="PageBGWaterMark"/>
+    <style name="PageBGWaterMark.LinearLayout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">80dip</item>
+        <item name="android:layout_marginTop">17.33dip</item>
+        <item name="android:layout_marginBottom">14dip</item>
+        <item name="android:layout_marginLeft">@dimen/page_background_margin_left_right</item>
+        <item name="android:layout_marginRight">@dimen/page_background_margin_left_right</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    
+    <style name="PageBGWaterMark.CheckBox">
+        <item name="android:layout_width">62dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">8sp</item>
+        <item name="android:gravity">center_horizontal|bottom</item>
+        <item name="android:textColor">@color/panel_item_tcolor_selector</item>
+        <item name="android:clickable">true</item>
+        <item name="android:button">@null</item>
+        <item name="android:padding">0dip</item>
+    </style>
+    
+    <!-- //[2014.04.26][유선욱][TID:#823][JIRA:ICF-938] 특정 단말에서의 공간 부족으로 Code 상에서 Port/land Space 값 조절 추가. -->
+    <!-- Code 에서 해당 값을 변경하므로 해당 값 수정 시에는 Code 부분도 같이 확인 필요. -->
+    <style name="PageBGWaterMark.Space">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+	</style>
+	
+    <style name="PageBGWaterMark.subTitle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textColor">@color/panel_default_text</item>
+	</style>
+    
+    <style name="PageBGWaterMark.TextSizeCheckBox">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/btn_default_tcolor_selector</item>
+        <item name="android:clickable">true</item>
+        <item name="android:button">@null</item>
+        <item name="android:padding">0dip</item>
+    </style>
+    
+    <style name="PageBGWaterMark.TextSizeCheckBox.left">
+        <item name="android:background">@drawable/cm_btn_multiple_left_check_selector</item>
+    </style>
+    <style name="PageBGWaterMark.TextSizeCheckBox.center">
+        <item name="android:background">@drawable/cm_btn_multiple_center_check_selector</item>
+	</style>
+	<style name="PageBGWaterMark.TextSizeCheckBox.right">
+	    <item name="android:background">@drawable/cm_btn_multiple_right_check_selector</item>
+	</style>
+    
+    <!-- Page BackGround Page Color -->
+    <style name="PageBGPageColor"/>
+    <style name="PageBGPageColor.LinearLayout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">15dip</item>
+        <item name="android:layout_marginBottom">15dip</item>
+        <item name="android:layout_marginLeft">10.33dip</item>
+        <item name="android:layout_marginRight">10.33dip</item>
+    </style>
+    
+    <style name="PageBGPageColor.gradientCheckBox">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:clickable">true</item>
+        <item name="android:button">@null</item>
+        <item name="android:padding">0dip</item>
+        <item name="android:layout_marginLeft">2dip</item>
+    </style>
+    
+    <style name="PageBGPageColor.CheckImageView">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:clickable">true</item>
+	</style>
+	
+    <style name="PageBGPageColor.lineLayoutSpace">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">7.33dip</item>
+	</style>
+    
+	<style name="PageBGPageColor.CheckImageView.left">
+		<item name="android:background">@drawable/cm_btn_multiple_left_check_selector</item>
+	</style>
+	
+	<style name="PageBGPageColor.CheckImageView.center">
+		<item name="android:background">@drawable/cm_btn_multiple_center_check_selector</item>
+	</style>
+	
+	<style name="PageBGPageColor.CheckImageView.right">
+		<item name="android:background">@drawable/cm_btn_multiple_right_check_selector</item>
+	</style>
+	
+	<style name="tableStyleSpace">
+	    <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">@dimen/style_icon_h</item>
+	</style>
+	
+	<style name="tableStyleSpace.dummyView">
+        <item name="android:layout_width">@dimen/style_icon_w</item>
+        <item name="android:layout_height">@dimen/style_icon_h</item>
+	</style>
+	
+	<style name="tableStyleSpace.LeftAndRight">
+        <item name="android:layout_weight">1.2</item>
+	</style>
+	
+	<style name="tableStyleSpace.Center">
+        <item name="android:layout_weight">1.2</item>
+	</style>
+	
+	<style name="tableStyleSpace.LeftAndRightLand">
+        <item name="android:layout_weight">1.25</item>
+	</style>
+	
+	<style name="tableStyleSpace.CenterLand">
+        <item name="android:layout_weight">1</item>
+	</style>
+
+    <style name="Animation"></style>
+
+    <style name="Animation.PopupWindow"></style>
+
+    <style name="Animation.PopupWindow.SheetTab">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+    
+    <style name="sliding_animation">
+	    <item name="android:windowEnterAnimation">@anim/actionbar_file_sliding_in</item>
+	    <item name="android:windowExitAnimation">@anim/actionbar_file_slideing_out</item>
+	</style>
+</resources>

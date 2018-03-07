@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/base_common_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/data_sheet_actionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/title_bg_common"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/data_sheet_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13.33dip"
+            android:singleLine="true"
+            android:text="@string/dm_data_sheet"
+            android:textColor="@color/actionbar_tcolor"
+            android:textSize="18.00sp" />
+
+        <TextView
+            android:id="@+id/data_sheet_cellinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.33dip"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text=" (B1)"
+            android:textColor="@color/actionbar_tcolor"
+            android:textSize="18.00sp" />
+
+        <ImageButton
+            android:id="@+id/activie_done_button"
+            android:layout_width="48.00dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/cm_bg_pressed_selector"
+            android:padding="4.00dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/actionbar_ico_check" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_margin="0dip"
+        android:background="@drawable/titlesub_bg_n" >
+
+        <com.infraware.polarisoffice6.common.ExEditText
+            android:id="@+id/editText1"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginBottom="4dip"
+            android:layout_marginLeft="4.33dip"
+            android:layout_marginRight="4.33dip"
+            android:layout_marginTop="4dip"
+            android:layout_weight="1"
+            android:background="@drawable/textfield_selector_common"
+            android:imeOptions="actionNext|flagNoFullscreen"
+            android:lines="1"
+            android:maxLength="1024"
+            android:paddingLeft="11dp"
+            android:paddingRight="11dp"
+            android:privateImeOptions="inputType=DisableEmoji"
+            android:singleLine="true"
+            android:textColor="@color/cm_edit_text_normal"
+            android:textColorHighlight="@color/cm_edit_text_highlight"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.infraware.polarisoffice6.common.ScrollView2
+            android:id="@+id/scrollChartView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="vertical|horizontal" >
+
+            <TableLayout
+                android:id="@+id/TableGrid"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </com.infraware.polarisoffice6.common.ScrollView2>
+    </LinearLayout>
+
+</LinearLayout>

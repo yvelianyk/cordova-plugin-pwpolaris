@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+	<TextView android:id="@+id/cm_btn_sign_up"
+		android:layout_width="fill_parent"
+		android:layout_height="25dp"
+		android:text="@string/cm_setting_category_general"
+		android:textSize="13sp"
+		android:textColor="@color/cm_title_sub_text"
+		android:textStyle="bold"
+		android:singleLine="true"
+		android:paddingLeft="11.5dip"
+		android:paddingRight="0dip"
+		android:gravity="center_vertical"
+		android:visibility="gone"
+		android:background="@drawable/titlesub_bg_n"/>
+	<FrameLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<ImageButton android:id="@+id/settings_item_disable"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:background="@color/transparent"
+			android:enabled="false"
+			android:focusable="true"/>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			<LinearLayout android:id="@+id/settings_item_text"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical" 
+				android:layout_weight="1">
+				<TextView android:id="@+id/settings_item_title"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="11.5dp"
+					android:layout_marginLeft="11dp"
+					android:layout_marginBottom="5dp"
+					android:textSize="16sp"
+					android:textColor="@color/cm_list_item_name"/>
+				<TextView android:id="@+id/settings_item_sub_title"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="11.5dp"
+					android:layout_marginLeft="11dp"
+					android:textSize="12sp"
+					android:textColor="@color/cm_list_item_info"/>
+			</LinearLayout>
+			<LinearLayout android:id="@+id/settings_item_check"
+					android:layout_width="wrap_content"
+					android:layout_height="fill_parent"
+					android:orientation="horizontal">
+					<CheckBox android:id="@+id/settings_item_selected"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginRight="2.5dp"
+						android:layout_gravity="center_vertical"
+						android:button="@drawable/btn_check"
+						android:focusable="false"/>
+			</LinearLayout>
+		</LinearLayout>
+		<FrameLayout android:id="@+id/settings_item_divider"
+			android:layout_width="fill_parent"
+			android:layout_height="0.5dp"
+			android:layout_gravity="bottom"
+			android:background="@color/cm_list_divider">
+		</FrameLayout>
+	</FrameLayout>
+</LinearLayout>

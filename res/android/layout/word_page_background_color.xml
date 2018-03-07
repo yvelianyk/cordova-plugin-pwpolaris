@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_common_bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/mainLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/content_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/anchor_pagebackground_page_color"
+                    style="@style/PanelAnchorTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/page_background_sub_title_height"
+                    android:text="@string/dm_color" />
+
+                <LinearLayout
+                    style="@style/PageBGPageColor.LinearLayout"
+                    android:orientation="horizontal" >
+
+                    <com.infraware.polarisoffice6.panel.kit.CommonPanelColor
+                        android:id="@+id/PageColorSelection"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/anchor_pagebackground_gradition"
+                    style="@style/PanelAnchorTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/page_background_sub_title_height"
+                    android:text="@string/dm_fill_gradition" />
+
+                <LinearLayout
+                    android:id="@+id/PageGradationSelection"
+                    style="@style/PageBGPageColor.LinearLayout"
+                    android:layout_height="40dip"
+                    android:orientation="horizontal" >
+
+                    <CheckBox
+                        android:id="@+id/page_color_gradient_01"
+                        style="@style/PageBGPageColor.gradientCheckBox"
+                        android:layout_marginLeft="0dip"
+                        android:background="@drawable/ico_page_color_gradient_01_selector"
+                        android:visibility="gone" />
+
+                    <CheckBox
+                        android:id="@+id/page_color_gradient_02"
+                        style="@style/PageBGPageColor.gradientCheckBox"
+                        android:background="@drawable/ico_page_color_gradient_02_selector"
+                        android:visibility="gone" />
+
+                    <CheckBox
+                        android:id="@+id/page_color_gradient_03"
+                        style="@style/PageBGPageColor.gradientCheckBox"
+                        android:background="@drawable/ico_page_color_gradient_03_selector"
+                        android:visibility="gone" />
+
+                    <CheckBox
+                        android:id="@+id/page_color_gradient_04"
+                        style="@style/PageBGPageColor.gradientCheckBox"
+                        android:background="@drawable/ico_page_color_gradient_04_selector"
+                        android:visibility="gone" />
+
+                    <CheckBox
+                        android:id="@+id/page_color_gradient_05"
+                        style="@style/PageBGPageColor.gradientCheckBox"
+                        android:background="@drawable/ico_page_color_gradient_05_selector"
+                        android:visibility="gone" />
+
+                    <CheckBox
+                        android:id="@+id/page_color_gradient_06"
+                        style="@style/PageBGPageColor.gradientCheckBox"
+                        android:background="@drawable/ico_page_color_gradient_06_selector"
+                        android:visibility="gone" />
+
+                    <CheckBox
+                        android:id="@+id/page_color_gradient_07"
+                        style="@style/PageBGPageColor.gradientCheckBox"
+                        android:background="@drawable/ico_page_color_gradient_07_selector"
+                        android:visibility="gone" />
+
+                    <CheckBox
+                        android:id="@+id/page_color_gradient_08"
+                        style="@style/PageBGPageColor.gradientCheckBox"
+                        android:background="@drawable/ico_page_color_gradient_08_selector"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_insert_image"
+                    style="@style/PageBGPageColor.LinearLayout"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/anchor_pagebackground_insert_image"
+                        style="@style/PanelAnchorTitle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/page_background_sub_title_height"
+                        android:text="@string/dm_insert_image" />
+
+                    <LinearLayout
+                        style="@style/PageBGPageColor.LinearLayout"
+                        android:layout_height="41dip"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/insert_camera"
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_default_selector_common"
+                            android:text="@string/dm_camera"
+                            android:textColor="@color/btn_default_tcolor_selector"
+                            android:textSize="@dimen/page_background_button_text_size" />
+
+                        <Space
+                            android:id="@+id/insert_camera_space"
+                            android:layout_width="2.67dip"
+                            android:layout_height="match_parent" />
+
+                        <Button
+                            android:id="@+id/insert_gallery"
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_default_selector_common"
+                            android:text="@string/dm_insert_gallery"
+                            android:textColor="@color/btn_default_tcolor_selector"
+                            android:textSize="@dimen/page_background_button_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

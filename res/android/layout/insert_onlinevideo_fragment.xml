@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/base_common_dialog_bg" >
+
+    <LinearLayout
+        android:id="@+id/actiontitlebar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"	
+         android:orientation="vertical"/>
+
+    <LinearLayout
+        android:id="@+id/insert_onlinevideo_layer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/actiontitlebar_layout"
+        android:layout_marginLeft="17dip"
+        android:layout_marginRight="17dip"
+        android:layout_marginTop="15dip"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/insert_onlinevideo_layer01_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dip"
+            android:textColor="@color/cm_common_message_text"
+            android:textSize="14.00sp" >
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical" 
+            android:layout_marginBottom="15dip">
+
+            <com.infraware.polarisoffice6.common.ExEditText
+                android:id="@+id/insert_onlinevideo_layer01_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/textfield_selector_slide"
+                android:imeOptions="actionDone"
+                android:maxLength="@integer/dm_hyperlink_max"
+                android:paddingLeft="11dip"
+                android:paddingRight="11dip"
+                android:maxLines="1"
+                android:textColor="@color/cm_edit_text_normal"
+                android:textColorHighlight="@color/cm_edit_text_highlight"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp"
+                android:inputType="text" />
+
+            <com.infraware.common.control.textfielddelete.DeleteImageButton
+                android:id="@+id/edit_delete_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3.33dp"
+                android:background="@drawable/textfield_delete"
+                android:contentDescription="@string/cm_btn_delete"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

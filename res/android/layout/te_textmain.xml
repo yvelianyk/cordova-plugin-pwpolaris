@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/tvRootView"
+    > 
+	<LinearLayout 
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		
+	    <LinearLayout
+	        android:id="@+id/te_actionbar_parent"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        >
+	        <include layout = "@layout/te_actionbar"/>
+	    </LinearLayout>
+		
+		<RelativeLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:background="@color/te_textmain_background">
+			
+			<com.infraware.document.text.control.EditCtrl
+				android:id="@+id/edtTextEdit"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_centerInParent="true"
+				android:background="@color/te_text_background"
+				android:textColor="@color/te_textmain_editctrltextcolor"
+				android:textCursorDrawable="@null"
+				android:textSize="16sp"
+				android:padding="14.67dip"
+				android:fadingEdge="none"
+				android:scrollbars="none"
+				android:gravity="top"
+				android:imeOptions="flagNoExtractUi"
+				android:singleLine="false"
+				android:longClickable="false"
+				android:cursorVisible="true"
+				android:inputType="textMultiLine|textCapSentences"
+				android:textColorHighlight="@color/te_editctrl_highlight"
+				/>
+			<com.infraware.sdk.UserWaterMarkImageView android:id="@+id/userWaterMarkImageView"
+			    android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+			    android:visibility="gone"
+			    />
+			<ScrollView
+				android:id="@+id/svEdit"
+				android:layout_alignParentRight="true"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="1.33dip" >
+			</ScrollView>
+			<LinearLayout
+			    android:orientation="vertical"
+			    android:layout_width="wrap_content"
+			    android:layout_height="fill_parent"
+			    android:layout_toLeftOf="@id/svEdit"
+			    android:layout_marginTop="1.33dip" >
+				<FrameLayout 
+				    android:layout_width="wrap_content" 
+				    android:layout_height="wrap_content" 
+				    android:id="@+id/flScrollPos"
+				    android:visibility="gone" />
+				<ImageButton
+				    android:id="@+id/ibScrollThumb"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:background="@drawable/te_btn_quick_scroll"
+				    android:visibility="gone" />
+			</LinearLayout>
+			<FrameLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/dic_search_panel"
+				android:layout_alignParentBottom="true"
+				android:visibility="gone">
+			</FrameLayout>
+		</RelativeLayout>
+	</LinearLayout>
+	<!-- tts toolbar -->
+					<LinearLayout
+						android:id="@+id/te_tts_bar"
+						android:background="@drawable/menubar_bg_n"						
+						android:layout_width="fill_parent"
+						android:layout_height="48.00dip"
+						android:layout_alignParentBottom="true"
+						android:gravity="center"
+						android:focusable="false"
+						android:visibility="gone">						
+						 <View						      
+					        android:layout_width="60dip"
+					        android:layout_height="48.00dip"
+					        android:padding="0dip"	
+					        android:background="@drawable/menubar_bg_n" />
+						 <ImageView
+							android:id="@+id/te_tts_prev"		
+							android:src="@drawable/btn_tts_prev"
+							android:layout_width="80dip"	
+							android:layout_height="48.00dip"							
+							android:background="@drawable/bg_pressed_selector"
+							android:padding="0dip"
+							android:focusable="true"
+							android:clickable="true"
+							android:contentDescription="@string/cm_btn_tts_previous"/>						
+						<ImageView
+							android:id="@+id/te_tts_playpause"							
+							android:src="@drawable/btn_tts_pause"
+							android:layout_width="80dip"
+							android:layout_height="48.00dip"							
+							android:background="@drawable/bg_pressed_selector"
+							android:padding="0dip"
+							android:focusable="true"
+							android:clickable="true"
+							android:contentDescription="@string/cm_btn_tts_pause"/>
+						<ImageView
+							android:id="@+id/te_tts_next"							
+							android:src="@drawable/btn_tts_next"
+							android:layout_width="80dip"							
+							android:layout_height="48.00dip"
+							android:background="@drawable/bg_pressed_selector"
+							android:padding="0dip"
+							android:focusable="true"
+							android:clickable="true"
+							android:contentDescription="@string/cm_btn_tts_next"/>						
+						<View
+					        android:layout_width="60dip"
+					        android:layout_height="48.00dip"
+					        android:padding="0dip"	
+					        android:background="@drawable/menubar_bg_n" />
+					</LinearLayout>
+	<!-- tts toolbar -->
+</RelativeLayout>

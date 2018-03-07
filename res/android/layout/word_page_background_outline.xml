@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_common_bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/mainLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/content_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/anchor_pagebackground_outline_setting"
+                    style="@style/PanelAnchorTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/page_background_sub_title_height"
+                    android:text="@string/cm_btn_sign_up" />
+
+                <RadioGroup
+                    android:id="@+id/page_border_group"
+                    style="@style/PageBGWaterMark.LinearLayout"
+                    android:gravity="center_horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/page_outline_settings_none"
+                        style="@style/PageBGWaterMark.CheckBox"
+                        android:checked="true"
+                        android:drawableTop="@drawable/pagebackground_border_01_selector"
+                        android:text="@string/dm_none" />
+
+                    <Space style="@style/PageBGWaterMark.Space" />
+
+                    <RadioButton
+                        android:id="@+id/page_outline_settings_box"
+                        style="@style/PageBGWaterMark.CheckBox"
+                        android:drawableTop="@drawable/pagebackground_border_02_selector"
+                        android:text="@string/dm_box" />
+
+                    <Space style="@style/PageBGWaterMark.Space" />
+
+                    <RadioButton
+                        android:id="@+id/page_outline_settings_shadow"
+                        style="@style/PageBGWaterMark.CheckBox"
+                        android:drawableTop="@drawable/pagebackground_border_03_selector"
+                        android:text="@string/dm_shadow" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/anchor_pagebackground_outline_format"
+                    style="@style/PanelAnchorTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/page_background_sub_title_height"
+                    android:text="@string/dm_word_pagebackground_outline_format" />
+
+                <LinearLayout
+                    android:id="@+id/border_format_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dip"
+                    android:layout_marginLeft="@dimen/page_background_margin_left_right"
+                    android:layout_marginRight="@dimen/page_background_margin_left_right"
+                    android:layout_marginTop="15dip"
+                    android:orientation="vertical" >
+
+                    <com.infraware.polarisoffice6.common.WheelButtonOutlineCustom
+                        android:id="@+id/page_color_outline_width"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dip"
+                        android:gravity="center_horizontal" />
+
+                    <com.infraware.polarisoffice6.panel.kit.CommonPanelColor
+                        android:id="@+id/PageColorSelection"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dip" />
+
+                    <include layout="@layout/word_page_background_outline_line" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/apply_to_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/anchor_pagebackground_apply_to"
+                        style="@style/PanelAnchorTitle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/page_background_sub_title_height"
+                        android:text="@string/dm_word_pagebackground_outline_applies_to" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="41dip"
+                        android:layout_marginLeft="@dimen/page_background_margin_left_right"
+                        android:layout_marginRight="@dimen/page_background_margin_left_right"
+                        android:layout_marginTop="15dip"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/outline_apply_to_text"
+                            android:layout_width="0dip"
+                            android:layout_height="41dip"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/dm_word_pagebackground_outline_applies_to"
+                            android:textColor="@color/panel_sub_title_tcolor"
+                            android:textSize="@dimen/page_background_title_text_size" />
+
+                        <RadioGroup
+                            android:id="@+id/apply_to_group"
+                            android:layout_width="196dip"
+                            android:layout_height="fill_parent"
+                            android:orientation="horizontal" >
+
+                            <RadioButton
+                                android:id="@+id/apply_to_doc_text"
+                                android:layout_width="0dip"
+                                android:layout_height="41dip"
+                                android:layout_weight="1"
+                                android:background="@drawable/btn_multi_left_selector_common"
+                                android:button="@null"
+                                android:checked="true"
+                                android:clickable="true"
+                                android:gravity="center"
+                                android:padding="0dip"
+                                android:text="@string/dm_text"
+                                android:textColor="@color/btn_default_tcolor_selector"
+                                android:textSize="@dimen/page_background_button_text_size" />
+
+                            <RadioButton
+                                android:id="@+id/apply_to_doc_short"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/btn_multi_right_selector_common"
+                                android:button="@null"
+                                android:clickable="true"
+                                android:gravity="center"
+                                android:padding="0dip"
+                                android:text="@string/dm_paragraph"
+                                android:textColor="@color/btn_default_tcolor_selector"
+                                android:textSize="@dimen/page_background_button_text_size" />
+                        </RadioGroup>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/outline_option"
+                    android:layout_width="fill_parent"
+                    android:layout_height="41dip"
+                    android:layout_marginBottom="15dip"
+                    android:layout_marginLeft="@dimen/page_background_margin_left_right"
+                    android:layout_marginRight="@dimen/page_background_margin_left_right"
+                    android:layout_marginTop="7.33dip"
+                    android:background="@drawable/btn_default_selector_common"
+                    android:text="@string/dm_word_pagebackground_outline_applies_to_options"
+                    android:textColor="@color/btn_default_tcolor_selector"
+                    android:textSize="@dimen/page_background_button_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

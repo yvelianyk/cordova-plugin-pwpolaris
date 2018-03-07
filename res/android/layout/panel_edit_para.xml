@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel_edit_body_root"
+    android:layout_width="fill_parent"
+    android:layout_weight="1"
+    android:layout_height="match_parent" >
+
+        <com.infraware.polarisoffice6.panel.EditPanelBodyScrollView
+            android:id="@+id/panel_edit_scroll_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:id="@+id/panel_edit_content_linear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <!-- content start -->
+
+                <TextView
+                    android:id="@+id/anchor_word_text_alignment"
+                    style="@style/PanelAnchorTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/panel_subtitle_h"
+                    android:text="@string/dm_align" />
+
+                <LinearLayout 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/panel_common_content_area_margin_horizontal"
+                    android:layout_marginRight="@dimen/panel_common_content_area_margin_horizontal"
+                    android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical"
+                    android:layout_marginBottom="@dimen/panel_common_content_area_margin_vertical">
+	                <com.infraware.polarisoffice6.panel.kit.PanelButtonImage
+	                    android:id="@+id/fontParaAlign01"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content" />
+	
+	                <com.infraware.polarisoffice6.panel.kit.PanelButtonImage
+	                    android:id="@+id/fontParaAlign02"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="@dimen/panel_common_content_button_vertical_space" />
+	                
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/anchor_word_text_list"
+                    style="@style/PanelAnchorTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/panel_subtitle_h"
+                    android:text="@string/dm_list" />
+
+                <com.infraware.polarisoffice6.panel.kit.PanelKitList
+                    android:id="@+id/panelList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/panel_common_content_area_margin_horizontal"
+            		android:layout_marginRight="@dimen/panel_common_content_area_margin_horizontal"
+                    android:layout_marginBottom="@dimen/panel_common_content_area_margin_vertical"
+                    android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical" />
+                
+                <TextView
+                    android:id="@+id/anchor_word_text_indent"
+                    style="@style/PanelAnchorTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/panel_subtitle_h"
+                    android:layout_marginBottom="@dimen/panel_subtitle_margin_bottom_h"
+                    android:text="@string/dm_indent" />
+
+                <com.infraware.polarisoffice6.panel.kit.PanelKitIndent
+                    android:id="@+id/panelindent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+ 					android:layout_marginLeft="@dimen/panel_common_content_area_margin_horizontal"
+            		android:layout_marginRight="@dimen/panel_common_content_area_margin_horizontal"
+                    android:layout_marginBottom="@dimen/panel_common_content_area_margin_vertical"
+                    android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical" />
+                
+                <TextView
+                    android:id="@+id/anchor_word_text_spacing"
+                    style="@style/PanelAnchorTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/panel_subtitle_h"
+                    android:text="@string/dm_spacing" />
+
+                <com.infraware.polarisoffice6.panel.kit.PanelKitSpacing
+                    android:id="@+id/panelSpacing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+ 					android:layout_marginLeft="@dimen/panel_common_content_area_margin_horizontal"
+            		android:layout_marginRight="@dimen/panel_common_content_area_margin_horizontal"
+                    android:layout_marginBottom="@dimen/panel_common_content_area_margin_vertical"
+                    android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical" />
+
+                <TextView
+                    android:id="@+id/anchor_text_direction"
+                    style="@style/PanelAnchorTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/panel_subtitle_h"
+                    android:text="@string/dm_text_direction" />
+            
+                <LinearLayout 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/panel_common_content_area_margin_horizontal"
+                    android:layout_marginRight="@dimen/panel_common_content_area_margin_horizontal"
+                    android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical"
+                    android:layout_marginBottom="@dimen/panel_common_content_area_margin_vertical">
+	                <com.infraware.polarisoffice6.panel.kit.PanelButtonImage
+	                    android:id="@+id/textdirection01"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content" />
+                            
+                	<!-- <com.infraware.polarisoffice6.panel.kit.PanelList
+	                    android:id="@+id/textdirection02"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginTop="@dimen/panel_common_content_button_vertical_space" /> -->
+	                 <LinearLayout 
+	                     android:id="@+id/textdirection02"
+	                     android:layout_width="match_parent"
+	                     android:layout_height="wrap_content"
+	                     android:orientation="horizontal"
+	                     android:layout_marginTop="@dimen/panel_common_content_button_vertical_space">
+	                     
+	                     <ImageButton 
+	                         android:id="@+id/text_left_to_right"
+	                         style="@style/PanelCommonImageButton.Left"
+	                         android:src="@drawable/panel_ico_direction_08_selector" />
+	                     
+	                     <ImageButton 
+	                         android:id="@+id/text_right_to_left"
+	                         style="@style/PanelCommonImageButton.Right"
+	                         android:src="@drawable/panel_ico_direction_09_selector" />
+	                 </LinearLayout>
+                </LinearLayout>
+			</LinearLayout>
+           	<!-- content end -->
+		</com.infraware.polarisoffice6.panel.EditPanelBodyScrollView>
+</LinearLayout>

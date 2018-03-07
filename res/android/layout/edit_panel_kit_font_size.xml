@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:orientation="vertical" 
+	android:gravity="center_horizontal"
+	android:layout_gravity="center_horizontal">
+
+    	<com.infraware.polarisoffice6.panel.kit.PanelButtonText
+		android:id="@+id/fontSizeButton1" 
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:gravity="center_horizontal"
+		android:layout_marginBottom="@dimen/panel_subtitle_margin_bottom_h"
+		/>
+
+		<com.infraware.common.widget.WheelButton
+		android:id="@+id/fontSizeSpin" 
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:gravity="center_horizontal"
+		/>
+		
+</LinearLayout>

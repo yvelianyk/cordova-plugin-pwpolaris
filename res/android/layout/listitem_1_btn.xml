@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/ListItemText1"
+        android:layout_width="match_parent"
+        android:layout_height="54.00dip"
+        android:layout_marginLeft="12.00dip"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:background="@drawable/cm_list_item_pressed_selector_common"
+        android:text="@+id/ListItemText1"
+        android:textColor="@color/cm_list_item_main_tcolor"
+        android:textSize="14sp"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/RightButton"
+        android:layout_width="54.00dip"
+        android:layout_height="53.67dip"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:scaleType="centerInside" />
+
+</LinearLayout>

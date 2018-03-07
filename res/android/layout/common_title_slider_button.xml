@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"><!--
+	//작업안됨
+	
+	--><ImageButton android:id="@+id/sb_prev"
+		android:layout_width="48.67dip" 
+		android:layout_height="@dimen/panel_button_height"
+		android:background="@drawable/wheel_btn_left_selector_common" />
+	<LinearLayout
+		android:layout_gravity="center"
+	 	android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+	<Gallery
+		android:id="@+id/sb_gallery" 
+		android:layout_width="122.01dip"
+		android:layout_height="@dimen/panel_button_height"
+		android:background="@drawable/wheel_btn_center" />
+	</LinearLayout>
+	<ImageButton android:id="@+id/sb_next"
+		android:layout_width="48.67dip" 
+		android:layout_height="@dimen/panel_button_height"
+		android:background="@drawable/wheel_btn_right_selector_common"	/>
+</LinearLayout>

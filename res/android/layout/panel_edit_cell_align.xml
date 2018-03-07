@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel_edit_body_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <com.infraware.polarisoffice6.panel.EditPanelBodyScrollView
+        android:id="@+id/panel_edit_scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/panel_edit_content_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- content start -->
+
+            <TextView
+                android:id="@+id/anchor_sheet_text_alignment"
+                style="@style/PanelAnchorTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dm_align" />
+
+            <com.infraware.polarisoffice6.panel.kit.PanelButtonImage
+                android:id="@+id/btn_horizontal_align"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/panel_common_content_area_margin_horizontal"
+                android:layout_marginRight="@dimen/panel_common_content_area_margin_horizontal"
+                android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical" />
+
+            <com.infraware.polarisoffice6.panel.kit.PanelButtonImage
+                android:id="@+id/btn_vertical_align"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/panel_common_content_area_margin_vertical"
+                android:layout_marginLeft="@dimen/panel_common_content_area_margin_horizontal"
+                android:layout_marginRight="@dimen/panel_common_content_area_margin_horizontal"
+                android:layout_marginTop="@dimen/panel_common_content_button_vertical_space" />
+
+            <TextView
+                android:id="@+id/anchor_sheet_text_control"
+                style="@style/PanelAnchorTitle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/panel_subtitle_h"
+                android:layout_marginBottom="@dimen/panel_common_content_area_margin_vertical"
+                android:text="@string/dm_arrange_wrap" />
+
+            <RelativeLayout
+                android:id="@+id/form_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/panel_common_content_area_margin_horizontal"
+                android:layout_marginRight="@dimen/panel_common_content_area_margin_horizontal"
+                android:background="@color/transparent"
+                android:padding="0dip" >
+
+                <TextView
+                    android:id="@+id/form_title_wrap_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/dm_arrange_wrap"
+                    android:textColor="@color/panel_sub_title_tcolor"
+                    android:textSize="14.00sp" />
+
+                <CheckBox
+                    android:id="@+id/slide_btn_wrap_text"
+                    android:layout_width="35dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:button="@drawable/cm_checkbox_selector_common"
+                    android:gravity="left|center_vertical" />
+            </RelativeLayout>
+            <!--
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dip" />
+            -->
+            <!-- content end -->
+
+        </LinearLayout>
+    </com.infraware.polarisoffice6.panel.EditPanelBodyScrollView>
+
+</LinearLayout>

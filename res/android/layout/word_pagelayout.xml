@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_common_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/actiontitlebar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp" >
+
+            <LinearLayout
+                android:id="@+id/pagelayout_layer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="17dip"
+                android:layout_marginRight="17dip"
+                android:layout_marginTop="10dip"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <include layout="@layout/word_pagelayout_margins"/>
+                
+               	<include layout="@layout/word_pagelayout_divider"/>
+
+                <include layout="@layout/word_pagelayout_size"/>
+
+                <include layout="@layout/word_pagelayout_divider"/>
+
+                <include layout="@layout/word_pagelayout_orientation"/>
+                
+                <include layout="@layout/word_pagelayout_divider"/>
+                
+                <include layout="@layout/word_pagelayout_column"/>
+
+                <include layout="@layout/word_pagelayout_divider"/>
+
+                <include layout="@layout/word_pagelayout_apply"/>
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pagelayout_custom_layer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="17dip"
+                android:layout_marginRight="17dip"
+                android:layout_marginTop="15dip"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/pagelayout_custom_top_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="9dip"
+                    android:textColor="@color/panel_default_text"
+                    android:textSize="14sp" />
+
+                <com.infraware.common.widget.WheelButton
+                    android:id="@+id/pagelayout_custom_top_spin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/pagelayout_custom_bottom_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="9dip"
+                    android:layout_marginTop="23.5dip"
+                    android:textColor="@color/panel_default_text"
+                    android:textSize="14sp" />
+
+                <com.infraware.common.widget.WheelButton
+                    android:id="@+id/pagelayout_custom_bottom_spin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/pagelayout_custom_left_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="9dip"
+                    android:layout_marginTop="23.5dip"
+                    android:textColor="@color/panel_default_text"
+                    android:textSize="14sp" />
+
+                <com.infraware.common.widget.WheelButton
+                    android:id="@+id/pagelayout_custom_left_spin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/pagelayout_custom_right_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="9dip"
+                    android:layout_marginTop="23.5dip"
+                    android:textColor="@color/panel_default_text"
+                    android:textSize="14sp" />
+
+                <com.infraware.common.widget.WheelButton
+                    android:id="@+id/pagelayout_custom_right_spin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+
+</LinearLayout>

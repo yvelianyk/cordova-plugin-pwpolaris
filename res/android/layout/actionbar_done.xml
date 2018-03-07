@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- //20130816 khchoi To apply GUI change -->
+
+    <LinearLayout
+        android:id="@+id/common_actionbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_bg_common"
+        android:gravity="center_vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/common_actionbar_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="13.00dip"
+                    android:layout_marginRight="8.00dip"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/actionbar_tcolor"
+                    android:textSize="18.00sp" />
+
+                <ImageButton
+                    android:id="@+id/common_actionbar_image_button2"
+                    android:layout_width="48.00dip"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cm_title_bg_pressed_selector"
+                    android:padding="4.00dip"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/actionbar_ico_check"
+                    android:visibility="gone"
+                    android:contentDescription="@string/cm_btn_done" />
+
+                <ImageButton
+                    android:id="@+id/common_actionbar_image_button"
+                    android:layout_width="48.00dip"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cm_title_bg_pressed_selector"
+                    android:padding="4.00dip"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/actionbar_ico_check"
+                    android:visibility="gone"
+                    android:contentDescription="@string/cm_btn_done" />
+
+                <Button
+                    android:id="@+id/common_actionbar_text_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cm_title_bg_pressed_selector"
+                    android:paddingLeft="13.33dip"
+                    android:paddingRight="13.33dip"
+                    android:singleLine="true"
+                    android:text="@string/cm_btn_done"
+                    android:textColor="@drawable/actionbar_button"
+                    android:textSize="17.33sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/rulerbar_bubbleballon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_bubble"
+                android:gravity="center"
+                android:paddingTop="3.5dip"
+                android:text="7"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>   
+
+</LinearLayout>

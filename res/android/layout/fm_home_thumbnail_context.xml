@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="82dp"
+    android:layout_height="37.67dp">
+	<ImageButton
+	    android:id="@+id/home_context_send"
+	    android:layout_width="0px"
+      	android:layout_weight="1"
+	    android:layout_height="fill_parent"
+	    android:src="@drawable/ico_inline_home_send_n"
+	    android:background="@drawable/inlinepopup_bg_left_selector_common"/>
+	<ImageButton
+	    android:id="@+id/home_context_delete"
+	    android:layout_width="0px"
+      	android:layout_weight="1"
+	    android:layout_height="fill_parent"
+	    android:src="@drawable/fm_ico_inline_home_delete"
+	    android:background="@drawable/inlinepopup_bg_right_selector_common"/>
+</LinearLayout>

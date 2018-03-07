@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<include layout="@layout/cm_action_title_bar"/>
+
+    	<LinearLayout android:id="@+id/fm_template_layout"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		android:background="@color/base_common_bg">
+		<GridView android:id="@+id/fm_template_grid"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:numColumns="auto_fit"
+			android:columnWidth="126dp"
+			android:stretchMode="spacingWidthUniform"
+			android:gravity="center"
+			android:listSelector="@android:color/transparent" />
+		<GridView android:id="@+id/fm_template_grid_slide"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:numColumns="auto_fit"
+			android:columnWidth="162.67dp"
+			android:stretchMode="spacingWidthUniform"
+			android:gravity="center"
+			android:listSelector="@android:color/transparent"/>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.infraware.common.event.OfficeRootFrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:id="@+id/root_view">
+	
+	<com.infraware.office.baseframe.MainLinearLayout
+		android:id="@+id/mainLayout"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="@color/base_common_bg"> <!-- //20130814 khchoi To apply GUI [start] -->   
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/main_actionbar_layout"
+			android:orientation="horizontal">
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:id="@+id/actiontitlebar_layout">
+		</LinearLayout>
+		
+		<include layout="@layout/bc_action_title_bar"/>
+		<LinearLayout android:id="@+id/po_broadcast_info"
+			android:layout_width="fill_parent"
+			android:layout_height="@dimen/actionbar_subbar_height"
+			android:layout_alignParentTop="true"
+			android:background="@drawable/titlesub_bg_n"
+			android:visibility="gone">
+			<TextView android:id="@+id/po_broadcast_info_text"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:gravity="center"
+				android:text="@string/bc_msg_attendee"
+				android:textSize="@dimen/actionbar_subbar_text_size"
+				android:textColor="@color/bc_title_info_text"/>
+		</LinearLayout>
+		
+        <include layout="@layout/findbar" />
+        <include layout="@layout/common_move" />
+		
+	    <LinearLayout
+		        android:id="@+id/freedrawbase_bar"
+		        android:layout_width="fill_parent"
+		        android:layout_height="48dip"
+		        android:layout_margin="0dip"
+		        android:layout_alignParentTop="true"
+		        android:visibility="gone"
+		        android:background="@drawable/title_bg">
+		        <Button
+		            android:id="@+id/TitlePenBtn"
+		            android:layout_width="0dip"
+		            android:layout_height="fill_parent"
+		            android:layout_gravity="center"
+		            android:layout_weight="1"
+		            android:drawableTop="@drawable/toolbar_ico_pen"
+		            style="@style/PenMainBar"
+		            android:text="@string/cm_action_bar_pen"/>
+		        <Button
+			        android:id="@+id/TitlelassoBtn"
+			        android:layout_width="0dip"
+			        android:layout_height="fill_parent"
+			        android:layout_weight="1"
+			        android:drawableTop="@drawable/toolbar_ico_lasso"
+					style="@style/PenMainBar"
+			        android:text="@string/cm_action_bar_pendraw_lasso"/>  
+		        <Button
+			        android:id="@+id/TitleEraserBtn"
+			        android:layout_width="0dip"
+			        android:layout_height="fill_parent"
+			        android:layout_weight="1"
+			        android:drawableTop="@drawable/toolbar_ico_erase"
+			        style="@style/PenMainBar"
+			        android:text="@string/cm_action_bar_pendraw_erase"/>
+  	        <Button
+			        android:id="@+id/TitleEraserAllBtn"
+			        android:layout_width="0dip"
+			        android:layout_height="fill_parent"
+			        android:layout_weight="1"
+			        android:drawableTop="@drawable/toolbar_ico_eraseall"
+					style="@style/PenMainBar"
+			        android:text="@string/dm_clear_all" />        
+		</LinearLayout>
+		
+		<LinearLayout
+			android:id="@+id/docViewLayoutParent"
+			android:layout_width="fill_parent"
+			android:layout_height="0px"
+			android:layout_weight="1"
+			android:gravity="bottom">
+			<RelativeLayout
+				android:id="@+id/docViewLayoutLeft"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+			</RelativeLayout>
+			<RelativeLayout
+				android:id="@+id/docViewLayoutRight"
+				android:layout_width="0px"
+				android:layout_height="fill_parent"
+				android:layout_weight="1"
+				android:gravity="right">
+				<LinearLayout
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:orientation="vertical"
+					android:gravity="bottom"
+					android:visibility="visible">
+					<FrameLayout 
+						android:id="@+id/ruler_container"
+						android:layout_width="fill_parent"
+						android:layout_height="48.67dip"
+						android:visibility="gone">
+						<com.infraware.polarisoffice6.common.RulerView
+							android:id="@+id/ruler_view"
+							android:layout_width="fill_parent"
+							android:layout_height="48.67dip"
+							 />
+					    <TextView
+					        android:id="@+id/ruler_balloon"
+					        android:layout_width="wrap_content"
+					        android:layout_height="25dp"
+					        android:background="@drawable/bubble_ruler"
+					        android:gravity="center"
+					        android:lines="1"
+					        android:textColor="@color/bubble_tcolor"
+					        android:textSize="14sp"
+					        android:paddingLeft="5dp"
+					        android:paddingRight="5dp"
+					        android:minWidth="42dp"
+					        android:visibility="gone" />
+
+					</FrameLayout>
+					<com.infraware.office.docview.DocView
+						android:id="@+id/docViewLayout"
+						android:background="@color/doc_bg_color"
+						android:layout_width="fill_parent"
+						android:layout_height="0px"
+						android:layout_weight="1"
+						android:gravity="bottom"/>
+					
+        			<include layout="@layout/ttsbar" />
+					
+					<com.infraware.common.panel.TextContentPanel
+						android:layout_height="216.5dip"
+						android:id="@+id/text_content_view"
+						android:layout_width="fill_parent"
+						android:orientation="vertical"
+						android:visibility="gone">
+					</com.infraware.common.panel.TextContentPanel>
+
+					<LinearLayout
+						android:id="@+id/edit_panel_main_dummy"
+						android:layout_width="fill_parent"
+						android:layout_height="300dp"
+						android:orientation="horizontal"
+						android:background="@color/po_main_background2"
+						android:visibility="gone" >
+					</LinearLayout>
+
+				</LinearLayout>
+
+				<!-- //20130817 khchoi To change edit panel gui [start] -->  
+				<LinearLayout
+				    android:id="@+id/edit_panel_main"
+				    android:layout_width="fill_parent"
+				    android:layout_height="305dp"
+				    android:orientation="horizontal"
+				    android:layout_alignParentBottom="true"
+				    android:visibility="gone" >
+				</LinearLayout>
+
+			</RelativeLayout>
+		</LinearLayout>
+
+		<FrameLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/dic_search_panel"
+			android:visibility="gone">
+		</FrameLayout>
+
+	</com.infraware.office.baseframe.MainLinearLayout>
+	
+<!--  
+	<com.infraware.polarisoffice6.common.marker.MarkerOptionsView
+		android:id="@+id/freedraw_marker_option"
+		android:background="@drawable/slide_btn_popup_bg"
+		android:layout_width="264.67dip"
+		android:layout_height="268.67dip"
+		android:layout_marginLeft="13.33dip"
+		android:layout_marginBottom="45.33dip"
+		android:layout_gravity="left|bottom"
+		android:visibility="gone"
+		 />
+-->
+		 
+    <!-- //20130817 khchoi To change pendraw option [start] -->  
+	<com.infraware.common.widget.marker.PenDrawOptionsView
+		android:id="@+id/freedraw_pendraw_option"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48.00dp"
+        android:background="@drawable/popover_bg"
+		android:visibility="gone" />
+	
+	<LinearLayout
+        android:id="@+id/broadcast_mode_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="50.67dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/broadcast_mode_normal"
+            android:layout_width="60.00dip"
+            android:layout_height="41.00dp"
+            android:background="@drawable/cm_btn_multiple_left_disselectable_selector"
+            android:contentDescription="@string/dm_slide"
+            android:onClick="onButtonClick"
+            android:src="@drawable/slideshow_mode_btn_slide_selector" />
+
+        <ImageView
+            android:id="@+id/broadcast_mode_pointer"
+            android:layout_width="60.00dip"
+            android:layout_height="41.00dp"
+            android:background="@drawable/cm_btn_multiple_center_disselectable_selector"
+            android:contentDescription="@string/string_free_drawing_pointer"
+            android:onClick="onButtonClick"
+            android:src="@drawable/slideshow_mode_btn_pointer_selector" />
+
+        <com.infraware.common.widget.marker.MarkerModeImageView
+            android:id="@+id/broadcast_mode_marker"
+            android:layout_width="60.00dip"
+            android:layout_height="41.00dp"
+            android:background="@drawable/cm_btn_multiple_center_disselectable_selector"
+            android:contentDescription="@string/cm_action_bar_pen"
+            android:onClick="onButtonClick"
+            android:src="@drawable/slideshow_mode_btn_pen_selector" />
+
+        <FrameLayout
+            android:id="@+id/broadcast_mode_ink_view"
+            android:layout_width="60.00dip"
+            android:layout_height="41.00dp" >
+
+            <ImageView
+                android:id="@+id/broadcast_mode_ink"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_multi_right_selector_common"
+                android:contentDescription="@string/string_free_drawing_pointer"
+                android:onClick="onButtonClick"
+                android:src="@drawable/slideshow_mode_btn_inkonoff_selector" />
+
+            <ImageView
+                android:id="@+id/broadcast_mode_ink_onoff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="3.67dp"
+                android:background="@drawable/ico_showpen_on" />
+        </FrameLayout>
+    </LinearLayout>
+    
+	<LinearLayout
+        android:id="@+id/broadcast_pointer_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popover_bg"
+        android:gravity="center"
+        android:layout_marginTop="48.00dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <com.infraware.common.widget.marker.MarkerColorImageView
+            android:id="@+id/broadcast_pointer_color01"
+            android:layout_width="39.33dip"
+            android:layout_height="38.67dip"
+            android:layout_marginBottom="5.00dip"
+            android:layout_marginLeft="5.00dip"
+            android:layout_marginRight="3.00dip"
+            android:layout_marginTop="5.00dip"
+            android:contentDescription=" "
+            android:onClick="onButtonClick" />
+
+        <com.infraware.common.widget.marker.MarkerColorImageView
+            android:id="@+id/broadcast_pointer_color02"
+            android:layout_width="39.33dip"
+            android:layout_height="38.67dip"
+            android:layout_marginBottom="5.00dip"
+            android:layout_marginRight="3.00dip"
+            android:layout_marginTop="5.00dip"
+            android:contentDescription=" "
+            android:onClick="onButtonClick" />
+
+        <com.infraware.common.widget.marker.MarkerColorImageView
+            android:id="@+id/broadcast_pointer_color03"
+            android:layout_width="39.33dip"
+            android:layout_height="38.67dip"
+            android:layout_marginBottom="5.00dip"
+            android:layout_marginRight="3.00dip"
+            android:layout_marginTop="5.00dip"
+            android:contentDescription=" "
+            android:onClick="onButtonClick" />
+
+        <com.infraware.common.widget.marker.MarkerColorImageView
+            android:id="@+id/broadcast_pointer_color04"
+            android:layout_width="39.33dip"
+            android:layout_height="38.67dip"
+            android:layout_marginBottom="5.00dip"
+            android:layout_marginRight="3.00dip"
+            android:layout_marginTop="5.00dip"
+            android:contentDescription=" "
+            android:onClick="onButtonClick" />
+
+        <com.infraware.common.widget.marker.MarkerColorImageView
+            android:id="@+id/broadcast_pointer_color05"
+            android:layout_width="39.33dip"
+            android:layout_height="38.67dip"
+            android:layout_marginBottom="5.00dip"
+            android:layout_marginRight="5.00dip"
+            android:layout_marginTop="5.00dip"
+            android:contentDescription=" "
+            android:onClick="onButtonClick" />
+    </LinearLayout>
+	
+	<LinearLayout 
+	    android:id="@+id/animation_hand"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:visibility="gone" />
+	
+	<LinearLayout
+	    android:id="@+id/animation_mobile_view"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="horizontal"
+	    android:visibility="invisible" />
+
+</com.infraware.common.event.OfficeRootFrameLayout>

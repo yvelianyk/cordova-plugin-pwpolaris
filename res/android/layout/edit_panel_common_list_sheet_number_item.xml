@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SelectionCustomListItem.LinearLayout"
+    android:focusable="false"
+    android:clickable="false" >
+
+    <ImageView style="@style/SelectionCustomListItem.View.ImageView"
+        android:src="@drawable/radio_selector_sheet" />
+
+    <Button
+        android:id="@+id/button_text"
+        style="@style/SelectionCustomListItem.View.Button" />
+
+</LinearLayout>

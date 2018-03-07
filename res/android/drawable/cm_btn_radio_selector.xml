@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- Disable -->
+	<item android:state_enabled="false" android:drawable="@drawable/btn_radio_d" />
+	
+	<!-- Focus --> <!-- [2013.11.22][hjlee] Modify focus image for external keybroad -->	
+	<item android:state_focused="true" android:state_pressed="true" android:drawable="@drawable/btn_radio_on_common_p" />
+	<item android:state_focused="true" android:state_checked="true" android:drawable="@drawable/btn_radio_on_common_n" />
+	<item android:state_focused="true" android:state_checked="false" android:drawable="@drawable/btn_radio_off_n" />
+
+	<!-- Select -->
+	<item android:state_selected="true" android:state_pressed="true" android:drawable="@drawable/btn_radio_on_common_p" />
+	<item android:state_selected="true" android:state_checked="true" android:drawable="@drawable/btn_radio_on_common_n" />
+	<item android:state_selected="true" android:state_checked="false" android:drawable="@drawable/btn_radio_off_n" />
+	
+	<!-- Check -->
+	<item android:state_checked="true" android:state_pressed="true" android:drawable="@drawable/btn_radio_on_common_p" />
+	<item android:state_checked="true" android:drawable="@drawable/btn_radio_on_common_n" />
+	
+	<!-- Normal -->
+	<item android:state_pressed="true" android:drawable="@drawable/btn_radio_off_p" />
+    <item android:drawable="@drawable/btn_radio_off_n" />
+</selector>

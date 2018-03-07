@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_sheet_list_popup"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popover_bg_selector_sheet" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="42.5dip"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/TextFunctionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:gravity="left"
+            android:singleLine="true"
+            android:textColor="@color/popover_list_main_tcolor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/TextFunctionDef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:gravity="left"
+            android:singleLine="true"
+            android:textColor="@color/popover_list_sub_tcolor"
+            android:textSize="9sp" />
+    </LinearLayout>
+
+    <com.infraware.polarisoffice6.common.ListImgRightButton
+        android:id="@+id/icon_DetailFunction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/sheet_function_toglebtn"
+        android:focusable="false"
+        android:visibility="gone" />
+
+    <!--
+	<ImageButton android:id="@+id/icon_DetailFunction"
+		android:layout_width="wrap_content" 
+		android:layout_height="fill_parent"
+		android:layout_marginRight="10dip" 
+		android:layout_alignParentRight="true" 
+		android:background="@drawable/sheet_function_detail_open"/>
+    -->
+
+</RelativeLayout>

@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string-array name="fontsize_list_doc_sheet">
+		<item>9</item>
+		<item>10</item>
+		<item>12</item>
+		<item>14</item>
+		<item>16</item>
+		<item>20</item>
+	</string-array>    
+   <string-array name="fontsize_list_slide">
+		<item>12</item>
+		<item>14</item>
+		<item>20</item>
+		<item>24</item>
+		<item>32</item>
+		<item>44</item>
+	</string-array>    
+   	<string-array name="chart_data_label_list">
+		<item>none</item>
+		<item>Top</item>
+		<item>Center</item>
+		<item>Bottom</item>
+		<item>Outer</item>
+	</string-array>
+	
+   	<integer-array name="chart_font_size_list">
+		<item>@drawable/panel_ico_fontsize_01</item>
+		<item>@drawable/panel_ico_fontsize_02</item>
+		<item>@drawable/panel_ico_fontsize_03</item>
+		<item>@drawable/panel_ico_fontsize_04</item>
+		<item>@drawable/panel_ico_fontsize_05</item>
+	</integer-array>
+	
+<!-- 	<string-array name="chart_font_size_list">
+		<item>@string/dm_chart_font_size1</item>
+		<item>@string/dm_chart_font_size2</item>
+		<item>@string/dm_border_style_medium</item>
+		<item>@string/string_sheet_subtoolbar_insert_chart_small</item>				
+		<item>@string/dm_chart_font_size5</item>
+	</string-array>	 -->
+	
+	<integer-array name="fonteffect_doc_01">
+		<item>@drawable/panel_ico_font_effect01</item>
+		<item>@drawable/panel_ico_font_effect02</item>
+		<item>@drawable/panel_ico_font_effect03</item>
+		<item>@drawable/panel_ico_font_effect04</item>
+		<item>@drawable/panel_ico_font_effect05</item>
+		<item>@drawable/panel_ico_font_effect06</item>
+	</integer-array>
+	
+	<integer-array name="fonteffect_doc_02">
+		<item>@drawable/panel_ico_font_effect07</item>
+		<item>@drawable/panel_ico_font_effect08</item>
+	</integer-array>
+	
+	<integer-array name="fonteffect_doc_03">
+		<item>@drawable/panel_ico_font_effect09</item>
+		<item>@drawable/panel_ico_font_effect10</item>
+	</integer-array>
+	
+	<integer-array name="fonteffect_doc_04">
+		<item>@drawable/panel_ico_font_effect11</item>
+		<item>@drawable/panel_ico_font_effect12</item>
+	</integer-array>
+	
+	<integer-array name="fonteffect_slide_01">
+		<item>@drawable/panel_ico_font_effect01</item>
+		<item>@drawable/panel_ico_font_effect02</item>
+		<item>@drawable/panel_ico_font_effect03</item>
+		<item>@drawable/panel_ico_font_effect04</item>
+		<item>@drawable/panel_ico_font_effect05</item>
+	</integer-array>
+	
+	<integer-array name="fonteffect_slide_02">
+	    <item>@drawable/panel_ico_font_effect09</item>
+		<item>@drawable/panel_ico_font_effect10</item>
+	</integer-array>
+	
+	<integer-array name="fonteffect_ppt">
+	    <item>@drawable/panel_ico_font_effect01</item>
+		<item>@drawable/panel_ico_font_effect02</item>
+		<item>@drawable/panel_ico_font_effect03</item>
+		<item>@drawable/panel_ico_font_effect09</item>
+		<item>@drawable/panel_ico_font_effect10</item>
+	</integer-array>
+	
+	<integer-array name="fonteffect_sheet_01">
+		<item>@drawable/panel_ico_font_effect01</item>
+		<item>@drawable/panel_ico_font_effect02</item>
+		<item>@drawable/panel_ico_font_effect04</item>
+	</integer-array>
+	
+	<integer-array name="fonteffect_slide_sheet_02">
+	    <item>@drawable/panel_ico_font_effect09</item>
+		<item>@drawable/panel_ico_font_effect10</item>
+	</integer-array>
+	
+	<integer-array name="fonteffect_slide_sheet_03">
+		<item>@drawable/panel_ico_font_effect11</item>
+		<item>@drawable/panel_ico_font_effect12</item>
+	</integer-array>
+	
+	<integer-array name="fonteffect_sheet">
+	    <item>@drawable/panel_ico_font_effect01</item><!-- bold -->
+		<item>@drawable/panel_ico_font_effect02</item><!-- italic -->
+		<item>@drawable/panel_ico_font_effect04</item><!-- strike -->
+	    <item>@drawable/panel_ico_font_effect09</item><!-- super -->
+		<item>@drawable/panel_ico_font_effect10</item><!-- sub -->
+	</integer-array>	
+	<integer-array name="fonteffect_slide2003">
+	    <item>@drawable/panel_ico_font_effect01</item><!-- bold -->
+		<item>@drawable/panel_ico_font_effect02</item><!-- italic -->
+		<item>@drawable/panel_ico_font_effect03</item><!-- underline -->
+	</integer-array>
+	
+	<integer-array name="fonteffect_slide2003_2">
+	    <item>@drawable/panel_ico_font_effect09</item><!-- super -->
+		<item>@drawable/panel_ico_font_effect10</item><!-- sub -->
+	</integer-array>
+	
+	<integer-array name="fonteffect_slide2003_3">
+	    <item>@drawable/panel_ico_font_effect11</item><!-- upper -->
+		<item>@drawable/panel_ico_font_effect12</item><!-- lower -->
+	</integer-array>
+	
+	<integer-array name="underline_01">
+		<item>@drawable/panel_ico_underline01</item>
+		<item>@drawable/panel_ico_underline02</item>
+		<item>@drawable/panel_ico_underline03</item>
+		<item>@drawable/panel_ico_underline04</item>
+		<item>@drawable/panel_ico_underline05</item>
+	</integer-array>
+
+	<integer-array name="underline_01_hwp">
+		<item>@drawable/panel_ico_underline01</item>
+		<item>@drawable/panel_ico_underline02</item>
+		<item>@drawable/panel_ico_underline04</item>
+		<item>@drawable/panel_ico_underline05</item>
+	</integer-array>
+
+	<integer-array name="underline_02">
+	    <item>@drawable/panel_ico_underline06</item>
+		<item>@drawable/panel_ico_underline07</item>
+		<item>@drawable/panel_ico_underline08</item>
+		<item>@drawable/panel_ico_underline09</item>
+	</integer-array>
+	
+	<integer-array name="underline_02_hwp">
+	    <item>@drawable/panel_ico_underline06</item>
+		<item>@drawable/panel_ico_underline07</item>
+		<item>@drawable/panel_ico_underline09</item>
+	</integer-array>
+	
+	<integer-array name="underline_sheet">
+		<item>@drawable/panel_ico_underline01</item>
+		<item>@drawable/panel_ico_underline02</item>
+	</integer-array>
+	
+	<integer-array name="fontpara_align_01">
+		<item>@drawable/panel_ico_alignment_01_selector</item>
+		<item>@drawable/panel_ico_alignment_02_selector</item>
+		<item>@drawable/panel_ico_alignment_03_selector</item>
+		<item>@drawable/panel_ico_alignment_04_selector</item>
+		<item>@drawable/panel_ico_alignment_05_selector</item>
+	</integer-array>
+	
+	<integer-array name="sheet_align_01">
+		<item>@drawable/panel_ico_alignment_01_selector</item>
+		<item>@drawable/panel_ico_alignment_02_selector</item>
+		<item>@drawable/panel_ico_alignment_03_selector</item>
+	</integer-array>
+		
+	<integer-array name="fontpara_align_02">
+		<item>@drawable/panel_ico_alignment_06_selector</item>
+		<item>@drawable/panel_ico_alignment_07_selector</item>
+		<item>@drawable/panel_ico_alignment_08_selector</item>
+	</integer-array>
+	
+	<integer-array name="tablepara_align">
+	    <item>@drawable/panel_icon_align_01</item>
+		<item>@drawable/panel_icon_align_02</item>
+		<item>@drawable/panel_icon_align_03</item>
+	</integer-array>
+	
+	<integer-array name="imageformat_obj_order">
+		<item>@drawable/panel_ico_arrange_order01_selector</item>
+		<item>@drawable/panel_ico_arrange_order02_selector</item>
+		<item>@drawable/panel_ico_arrange_order03_selector</item>
+		<item>@drawable/panel_ico_arrange_order04_selector</item>
+	</integer-array>
+	
+	<integer-array name="imageformat_text_wrap">
+		<item>@drawable/panel_icon_textwrap_01</item>
+		<item>@drawable/panel_icon_textwrap_05</item>
+		<item>@drawable/panel_icon_textwrap_02</item>
+		<item>@drawable/panel_icon_textwrap_03</item>
+		<item>@drawable/panel_icon_textwrap_04</item>
+	</integer-array>
+	
+	<integer-array name="imageformat_text_wrap_hwp">
+		<item>@drawable/panel_icon_textwrap_01</item>
+		<item>@drawable/panel_icon_textwrap_05</item>
+		<item>@drawable/panel_icon_textwrap_03</item>
+		<item>@drawable/panel_icon_textwrap_04</item>
+	</integer-array>
+	
+	<integer-array name="imageformat_align">
+		<item>@drawable/panel_icon_align_01</item>
+		<item>@drawable/panel_icon_align_02</item>
+		<item>@drawable/panel_icon_align_03</item>
+		<item>@drawable/panel_icon_align_04</item>
+		<item>@drawable/panel_icon_align_05</item>
+		<item>@drawable/panel_icon_align_06</item>
+	</integer-array>
+	<!-- <integer-array name="imageformat_line_width">
+		<item>@drawable/panel_icon_none_selector</item>
+		<item>@drawable/panel_icon_line_width01_selector</item>
+		<item>@drawable/panel_icon_line_width02_selector</item>
+		<item>@drawable/panel_icon_line_width03_selector</item>
+	</integer-array> -->
+
+	<integer-array name="fontfacelist">
+		<item>@drawable/panel_ico_font_times_selector</item>
+		<item>@drawable/panel_ico_font_arial_selector</item>
+		<item>@drawable/panel_ico_font_tahoma_selector</item>
+		<item>@drawable/panel_ico_font_courier_selector</item>
+		<item>@drawable/panel_ico_font_verdana_selector</item>
+		<item>@drawable/panel_ico_font_gulim_eng_selector</item>
+		<item>@drawable/panel_ico_font_dotum_eng_selector</item>
+		<item>@drawable/panel_ico_font_batang_eng_selector</item>
+	</integer-array>
+	
+	<integer-array name="fontfacelist_ko">
+		<item>@drawable/panel_ico_font_times_selector</item>
+		<item>@drawable/panel_ico_font_arial_selector</item>
+		<item>@drawable/panel_ico_font_tahoma_selector</item>
+		<item>@drawable/panel_ico_font_courier_selector</item>
+		<item>@drawable/panel_ico_font_verdana_selector</item>
+		<item>@drawable/panel_ico_font_gulim_hangul_selector</item>
+		<item>@drawable/panel_ico_font_dotum_hangul_selector</item>
+		<item>@drawable/panel_ico_font_batang_hangul_selector</item>
+	</integer-array>
+	    
+
+	 <string-array name="font_style">
+		<item>@string/dm_text_style_1</item>
+		<item>@string/dm_spacing</item>
+		<item>@string/dm_font_text_style_3</item>
+		<item>@string/dm_font_text_style_4</item>
+		<item>@string/fm_property_item_title</item>
+		<item>@string/dm_font_text_style_6</item>
+		<item>@string/dm_font_text_style_7</item>
+		<item>@string/dm_font_text_style_8</item>
+		<item>@string/dm_text_style_6</item>
+		<item>@string/dm_font_text_style_10</item>
+		<item>@string/dm_font_text_style_11</item>
+		<item>@string/dm_font_text_style_12</item>
+		<item>@string/dm_font_text_style_13</item>
+		<item>@string/dm_text_style_7</item>
+		<item>@string/dm_font_text_style_15</item>
+		<item>@string/dm_font_text_style_16</item>
+	</string-array> 
+	
+	<integer-array name="chartlegends">
+		<item>@drawable/panel_icon_legends_0_selector</item>
+		<item>@drawable/panel_icon_legends_1_selector</item>
+		<item>@drawable/panel_icon_legends_2_selector</item>
+		<item>@drawable/panel_icon_legends_3_selector</item>
+		<item>@drawable/panel_icon_legends_4_selector</item>
+	</integer-array>
+	
+	<integer-array name="xlabelslope">
+		<item>@drawable/panel_icon_xlabel_slope_1_selector</item>
+		<item>@drawable/panel_icon_xlabel_slope_2_selector</item>
+		<item>@drawable/panel_icon_xlabel_slope_3_selector</item>
+		<item>@drawable/panel_icon_xlabel_slope_4_selector</item>
+		<item>@drawable/panel_icon_xlabel_slope_5_selector</item>
+	</integer-array>
+	
+	<integer-array name="ylabelslope">
+		<item>@drawable/panel_icon_ylabel_slope_1_selector</item>
+		<item>@drawable/panel_icon_ylabel_slope_2_selector</item>
+		<item>@drawable/panel_icon_ylabel_slope_3_selector</item>
+		<item>@drawable/panel_icon_ylabel_slope_4_selector</item>
+		<item>@drawable/panel_icon_ylabel_slope_5_selector</item>
+	</integer-array>
+	
+	
+	<integer-array name="chart_arrange_order">
+		<item>@drawable/panel_ico_arrange_order01_selector</item>
+		<item>@drawable/panel_ico_arrange_order02_selector</item>
+		<item>@drawable/panel_ico_arrange_order03_selector</item>
+		<item>@drawable/panel_ico_arrange_order04_selector</item>
+	</integer-array>
+	
+	<integer-array name="chart_arrange_wrap">
+		<item>@drawable/panel_icon_textwrap_01</item>
+		<item>@drawable/panel_icon_textwrap_02</item>
+		<item>@drawable/panel_icon_textwrap_03</item>
+		<item>@drawable/panel_icon_textwrap_04</item>
+	</integer-array>
+	
+	<integer-array name="axis_cluster_verticalbar_datalabel">
+		<item>@drawable/panel_icon_axis_verticalbar_1_selector</item>
+		<item>@drawable/panel_icon_axis_verticalbar_3_selector</item>
+		<item>@drawable/panel_icon_axis_verticalbar_4_selector</item>
+		<item>@drawable/panel_icon_axis_verticalbar_5_selector</item>
+	</integer-array>
+	
+	<integer-array name="axis_cluster_horizontalbar_datalabel">
+	    <item>@drawable/panel_icon_axis_horizontalbar_1_selector</item>
+		<item>@drawable/panel_icon_axis_horizontalbar_3_selector</item>
+		<item>@drawable/panel_icon_axis_horizontalbar_4_selector</item>
+		<item>@drawable/panel_icon_axis_horizontalbar_5_selector</item>
+	</integer-array>
+	
+	<integer-array name="axis_verticalbar_datalabel">
+		<item>@drawable/panel_icon_axis_verticalbar_1_selector</item>
+		<item>@drawable/panel_icon_axis_verticalbar_2_selector</item>
+		<item>@drawable/panel_icon_axis_verticalbar_3_selector</item>
+		<item>@drawable/panel_icon_axis_verticalbar_4_selector</item>
+		<item>@drawable/panel_icon_axis_verticalbar_5_selector</item>
+	</integer-array>
+	
+	<integer-array name="axis_horizontalbar_datalabel">
+		<item>@drawable/panel_icon_axis_horizontalbar_1_selector</item>
+		<item>@drawable/panel_icon_axis_horizontalbar_2_selector</item>
+		<item>@drawable/panel_icon_axis_horizontalbar_3_selector</item>
+		<item>@drawable/panel_icon_axis_horizontalbar_4_selector</item>
+		<item>@drawable/panel_icon_axis_horizontalbar_5_selector</item>
+	</integer-array>
+	
+	
+	<integer-array name="axis_circle_datalabel">
+		<item>@drawable/panel_icon_axis_circle_1_selector</item>
+		<item>@drawable/panel_icon_axis_circle_2_selector</item>
+		<item>@drawable/panel_icon_axis_circle_3_selector</item>
+		<item>@drawable/panel_icon_axis_circle_4_selector</item>
+		<item>@drawable/panel_icon_axis_circle_5_selector</item>
+	</integer-array>
+	
+	<integer-array name="axis_line_datalabel">
+		<item>@drawable/panel_icon_axis_line_1_selector</item>
+		<item>@drawable/panel_icon_axis_line_2_selector</item>
+		<item>@drawable/panel_icon_axis_line_3_selector</item>
+		<item>@drawable/panel_icon_axis_line_4_selector</item>
+		<item>@drawable/panel_icon_axis_line_5_selector</item>
+		<item>@drawable/panel_icon_axis_line_6_selector</item>
+	</integer-array>
+
+	<integer-array name="axis_scatter_datalabel">
+		<item>@drawable/panel_icon_axis_scatter_1_selector</item>
+		<item>@drawable/panel_icon_axis_scatter_2_selector</item>
+		<item>@drawable/panel_icon_axis_scatter_3_selector</item>
+		<item>@drawable/panel_icon_axis_scatter_4_selector</item>
+		<item>@drawable/panel_icon_axis_scatter_5_selector</item>
+		<item>@drawable/panel_icon_axis_scatter_6_selector</item>
+	</integer-array>			
+
+	<integer-array name="sheet_axis_2Btn_datalabel">
+		<item>@drawable/panel_icon_axis_verticalbar_1_selector</item>
+		<item>@drawable/panel_icon_axis_verticalbar_5_selector</item>
+	</integer-array>	
+	
+	<integer-array name="text_wrapping_icons">
+		<item>@drawable/panel_icon_textwrap_01</item>
+		<item>@drawable/panel_icon_textwrap_02</item>
+		<item>@drawable/panel_icon_textwrap_03</item>
+		<item>@drawable/panel_icon_textwrap_04</item>
+	</integer-array>
+		
+	<integer-array name="object_Align_01_icons">
+		<item>@drawable/panel_icon_arrange_align_01_selector</item>
+		<item>@drawable/panel_icon_arrange_align_02_selector</item>
+		<item>@drawable/panel_icon_arrange_align_03_selector</item>
+	</integer-array>
+	
+		<integer-array name="object_Align_02_icons">
+		<item>@drawable/panel_icon_arrange_align_04_selector</item>
+		<item>@drawable/panel_icon_arrange_align_05_selector</item>
+		<item>@drawable/panel_icon_arrange_align_06_selector</item>
+	</integer-array>
+	
+		<integer-array name="object_Align_03_icons">
+		<item>@drawable/panel_icon_arrange_align_07_selector</item>
+		<item>@drawable/panel_icon_arrange_align_08_selector</item>
+	</integer-array>
+	
+	<integer-array name="object_Align_04_icons">
+	    <item>@drawable/panel_icon_arrange_align_01_selector</item>
+		<item>@drawable/panel_icon_arrange_align_02_selector</item>
+		<item>@drawable/panel_icon_arrange_align_03_selector</item>
+		<item>@drawable/panel_icon_arrange_align_04_selector</item>
+		<item>@drawable/panel_icon_arrange_align_05_selector</item>
+		<item>@drawable/panel_icon_arrange_align_06_selector</item>
+	</integer-array>
+	
+	<string-array name="word_text_direction_std">
+	<item>@string/dm_direction_horizontal</item>
+	<item>@string/dm_direction_vertical</item>
+	<item>@string/dm_direction_rotate90</item>
+	<item>@string/dm_direction_rotate270</item>
+	<item>@string/dm_direction_rotate_asian270</item>
+	</string-array>
+
+	<integer-array name="word_text_direction">
+	<item>@drawable/panel_ico_direction_01_selector</item>
+	<item>@drawable/panel_ico_direction_02_selector</item>
+	<item>@drawable/panel_ico_direction_03_selector</item>
+	<item>@drawable/panel_ico_direction_04_selector</item>
+	<item>@drawable/panel_ico_direction_05_selector</item>
+	</integer-array>
+	
+	<string-array name="ppt_text_direction">
+	<item>@drawable/panel_ico_direction_01_selector</item>
+	<item>@drawable/panel_ico_direction_02_selector</item>
+	</string-array>
+	
+	
+	<integer-array name="pptx_text_direction">
+	<item>@drawable/panel_ico_direction_01_selector</item>
+	<item>@drawable/panel_ico_direction_02_selector</item>
+	<item>@drawable/panel_ico_direction_03_selector</item>
+	<item>@drawable/panel_ico_direction_04_selector</item>
+	<item>@drawable/panel_ico_direction_06_selector</item>
+	<item>@drawable/panel_ico_direction_07_selector</item>
+	</integer-array>
+	
+	<string-array name="spacing_unit">
+	<item>pt</item>
+	<item>%</item>
+	</string-array>
+	
+	<integer-array name="indent_arrow">
+	<item>@drawable/panel_ico_indent01</item>
+	<item>@drawable/panel_ico_indent02</item>
+	</integer-array>
+	
+	<integer-array name="text_direction_str">
+	<item>@string/dm_direction_ltr</item>
+	<item>@string/dm_direction_rtl</item>
+	</integer-array>
+	
+	<integer-array name="table_style_01">
+		<item>@drawable/ico_style_table_01</item>
+		<item>@drawable/ico_style_table_02</item>
+		<item>@drawable/ico_style_table_03</item>
+		<item>@drawable/ico_style_table_04</item>
+		<item>@drawable/ico_style_table_05</item>
+		<item>@drawable/ico_style_table_06</item>
+	</integer-array>	
+	<integer-array name="table_style_02">
+		<item>@drawable/ico_style_table_07</item>
+		<item>@drawable/ico_style_table_08</item>
+		<item>@drawable/ico_style_table_09</item>
+		<item>@drawable/ico_style_table_10</item>
+		<item>@drawable/ico_style_table_11</item>
+		<item>@drawable/ico_style_table_12</item>
+	</integer-array>
+	<integer-array name="table_style_03">
+		<item>@drawable/ico_style_table_13</item>
+		<item>@drawable/ico_style_table_14</item>
+		<item>@drawable/ico_style_table_15</item>
+		<item>@drawable/ico_style_table_16</item>
+		<item>@drawable/ico_style_table_17</item>
+		<item>@drawable/ico_style_table_18</item>
+	</integer-array>	
+	<integer-array name="table_style_04">
+		<item>@drawable/ico_style_table_19</item>
+		<item>@drawable/ico_style_table_20</item>
+		<item>@drawable/ico_style_table_21</item>
+		<item>@drawable/ico_style_table_22</item>
+		<item>@drawable/ico_style_table_23</item>
+		<item>@drawable/ico_style_table_24</item>
+	</integer-array>
+		
+	<integer-array name="table_border_01">
+		<item>@drawable/panel_icon_table_border01_selector</item>
+		<item>@drawable/panel_icon_table_border02_selector</item>
+		<item>@drawable/panel_icon_table_border03_selector</item>
+		<item>@drawable/panel_icon_table_border04_selector</item>	
+		<item>@drawable/panel_icon_table_border05_selector</item>
+		<item>@drawable/panel_icon_table_border06_selector</item>
+	</integer-array>	
+	
+	<integer-array name="table_border_02">
+		<item>@drawable/panel_icon_table_border07_selector</item>
+		<item>@drawable/panel_icon_table_border08_selector</item>
+		<item>@drawable/panel_icon_table_border09_selector</item>
+		<item>@drawable/panel_icon_table_border10_selector</item>
+		<item>@drawable/panel_icon_table_border11_selector</item>
+		<item>@drawable/panel_icon_table_border12_selector</item>	
+	</integer-array>
+	
+	<integer-array name="table_border_02_sheet">
+	    <item>@drawable/panel_icon_table_border07_selector</item>
+		<item>@drawable/panel_icon_table_border08_selector</item>
+		<item>@drawable/panel_icon_table_border09_selector</item>
+		<item>@drawable/panel_icon_table_border10_selector</item>
+	</integer-array>
+	
+	<!-- word list, number is icon filename and icon order is shown in GUI guide-->
+	<integer-array name="text_para_bullet">
+	    <item>@drawable/panel_ico_bullet02</item>
+	    <item>@drawable/panel_ico_bullet04</item>
+	    <item>@drawable/panel_ico_bullet05</item>
+	    <item>@drawable/panel_ico_bullet07</item>
+	    <item>@drawable/panel_ico_bullet06</item>
+	    <item>@drawable/panel_ico_bullet09</item>
+	</integer-array>
+	
+	<!-- diffent order and count in slide & word -->
+	<integer-array name="text_para_bullet_slide">
+	    <item>@drawable/panel_ico_bullet01</item>
+	    <item>@drawable/panel_ico_bullet05</item>
+	    <item>@drawable/panel_ico_bullet03</item>
+	    <item>@drawable/panel_ico_bullet02</item>
+	    <item>@drawable/panel_ico_bullet08</item>
+	    <item>@drawable/panel_ico_bullet06</item>
+	    <item>@drawable/panel_ico_bullet07</item>
+	</integer-array>
+	
+	<integer-array name="text_para_numbering">
+	    <item>@drawable/panel_ico_bullet10</item>
+	    <item>@drawable/panel_ico_bullet21</item>
+	    <item>@drawable/panel_ico_bullet11</item>
+	    <item>@drawable/panel_ico_bullet15</item>
+	    
+	</integer-array>
+	
+	<integer-array name="text_para_numbering2">
+	    <item>@drawable/panel_ico_bullet19</item>
+	    <item>@drawable/panel_ico_bullet20</item>
+	    <item>@drawable/panel_ico_bullet12</item>
+	    <item>@drawable/panel_ico_bullet16</item>
+	</integer-array>
+	
+	<integer-array name="text_para_numbering2_non_korean">
+	    <item>@drawable/panel_ico_bullet12</item>
+	    <item>@drawable/panel_ico_bullet16</item>
+	</integer-array>
+	
+	<integer-array name="text_para_numbering_slide">
+	    <item>@drawable/panel_ico_bullet10</item>
+	    <item>@drawable/panel_ico_bullet11</item>
+	    <item>@drawable/panel_ico_bullet15</item>
+	    <item>@drawable/panel_ico_bullet12</item>
+	    <item>@drawable/panel_ico_bullet14</item>
+	    <item>@drawable/panel_ico_bullet13</item>
+	    <item>@drawable/panel_ico_bullet17</item>
+	</integer-array>
+	
+	<integer-array name="text_para_multi_level">
+	    <item>@drawable/panel_ico_bullet_multi_level01</item>
+	    <item>@drawable/panel_ico_bullet_multi_level02</item>
+	    <item>@drawable/panel_ico_bullet_multi_level03</item>
+	</integer-array>
+	
+	<integer-array name="image_arrange_order">
+		<item>@drawable/panel_ico_arrange_order01_selector</item>
+		<item>@drawable/panel_ico_arrange_order02_selector</item>
+		<item>@drawable/panel_ico_arrange_order03_selector</item>
+		<item>@drawable/panel_ico_arrange_order04_selector</item>	
+	</integer-array>	
+
+	
+	<integer-array name="array_line_type1">
+		<item>@drawable/panel_icon_line_common_style01</item>
+		<item>@drawable/panel_icon_line_common_style02</item>
+		<item>@drawable/panel_icon_line_common_style03</item>
+		<item>@drawable/panel_icon_line_common_style04</item>
+	</integer-array>
+	
+	<integer-array name="array_line_type2">
+		<item>@drawable/panel_icon_line_common_style05</item>
+		<item>@drawable/panel_icon_line_common_style06</item>
+		<item>@drawable/panel_icon_line_common_style07</item>
+		<item>@drawable/panel_icon_line_common_style08</item>
+	</integer-array>
+	
+	<integer-array name="array_line_type_word_1">
+		<item>@drawable/ico_border_line_01_selector</item>
+		<item>@drawable/ico_border_line_02_selector</item>
+		<item>@drawable/ico_border_line_03_selector</item>
+		<item>@drawable/ico_border_line_04_selector</item>
+		<item>@drawable/ico_border_line_05_selector</item>
+	</integer-array>
+	
+	<integer-array name="array_line_type_word_2">
+	    <item>@drawable/ico_border_line_06_selector</item>
+		<item>@drawable/ico_border_line_07_selector</item>
+		<item>@drawable/ico_border_line_08_selector</item>
+		<item>@drawable/ico_border_line_09_selector</item>
+		<item>@drawable/ico_border_line_10_selector</item>
+	</integer-array>
+	
+	<integer-array name="array_line_type_word_3">
+	    <item>@drawable/ico_border_line_11_selector</item>
+	    <item>@drawable/ico_border_line_12_selector</item>
+	    <item>@drawable/ico_border_line_13_selector</item>
+	    <item>@drawable/ico_border_line_14_selector</item>
+	    <item>@drawable/ico_border_line_15_selector</item>
+	</integer-array>
+	
+	<integer-array name="array_line_type_word_4">
+	    <item>@drawable/ico_border_line_16_selector</item>
+	    <item>@drawable/ico_border_line_17_selector</item>
+	    <item>@drawable/ico_border_line_18_selector</item>
+	    <item>@drawable/ico_border_line_19_selector</item>
+	    <item>@drawable/ico_border_line_20_selector</item>
+	</integer-array>
+	
+	<integer-array name="array_line_type_slide_1">
+		<item>@drawable/panel_icon_line_table_slide_style01</item>
+		<item>@drawable/panel_icon_line_table_slide_style02</item>
+		<item>@drawable/panel_icon_line_table_slide_style03</item>
+		<item>@drawable/panel_icon_line_table_slide_style04</item>
+		<item>@drawable/panel_icon_line_table_slide_style05</item>
+	</integer-array>
+	
+	<integer-array name="array_line_type_slide_2">
+		<item>@drawable/panel_icon_line_table_slide_style06</item>
+		<item>@drawable/panel_icon_line_table_slide_style07</item>
+		<item>@drawable/panel_icon_line_table_slide_style08</item>
+		<item>@drawable/panel_icon_line_table_slide_style09</item>
+		<item>@drawable/panel_icon_line_table_slide_style10</item>
+	</integer-array>
+	
+	<integer-array name="array_line_type_hwp_1">
+		<item>@drawable/panel_icon_line_common_style01</item>
+		<item>@drawable/panel_icon_line_common_style04</item>
+		<item>@drawable/panel_icon_line_common_style03</item>
+		<item>@drawable/panel_icon_line_common_style07</item>
+		<item>@drawable/panel_icon_line_common_style08</item>
+		<item>@drawable/panel_icon_line_common_style06</item>
+	</integer-array>
+	
+	<integer-array name="array_line_type_hwp_2">
+		<item>@drawable/panel_icon_line_common_style02</item>
+		<item>@drawable/ico_border_line_07_selector</item>
+		<item>@drawable/ico_border_line_10_selector</item>
+		<item>@drawable/ico_border_line_09_selector</item>
+		<item>@drawable/ico_border_line_11_selector</item>
+	</integer-array>
+		
+	<integer-array name="array_line_border_type1">
+		<item>@drawable/panel_icon_line_style01</item>
+		<item>@drawable/panel_icon_line_style02</item>
+		<item>@drawable/panel_icon_line_style03</item>
+		<item>@drawable/panel_icon_line_style04</item>
+		<item>@drawable/panel_icon_line_style05</item>
+	</integer-array>
+	
+	<integer-array name="array_line_border_type2">
+		<item>@drawable/panel_icon_line_style06</item>	    
+		<item>@drawable/panel_icon_line_style07</item>
+		<item>@drawable/panel_icon_line_style08</item>
+		<item>@drawable/panel_icon_line_style09</item>
+		<item>@drawable/panel_icon_line_style10</item>
+	</integer-array>
+	
+	<integer-array name="array_line_border_type3">
+		<item>@drawable/panel_icon_line_style11</item>
+		<item>@drawable/panel_icon_line_style12</item>
+	    <item>@drawable/panel_icon_line_style13</item>
+	</integer-array>
+		
+	<integer-array name="array_type_start">
+		<item>@drawable/panel_icon_arrow_start01</item>
+		<item>@drawable/panel_icon_arrow_start02</item>
+		<item>@drawable/panel_icon_arrow_start03</item>
+		<item>@drawable/panel_icon_arrow_start04</item>
+		<item>@drawable/panel_icon_arrow_start05</item>	
+	</integer-array>	
+	
+	<integer-array name="array_type_end">
+	    <item>@drawable/panel_icon_arrow_start01</item>				
+		<item>@drawable/panel_icon_arrow_start06</item>
+		<item>@drawable/panel_icon_arrow_start07</item>
+		<item>@drawable/panel_icon_arrow_start08</item>
+		<item>@drawable/panel_icon_arrow_start09</item>							
+	</integer-array>
+
+	<integer-array name="rotate">
+		<item>@drawable/ico_rotate_left90_selector</item>
+		<item>@drawable/ico_rotate_right90_selector</item>
+		<item>@drawable/ico_rotate_180_selector</item>
+		<item>@drawable/ico_rotate_vertical_symmetry_selector</item>
+		<item>@drawable/ico_rotate_bilateral_symmetry_selector</item>
+	</integer-array>
+	
+	<string-array name="insert_cells_table">
+		<item>@string/dm_insert_col_left</item>
+		<item>@string/dm_insert_row_above</item>
+		<item>@string/dm_insert_col_right</item>
+		<item>@string/dm_insert_row_below</item>
+	</string-array>
+	
+	<integer-array name="shape_effect_1">
+		<item>@drawable/panel_icon_3d_effect01</item>
+		<item>@drawable/panel_icon_3d_effect02</item>
+		<item>@drawable/panel_icon_3d_effect03</item>
+		<item>@drawable/panel_icon_3d_effect04</item>
+		<item>@drawable/panel_icon_3d_effect05</item>
+	</integer-array>
+	
+	<integer-array name="shape_effect_2">
+		<item>@drawable/panel_icon_3d_effect06</item>
+		<item>@drawable/panel_icon_3d_effect07</item>
+		<item>@drawable/panel_icon_3d_effect08</item>
+		<item>@drawable/panel_icon_3d_effect09</item>
+		<item>@drawable/panel_icon_3d_effect10</item>
+	</integer-array>
+	
+	<integer-array name="insert_shape_01">
+		<item>@drawable/ico_shape_line_01</item>
+		<item>@drawable/ico_shape_line_02</item>
+		<item>@drawable/ico_shape_line_03</item>
+		<item>@drawable/ico_shape_line_04</item>
+		<item>@drawable/ico_shape_line_05</item>
+		<item>@drawable/ico_shape_line_06</item>
+		<item>@drawable/ico_shape_line_07</item>
+		<item>@drawable/ico_shape_line_08</item>
+		<item>@drawable/ico_shape_line_09</item>
+		<item>@drawable/ico_shape_line_10</item>
+		<item>@drawable/ico_shape_line_11</item>
+	</integer-array>
+	
+	<integer-array name="insert_shape_02">
+		<item>@drawable/ico_shape_line_01</item>
+		<item>@drawable/ico_shape_line_02</item>
+		<item>@drawable/ico_shape_line_03</item>
+		<item>@drawable/ico_shape_line_04</item>
+		<item>@drawable/ico_shape_line_05</item>
+		<item>@drawable/ico_shape_line_06</item>
+		<item>@drawable/ico_shape_line_07</item>
+		<item>@drawable/ico_shape_line_08</item>
+		<item>@drawable/ico_shape_line_09</item>
+		<item>@drawable/ico_shape_line_10</item>
+		<item>@drawable/ico_shape_line_11</item>
+	</integer-array>
+	
+	<integer-array name="insert_shape_03">
+		<item>@drawable/ico_shape_line_01</item>
+		<item>@drawable/ico_shape_line_02</item>
+		<item>@drawable/ico_shape_line_03</item>
+		<item>@drawable/ico_shape_line_04</item>
+		<item>@drawable/ico_shape_line_05</item>
+		<item>@drawable/ico_shape_line_06</item>
+		<item>@drawable/ico_shape_line_07</item>
+		<item>@drawable/ico_shape_line_08</item>
+		<item>@drawable/ico_shape_line_09</item>
+		<item>@drawable/ico_shape_line_10</item>
+		<item>@drawable/ico_shape_line_11</item>
+	</integer-array>
+	
+	<integer-array name="insert_shape_04">
+		<item>@drawable/ico_shape_line_01</item>
+		<item>@drawable/ico_shape_line_02</item>
+		<item>@drawable/ico_shape_line_03</item>
+		<item>@drawable/ico_shape_line_04</item>
+		<item>@drawable/ico_shape_line_05</item>
+		<item>@drawable/ico_shape_line_06</item>
+		<item>@drawable/ico_shape_line_07</item>
+		<item>@drawable/ico_shape_line_08</item>
+		<item>@drawable/ico_shape_line_09</item>
+		<item>@drawable/ico_shape_line_10</item>
+		<item>@drawable/ico_shape_line_11</item>
+	</integer-array>
+	
+	<integer-array name="insert_shape_05">
+		<item>@drawable/ico_shape_line_01</item>
+		<item>@drawable/ico_shape_line_02</item>
+		<item>@drawable/ico_shape_line_03</item>
+		<item>@drawable/ico_shape_line_04</item>
+		<item>@drawable/ico_shape_line_05</item>
+		<item>@drawable/ico_shape_line_06</item>
+		<item>@drawable/ico_shape_line_07</item>
+		<item>@drawable/ico_shape_line_08</item>
+		<item>@drawable/ico_shape_line_09</item>
+		<item>@drawable/ico_shape_line_10</item>
+		<item>@drawable/ico_shape_line_11</item>
+	</integer-array>
+	<integer-array name="insert_shape_06">
+		<item>@drawable/ico_shape_line_01</item>
+		<item>@drawable/ico_shape_line_02</item>
+		<item>@drawable/ico_shape_line_03</item>
+		<item>@drawable/ico_shape_line_04</item>
+		<item>@drawable/ico_shape_line_05</item>
+		<item>@drawable/ico_shape_line_06</item>
+		<item>@drawable/ico_shape_line_07</item>
+		<item>@drawable/ico_shape_line_08</item>
+		<item>@drawable/ico_shape_line_09</item>
+		<item>@drawable/ico_shape_line_10</item>
+		<item>@drawable/ico_shape_line_11</item>
+	</integer-array>
+	
+		<integer-array name="insert_shape_07">
+		<item>@drawable/ico_shape_line_01</item>
+		<item>@drawable/ico_shape_line_02</item>
+		<item>@drawable/ico_shape_line_03</item>
+		<item>@drawable/ico_shape_line_04</item>
+		<item>@drawable/ico_shape_line_05</item>
+		<item>@drawable/ico_shape_line_06</item>
+		<item>@drawable/ico_shape_line_07</item>
+		<item>@drawable/ico_shape_line_08</item>
+		<item>@drawable/ico_shape_line_09</item>
+		<item>@drawable/ico_shape_line_10</item>
+		<item>@drawable/ico_shape_line_11</item>
+	</integer-array>
+	
+	<integer-array name="insert_shape_08">
+		<item>@drawable/ico_shape_line_01</item>
+		<item>@drawable/ico_shape_line_02</item>
+		<item>@drawable/ico_shape_line_03</item>
+		<item>@drawable/ico_shape_line_04</item>
+		<item>@drawable/ico_shape_line_05</item>
+		<item>@drawable/ico_shape_line_06</item>
+		<item>@drawable/ico_shape_line_07</item>
+		<item>@drawable/ico_shape_line_08</item>
+		<item>@drawable/ico_shape_line_09</item>
+		<item>@drawable/ico_shape_line_10</item>
+		<item>@drawable/ico_shape_line_11</item>
+	</integer-array>
+	<integer-array name="insert_shape_09">
+		<item>@drawable/ico_shape_line_01</item>
+		<item>@drawable/ico_shape_line_02</item>
+		<item>@drawable/ico_shape_line_03</item>
+		<item>@drawable/ico_shape_line_04</item>
+		<item>@drawable/ico_shape_line_05</item>
+		<item>@drawable/ico_shape_line_06</item>
+		<item>@drawable/ico_shape_line_07</item>
+		<item>@drawable/ico_shape_line_08</item>
+		<item>@drawable/ico_shape_line_09</item>
+		<item>@drawable/ico_shape_line_10</item>
+		<item>@drawable/ico_shape_line_11</item>
+	</integer-array>
+	
+	<string-array name="sheet_insert_table_cell">
+	    <item>@string/dm_insert_col_left</item>
+		<item>@string/dm_insert_row_above</item>
+		<item>@string/dm_insert_col_right</item>
+		<item>@string/dm_insert_row_below</item>
+	</string-array>
+	
+	<string-array name="select_table_cell">
+		<item>@string/sheet_select_table_cell_only_row_data</item>
+		<item>@string/dm_delete_entire_col</item>
+		<item>@string/sheet_select_table_cell_column_data</item>
+	</string-array>
+	
+	<integer-array name="word_table_style_resource">
+	    <item>@drawable/ico_insert_table_style_01_selector</item>
+	    <item>@drawable/ico_insert_table_style_02_selector</item>
+	    <item>@drawable/ico_insert_table_style_03_selector</item>
+	    <item>@drawable/ico_insert_table_style_04_selector</item>
+	    <item>@drawable/ico_insert_table_style_05_selector</item>
+	    <item>@drawable/ico_insert_table_style_06_selector</item>
+	    <item>@drawable/ico_insert_table_style_07_selector</item>
+	    <item>@drawable/ico_insert_table_style_08_selector</item>
+	    <item>@drawable/ico_insert_table_style_09_selector</item>
+	    <item>@drawable/ico_insert_table_style_10_selector</item>
+	    <item>@drawable/ico_insert_table_style_11_selector</item>
+	    <item>@drawable/ico_insert_table_style_12_selector</item>
+	    <item>@drawable/ico_insert_table_style_13_selector</item>
+	    <item>@drawable/ico_insert_table_style_14_selector</item>
+	    <item>@drawable/ico_insert_table_style_15_selector</item>
+	    <item>@drawable/ico_insert_table_style_16_selector</item>
+	    <item>@drawable/ico_insert_table_style_17_selector</item>
+	    <item>@drawable/ico_insert_table_style_18_selector</item>
+	    <item>@drawable/ico_insert_table_style_19_selector</item>
+	    <item>@drawable/ico_insert_table_style_20_selector</item>
+	    <item>@drawable/ico_insert_table_style_21_selector</item>
+	    <item>@drawable/ico_insert_table_style_22_selector</item>
+	    <item>@drawable/ico_insert_table_style_23_selector</item>
+	    <item>@drawable/ico_insert_table_style_24_selector</item>
+	</integer-array>
+	
+	<integer-array name="slide_table_style_resource">
+	    <item>@drawable/ico_insert_sheet_table_style_01_selector</item>
+	    <item>@drawable/ico_insert_sheet_table_style_02_selector</item>
+	    <item>@drawable/ico_insert_sheet_table_style_03_selector</item>
+	    <item>@drawable/ico_insert_sheet_table_style_04_selector</item>
+	    <item>@drawable/ico_insert_sheet_table_style_05_selector</item>
+	    <item>@drawable/ico_insert_sheet_table_style_06_selector</item>
+	    <item>@drawable/ico_insert_sheet_table_style_07_selector</item>
+	    <item>@drawable/ico_insert_sheet_table_style_08_selector</item>
+	    <item>@drawable/ico_insert_sheet_table_style_09_selector</item>
+	    <item>@drawable/ico_insert_sheet_table_style_10_selector</item>
+	    <item>@drawable/ico_insert_sheet_table_style_11_selector</item>
+	    <item>@drawable/ico_insert_sheet_table_style_12_selector</item>
+	    <item>@drawable/ico_insert_sheet_table_style_13_selector</item>
+	    <item>@drawable/ico_insert_sheet_table_style_14_selector</item>
+	    <item>@drawable/ico_insert_sheet_table_style_15_selector</item>
+	    <item>@drawable/ico_insert_sheet_table_style_16_selector</item>
+	    <item>@drawable/ico_insert_sheet_table_style_17_selector</item>
+	    <item>@drawable/ico_insert_sheet_table_style_18_selector</item>
+	    <item>@drawable/ico_insert_sheet_table_style_19_selector</item>
+	    <item>@drawable/ico_insert_sheet_table_style_20_selector</item>
+	    <item>@drawable/ico_insert_sheet_table_style_21_selector</item>
+	    <item>@drawable/ico_insert_sheet_table_style_22_selector</item>
+	    <item>@drawable/ico_insert_sheet_table_style_23_selector</item>
+	    <item>@drawable/ico_insert_sheet_table_style_24_selector</item>
+	</integer-array>
+	
+	<string-array name="panel_line_type_list1">
+	    <item>@string/panel_line_type_solid</item>
+		<item>@string/panel_line_type_round_dot</item>
+		<item>@string/panel_line_type_square_dot</item>
+		<item>@string/panel_line_type_dashes</item>
+	</string-array>
+	<string-array name="panel_line_type_list2">
+	    <item>@string/panel_line_type_dash_dot</item>
+		<item>@string/panel_line_type_dash_long_line</item>
+		<item>@string/panel_line_type_long_dash_dot</item>
+		<item>@string/panel_line_type_long_dash_dot_dot</item>
+	</string-array>
+	
+	<string-array name="panel_line_type_hwp_list1">
+	    <item>@string/panel_line_type_solid</item>
+	    <item>@string/panel_line_type_dashes</item>
+	    <item>@string/panel_line_type_square_dot</item>
+	    <item>@string/panel_line_type_long_dash_dot</item>
+	    <item>@string/panel_line_type_long_dash_dot_dot</item>
+	    <item>@string/panel_line_type_dash_long_line</item>
+	</string-array>
+	<string-array name="panel_line_type_hwp_list2">
+	    <item>@string/panel_line_type_round_dot</item>
+	</string-array>    
+</resources>

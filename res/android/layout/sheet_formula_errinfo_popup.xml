@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sheet_formula_errinfo_popup_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/formulaerrinfopopup"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center"
+        android:textColor="@color/common_default_btn_text_default"
+        android:textSize="14sp"
+   		android:text="@string/dm_msg_invalid_formula" />
+
+</LinearLayout>

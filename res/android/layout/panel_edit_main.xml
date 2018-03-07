@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel_main_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	    <RadioGroup
+	        android:id="@+id/panel_main_head"
+	        android:layout_width="match_parent"
+	        android:layout_height="41dip"
+	        android:background="@drawable/tab_bg"
+	        android:orientation="horizontal" >
+	
+        <RadioButton
+            android:id="@+id/panel_head_item1"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@drawable/cm_panel_tab_bg"
+	            android:text="@string/dm_font"
+	            android:textColor="@color/panel_tab_tcolor_selector_common"
+	            android:textSize="15sp" 
+	            android:gravity="center"
+	            android:textStyle="bold"
+	            android:focusable="true"/>
+	
+	        <RadioButton
+            android:id="@+id/panel_head_item2"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+	            android:background="@drawable/cm_panel_tab_bg"
+	            android:text="@string/dm_paragraph"
+	            android:textColor="@color/panel_tab_tcolor_selector_common"
+	            android:textSize="15sp"
+	            android:gravity="center"
+	            android:textStyle="bold"
+	            android:focusable="true" />
+	
+	        <RadioButton
+            android:id="@+id/panel_head_item3"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@drawable/cm_panel_tab_bg"
+            android:text="@string/dm_chart_style"
+	            android:textColor="@color/panel_tab_tcolor_selector_common"
+	            android:textSize="15sp"
+	            android:gravity="center"
+	            android:textStyle="bold"
+	            android:focusable="true" />
+	
+	        <RadioButton
+            android:id="@+id/panel_head_item4"
+           	android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@drawable/cm_panel_tab_bg"
+	            android:text="@string/dm_chart_style"
+	            android:textColor="@color/panel_tab_tcolor_selector_common"
+	            android:textSize="15sp"
+	            android:gravity="center"
+	            android:textStyle="bold"
+	            android:focusable="true" />
+	       
+	       <RadioButton
+	            android:id="@+id/panel_head_item5"
+           	android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+	            android:background="@drawable/cm_panel_tab_bg"
+	            android:text="@string/dm_chart_style"
+	            android:textColor="@color/panel_tab_tcolor_selector_common"
+	            android:textSize="15sp"
+	            android:gravity="center"
+	            android:textStyle="bold"
+	            android:focusable="true" />
+	    </RadioGroup>
+    <FrameLayout
+        android:id="@+id/panel_main_body"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/panel_bg_full" >
+       <ProgressBar 
+           android:id="@+id/panel_main_loading"
+           android:layout_width="40dip"
+           android:layout_height="40dip"
+           android:layout_gravity="center"
+           android:visibility="visible"/>
+    </FrameLayout>
+
+</LinearLayout>

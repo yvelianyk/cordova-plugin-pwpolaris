@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="popup_share_document">
+        <item>@string/po_menu_item_new_doc</item>
+        <item>@string/dm_pdf</item>
+    </string-array>
+    
+    <string-array name="popup_share_sheet">
+        <item>@string/po_menu_item_new_xls</item>
+        <item>@string/dm_pdf</item>
+    </string-array>
+    
+    <string-array name="popup_share_slide">
+        <item>@string/po_menu_item_new_ppt</item>
+        <item>@string/dm_pdf</item>
+        <item>@string/dm_shared_pdf_except_ink</item>
+    </string-array>
+    
+    <string-array name="popup_share_pdf">
+ 		<item>@string/dm_send_email_original</item>
+    </string-array>
+    
+    <string-array name="popup_share_text">
+        <item>@string/po_menu_item_new_txt</item>
+    </string-array>
+    
+    <string-array name="popup_share_rtf">
+        <item>@string/dm_send_email_original</item>
+    </string-array>
+    
+    <string-array name="popup_share_hwp">
+        <item>@string/dm_send_email_original</item>
+        <item>@string/dm_pdf</item>
+    </string-array>
+</resources>

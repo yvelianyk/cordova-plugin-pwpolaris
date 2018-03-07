@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+    
+          <TextView
+           android:id="@+id/title"
+           style="@style/PanelButtonTitleText"
+           android:layout_width="fill_parent"
+           android:layout_height="@dimen/panel_subtitle_h"
+           android:visibility="gone"
+           />
+    
+         <LinearLayout  
+        	android:layout_width="fill_parent" 
+			android:layout_height="@dimen/panel_button_height"
+			android:orientation="horizontal"
+			android:background="@drawable/btn_default_n"> 
+		   
+			<Button 
+				android:id="@+id/button_01" 
+				android:layout_width="0dip"
+				android:layout_weight="1" 
+				android:layout_height="fill_parent"
+				android:visibility="gone"
+				style="@style/PanelButtonText"
+				android:textColor="@color/btn_multi_tcolor_selector"/>
+		
+			<Button 
+				android:id="@+id/button_02" 
+				android:layout_width="0dip"
+				android:layout_weight="1" 
+				android:layout_height="fill_parent"
+				android:visibility="gone"
+				style="@style/PanelButtonText"
+				android:textColor="@color/btn_multi_tcolor_selector"/>
+			
+			<Button 
+				android:id="@+id/button_03" 
+				android:layout_width="0dip"
+				android:layout_weight="1" 
+				android:layout_height="fill_parent"
+				android:visibility="gone"
+				style="@style/PanelButtonText"
+				android:textColor="@color/btn_multi_tcolor_selector"/>
+	
+			<Button 
+				android:id="@+id/button_04" 
+				android:layout_width="0dip"
+				android:layout_weight="1" 
+				android:layout_height="fill_parent"
+				android:visibility="gone"
+				style="@style/PanelButtonText"
+				android:textColor="@color/btn_multi_tcolor_selector"/>
+		
+			<Button 
+				android:id="@+id/button_05" 
+				android:layout_width="0dip"
+				android:layout_weight="1" 
+				android:layout_height="fill_parent"
+				android:visibility="gone"
+				style="@style/PanelButtonText"
+				android:textColor="@color/btn_multi_tcolor_selector"/>
+					
+			<Button 
+				android:id="@+id/button_06" 
+				android:layout_width="0dip"
+				android:layout_weight="1" 
+				android:layout_height="fill_parent"
+				android:visibility="gone"
+				style="@style/PanelButtonText"
+				android:textColor="@color/btn_multi_tcolor_selector"/>
+			
+		  </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel_edit_body_root"
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:layout_height="match_parent" >
+
+        <com.infraware.polarisoffice6.panel.EditPanelBodyScrollView
+            android:id="@+id/panel_edit_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout  
+            	android:id="@+id/panel_edit_content_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <!-- content start -->
+                <!-- anchor fill -->
+                <TextView
+                    android:id="@+id/anchor_fill"
+                    style="@style/PanelAnchorTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/panel_subtitle_h"
+                    android:text="@string/dm_fill" />
+
+                <com.infraware.polarisoffice6.panel.kit.CommonPanelColor
+                    android:id="@+id/fontColorSelection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+ 					android:layout_marginLeft="@dimen/panel_common_content_area_margin_horizontal"
+            		android:layout_marginRight="@dimen/panel_common_content_area_margin_horizontal"
+                    android:layout_marginBottom="@dimen/panel_common_content_area_margin_vertical"
+                    android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical" />
+                
+               <com.infraware.polarisoffice6.panel.kit.PanelKitFill
+                    android:id="@+id/fillColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/panel_common_content_area_margin_vertical"
+                    android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical" /> 
+                <!-- anchor line -->
+                
+                <TextView
+                    android:id="@+id/anchor_line"
+                    style="@style/PanelAnchorTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/panel_subtitle_h"
+                    android:text="@string/dm_line" />
+                
+                  <com.infraware.polarisoffice6.panel.kit.PanelLineButton
+                    android:id="@+id/shapeLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+ 					android:layout_marginLeft="@dimen/panel_common_content_area_margin_horizontal"
+            		android:layout_marginRight="@dimen/panel_common_content_area_margin_horizontal"
+                    android:layout_marginBottom="@dimen/panel_common_content_area_margin_vertical"
+                    android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical" />
+
+                <TextView
+                    android:id="@+id/anchor_opacity_all"
+                    style="@style/PanelAnchorTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/panel_subtitle_h"
+                    android:text="@string/dm_opaticy_per"
+                    android:visibility="gone" />
+                
+                <com.infraware.polarisoffice6.common.WheelPanelButton
+					android:id="@+id/lineOpacityAll" 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+ 					android:layout_marginLeft="@dimen/panel_common_content_area_margin_horizontal"
+            		android:layout_marginRight="@dimen/panel_common_content_area_margin_horizontal"
+                    android:layout_marginBottom="@dimen/panel_common_content_area_margin_vertical"
+                    android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical"
+                    android:visibility="gone" />
+                
+			    <TextView
+                    android:id="@+id/anchor_effect"
+                    style="@style/PanelAnchorTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/panel_subtitle_h"
+                    android:text="@string/dm_effect" />
+                
+                <com.infraware.polarisoffice6.panel.kit.ShapeEffectButton
+                    android:id="@+id/shapeEffect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+ 					android:layout_marginLeft="@dimen/panel_common_content_area_margin_horizontal"
+            		android:layout_marginRight="@dimen/panel_common_content_area_margin_horizontal"
+                    android:layout_marginBottom="@dimen/panel_common_content_area_margin_vertical"
+                    android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical" />
+                
+                <!-- anchor arrange -->
+                <TextView
+                    android:id="@+id/anchor_arrange"
+ 					style="@style/PanelAnchorTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/panel_subtitle_h"
+                    android:text="@string/dm_arrange" />
+
+                <com.infraware.polarisoffice6.panel.kit.PanelKitArrange
+                    android:id="@+id/imageFormatArrange"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+ 					android:layout_marginLeft="@dimen/panel_common_content_area_margin_horizontal"
+            		android:layout_marginRight="@dimen/panel_common_content_area_margin_horizontal"
+                    android:layout_marginBottom="@dimen/panel_common_content_area_margin_vertical" />
+                <!-- content end -->
+            </LinearLayout>
+        </com.infraware.polarisoffice6.panel.EditPanelBodyScrollView>
+</LinearLayout>

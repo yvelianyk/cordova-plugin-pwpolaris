@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/panel_common_content_area_margin_horizontal"
+		android:layout_marginRight="@dimen/panel_common_content_area_margin_horizontal"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/tab1"
+            android:background="@drawable/btn_multi_left_selector_common"
+            android:focusable="true"
+            style="@style/PanelTab.LinearLayout" >
+
+            <ImageView
+                android:src="@drawable/panel_ico_tab_fill_color"
+                style="@style/PanelTab.Item.ImageView" />
+
+            <TextView
+                android:id="@+id/tab1_text"
+                android:text="@string/dm_color"
+                style="@style/PanelTab.Item.TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab2"
+            android:background="@drawable/btn_multi_center_selector_common"
+            android:focusable="true"
+            style="@style/PanelTab.LinearLayout" >
+
+            <ImageView
+                android:src="@drawable/panel_ico_tab_fill_gradation"
+                style="@style/PanelTab.Item.ImageView" />
+
+            <TextView
+                android:id="@+id/tab2_text"
+                android:text="@string/dm_fill_gradition"
+				style="@style/PanelTab.Item.TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab3"
+            android:background="@drawable/btn_multi_right_selector_common"
+            android:focusable="true"
+            style="@style/PanelTab.LinearLayout" >
+
+            <ImageView
+                android:src="@drawable/panel_ico_tab_fill_pattern"
+                style="@style/PanelTab.Item.ImageView" />
+
+            <TextView
+                android:id="@+id/effrect_tab3_text"
+                android:text="@string/dm_fill_pattern"
+				style="@style/PanelTab.Item.TextView" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginBottom="3.5dip"
+        android:layout_marginTop="3.5dip"
+        android:background="@drawable/img_divider_repeat" /> -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical"
+        android:visibility="visible" >
+
+        <ViewStub
+            android:id="@+id/stub_tab1_contents" 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/layout_tab1_contents"
+            />
+        
+        <ViewStub
+            android:id="@+id/stub_tab2_contents" 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/layout_tab2_contents"
+            />
+        
+        <ViewStub
+            android:id="@+id/stub_tab3_contents" 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/layout_tab3_contents"
+            />
+
+        
+    </FrameLayout>
+
+</LinearLayout>

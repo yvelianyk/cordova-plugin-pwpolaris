@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_common_dialog_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/actiontitlebar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/base_common_dialog_bg" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout02"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8.00dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/saveas_filename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8.00dip"
+                android:layout_marginLeft="17.00dip"
+                android:layout_marginRight="17.00dip"
+                android:layout_marginTop="15.00dip"
+                android:gravity="center_vertical"
+                android:text="@string/cm_hint_filename"
+                android:textColor="@color/panel_default_text"
+                android:textSize="14.00sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42.50dip"
+                android:layout_marginLeft="17.00dip"
+                android:layout_marginRight="17.00dip" >
+
+                <com.infraware.polarisoffice6.common.ExEditText
+                    android:id="@+id/saveas_editname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40.00dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="7.00dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/textfield_selector_common"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/cm_hint_filename"
+                     android:textColorHint="@color/cm_edit_text_hint"
+                    android:imeOptions="actionDone|flagNoFullscreen"
+                    android:paddingLeft="11.50dip"
+                    android:paddingRight="0dip"
+                    android:privateImeOptions="inputType=filename"
+                    android:singleLine="true"
+                    android:textColor="@color/cm_edit_text_normal"
+                    android:textColorHighlight="@color/cm_edit_text_highlight"
+                    android:textCursorDrawable="@null"
+                    android:textSize="16.00sp" />
+
+                <Button
+                    android:id="@+id/saveas_editformat"
+                    android:layout_width="55dip"
+                    android:layout_height="42.50dip"
+                    android:background="@drawable/btn_default_selector_common"
+                    android:gravity="center"
+                    android:textAllCaps="false"
+                    android:text="@string/cm_btn_select"
+                    android:textColor="@color/btn_default_tcolor_selector"
+                    android:textSize="10.5sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/save_attention_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10.00dip"
+                android:layout_marginLeft="17.00dip"
+                android:layout_marginRight="17.00dip"
+                android:layout_marginTop="17.00dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <View
+                    android:id="@+id/save_attention_ico"
+                    android:layout_width="15dip"
+                    android:layout_height="15.00dip"
+                    android:layout_marginRight="6dip"
+                    android:background="@drawable/ico_caution" />
+
+                <TextView
+                    android:id="@+id/save_error"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/filemanager_file_exist_error_msg"
+                    android:textColor="@color/colorpalette_03"
+                    android:textSize="14.00sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/saveas_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.00dip"
+                android:layout_marginLeft="17.00dip"
+                android:layout_marginRight="17.00dip"
+                android:layout_marginTop="18.50dip"
+                android:gravity="center_vertical"
+                android:text="@string/dm_folder_path"
+                android:textColor="@color/panel_default_text"
+                android:textSize="14.00sp" />
+
+            <LinearLayout
+                android:id="@+id/saveas_btn"
+                android:layout_width="match_parent"
+                android:layout_height="41.00dp"
+                android:layout_marginLeft="17.00dp"
+                android:layout_marginRight="17.00dp"
+                android:background="@drawable/btn_more_selector_common"
+                android:focusable="true"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/save_location_icon"
+                    android:layout_width="34.00dp"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/ico_path_device_n" />
+
+                <TextView
+                    android:id="@+id/saveas_folder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:ellipsize="start"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/dm_save_folder"
+                    android:textColor="@color/btn_more_tcolor_selector"
+                    android:textSize="16.00sp" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/save_pendraw_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17.00dip"
+                android:layout_marginRight="17.00dip"
+                android:layout_marginTop="13.00dip"
+                android:button="@drawable/cm_checkbox_selector_common"
+                android:checked="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/dm_export_pendraw"
+                android:textColor="@color/panel_button_text_color_normal"
+                android:textSize="14.00sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="fill_parent"
+	android:visibility="gone">
+	<LinearLayout
+		android:background="@drawable/option_bg_landscape"
+		android:layout_width="wrap_content"
+		android:layout_height="fill_parent"
+		android:orientation="vertical">
+		<FrameLayout
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:layout_weight="1">
+
+			<com.infraware.document.slide.SlideDragNDropListView
+			    android:id="@+id/slide_manage_land_list"
+			    android:layout_width="wrap_content"
+			    android:layout_height="fill_parent"
+			    android:layout_gravity="top"
+			    android:layout_marginLeft="2.67dip"
+			    android:layout_marginRight="2.67dip"
+			    android:layout_marginTop="2.67dip"
+			    android:cacheColorHint="@android:color/transparent"
+			    android:divider="@android:color/transparent"
+			    android:listSelector="@android:color/transparent"
+			    android:scrollbars="none" />
+
+			<ImageView
+				android:id="@+id/slide_manage_indicator_landscape"
+				android:layout_gravity="top"
+				android:layout_width="130.00dip"
+				android:layout_height="8.00dip"
+				android:src="@drawable/slide_move_icon_landscape"
+				android:visibility="invisible" />
+			<!--  
+			<View
+                android:layout_width="130dp"
+                android:layout_height="5dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/bottom_shadow" />
+			-->
+		</FrameLayout>
+		<LinearLayout
+		    android:id="@+id/slide_manager_btn_layout_landscape"
+			android:layout_width="130.00dip"
+			android:layout_height="39.50dip"
+			android:background="@drawable/slide_btn_landscape_n">			
+			<ImageView
+				android:id="@+id/slide_manage_add_btn_landscape"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_weight="1"
+				android:background="@drawable/slidemanage_btn_background_land_selector"
+				android:padding="5.00dip"
+				android:src="@drawable/slidemanage_add_selector"
+				android:focusable="true"
+				android:longClickable="true"
+				android:scaleType="centerInside"
+				android:contentDescription="@string/dm_slide_insert" />
+			<ImageView
+				android:id="@+id/slide_manage_slideshow_btn_landscape"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_weight="1"
+				android:background="@drawable/slidemanage_btn_background_land_selector"
+				android:padding="5.00dip"
+				android:src="@drawable/slidemanage_slideshow_selector"
+				android:focusable="true"
+				android:longClickable="true"
+				android:scaleType="centerInside"
+				android:contentDescription="@string/dm_slide_show" />
+		</LinearLayout>
+	</LinearLayout>
+</FrameLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popover_bg"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5.00dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5.50dip" >
+
+                <com.infraware.document.slide.SlideLayoutImageView
+                    android:id="@+id/slide_layout_template01"
+                    android:layout_width="86.00dip"
+                    android:layout_height="65.00dip"
+                    android:layout_marginRight="5.50dip"
+                    android:onClick="onClickLayout"
+                    android:src="@drawable/slidelayout_01_selector" />
+
+                <com.infraware.document.slide.SlideLayoutImageView
+                    android:id="@+id/slide_layout_template02"
+                    android:layout_width="86.00dip"
+                    android:layout_height="65.00dip"
+                    android:layout_marginRight="5.50dip"
+                    android:onClick="onClickLayout"
+                    android:src="@drawable/slidelayout_02_selector" />
+
+                <com.infraware.document.slide.SlideLayoutImageView
+                    android:id="@+id/slide_layout_template04"
+                    android:layout_width="86.00dip"
+                    android:layout_height="65.00dip"
+                    android:onClick="onClickLayout"
+                    android:src="@drawable/slidelayout_04_selector" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5.50dip" >
+
+                <com.infraware.document.slide.SlideLayoutImageView
+                    android:id="@+id/slide_layout_template06"
+                    android:layout_width="86.00dip"
+                    android:layout_height="65.00dip"
+                    android:layout_marginRight="5.50dip"
+                    android:onClick="onClickLayout"
+                    android:src="@drawable/slidelayout_06_selector" />
+
+                <com.infraware.document.slide.SlideLayoutImageView
+                    android:id="@+id/slide_layout_template07"
+                    android:layout_width="86.00dip"
+                    android:layout_height="65.00dip"
+                    android:layout_marginRight="5.50dip"
+                    android:onClick="onClickLayout"
+                    android:src="@drawable/slidelayout_07_selector" />
+
+                <com.infraware.document.slide.SlideLayoutImageView
+                    android:id="@+id/slide_layout_template10"
+                    android:layout_width="86.00dip"
+                    android:layout_height="65.00dip"
+                    android:onClick="onClickLayout"
+                    android:src="@drawable/slidelayout_10_selector" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <com.infraware.document.slide.SlideLayoutImageView
+                    android:id="@+id/slide_layout_template11"
+                    android:layout_width="86.00dip"
+                    android:layout_height="65.00dip"
+                    android:layout_marginRight="5.50dip"
+                    android:onClick="onClickLayout"
+                    android:src="@drawable/slidelayout_11_selector" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

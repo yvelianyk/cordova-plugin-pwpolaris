@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contents"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/print_all"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:button="@null"
+            android:gravity="left|center_vertical"
+            android:drawableRight="@drawable/cm_btn_radio_selector"
+            android:background="@drawable/print_bg_pressed_selector"
+            android:paddingLeft="14.67dip"
+            android:paddingRight="14.67dip" />
+
+        <View
+            android:id="@+id/divideline1"
+            android:layout_width="fill_parent"
+            android:layout_height="0.67dip"
+            android:background="@color/dlg_divideline_color" />
+
+        <RadioButton
+            android:id="@+id/print_current"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="left|center_vertical"
+            android:drawableRight="@drawable/cm_btn_radio_selector"
+            android:background="@drawable/print_bg_pressed_selector"
+            android:paddingLeft="14.67dip"
+            android:paddingRight="14.67dip" />
+
+        <View
+            android:id="@+id/divideline2"
+            android:layout_width="fill_parent"
+            android:layout_height="0.67dip"
+            android:background="@color/dlg_divideline_color" />
+
+        <LinearLayout
+            android:id="@+id/print_edit_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/print_page"
+                android:layout_width="fill_parent"
+                android:layout_height="48dip"
+                android:gravity="left|center_vertical"
+                android:button="@null"
+                android:drawableRight="@drawable/cm_btn_radio_selector"
+                android:background="@drawable/print_bg_pressed_selector"
+                android:ellipsize="marquee"
+                android:paddingLeft="14.67dip"
+                android:paddingRight="14.67dip"
+                android:singleLine="true" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60.67dip"
+                android:layout_marginLeft="29.33dip"
+                android:layout_marginRight="29.33dip" >
+
+                <com.infraware.polarisoffice6.common.ExEditText
+                    android:id="@+id/print_start_page"
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:background="@drawable/textfield_selector_common"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="number"
+                    android:textColor="@color/cm_text_field"
+                    android:textColorHighlight="@color/cm_edit_text_highlight" />
+
+                <!-- <TextView
+                    android:layout_width="74dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="~" /> -->
+
+				<ImageView 
+				    android:layout_width="74dip"
+				    android:layout_height="fill_parent"
+				    android:scaleType="center"
+				    android:src="@drawable/ico_swungdash"/>
+
+                <com.infraware.polarisoffice6.common.ExEditText
+                    android:id="@+id/print_end_page"
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:background="@drawable/textfield_selector_common"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="number"
+                    android:textColor="@color/cm_text_field"
+                    android:textColorHighlight="@color/cm_edit_text_highlight" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

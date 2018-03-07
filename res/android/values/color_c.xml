@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bc_common_bg">#FF000000</color>
+    <color name="bc_create_room_text_color">#FF646464</color>
+    <color name="bc_empty_text">#FF007CE9</color>
+	<color name="bc_not_connected_text">#FF3C3C3C</color>
+    <color name="bc_room_attendee_count_text_normal">#FF53A7F6</color>
+    <color name="bc_room_attendee_count_text_pressed">#FFFFFFFF</color>
+
+    <color name="cm_license_agree_btn_text_normal">#FFF5F5F5</color>
+    <color name="cm_license_agree_btn_text_pressed">#FFFFFFFF</color>
+    <color name="cm_license_agree_btn_text_selected">#FFFFFFFF</color>
+    <color name="cm_license_agree_btn_text_disabled">#FF606C74</color>
+    <color name="cm_license_info_bg">#FFE1E1E1</color>   
+    <color name="cm_license_info_text">#FF282828</color>
+    <color name="cm_license_info_line_bg">#FF606C74</color>
+    <color name="cm_popup_text">#FFFFFFFF</color>
+    <color name="cm_text_color_link">#FF57DDFF</color>
+    <color name="cm_user_register_text">#FF3C3C3C</color> <!-- //20130813 khchoi To apply GUI change from #FFF4F4F4 to #FF3C3C3C --> 
+    <color name="cm_user_register_link">#FF53A7F6</color> <!-- //20130813 khchoi To apply GUI change from #FF4AABFF to #FF53A7F6 --> 
+    <color name="cm_user_register_week">#FF3D3D3D</color> <!-- //20130813 khchoi To apply GUI change from #FFF4F4F4 to #FF3D3D3D --> 
+   
+   
+   	<color name="fm_office_guide_desc">#FF707070</color>
+   	<color name="fm_office_guide_new_feature">#FF0A2A63</color>
+   	<color name="fm_office_guide_summary">#FF299BFF</color>
+   
+	<color name="fm_file_select_actionbar_text">#FF414750</color>
+    <color name="fm_folder_path_normal">#FF6C7076</color>
+    <color name="fm_folder_path_pressed">#FFFFFFFF</color>
+    <color name="fm_folder_path_last_normal">#FF282828</color>
+    <color name="fm_folder_path_last_pressed">#FFFFFFFF</color>
+    <color name="fm_folder_tree_bg">#FFF5F5F5</color>
+    <color name="fm_folder_tree_divider">#FFC7CBCE</color>
+    <color name="fm_folder_tree_name_normal">#FF282828</color>
+    <color name="fm_folder_tree_name_pressed">#FFFFFFFF</color>
+    
+    <color name="fm_license_info_bg">#FFE1E1E1</color>
+
+    <color name="fm_template_file_blank">#FFDADADA</color>
+    <color name="fm_template_file_name">#FF646464</color>
+    
+    <color name="po_add_account_exist">#FFB4B9BC</color>
+    <color name="po_add_account_sync_background">#FF000000</color>
+    <color name="po_add_account_sync_divider">#FF303030</color>
+    <color name="po_add_account_sync_text_color">#FFFFFFFF</color>
+    <color name="po_cloud_sign_agree_text">#FF9CA6AD</color>
+    <color name="po_cloud_menu_text">#FFFFFFFF</color>
+    <color name="po_cloud_sign_text">#FF4794C8</color>
+    <color name="po_home_bg">#FFECEEF0</color>
+    <color name="po_home_no_recent_text">#FF3C3C3C</color>
+    <color name="po_home_icon_text">#FF1E1E1E</color>
+    <color name="po_home_cloud_divider">#FF575C5D</color>
+    <color name="po_home_file_name_normal">#FF1E1E1E</color>
+    <color name="po_home_file_name_pressed">#FFFFFFFF</color>
+    <color name="po_main_logo_bg">#FFF5F5F5</color>
+    <color name="po_navi_context_bg">#FF000000</color>
+    <color name="po_navi_sub_list_bg">#FF1B1D1F</color>
+    <color name="po_navi_sub_list_divider">#FF384785</color>
+    <color name="po_navi_title_list_divider">#FF373C44</color>
+    <color name="po_product_about_version">#FF53A7F6</color>
+    <color name="po_product_about_info">#FF3C3C3C</color>
+    <color name="po_setting_dialog_size_text">#FFB4B9BC</color>
+    <color name="po_terms_text">#FF005EC9</color>
+    
+</resources>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_common_bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/mainLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/content_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/anchor_pagebackground_urgency"
+                    style="@style/PanelAnchorTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/page_background_sub_title_height" />
+				<!-- //[2014.04.26][유선욱][TID:#823][JIRA:ICF-938] 특정 단말에서의 공간 부족으로 Code 상에서 Port/land Space 값 조절 추가. -->
+                <LinearLayout style="@style/PageBGWaterMark.LinearLayout" >
+
+                    <CheckBox
+                        android:id="@+id/water_mark_urgency_01"
+                        style="@style/PageBGWaterMark.CheckBox" />
+
+                    <Space
+                        android:id="@+id/space_01"
+                        style="@style/PageBGWaterMark.Space" />
+
+                    <CheckBox
+                        android:id="@+id/water_mark_urgency_02"
+                        style="@style/PageBGWaterMark.CheckBox" />
+
+                    <Space 
+                        android:id="@+id/space_02"
+                        style="@style/PageBGWaterMark.Space" />
+
+                    <CheckBox
+                        android:id="@+id/water_mark_urgency_03"
+                        style="@style/PageBGWaterMark.CheckBox" />
+
+                    <Space
+                        android:id="@+id/space_03"
+                        style="@style/PageBGWaterMark.Space" />
+
+                    <CheckBox
+                        android:id="@+id/water_mark_urgency_04"
+                        style="@style/PageBGWaterMark.CheckBox" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/anchor_pagebackground_restricted"
+                    style="@style/PanelAnchorTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/page_background_sub_title_height" />
+
+                <LinearLayout style="@style/PageBGWaterMark.LinearLayout" >
+
+                    <CheckBox
+                        android:id="@+id/water_mark_restricted_01"
+                        style="@style/PageBGWaterMark.CheckBox" />
+
+                    <Space
+                        android:id="@+id/space_04"
+                        style="@style/PageBGWaterMark.Space" />
+
+                    <CheckBox
+                        android:id="@+id/water_mark_restricted_02"
+                        style="@style/PageBGWaterMark.CheckBox" />
+
+                    <Space
+                        android:id="@+id/space_05"
+                        style="@style/PageBGWaterMark.Space" />
+
+                    <CheckBox
+                        android:id="@+id/water_mark_restricted_03"
+                        style="@style/PageBGWaterMark.CheckBox" />
+
+                    <Space
+                        android:id="@+id/space_06"
+                        style="@style/PageBGWaterMark.Space" />
+
+                    <CheckBox
+                        android:id="@+id/water_mark_restricted_04"
+                        style="@style/PageBGWaterMark.CheckBox" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/anchor_pagebackground_sample"
+                    style="@style/PanelAnchorTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/page_background_sub_title_height" />
+
+                <LinearLayout style="@style/PageBGWaterMark.LinearLayout" >
+
+                    <CheckBox
+                        android:id="@+id/water_mark_sample_01"
+                        style="@style/PageBGWaterMark.CheckBox" />
+
+                    <Space
+                        android:id="@+id/space_07"
+                        style="@style/PageBGWaterMark.Space" />
+
+                    <CheckBox
+                        android:id="@+id/water_mark_sample_02"
+                        style="@style/PageBGWaterMark.CheckBox" />
+
+                    <Space
+                        android:id="@+id/space_08"
+                        style="@style/PageBGWaterMark.Space" />
+
+                    <CheckBox
+                        android:id="@+id/water_mark_sample_03"
+                        style="@style/PageBGWaterMark.CheckBox" />
+
+                    <Space
+                        android:id="@+id/space_09"
+                        style="@style/PageBGWaterMark.Space" />
+
+                    <CheckBox
+                        android:id="@+id/water_mark_sample_04"
+                        style="@style/PageBGWaterMark.CheckBox" />
+                </LinearLayout>
+            </LinearLayout>
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.67dip"
+                android:layout_marginLeft="17dip"
+                android:layout_marginRight="17dip"
+                android:layout_marginBottom="7.67dip"
+                android:layout_marginTop="7.67dip"
+                android:background="@drawable/pagelayout_divider" />
+            
+            <LinearLayout
+                android:id="@+id/button_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dip"
+                android:layout_marginRight="17dip"
+                android:layout_marginBottom="15dip"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/user_watermark"
+                    android:layout_width="fill_parent"
+                    android:layout_height="41dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_default_selector_common"
+                    android:textColor="@color/btn_default_tcolor_selector"
+                    android:textSize="@dimen/page_background_button_text_size" />
+
+                <Space 
+                    android:id="@+id/port_space"
+                    android:layout_width="wrap_content"
+                    android:layout_height="7.33dip"/>
+                
+                <Space 
+                    android:id="@+id/land_space"
+                    android:layout_width="2.67dip"
+                    android:layout_height="wrap_content"/>
+                
+                <Button
+                    android:id="@+id/delete_watermark"
+                    android:layout_width="fill_parent"
+                    android:layout_height="41dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_default_selector_common"
+                    android:textColor="@color/btn_default_tcolor_selector"
+                    android:textSize="@dimen/page_background_button_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+        
+<LinearLayout
+    android:id="@+id/toc_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:orientation="horizontal" >
+
+    	<ImageView
+			android:id="@+id/toc_item_icon"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:paddingLeft="6.5dip"
+			android:paddingRight="7.5dip"
+			android:paddingTop="5.5dip"
+			android:paddingBottom="6dip"
+			android:scaleType="center" />
+	   
+		<TextView
+		    android:id="@+id/toc_item_text"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center_vertical"
+		    android:layout_weight="1"
+		    android:gravity="center_vertical"
+		    android:singleLine="true"
+		    android:textColor="@color/tree_item_tcolor_selector"
+		    android:textSize="16sp" />
+
+   		<ImageView
+            android:id="@+id/toc_item_list_move"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/btn_list_move"
+            android:visibility="gone" />
+     
+		<LinearLayout
+		    android:id="@+id/toc_item_check_layout"
+		    android:layout_width="48dp"
+		    android:layout_height="match_parent"
+		    android:gravity="center"
+		    android:visibility="gone">
+		 <CheckBox
+		     android:id="@+id/toc_item_check"
+		     android:layout_width="wrap_content"
+		     android:layout_height="match_parent"
+		     android:button="@drawable/checkbox_selector_pdf"
+		     android:visibility="visible"
+		     android:clickable="true"
+		     android:focusable="false"/>
+		</LinearLayout>
+
+</LinearLayout>
+
+</RelativeLayout>

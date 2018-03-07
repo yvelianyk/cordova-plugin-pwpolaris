@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center">
+	<LinearLayout
+		android:layout_width="250dp"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical">
+		<ProgressBar android:id="@+id/po_progress_circle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dp"
+			android:layout_marginTop="13.33dp"
+			android:layout_marginBottom="13.33dp"/>
+		<TextView android:id="@+id/po_progress_message"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dip"
+			android:layout_marginRight="10dip"
+			android:textSize="18sp"
+			android:text=""
+			android:singleLine="true"/>
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="right">
+		<TextView
+			android:id="@+id/po_progress_count"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="15dp"/>
+	</LinearLayout>
+	<ProgressBar android:id="@+id/po_progress_bar"
+		style="?android:attr/progressBarStyleHorizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="12dp"
+		android:layout_marginBottom="1dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dip" />
+	<ProgressBar android:id="@+id/po_progress_bar_sub"
+		style="?android:attr/progressBarStyleHorizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="12dp"
+		android:layout_marginBottom="1dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dip" />
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="left">
+		<TextView
+			android:id="@+id/po_progress_percent"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingBottom="12dp"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:singleLine="true"/>
+	</LinearLayout>
+</LinearLayout>

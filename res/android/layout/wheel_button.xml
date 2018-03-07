@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dip"
+    android:orientation="vertical"
+    android:padding="0dp" >
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/PanelCommonSubTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/panel_subtitle_h"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/wheel_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/panel_wheel_height"
+        android:layout_margin="0dip"
+        android:orientation="horizontal"
+        android:padding="0dp" >
+
+        <ImageButton
+            android:id="@+id/sb_prev"
+            android:layout_width="56.67dip"
+            android:layout_height="@dimen/panel_wheel_height"
+            android:layout_weight="0"
+            android:background="@drawable/wheel_btn_left_selector_common"
+            android:contentDescription="@string/cm_action_bar_prev_find" />
+
+        <LinearLayout
+            android:id="@+id/sb_gallery_layout"
+            android:layout_width="100dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/panel_icon_fontsize_wheelscroll"
+            android:padding="0dp" >
+
+            <com.infraware.common.widget.WheelScroll
+                android:id="@+id/sb_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_focused_selector"
+                android:padding="0dp" >
+
+                <LinearLayout
+                    android:id="@+id/wheel_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="0dp" >
+
+                    <com.infraware.common.widget.WheelView
+                        android:id="@+id/wheel_view"
+                        android:layout_width="100dip"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:padding="0dip" />
+                </LinearLayout>
+            </com.infraware.common.widget.WheelScroll>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/sb_next"
+            android:layout_width="56.67dip"
+            android:layout_height="@dimen/panel_wheel_height"
+            android:layout_weight="0"
+            android:background="@drawable/wheel_btn_right_selector_common"
+            android:contentDescription="@string/cm_action_bar_next_find" />
+    </LinearLayout>
+
+    <!--
+    <View
+          android:id="@+id/separate_line_01"
+          android:visibility="gone"
+          android:layout_width="match_parent"
+          android:layout_height="0.5dip"
+          android:layout_marginBottom="3.5dip"
+          android:layout_marginTop="3.5dip"
+          android:background="@drawable/img_divider_repeat" /> 
+	 
+	<View 
+	    android:id="@+id/endView"
+	    android:visibility="gone"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/panel_subtitle_margin_bottom_h"  
+	 />
+    -->
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="PanelCommonSubTitle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/panel_sub_title_tcolor</item>
+    </style>
+
+    <style name="AnimationPopup">
+         
+    	<item name="android:windowEnterAnimation">@anim/appear</item>
+   	 	<item name="android:windowExitAnimation">@anim/disappear</item> 
+    	
+    </style>
+    
+    <style name="CustomRightPopupAnimation">
+        <item name="android:windowEnterAnimation">@anim/custom_right_popup_show_anim_style</item>
+        <item name="android:windowExitAnimation">@anim/custom_right_popup_hide_anim_style</item>
+    </style>
+    
+    <style name="CustomLeftPopupAnimation">
+        <item name="android:windowEnterAnimation">@anim/custom_left_popup_show_anim_style</item>
+        <item name="android:windowExitAnimation">@anim/custom_left_popup_hide_anim_style</item>
+    </style>
+
+    <style name="CustomAlertDialogStyle" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowTitleStyle">@style/Theme.AlertDialog.Title</item>
+    	<item name="android:background">@android:color/transparent</item>  
+  		<item name="android:windowBackground">@android:color/transparent</item>
+  		<item name="android:borderlessButtonStyle">@style/BorderlessStyle</item>
+  		<item name="android:buttonBarStyle">@null</item>
+        <item name="android:dividerHorizontal">@null</item>
+ 	</style>
+ 	
+    <style name="Theme.AlertDialog.Title" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/cm_dialog_title</item>
+        <item name="android:background">@color/cm_white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+    
+    <style name="BorderlessStyle">
+        <item name="android:background">@drawable/cm_popup_btn_selector</item>
+    </style>
+</resources>

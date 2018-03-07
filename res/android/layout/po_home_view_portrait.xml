@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/RootView"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="@drawable/home_bg_repeat">
+	
+	<include layout="@layout/cm_action_title_bar" />
+	
+	<LinearLayout
+	    android:orientation="horizontal"
+	    android:id="@+id/filling_top_of_recent"
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1">
+	</LinearLayout>
+		
+	<LinearLayout
+	    android:id="@+id/home_recent"
+	    android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="@dimen/home_recent_pager_port_height">
+		<LinearLayout
+			android:id="@+id/home_no_recent"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:gravity="center"
+			android:orientation="vertical">
+			<ImageView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="6.67dp"
+				android:src="@drawable/img_no_contents">
+			</ImageView>
+			<TextView
+				android:id="@+id/home_no_recent_text"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_horizontal"
+				android:text="@string/fm_msg_no_recent"
+				android:textSize="16sp"
+				android:textColor="@color/po_home_no_recent_text">
+			</TextView>
+		</LinearLayout>
+		<android.support.v4.view.ViewPager
+			android:id="@+id/pager"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent" />
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1.04">
+	</LinearLayout>
+	
+	<LinearLayout android:id="@+id/recent_navigator"
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="10dp"
+		android:layout_gravity="bottom|center_horizontal">
+		
+		<LinearLayout android:id="@+id/ll_navi_01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1">
+			<ImageView android:id="@+id/navi_01"
+				android:layout_width="10dp"
+				android:layout_height="wrap_content"
+				android:src="@drawable/home_indicator_n">
+			</ImageView>
+		</LinearLayout>
+		
+		<LinearLayout
+		    android:id="@+id/ll_navi_spacer_01"
+		    android:orientation="horizontal"
+		    android:layout_width="5dip"
+		    android:layout_height="match_parent" />
+		
+		<LinearLayout android:id="@+id/ll_navi_02"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1">	
+			<ImageView android:id="@+id/navi_02"
+				android:layout_width="10dp"
+				android:layout_height="wrap_content"
+				android:src="@drawable/home_indicator_n">
+			</ImageView>
+		</LinearLayout>
+		
+		<LinearLayout
+		    android:id="@+id/ll_navi_spacer_02"
+		    android:orientation="horizontal"
+		    android:layout_width="5dip"
+		    android:layout_height="match_parent" />
+		
+		<LinearLayout android:id="@+id/ll_navi_03"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1">	
+			<ImageView android:id="@+id/navi_03"
+				android:layout_width="10dp"
+				android:layout_height="wrap_content"
+				android:src="@drawable/home_indicator_n">
+			</ImageView>
+		</LinearLayout>
+		
+		<LinearLayout
+		    android:id="@+id/ll_navi_spacer_03"
+		    android:orientation="horizontal"
+		    android:layout_width="5dip"
+		    android:layout_height="match_parent" />
+		
+		<LinearLayout android:id="@+id/ll_navi_04"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1">	
+			<ImageView android:id="@+id/navi_04"
+				android:layout_width="10dp"
+				android:layout_height="wrap_content"
+				android:src="@drawable/home_indicator_n">
+			</ImageView>
+		</LinearLayout>
+		
+		<LinearLayout
+		    android:id="@+id/ll_navi_spacer_04"
+		    android:orientation="horizontal"
+		    android:layout_width="5dip"
+		    android:layout_height="match_parent" />
+		
+		<LinearLayout android:id="@+id/ll_navi_05"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1">	
+			<ImageView android:id="@+id/navi_05"
+				android:layout_width="10dp"
+				android:layout_height="wrap_content"
+				android:src="@drawable/home_indicator_n">
+			</ImageView>
+		</LinearLayout>
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:orientation="horizontal"
+	    android:id="@+id/filling_bottom_of_navi"
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1.04">
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:orientation="horizontal"
+	    android:id="@+id/filling_bottom_up"
+		android:layout_width="match_parent"
+		android:layout_height="16.67dip" />
+	
+	<LinearLayout android:id="@+id/home_bottom"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:layout_gravity="bottom">
+	    
+	    <LinearLayout android:id="@+id/home_browser"
+	        android:orientation="vertical"
+	        android:layout_gravity="top"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:focusable="true"
+	        android:background="@drawable/home_bottom_ico_bg_selector">
+	        
+	        <ImageView
+				android:id="@+id/home_ico_browser"
+				android:layout_width="80dp"
+				android:layout_height="wrap_content"
+				android:focusable="false"
+				android:background="@color/transparent"
+				android:src="@drawable/home_ico_browser_selector"
+				/>
+	        
+	        <TextView
+				android:id="@+id/home_tv_browser"
+				android:layout_width="80dp"
+				android:layout_height="wrap_content"
+				android:focusable="false"
+				android:text="@string/po_title_browser"
+				android:textColor="@color/po_home_icon_text"
+				android:textSize="9sp"
+				android:gravity="center_horizontal|center_vertical">
+			</TextView>
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="10dip"
+	        android:layout_height="match_parent" />
+	    
+	    <LinearLayout android:id="@+id/home_types"
+	        android:orientation="vertical"
+	        android:layout_gravity="top"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:focusable="true"
+	        android:background="@drawable/home_bottom_ico_bg_selector">
+	        
+	        <ImageView
+				android:id="@+id/home_ico_types"
+				android:layout_width="80dp"
+				android:layout_height="wrap_content"
+				android:focusable="false"
+				android:background="@color/transparent"
+				android:src="@drawable/home_ico_documenttype_selector"
+				/>
+	        
+	        <TextView
+				android:id="@+id/home_tv_types"
+				android:layout_width="80dp"
+				android:layout_height="wrap_content"
+				android:focusable="false"
+				android:text="@string/po_title_types"
+				android:textColor="@color/po_home_icon_text"
+				android:textSize="9sp"
+				android:gravity="center_horizontal|center_vertical">
+			</TextView>
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="10dip"
+	        android:layout_height="match_parent" />
+	    
+	    <LinearLayout android:id="@+id/home_favorites"
+	        android:orientation="vertical"
+	        android:layout_gravity="top"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:focusable="true"
+	        android:background="@drawable/home_bottom_ico_bg_selector">
+	        
+	        <ImageView
+				android:id="@+id/home_ico_favorites"
+				android:layout_width="80dp"
+				android:layout_height="wrap_content"
+				android:focusable="false"
+				android:background="@color/transparent"
+				android:src="@drawable/home_ico_favorite_selector"
+				/>
+	        
+	        <TextView
+				android:id="@+id/home_tv_favorites"
+				android:layout_width="80dp"
+				android:layout_height="wrap_content"
+				android:focusable="false"
+				android:text="@string/po_title_favorite"
+				android:textColor="@color/po_home_icon_text"
+				android:textSize="9sp"
+				android:gravity="center_horizontal|center_vertical">
+			</TextView>
+	    </LinearLayout>
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:orientation="horizontal"
+	    android:id="@+id/filling_bottom"
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1.04" >
+	</LinearLayout>
+</LinearLayout>

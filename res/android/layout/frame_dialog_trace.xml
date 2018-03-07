@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dialog_memo_width"
+    android:layout_height="@dimen/dialog_memo_height"
+    android:background="@drawable/popup_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/popup_title"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="11dp"
+            android:paddingRight="11dp"
+            android:text="@string/word_trace_title"
+            android:textColor="#1e1e1e"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_width="192dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+            <ImageButton
+                android:id="@+id/trace_apply_btn"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ico_trace_applychange_selector" />
+            <ImageButton
+                android:id="@+id/trace_cancel_btn"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ico_trace_cancelchange_selector" />
+            <ImageButton
+                android:id="@+id/trace_prev_btn"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ico_memo_prev_selector" />
+            <ImageButton
+                android:id="@+id/trace_next_btn"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ico_memo_next_selector" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_marginTop="13dp"
+		android:paddingBottom="14dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="208dp"
+            android:background="@android:color/transparent"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/dialog_trace_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+				android:layout_marginLeft="14dp"
+				android:layout_marginRight="14dp"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:textColor="#3d3d3d"
+                android:textSize="14sp"
+                android:lineSpacingExtra="3dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

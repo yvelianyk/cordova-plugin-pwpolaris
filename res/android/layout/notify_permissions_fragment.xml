@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:gravity="center_vertical|center_horizontal"
+	android:background="@drawable/acs_popup_bg"
+	android:paddingTop="26dp"
+	android:paddingBottom="21dp"
+	android:paddingLeft="20dp"
+	android:paddingRight="20dp" >
+	
+    <LinearLayout
+        android:id="@+id/permission_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+	
+	    <LinearLayout
+	        android:orientation="vertical"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="25.3" >
+	        
+	        <ImageView
+		        android:layout_width="wrap_content"
+		        android:layout_height="48dp"
+		        android:layout_gravity="center_vertical|center_horizontal"
+		        android:src="@drawable/acs_logo" />
+	    
+	         <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="14.4" />
+	         
+		    <TextView
+		        android:id="@+id/acs_message_top"
+		        android:layout_width="match_parent"
+		        android:layout_height="51dp"
+		        android:text="@string/str_permission_noti1"
+		        android:textSize="14sp"
+		        android:textColor="#555555"
+		        android:gravity="center_vertical|center_horizontal" />
+		    
+		    <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="17.8" />
+	        
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:orientation="vertical"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="47.5" >
+		    
+	        <ScrollView
+			    android:id="@+id/acs_permissions"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent" >
+			    
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:orientation="vertical" >
+			        
+			        <LinearLayout
+			            android:layout_width="match_parent"
+			            android:layout_height="39dp" />
+			        
+				    <LinearLayout
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:orientation="horizontal" >
+				        
+				        <ImageView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:paddingRight="15dp"
+				            android:paddingLeft="0dp"
+				            android:src="@drawable/acs_logo_storage" />
+				        
+				        <LinearLayout
+					        android:layout_width="match_parent"
+					        android:layout_height="match_parent"
+					        android:orientation="vertical"
+					        android:paddingTop="7dp"
+					        android:paddingBottom="7dp" >
+					        
+					        <TextView
+					            android:layout_width="match_parent"
+					            android:layout_height="19dp"
+					            android:text="@string/str_permission_storage_title"
+					            android:textSize="16sp"
+					            android:textColor="#1d7ff9"
+					            android:textStyle="bold"
+					            android:textAllCaps="true"
+					            android:gravity="center_vertical" />
+					        
+					        <LinearLayout
+					            android:layout_width="match_parent"
+					            android:layout_height="3dp" />
+					        
+					        <TextView
+					            android:layout_width="match_parent"
+					            android:layout_height="34dp"
+					            android:text="@string/str_permission_storage_message"
+					            android:textSize="14sp"
+					            android:textColor="#555555"
+					            android:gravity="top" />
+				        </LinearLayout>
+			        </LinearLayout>
+			        
+				    <LinearLayout
+				        android:layout_width="match_parent"
+				        android:layout_height="37dp" />
+			        
+				    <LinearLayout
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:orientation="horizontal" >
+				        
+				        <ImageView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:paddingRight="15dp"
+				            android:src="@drawable/acs_logo_camera" />
+				        
+				        <LinearLayout
+					        android:layout_width="match_parent"
+					        android:layout_height="match_parent"
+					        android:orientation="vertical"
+					        android:paddingTop="7dp"
+					        android:paddingBottom="7dp" >
+					        
+					        <TextView
+					            android:layout_width="match_parent"
+					            android:layout_height="19dp"
+					            android:text="@string/dm_camera"
+					            android:textSize="16sp"
+					            android:textColor="#1d7ff9"
+					            android:textStyle="bold"
+					            android:textAllCaps="true"
+					            android:gravity="center_vertical" />
+		
+					        
+					        <LinearLayout
+					            android:layout_width="match_parent"
+					            android:layout_height="3dp" />
+					        
+					        <TextView
+					            android:layout_width="match_parent"
+					            android:layout_height="34dp"
+					            android:text="@string/str_permission_camera_message"
+					            android:textSize="14sp"
+					            android:textColor="#555555"
+					            android:gravity="top" />
+				        </LinearLayout>
+				    </LinearLayout>
+				    
+				    <LinearLayout
+			            android:layout_width="match_parent"
+			            android:layout_height="58dp" />
+			    </LinearLayout>
+			</ScrollView>
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:orientation="vertical"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="27.2" >
+		
+			<LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="0dp"
+			    android:layout_weight="13.4" />
+			
+			<TextView
+			    android:layout_width="match_parent"
+			    android:layout_height="51dp"
+			    android:text="@string/str_permission_noti2"
+			    android:textSize="14sp"
+		        android:textColor="#555555"
+		        android:gravity="center_vertical|center_horizontal" />
+			
+			<LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="0dp"
+			    android:layout_weight="23.6" />
+			
+			<LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="48dp"
+			    android:gravity="center_vertical|center_horizontal"
+			    android:orientation="horizontal" >
+			    
+			    <Button
+			        android:id="@+id/go_setting"
+			        android:layout_width="0dp"
+			        android:layout_height="match_parent"
+			        android:layout_weight="47.5"
+			        android:background="@drawable/acs_btn_setting_selector"
+			        android:text="@string/cm_btn_setting"
+			        android:textSize="17sp"
+			        android:textColor="#506e93"
+			        android:gravity="center_vertical|center_horizontal" />
+			    
+			    <LinearLayout
+			        android:layout_width="0dp"
+			        android:layout_weight="5"
+			        android:layout_height="match_parent" />
+			    
+			    <Button
+			        android:id="@+id/allow"
+			        android:layout_width="0dp"
+			        android:layout_height="match_parent"
+			        android:layout_weight="47.5"
+			        android:background="@drawable/acs_btn_permit_selector"
+			        android:text="@string/cm_btn_allow"
+			        android:textSize="17sp"
+			        android:textColor="#ffffff"
+			        android:gravity="center_vertical|center_horizontal" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

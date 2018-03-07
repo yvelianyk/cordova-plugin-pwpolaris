@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="42.67dip">
+    
+  	
+ 	<TextView android:id="@+id/text_orientationList_item"
+	    android:layout_width="fill_parent"
+	    android:layout_height="42.67dip"
+	   	android:layout_marginLeft="10dip"   
+		android:textSize="18.67sp"
+		android:textColor="@color/cm_list_item_main_tcolor"
+		android:gravity="left|center_vertical"/>
+		
+    <!--
+    <LinearLayout
+	  	android:layout_width="wrap_content"
+	  	android:layout_height="64dip"
+	  	android:gravity="center_vertical">
+	    <TextView 
+	    	android:id="@+id/text_key"
+	        android:layout_width="160dip"
+	        android:layout_height="wrap_content"
+	        android:textColor="#323b4a"
+	        android:textSize="20sp"
+	        android:textStyle="bold" />
+	
+	    <TextView android:id="@+id/text_sortby"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"   
+	        android:textColor="#323b4a" 
+	        android:textSize="15sp" />
+	</LinearLayout>
+	
+	<LinearLayout
+		android:layout_width="wrap_content"
+	  	android:layout_height="64dip"
+	    android:gravity="center_vertical"
+	  	android:layout_alignParentRight="true" >
+			<ImageView android:id="@+id/img_list_nextmove"
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:layout_margin="10dip"
+				android:background="@drawable/ico_list_nextmove"/>
+	</LinearLayout>
+	-->
+	
+</RelativeLayout>

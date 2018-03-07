@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/move_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/title_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="48.00dip"
+            android:background="@drawable/title_bg_common" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/move_next_button"
+                    android:layout_width="48dip"
+                    android:layout_height="48.00dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/actionbar_ico_bg"
+                    android:contentDescription="@string/cm_action_bar_next_find"
+                    android:longClickable="true"
+                    android:padding="4.00dip"
+                    android:src="@drawable/actionbar_next" >
+                </ImageButton>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toLeftOf="@id/move_next_button"
+                    android:orientation="horizontal" >
+
+                    <com.infraware.polarisoffice6.common.ExEditText
+                        android:id="@+id/move_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="40.00dip"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="4.00dip"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="4.33dip"
+                        android:layout_marginTop="4.00dip"
+                        android:background="@drawable/textfield_selector_common"
+                        android:imeOptions="actionDone|flagNoExtractUi"
+                        android:maxLength="40"
+                        android:paddingLeft="11.50dip"
+                        android:paddingRight="11.50dip"
+                        android:singleLine="true"
+                        android:textColor="@color/cm_edit_text_normal"
+                        android:textColorHighlight="@color/cm_edit_text_highlight"
+                        android:textColorHint="@color/cm_edit_text_hint"
+                        android:textCursorDrawable="@null" />
+
+                    <com.infraware.common.control.textfielddelete.DeleteImageButton
+                        android:id="@+id/move_delete_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="3.33dp"
+                        android:background="@drawable/textfield_delete"
+                        android:contentDescription="@string/cm_btn_delete"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>     
+    </LinearLayout>
+
+</merge>

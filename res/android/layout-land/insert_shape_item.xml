@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="48.00dip"
+    android:paddingBottom="6.00dip"
+    android:paddingLeft="25.00dip"
+    android:paddingRight="25.00dip"
+    android:paddingTop="6.00dip" >
+
+    <ImageButton
+        android:id="@+id/insert_shape_imagebutton1"
+        android:layout_width="50.00dip"
+        android:layout_height="48.00dip"
+        android:background="@drawable/panel_item_bg_selector_common"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+
+    <ImageButton
+        android:id="@+id/insert_shape_imagebutton2"
+        android:layout_width="50.00dip"
+        android:layout_height="48.00dip"
+        android:background="@drawable/panel_item_bg_selector_common"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+
+    <ImageButton
+        android:id="@+id/insert_shape_imagebutton3"
+        android:layout_width="50.00dip"
+        android:layout_height="48.00dip"
+        android:background="@drawable/panel_item_bg_selector_common"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+
+    <ImageButton
+        android:id="@+id/insert_shape_imagebutton4"
+        android:layout_width="50.00dip"
+        android:layout_height="48.00dip"
+        android:background="@drawable/panel_item_bg_selector_common"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+
+    <ImageButton
+        android:id="@+id/insert_shape_imagebutton5"
+        android:layout_width="50.00dip"
+        android:layout_height="48.00dip"
+        android:background="@drawable/panel_item_bg_selector_common"
+        android:scaleType="centerCrop" />
+    
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+
+    <ImageButton
+        android:id="@+id/insert_shape_imagebutton6"
+        android:layout_width="50.00dip"
+        android:layout_height="48.00dip"
+        android:background="@drawable/panel_item_bg_selector_common"
+        android:scaleType="centerCrop" />
+    
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+
+    <ImageButton
+        android:id="@+id/insert_shape_imagebutton7"
+        android:layout_width="50.00dip"
+        android:layout_height="48.00dip"
+        android:background="@drawable/panel_item_bg_selector_common"
+        android:scaleType="centerCrop" />
+    
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+
+    <ImageButton
+        android:id="@+id/insert_shape_imagebutton8"
+        android:layout_width="50.00dip"
+        android:layout_height="48.00dip"
+        android:background="@drawable/panel_item_bg_selector_common"
+        android:scaleType="centerCrop" />
+
+</LinearLayout>

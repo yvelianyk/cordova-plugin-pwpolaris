@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/neonMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical"
+        android:orientation="vertical" >
+
+        <com.infraware.polarisoffice6.panel.kit.CommonPanelColor
+            android:id="@+id/neonColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.infraware.common.widget.WheelButton
+            android:id="@+id/neonSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical" />
+    </LinearLayout>
+
+</LinearLayout>

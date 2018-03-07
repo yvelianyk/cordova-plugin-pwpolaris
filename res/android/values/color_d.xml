@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="actionbar_button_disable">#FF797f81</color>
+    <color name="actionbar_button_normal">#FFFFFFFF</color>
+    <color name="actionbar_button_pressed">#FFFFFFFF</color>
+    
+    
+    <color name="cm_menu_list_divider">#FFEBEBEB</color>
+    <color name="cm_white">#ffffff</color>
+    <color name="color_pressed">#FF05EDE7</color>
+    <color name="common_colorpicker_rgb_text_color">#646464</color>
+    <color name="common_default_btn_text_default">#ff282828</color>
+    <color name="common_default_btn_text_disabled">#ffc8c8c8</color>
+    <color name="common_default_btn_text_pressed">#ffffffff</color>
+    <color name="common_default_btn_text_selected">#ffffffff</color>
+    <color name="common_edit_panel_divider2">#c2c2c2</color> <!-- //20130817 khchoi To change pendraw option from #cccccc to #c2c2c2-->
+    <color name="common_inputbox_text_disabled">#b3b3b3</color>
+    <color name="common_inputbox_text_focused">#2c2c2c</color>
+    <color name="common_inputbox_text_selected">#2c2c2c</color>
+    <color name="common_inputbox_text_pressed">#2c2c2c</color>
+    <color name="common_inputbox_text_default">#2c2c2c</color>
+    <color name="common_keypad_bg_darker">#e5e5e5</color>
+	
+    <color name="dictionary_BG">#FFFAFAFA</color>
+    <color name="dlg_divideline_color">#434A51</color>
+    
+    <color name="marker_color01">#FF000000</color>
+    <color name="marker_color02">#FFC00000</color>
+    <color name="marker_color03">#FFFFC000</color>
+    <color name="marker_color04">#FF00B050</color>
+    <color name="marker_color05">#FF1345AA</color>
+    <color name="marker_color06">#FF7030A0</color>
+    <color name="marker_color07">#FFFFFFFF</color>
+    <color name="marker_color08">#FFFF0000</color>
+    <color name="marker_color09">#FFFFFF00</color>
+    <color name="marker_color10">#FF92D050</color>
+    <color name="marker_color11">#FF0070C0</color>
+
+    <color name="po_listitem_checkbox_text_color_normal">#FF3C3C3C</color>
+    <color name="po_listitem_checkbox_text_color_pressed">#FF3C3C3C</color>
+    <color name="po_listitem_checkbox_text_color_disabled">#FFBEBEBE</color>
+    
+    <color name="slide_marker_color_imageview_border">#FF3C3C3C</color>
+    <color name="slide_marker_preview_border">#FFBEBEBE</color>
+    
+    <color name="list_view_dialog_divider">#cccccc</color>
+    <color name="common_base_list_item_text">#FF000000</color>
+    <color name="panel_cm_sub_title_text">#FF282828</color>
+    
+    <color name="sheet_function_okbtn_text_disabled">#b4b4b4</color>
+    <color name="sheet_insertcell_text_disabled">#ff364553</color>
+    <color name="sheet_insertcell_text_focused">#ffffff</color>
+    <color name="sheet_insertcell_text_selected">#ffffff</color>
+    <color name="sheet_insertcell_text_pressed">#ffffff</color>
+    <color name="sheet_insertcell_text_default">#ffffff</color> 
+    <color name="panel_button_text_pressed">#4c83b3</color>
+    
+    <!-- dark red -->
+    <color name="colorpalette_03">#FFc00000</color>
+    
+    <color name="spin_selected_text_normal">#ff1184e6</color>
+    <color name="spin_selected_text_disabled">#ffccdef8</color>
+    
+    <color name="inline_popup_more_list_line">#ff415165</color> 
+    <color name="cm_dictionary_main_background">#FFF5F5f5</color>
+    
+    <color name="cm_dialog_title">#1e1e1e</color>
+    <color name="cm_dialog_title_border_line">#c8c8c8</color>
+</resources>

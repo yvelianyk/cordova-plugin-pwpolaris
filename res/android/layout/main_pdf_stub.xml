@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.infraware.common.event.OfficeRootFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/root_view"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent" >
+
+   <com.infraware.office.baseframe.MainLinearLayout
+       android:id="@+id/mainLayout"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:background="@color/doc_bg_color"
+       android:orientation="vertical" >
+
+       <LinearLayout
+           android:id="@+id/main_actionbar_layout"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal" >
+       </LinearLayout>
+
+       <LinearLayout
+           android:id="@+id/actiontitlebar_layout"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal" >
+       </LinearLayout>
+
+       <include layout="@layout/bc_action_title_bar" />
+
+       <LinearLayout
+           android:id="@+id/po_broadcast_info"
+           android:layout_width="fill_parent"
+           android:layout_height="40dp"
+           android:layout_alignParentTop="true"
+           android:background="@drawable/titlesub_bg_n"
+           android:visibility="gone" >
+
+           <TextView
+               android:id="@+id/po_broadcast_info_text"
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:gravity="center"
+               android:text="@string/bc_msg_attendee"
+               android:textColor="@color/bc_title_info_text"
+               android:textSize="12sp" />
+       </LinearLayout>
+
+       <include layout="@layout/findbar" />
+
+       <include layout="@layout/common_move" />
+
+       <LinearLayout
+           android:id="@+id/docViewLayoutParent"
+           android:layout_width="fill_parent"
+           android:layout_height="0px"
+           android:layout_weight="1"
+           android:gravity="bottom" >
+
+           <RelativeLayout
+               android:id="@+id/docViewLayoutLeft"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" >
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:id="@+id/docViewLayoutRight"
+               android:layout_width="0px"
+               android:layout_height="fill_parent"
+               android:layout_weight="1"
+               android:gravity="right" >
+
+               <LinearLayout
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:gravity="bottom"
+                   android:orientation="vertical"
+                   android:visibility="visible" >
+
+                   <RelativeLayout
+                       android:id="@+id/docViewLayout"
+                       android:layout_width="fill_parent"
+                       android:layout_height="0px"
+                       android:layout_weight="1"
+                       android:background="@color/doc_bg_color"
+                       android:gravity="bottom" >
+
+                       <FrameLayout
+                           android:id="@+id/EvBaseViewLayout"
+                           android:layout_width="fill_parent"
+                           android:layout_height="fill_parent" >
+
+                           <com.infraware.office.docview.EvBaseView
+                               android:id="@+id/EvBaseView"
+                               android:layout_width="fill_parent"
+                               android:layout_height="fill_parent" />
+
+                           <ImageView
+                               android:id="@+id/EvBaseView_dummy_imgview"
+                               android:layout_width="fill_parent"
+                               android:layout_height="fill_parent"
+                               android:visibility="gone" />
+                       </FrameLayout>
+                       
+                       <com.infraware.sdk.UserWaterMarkImageView android:id="@+id/userWaterMarkImageView"
+						    android:layout_width="fill_parent"
+							android:layout_height="fill_parent"
+						    android:visibility="gone"
+						    />
+
+                       <com.infraware.office.docview.view.PointerDrawView
+                           android:id="@+id/pointer_draw_view"
+                           android:layout_width="fill_parent"
+                           android:layout_height="fill_parent"
+                           android:clickable="true"
+                           android:visibility="gone" />
+
+                       <FrameLayout
+                           android:id="@+id/pageinfo"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_alignParentLeft="true"
+                           android:layout_alignParentTop="true"
+                           android:layout_marginLeft="10dp"
+                           android:layout_marginTop="10dp"
+                           android:visibility="invisible" >
+                       </FrameLayout>
+
+                       <FrameLayout
+                           android:id="@+id/transform_info"
+                           android:layout_width="@dimen/transform_info_width"
+                           android:layout_height="wrap_content"
+                           android:layout_centerHorizontal="true"
+                           android:layout_marginTop="10dip"
+                           android:visibility="gone" >
+                       </FrameLayout>
+
+                       <FrameLayout
+                           android:id="@+id/shape_drawing_layout"
+                           android:layout_width="fill_parent"
+                           android:layout_height="fill_parent"
+                           android:visibility="gone" />
+
+                        <ImageButton
+                            android:id="@+id/page_thumbnail_open_close_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="5.00dip"
+                            android:background="@null"
+                            android:contentDescription="@string/popup_str_slide_hide"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/slidemanage_open_btn_image"
+                            android:visibility="gone" />
+                       
+                   </RelativeLayout>
+
+                   <LinearLayout
+                       android:id="@+id/page_thumbnail"
+                       android:layout_width="fill_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal"
+                       android:visibility="gone" />
+                   
+				<ViewStub
+				    android:id="@+id/stub_pdf_annot_view"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:inflatedId="@+id/pdf_annot_view"
+				    android:layout="@layout/layout_pdf_annot_view" 
+				    />
+
+				<ViewStub
+				    android:id="@+id/stub_pdf_annot_property"
+				    android:layout_width="fill_parent"
+				    android:layout_height="300dp"
+				    android:inflatedId="@+id/pdf_annot_property"
+				    android:layout="@layout/pdf_property" 
+				    />
+               </LinearLayout>
+           </RelativeLayout>
+       </LinearLayout>
+       
+       <FrameLayout
+           android:id="@+id/dic_search_panel"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:visibility="gone" />
+       
+   </com.infraware.office.baseframe.MainLinearLayout>
+<!--  
+   <com.infraware.polarisoffice6.common.marker.MarkerOptionsView
+       android:id="@+id/freedraw_marker_option"
+       android:layout_width="264.67dip"
+       android:layout_height="268.67dip"
+       android:layout_gravity="left|bottom"
+       android:layout_marginBottom="45.33dip"
+       android:layout_marginLeft="13.33dip"
+       android:background="@drawable/slide_btn_popup_bg"
+       android:visibility="gone" />
+-->
+
+   <!-- //20130817 khchoi To change pendraw option [start] -->
+
+   <com.infraware.common.widget.marker.PenDrawOptionsView
+       android:id="@+id/freedraw_pendraw_option"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="left|top"
+		android:layout_marginTop="48.00dp"
+       android:background="@drawable/popover_bg"
+       android:visibility="gone" />
+
+   <LinearLayout
+       android:id="@+id/broadcast_mode_option"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="1dp"
+       android:layout_marginTop="50.67dp"
+       android:gravity="center"
+       android:orientation="horizontal"
+       android:visibility="gone" >
+
+       <ImageView
+           android:id="@+id/broadcast_mode_normal"
+           android:layout_width="60.00dip"
+           android:layout_height="41.00dp"
+           android:background="@drawable/cm_btn_multiple_left_disselectable_selector"
+           android:contentDescription="@string/dm_slide"
+           android:onClick="onButtonClick"
+           android:src="@drawable/slideshow_mode_btn_slide_selector" />
+
+       <ImageView
+           android:id="@+id/broadcast_mode_pointer"
+           android:layout_width="60.00dip"
+           android:layout_height="41.00dp"
+           android:background="@drawable/cm_btn_multiple_center_disselectable_selector"
+           android:contentDescription="@string/string_free_drawing_pointer"
+           android:onClick="onButtonClick"
+           android:src="@drawable/slideshow_mode_btn_pointer_selector" />
+
+       <com.infraware.common.widget.marker.MarkerModeImageView
+           android:id="@+id/broadcast_mode_marker"
+           android:layout_width="60.00dip"
+           android:layout_height="41.00dp"
+           android:background="@drawable/cm_btn_multiple_center_disselectable_selector"
+           android:contentDescription="@string/cm_action_bar_pen"
+           android:onClick="onButtonClick"
+           android:src="@drawable/slideshow_mode_btn_pen_selector" />
+
+       <FrameLayout
+           android:id="@+id/broadcast_mode_ink_view"
+           android:layout_width="60.00dip"
+           android:layout_height="41.00dp" >
+
+           <ImageView
+               android:id="@+id/broadcast_mode_ink"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="@drawable/btn_multi_right_selector_pdf"
+               android:contentDescription="@string/string_free_drawing_pointer"
+               android:onClick="onButtonClick"
+               android:src="@drawable/slideshow_mode_btn_inkonoff_selector" />
+
+           <ImageView
+               android:id="@+id/broadcast_mode_ink_onoff"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="top|right"
+               android:layout_marginRight="3dp"
+               android:layout_marginTop="3.67dp"
+               android:background="@drawable/ico_showpen_on" />
+       </FrameLayout>
+   </LinearLayout>
+
+   <LinearLayout
+       android:id="@+id/broadcast_pointer_option"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="48.00dp"
+       android:background="@drawable/popover_bg"
+       android:gravity="center"
+       android:orientation="horizontal"
+       android:visibility="gone" >
+
+       <com.infraware.common.widget.marker.MarkerColorImageView
+           android:id="@+id/broadcast_pointer_color01"
+           android:layout_width="39.33dip"
+           android:layout_height="38.67dip"
+           android:layout_marginBottom="5.00dip"
+           android:layout_marginLeft="5.00dip"
+           android:layout_marginRight="3.00dip"
+           android:layout_marginTop="5.00dip"
+           android:contentDescription=" "
+           android:onClick="onButtonClick" />
+
+       <com.infraware.common.widget.marker.MarkerColorImageView
+           android:id="@+id/broadcast_pointer_color02"
+           android:layout_width="39.33dip"
+           android:layout_height="38.67dip"
+           android:layout_marginBottom="5.00dip"
+           android:layout_marginRight="3.00dip"
+           android:layout_marginTop="5.00dip"
+           android:contentDescription=" "
+           android:onClick="onButtonClick" />
+
+       <com.infraware.common.widget.marker.MarkerColorImageView
+           android:id="@+id/broadcast_pointer_color03"
+           android:layout_width="39.33dip"
+           android:layout_height="38.67dip"
+           android:layout_marginBottom="5.00dip"
+           android:layout_marginRight="3.00dip"
+           android:layout_marginTop="5.00dip"
+           android:contentDescription=" "
+           android:onClick="onButtonClick" />
+
+       <com.infraware.common.widget.marker.MarkerColorImageView
+           android:id="@+id/broadcast_pointer_color04"
+           android:layout_width="39.33dip"
+           android:layout_height="38.67dip"
+           android:layout_marginBottom="5.00dip"
+           android:layout_marginRight="3.00dip"
+           android:layout_marginTop="5.00dip"
+           android:contentDescription=" "
+           android:onClick="onButtonClick" />
+
+       <com.infraware.common.widget.marker.MarkerColorImageView
+           android:id="@+id/broadcast_pointer_color05"
+           android:layout_width="39.33dip"
+           android:layout_height="38.67dip"
+           android:layout_marginBottom="5.00dip"
+           android:layout_marginRight="5.00dip"
+           android:layout_marginTop="5.00dip"
+           android:contentDescription=" "
+           android:onClick="onButtonClick" />
+   </LinearLayout>
+
+</com.infraware.common.event.OfficeRootFrameLayout>

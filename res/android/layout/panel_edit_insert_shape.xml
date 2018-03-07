@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- //20130818 khchoi To change edit panel gui [start] -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel_edit_body_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/base_common_bg"
+    android:orientation="vertical" >
+
+    <com.infraware.polarisoffice6.panel.EditPanelBodyScrollView
+        android:id="@+id/panel_edit_scroll_view"
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:id="@+id/panel_edit_content_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <!-- content start -->
+                <!-- //[2013.11.21][최경호] To debug shape item focus about bt key -->
+
+                <LinearLayout
+                    android:id="@+id/recent_layer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/anchor_insert_shape_recent"
+                        style="@style/PanelAnchorTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/panel_subtitle_h"
+                        android:text="@string/dm_shape_used" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/insert_shape_h"
+                        android:layout_marginBottom="@dimen/insert_shape_margin_top_bottom"
+                        android:layout_marginLeft="10.67dip"
+                        android:layout_marginRight="11dip"
+                        android:layout_marginTop="@dimen/insert_shape_margin_top_bottom"
+                        android:orientation="horizontal" >
+                        <ImageButton
+                            android:id="@+id/recent_01"
+                            android:layout_width="@dimen/insert_shape_w"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/panel_item_bg_selector_common"
+                            android:clickable="true"
+                            android:visibility="invisible" />
+
+                        <View
+                            android:layout_width="8dp"
+                            android:layout_height="match_parent" />
+
+                        <ImageButton
+                            android:id="@+id/recent_02"
+                            android:layout_width="@dimen/insert_shape_w"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/panel_item_bg_selector_common"
+                            android:clickable="true"
+                            android:visibility="invisible" />
+
+                        <View
+                            android:layout_width="8dp"
+                            android:layout_height="match_parent" />
+
+                        <ImageButton
+                            android:id="@+id/recent_03"
+                            android:layout_width="@dimen/insert_shape_w"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/panel_item_bg_selector_common"
+                            android:clickable="true"
+                            android:visibility="invisible" />
+
+                        <View
+                            android:layout_width="8dp"
+                            android:layout_height="match_parent" />
+
+                        <ImageButton
+                            android:id="@+id/recent_04"
+                            android:layout_width="@dimen/insert_shape_w"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/panel_item_bg_selector_common"
+                            android:clickable="true"
+                            android:visibility="invisible" />
+
+                        <View
+                            android:layout_width="8dp"
+                            android:layout_height="match_parent" />
+
+                        <ImageButton
+                            android:id="@+id/recent_05"
+                            android:layout_width="@dimen/insert_shape_w"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/panel_item_bg_selector_common"
+                            android:clickable="true"
+                            android:visibility="invisible" />
+
+                        <View
+                            android:layout_width="8dp"
+                            android:layout_height="match_parent" />
+
+                        <ImageButton
+                            android:id="@+id/recent_06"
+                            android:layout_width="@dimen/insert_shape_w"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/panel_item_bg_selector_common"
+                            android:clickable="true"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/anchor_insert_shape"
+                    style="@style/PanelAnchorTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/panel_subtitle_h"
+                    android:text="@string/dm_shape" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:background="@color/panel_insert_shape_shortcut_background"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dip"
+                    android:paddingTop="5dip" >
+
+                    <ImageButton
+                        android:id="@+id/showcut_01"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:clickable="true"
+                        android:src="@drawable/ico_shortcut_shape_01" />
+
+                    <ImageButton
+                        android:id="@+id/showcut_02"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:clickable="true"
+                        android:src="@drawable/ico_shortcut_shape_02" />
+
+                    <ImageButton
+                        android:id="@+id/showcut_03"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:clickable="true"
+                        android:src="@drawable/ico_shortcut_shape_03" />
+
+                    <ImageButton
+                        android:id="@+id/showcut_04"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:clickable="true"
+                        android:src="@drawable/ico_shortcut_shape_04" />
+
+                    <ImageButton
+                        android:id="@+id/showcut_05"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:clickable="true"
+                        android:src="@drawable/ico_shortcut_shape_05" />
+
+                    <ImageButton
+                        android:id="@+id/showcut_06"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:clickable="true"
+                        android:src="@drawable/ico_shortcut_shape_06" />
+
+                    <ImageButton
+                        android:id="@+id/showcut_07"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:clickable="true"
+                        android:src="@drawable/ico_shortcut_shape_07" />
+
+                    <ImageButton
+                        android:id="@+id/showcut_08"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:clickable="true"
+                        android:src="@drawable/ico_shortcut_shape_08" />
+
+                    <ImageButton
+                        android:id="@+id/showcut_09"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:clickable="true"
+                        android:src="@drawable/ico_shortcut_shape_09" />
+                </LinearLayout>
+
+                <com.infraware.polarisoffice6.common.SymbolGridView
+                    android:id="@+id/grid_shape_line"
+                    style="@style/ShapeSymbolGridView"
+                    android:layout_marginTop="@dimen/insert_shape_margin_top_bottom" />
+
+                <LinearLayout style="@style/ShapeInsertDividerLinearlayout" >
+
+                    <include layout="@layout/cm_panel_divider" />
+                </LinearLayout>
+
+                <com.infraware.polarisoffice6.common.SymbolGridView
+                    android:id="@+id/grid_shape_rectangle"
+                    style="@style/ShapeSymbolGridView" />
+
+                <LinearLayout style="@style/ShapeInsertDividerLinearlayout" >
+
+                    <include layout="@layout/cm_panel_divider" />
+                </LinearLayout>
+
+                <com.infraware.polarisoffice6.common.SymbolGridView
+                    android:id="@+id/grid_shape_basic"
+                    style="@style/ShapeSymbolGridView" />
+
+                <LinearLayout style="@style/ShapeInsertDividerLinearlayout" >
+
+                    <include layout="@layout/cm_panel_divider" />
+                </LinearLayout>
+
+                <com.infraware.polarisoffice6.common.SymbolGridView
+                    android:id="@+id/grid_shape_arrow"
+                    style="@style/ShapeSymbolGridView" />
+
+                <LinearLayout style="@style/ShapeInsertDividerLinearlayout" >
+
+                    <include layout="@layout/cm_panel_divider" />
+                </LinearLayout>
+
+                <com.infraware.polarisoffice6.common.SymbolGridView
+                    android:id="@+id/grid_shape_formulra"
+                    style="@style/ShapeSymbolGridView" />
+
+                <LinearLayout 
+                    android:id="@+id/last_formulra_divider"
+                    style="@style/ShapeInsertDividerLinearlayout" >
+
+                    <include layout="@layout/cm_panel_divider" />
+                </LinearLayout>
+
+                <com.infraware.polarisoffice6.common.SymbolGridView
+                    android:id="@+id/grid_shape_flow"
+                    style="@style/ShapeSymbolGridView" />
+
+                <LinearLayout 
+                    android:id="@+id/last_flow_divider"
+                    style="@style/ShapeInsertDividerLinearlayout" >
+
+                    <include layout="@layout/cm_panel_divider" />
+                </LinearLayout>
+
+                <com.infraware.polarisoffice6.common.SymbolGridView
+                    android:id="@+id/grid_shape_banner"
+                    style="@style/ShapeSymbolGridView" />
+
+                <LinearLayout 
+                    android:id="@+id/last_banner_divider"
+                    style="@style/ShapeInsertDividerLinearlayout" >
+
+                    <include layout="@layout/cm_panel_divider" />
+                </LinearLayout>
+
+                <com.infraware.polarisoffice6.common.SymbolGridView
+                    android:id="@+id/grid_shape_explanation"
+                    style="@style/ShapeSymbolGridView" />
+
+                <LinearLayout 
+                    android:id="@+id/last_explanation_divider"
+                    style="@style/ShapeInsertDividerLinearlayout" >
+
+                    <include layout="@layout/cm_panel_divider" />
+                </LinearLayout>
+
+                <com.infraware.polarisoffice6.common.SymbolGridView
+                    android:id="@+id/grid_shape_action"
+                    style="@style/ShapeSymbolGridView"
+                    android:layout_marginBottom="@dimen/panel_subtitle_margin_bottom_h" />
+
+                <!-- content end -->
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </com.infraware.polarisoffice6.panel.EditPanelBodyScrollView>
+
+</LinearLayout>

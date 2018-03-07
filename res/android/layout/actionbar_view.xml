@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/actionbar_view_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+	<RelativeLayout
+	    android:id="@+id/actionbar_view_actionbar"
+	    android:layout_width="fill_parent"
+	    android:layout_height="@dimen/ab_height"
+	    android:background="@drawable/title_bg_viewer"
+	    android:gravity="center_vertical"
+	    android:orientation="horizontal" >
+
+	    <LinearLayout
+	        android:id="@+id/actionbar_view_right_layout"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentRight="true"
+	        android:orientation="horizontal" >
+
+	        <LinearLayout
+	            android:id="@+id/veiw_actionbar_undoredolayout"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:layout_gravity="left|center_vertical"
+	            android:gravity="center_vertical"
+	            android:paddingLeft="4dp"
+	            android:visibility="gone" >
+
+	            <ImageButton
+	                android:id="@+id/view_actionbar_undo"
+	                android:layout_width="@dimen/ationbar_ico_func_width"
+	                android:layout_height="match_parent"
+	                android:background="@drawable/actionbar_item_bg_selector_common"
+	                android:contentDescription="@string/dm_undo"
+	                android:src="@drawable/actionbar_undo" />
+
+	            <ImageButton
+	                android:id="@+id/view_actionbar_redo"
+	                android:layout_width="@dimen/ationbar_ico_func_width"
+	                android:layout_height="match_parent"
+	                android:background="@drawable/actionbar_item_bg_selector_common"
+	                android:contentDescription="@string/dm_redo"
+	                android:src="@drawable/actionbar_redo" />
+	        </LinearLayout>
+
+	        <LinearLayout
+	            android:id="@+id/actionbar_rightlayout"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:gravity="center_vertical|right"
+	            android:orientation="horizontal" >
+
+	            <ImageButton
+	                android:id="@+id/actionbar_draw1"
+	                android:layout_width="@dimen/ationbar_ico_func_width"
+	                android:layout_height="match_parent"
+	                android:background="@drawable/actionbar_item_bg_selector_common"
+	                android:contentDescription="@string/cm_action_bar_draw"
+	                android:src="@drawable/toolbar_freewrite" />
+
+	            <ImageButton
+	                android:id="@+id/actionbar_find"
+	                android:layout_width="@dimen/ationbar_ico_func_width"
+	                android:layout_height="match_parent"
+	                android:background="@drawable/actionbar_item_bg_selector_common"
+	                android:contentDescription="@string/cm_action_bar_find"
+	                android:src="@drawable/actionbar_ico_find_selector_common" />
+
+	            <ImageButton
+	                android:id="@+id/actionbar_full"
+	                android:layout_width="@dimen/ationbar_ico_func_width"
+	                android:layout_height="match_parent"
+	                android:background="@drawable/actionbar_item_bg_selector_common"
+	                android:contentDescription="@string/cm_action_bar_fullview"
+	                android:src="@drawable/title_ico_full" />
+
+	            <ImageButton
+	                android:id="@+id/actionbar_mobile_view"
+	                android:layout_width="@dimen/ationbar_ico_func_width"
+	                android:layout_height="match_parent"
+	                android:background="@drawable/actionbar_item_bg_selector_common"
+	                android:contentDescription="Mobile View"
+	                android:src="@drawable/title_ico_mobile_view" />
+	            
+	            <ImageButton
+	                android:id="@+id/actionbar_property"
+	                android:layout_width="@dimen/ationbar_ico_func_width"
+	                android:layout_height="match_parent"
+	                android:background="@drawable/actionbar_item_bg_selector_common"
+	                android:contentDescription="@string/po_menu_item_property"
+	                android:src="@drawable/actionbar_property"
+	                android:visibility="gone" />
+
+	            <ImageButton
+	                android:id="@+id/actionbar_menu"
+	                android:layout_width="@dimen/ationbar_ico_func_width"
+	                android:layout_height="match_parent"
+	                android:background="@drawable/actionbar_item_bg_selector_common"
+	                android:contentDescription="@string/cm_action_bar_menu"
+	                android:src="@drawable/title_ico_menu_selector" />
+	            <ImageButton
+	                android:id="@+id/actionbar_user_menu"
+	                android:layout_width="@dimen/ab_ico_w"
+	                android:layout_height="match_parent"
+	                android:background="@drawable/cm_bg_pressed_selector"
+	                android:src="@drawable/actionbar_user_menu"
+	                android:contentDescription="@string/dm_etc"
+	                android:visibility="gone" />
+	        </LinearLayout>
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:id="@+id/actionbar_view_left_layout"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentLeft="true"
+	        android:layout_toLeftOf="@id/actionbar_view_right_layout"
+	        android:orientation="horizontal" >
+
+	        <ImageButton
+	            android:id="@+id/actionbar_save"
+	            android:layout_width="@dimen/ationbar_ico_doc_width"
+	            android:layout_height="match_parent"
+	            android:background="@drawable/actionbar_item_bg_selector_common"
+	            android:button="@null"
+	            android:contentDescription="@string/dm_file"
+	            android:gravity="center"
+	            android:src="@drawable/title_ico_view_docx_selector" />
+
+	        <TextView
+	            android:id="@+id/actionbar_title"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:layout_marginLeft="6dp"
+	            android:layout_weight="1"
+	            android:clickable="true"
+	            android:ellipsize="end"
+	            android:textDirection="locale"
+	            android:gravity="center_vertical"
+	            android:maxLines="2"
+	            android:textColor="@color/actionbar_tcolor"
+	            android:textSize="14sp" />
+	    </LinearLayout>
+	</RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/write_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:background="@drawable/toolbar_bg_n"
+        android:scrollbarStyle="insideOverlay"
+        android:fillViewport="true"
+        android:visibility="gone" >
+	    
+	    <LinearLayout
+	        android:id="@+id/draw_toolbar"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:gravity="center_horizontal|center_vertical"
+	        android:orientation="horizontal" >
+	        
+	        <!-- Phone GUI -->
+	        <RadioGroup
+	            android:id="@+id/view_toolbar_group"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:layout_gravity="center_vertical"
+	            android:gravity="center_horizontal|center_vertical"
+	            android:orientation="horizontal" >
+
+	            <RadioButton
+	                android:id="@+id/view_toolbar_pen"
+	                android:layout_width="@dimen/toolbar_ico_func_width"
+	                android:layout_height="match_parent"
+	                android:background="@drawable/actionbar_item_bg_selector_common"
+	                android:button="@null"
+	                android:checked="true"
+	                android:contentDescription="@string/cm_action_bar_pen"
+	                android:drawableTop="@drawable/toolbar_ico_pen"
+	                android:focusable="true"
+	                android:longClickable="true" />
+
+	            <RadioButton
+	                android:id="@+id/view_toolbar_erase"
+	                android:layout_width="@dimen/toolbar_ico_func_width"
+	                android:layout_height="match_parent"
+	                android:background="@drawable/actionbar_item_bg_selector_common"
+	                android:button="@null"
+	                android:contentDescription="@string/cm_action_bar_pendraw_erase"
+	                android:drawableTop="@drawable/toolbar_ico_erase"
+	                android:focusable="true"
+	                android:longClickable="true" />
+	            
+	            <RadioButton
+		            android:id="@+id/view_toolbar_eraseall"
+		            android:layout_width="@dimen/toolbar_ico_func_width"
+		            android:layout_height="match_parent"
+		            android:background="@drawable/actionbar_item_bg_selector_common"
+		            android:button="@null"
+		            android:contentDescription="@string/cm_action_bar_pendraw_eraseall"
+		            android:drawableTop="@drawable/toolbar_ico_eraseall"
+		            android:focusable="true"
+	                android:longClickable="true" />
+
+	            <RadioButton
+	                android:id="@+id/view_toolbar_lasso"
+	                android:layout_width="@dimen/toolbar_ico_func_width"
+	                android:layout_height="match_parent"
+	                android:background="@drawable/actionbar_item_bg_selector_common"
+	                android:button="@null"
+	                android:contentDescription="@string/cm_action_bar_pendraw_lasso"
+	                android:drawableTop="@drawable/toolbar_ico_lasso"
+	                android:focusable="true"
+	                android:longClickable="true" />
+
+	            <RadioButton
+	                android:id="@+id/view_toolbar_freedraw_panning"
+	                android:layout_width="@dimen/toolbar_ico_func_width"
+	                android:layout_height="match_parent"
+	                android:background="@drawable/actionbar_item_bg_selector_common"
+	                android:button="@null"
+	                android:contentDescription="@string/cm_action_bar_freedraw_panning"
+	                android:drawableTop="@drawable/toolbar_ico_panning"
+	                android:focusable="true"
+	                android:longClickable="true" />
+	        </RadioGroup>
+	        
+	        <!-- Tablet GUI -->
+	        <RadioGroup
+	            android:id="@+id/tablet_view_toolbar_group"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:layout_gravity="center_vertical"
+	            android:gravity="center_horizontal|center_vertical"
+	            android:orientation="horizontal" >
+	
+		        <RadioButton
+		            android:id="@+id/tablet_view_toolbar_pen"
+		            android:layout_width="@dimen/toolbar_ico_func_width"
+		            android:layout_height="match_parent"
+		            android:background="@drawable/actionbar_item_bg_selector_common"
+		            android:button="@null"
+	                android:checked="true"
+		            android:contentDescription="@string/cm_action_bar_pen"
+		            android:drawableTop="@drawable/toolbar_ico_pen"
+		            android:focusable="true"
+	                android:longClickable="true" />
+		        
+		        <RadioButton
+		            android:id="@+id/tablet_view_toolbar_highlight"
+		            android:layout_width="@dimen/toolbar_ico_func_width"
+		            android:layout_height="match_parent"
+		            android:background="@drawable/actionbar_item_bg_selector_common"
+		            android:button="@null"
+		            android:contentDescription="@string/dm_highlight"
+		            android:drawableTop="@drawable/toolbar_ico_highlighter"
+		            android:focusable="true"
+	                android:longClickable="true" />
+		        
+		        <RadioButton
+		            android:id="@+id/tablet_view_toolbar_ruler"
+		            android:layout_width="@dimen/toolbar_ico_func_width"
+		            android:layout_height="match_parent"
+		            android:background="@drawable/actionbar_item_bg_selector_common"
+		            android:button="@null"
+		            android:contentDescription="@string/dm_ruller"
+		            android:drawableTop="@drawable/toolbar_ico_ruler"
+		            android:focusable="true"
+	                android:longClickable="true" />
+		        
+		        <RadioButton
+		            android:id="@+id/tablet_view_toolbar_setting"
+		            android:layout_width="@dimen/toolbar_ico_func_width"
+		            android:layout_height="match_parent"
+		            android:background="@drawable/actionbar_item_bg_selector_common"
+		            android:button="@null"
+		            android:contentDescription="@string/slide_show_tooltip_pen_setting"
+		            android:drawableTop="@drawable/toolbar_ico_setting"
+		            android:focusable="true"
+	                android:longClickable="true"
+	                android:visibility="gone" />
+		
+				<RadioButton
+		            android:id="@+id/tablet_view_toolbar_erase"
+		            android:layout_width="@dimen/toolbar_ico_func_width"
+		            android:layout_height="match_parent"
+		            android:background="@drawable/actionbar_item_bg_selector_common"
+		            android:button="@null"
+		            android:contentDescription="@string/cm_action_bar_pendraw_erase"
+		            android:drawableTop="@drawable/toolbar_ico_erase"
+		            android:focusable="true"
+	                android:longClickable="true" />
+		
+		        <RadioButton
+		            android:id="@+id/tablet_view_toolbar_eraseall"
+		            android:layout_width="@dimen/toolbar_ico_func_width"
+		            android:layout_height="match_parent"
+		            android:background="@drawable/actionbar_item_bg_selector_common"
+		            android:button="@null"
+		            android:contentDescription="@string/cm_action_bar_pendraw_eraseall"
+		            android:drawableTop="@drawable/toolbar_ico_eraseall"
+		            android:focusable="true"
+	                android:longClickable="true" />
+		        
+		        <RadioButton
+		            android:id="@+id/tablet_view_toolbar_lasso"
+		            android:layout_width="@dimen/toolbar_ico_func_width"
+		            android:layout_height="match_parent"
+		            android:background="@drawable/actionbar_item_bg_selector_common"
+		            android:button="@null"
+		            android:contentDescription="@string/cm_action_bar_pendraw_lasso"
+		            android:drawableTop="@drawable/toolbar_ico_lasso"
+		            android:focusable="true"
+	                android:longClickable="true" />
+		
+		        <RadioButton
+		            android:id="@+id/tablet_view_toolbar_freedraw_panning"
+		            android:layout_width="@dimen/toolbar_ico_func_width"
+		            android:layout_height="match_parent"
+		            android:background="@drawable/actionbar_item_bg_selector_common"
+		            android:button="@null"
+		            android:contentDescription="@string/cm_action_bar_freedraw_panning"
+		            android:drawableTop="@drawable/toolbar_ico_panning"
+		            android:focusable="true"
+	                android:longClickable="true" />
+		        
+	        </RadioGroup>
+	    </LinearLayout>
+	</HorizontalScrollView>
+	
+	<HorizontalScrollView
+        android:id="@+id/annotaion_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:background="@drawable/toolbar_bg_n"
+        android:scrollbarStyle="insideOverlay"
+        android:fillViewport="true"
+        android:visibility="gone" >
+	    <LinearLayout
+	        android:id="@+id/toolbar_freedraw"
+	        android:layout_width="match_parent"
+	        android:layout_height="39.00dp"
+	        android:layout_gravity="center_vertical"
+	        android:gravity="center_horizontal"
+	        android:orientation="horizontal" >
+	
+	        <ImageButton
+	            android:id="@+id/toolbar_freedraw_StickyNote"
+	            android:layout_width="@dimen/toolbar_ico_func_width"
+	            android:layout_height="match_parent"
+	            android:background="@drawable/actionbar_item_bg_selector_common"
+	            android:contentDescription="@string/cm_action_bar_sticky_note"
+	            android:src="@drawable/toolbar_ico_sticky" />
+	        
+	        <ImageButton
+	            android:id="@+id/toolbar_freedraw_Text"
+	            android:layout_width="@dimen/toolbar_ico_func_width"
+	            android:layout_height="match_parent"
+	            android:background="@drawable/actionbar_item_bg_selector_common"
+	            android:contentDescription="@string/cm_action_bar_text_annot"
+	            android:src="@drawable/toolbar_ico_text" />
+	        
+	        <ImageButton
+	            android:id="@+id/toolbar_freedraw_Shape"
+	            android:layout_width="@dimen/toolbar_ico_func_width"
+	            android:layout_height="match_parent"
+	            android:background="@drawable/actionbar_item_bg_selector_common"
+	            android:contentDescription="@string/cm_action_bar_shape_annot"
+	            android:src="@drawable/toolbar_ico_shape_pdf" />
+	        
+	        <!-- Textbox, Rectangle, Circle, Arrow, Line Only Table GUI ++++++++++++++++++++++++ -->
+	        <ImageButton
+	            android:id="@+id/toolbar_freedraw_shape_textbox"
+	            android:layout_width="@dimen/toolbar_ico_func_width"
+	            android:layout_height="match_parent"
+	            android:background="@drawable/actionbar_item_bg_selector_common"
+	            android:contentDescription="@string/dm_insert_textbox"
+	            android:src="@drawable/toolbar_ico_textbox_pdf_selector" 
+	            android:visibility="gone" />
+	        <ImageButton
+	            android:id="@+id/toolbar_freedraw_shape_rectangle"
+	            android:layout_width="@dimen/toolbar_ico_func_width"
+	            android:layout_height="match_parent"
+	            android:background="@drawable/actionbar_item_bg_selector_common"
+	            android:contentDescription="@string/dm_shape_rectangle"
+	            android:src="@drawable/toolbar_ico_rectangle_pdf_selector"
+	            android:visibility="gone" />
+	        <ImageButton
+	            android:id="@+id/toolbar_freedraw_shape_circle"
+	            android:layout_width="@dimen/toolbar_ico_func_width"
+	            android:layout_height="match_parent"
+	            android:background="@drawable/actionbar_item_bg_selector_common"
+	            android:contentDescription="@string/dm_PDFOval"
+	            android:src="@drawable/toolbar_ico_circle_pdf_selector"
+	            android:visibility="gone" />
+	        <ImageButton
+	            android:id="@+id/toolbar_freedraw_shape_arrow"
+	            android:layout_width="@dimen/toolbar_ico_func_width"
+	            android:layout_height="match_parent"
+	            android:background="@drawable/actionbar_item_bg_selector_common"
+	            android:contentDescription="@string/dm_arrow"
+	            android:src="@drawable/toolbar_ico_arrow_pdf_selector"
+	            android:visibility="gone" />
+	        <ImageButton
+	            android:id="@+id/toolbar_freedraw_shape_line"
+	            android:layout_width="@dimen/toolbar_ico_func_width"
+	            android:layout_height="match_parent"
+	            android:background="@drawable/actionbar_item_bg_selector_common"
+	            android:contentDescription="@string/dm_line"
+	            android:src="@drawable/toolbar_ico_line_pdf_selector"
+	            android:visibility="gone" />
+	        
+	        <ImageButton
+	            android:id="@+id/toolbar_freedraw_FreeLine"
+	            android:layout_width="@dimen/toolbar_ico_func_width"
+	            android:layout_height="match_parent"
+	            android:background="@drawable/actionbar_item_bg_selector_common"
+	            android:contentDescription="@string/cm_action_bar_freedraw_annot"
+	            android:src="@drawable/toolbar_ico_freeline" />
+
+	        <ImageButton
+	            android:id="@+id/toolbar_freedraw_FreeLineSet"
+	            android:layout_width="@dimen/toolbar_ico_func_width"
+	            android:layout_height="match_parent"
+	            android:background="@drawable/actionbar_item_bg_selector_common"
+	            android:contentDescription="@string/cm_btn_sign_up"
+	            android:src="@drawable/toolbar_ico_freelineset"
+	            android:enabled="false" />
+		        	
+	        <ImageButton
+	            android:id="@+id/toolbar_freedraw_Lasso"
+	            android:layout_width="@dimen/toolbar_ico_func_width"
+	            android:layout_height="match_parent"
+	            android:background="@drawable/actionbar_item_bg_selector_common"
+	            android:contentDescription="@string/cm_action_bar_pendraw_lasso"
+	            android:src="@drawable/toolbar_ico_lasso_pdf" />
+	
+	        <ImageButton
+	            android:id="@+id/toolbar_freedraw_Panning"
+	            android:layout_width="@dimen/toolbar_ico_func_width"
+	            android:layout_height="match_parent"
+	            android:background="@drawable/actionbar_item_bg_selector_common"
+	            android:contentDescription="@string/cm_action_bar_freedraw_panning"
+	            android:src="@drawable/toolbar_ico_panning_pdf" />
+	    </LinearLayout>
+	</HorizontalScrollView>
+
+</LinearLayout>

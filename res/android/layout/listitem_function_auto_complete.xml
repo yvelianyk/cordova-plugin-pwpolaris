@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:background="@drawable/popover_bg_selector_sheet"
+    android:orientation="vertical"
+    android:paddingBottom="5.67dip"
+    android:paddingLeft="6.00dip"
+    android:paddingRight="0dip"
+    android:paddingTop="5.67dip" >
+
+    <TextView
+        android:id="@+id/functionFormat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:singleLine="true"
+        android:textColor="#3c3c3c"
+        android:textSize="16sp" />
+
+</LinearLayout>

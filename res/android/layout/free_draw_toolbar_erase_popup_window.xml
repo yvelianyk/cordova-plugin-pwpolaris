@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/free_draw_toolbar_erase_popup_window"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popover_bg"
+    android:minWidth="112.67dp"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/erase"
+        android:layout_width="wrap_content"
+        android:layout_height="42.67dp"
+        android:background="@drawable/popover_bg_selector_common"
+        android:gravity="center_vertical"
+        android:paddingLeft="10.00dip"
+        android:paddingRight="10.00dip"
+        android:singleLine="true"
+        android:text="@string/cm_action_bar_pendraw_erase"
+        android:textColor="@color/popover_list_tcolor_selector"
+        android:textSize="15sp" />
+
+    <!-- View
+        android:id="@+id/seperator_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.67dip"
+        android:background="@color/cm_popover_line" / -->
+
+    <Button
+        android:id="@+id/erase_all"
+        android:layout_width="wrap_content"
+        android:layout_height="42.67dp"
+        android:background="@drawable/popover_bg_selector_common"
+        android:gravity="center_vertical"
+        android:paddingLeft="10.00dip"
+        android:paddingRight="10.00dip"
+        android:singleLine="true"
+        android:text="@string/cm_action_bar_pendraw_eraseall"
+        android:textColor="@color/popover_list_tcolor_selector"
+        android:textSize="15sp" />
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel_edit_body_root"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+
+        <com.infraware.polarisoffice6.panel.EditPanelBodyScrollView
+            android:id="@+id/panel_edit_scroll_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:id="@+id/panel_edit_content_linear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <!-- content start -->
+                <TextView
+                    android:id="@+id/anchor_word_text_fontsize"
+                    style="@style/PanelAnchorTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/panel_subtitle_h"
+                    android:layout_marginBottom="@dimen/panel_subtitle_margin_bottom_h"
+                    android:text="@string/dm_font_size" />
+
+                <com.infraware.polarisoffice6.panel.kit.FontSizeButton
+                    android:id="@+id/fontSizeButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/panel_subtitle_margin_left_right"
+            		android:layout_marginRight="@dimen/panel_subtitle_margin_left_right"
+                    android:layout_marginBottom="@dimen/panel_subtitle_margin_bottom_h" />
+
+                <TextView
+                    android:id="@+id/anchor_word_text_fontcolor"
+                    style="@style/PanelAnchorTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/panel_subtitle_h"
+                    android:layout_marginBottom="@dimen/panel_subtitle_margin_bottom_h"
+                    android:text="@string/dm_font_color" />
+
+                <com.infraware.polarisoffice6.panel.kit.CommonPanelColor
+                    android:id="@+id/fontColorSelection"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                   	android:layout_marginLeft="@dimen/panel_subtitle_margin_left_right"
+            		android:layout_marginRight="@dimen/panel_subtitle_margin_left_right"
+                    android:layout_marginBottom="@dimen/panel_subtitle_margin_bottom_h" />
+
+                <TextView
+                    android:id="@+id/word_text_fonteffect"
+                    style="@style/PanelAnchorTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/panel_subtitle_h"
+                    android:text="@string/dm_effect" />
+
+                <com.infraware.polarisoffice6.panel.kit.FontEffectButton
+                    android:id="@+id/fontEffectButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+               
+                <TextView
+                    android:id="@+id/anchor_word_text_fontface"
+                    style="@style/PanelAnchorTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/panel_subtitle_h"
+                    android:layout_marginBottom="@dimen/panel_subtitle_margin_bottom_h"
+                    android:text="@string/dm_font" />
+
+                <com.infraware.polarisoffice6.panel.kit.PanelList
+                    android:id="@+id/fontfaceListView"
+					android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+ 					android:layout_marginLeft="@dimen/panel_subtitle_margin_left_right"
+            		android:layout_marginRight="@dimen/panel_subtitle_margin_left_right"
+                    android:layout_marginBottom="@dimen/panel_subtitle_margin_bottom_h" />
+
+                <TextView
+                    android:id="@+id/anchor_word_text_fonthighlight"
+                    style="@style/PanelAnchorTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/panel_subtitle_h"
+                    android:layout_marginBottom="@dimen/panel_subtitle_margin_bottom_h"
+                    android:text="@string/dm_highlight" />
+
+                <com.infraware.polarisoffice6.panel.kit.CommonPanelColor
+                    android:id="@+id/fontBGColorSelection"
+					android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+ 					android:layout_marginLeft="@dimen/panel_subtitle_margin_left_right"
+            		android:layout_marginRight="@dimen/panel_subtitle_margin_left_right"
+                    android:layout_marginBottom="@dimen/panel_subtitle_margin_bottom_h" />
+                <!-- content end -->
+            </LinearLayout>
+        </com.infraware.polarisoffice6.panel.EditPanelBodyScrollView>
+</LinearLayout>

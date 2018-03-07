@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+	<LinearLayout
+	    android:id="@+id/border_line_group_hwp"
+	    android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+         <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="41dip"
+            android:orientation="horizontal" >
+
+            <com.infraware.common.control.custom.CheckImageView
+                android:id="@+id/hwp_border_line_01"
+                style="@style/PageBGPageColor.CheckImageView.left"
+                android:src="@drawable/ico_border_line_01_selector" />
+
+            <com.infraware.common.control.custom.CheckImageView
+                android:id="@+id/hwp_border_line_02"
+                style="@style/PageBGPageColor.CheckImageView.center"
+                android:src="@drawable/ico_border_line_02_selector" />
+
+            <com.infraware.common.control.custom.CheckImageView
+                android:id="@+id/hwp_border_line_03"
+                style="@style/PageBGPageColor.CheckImageView.center"
+                android:src="@drawable/ico_border_line_03_selector" />
+
+            <com.infraware.common.control.custom.CheckImageView
+                android:id="@+id/hwp_border_line_04"
+                style="@style/PageBGPageColor.CheckImageView.center"
+                android:src="@drawable/ico_border_line_04_selector" />
+
+            <com.infraware.common.control.custom.CheckImageView
+                android:id="@+id/hwp_border_line_05"
+                style="@style/PageBGPageColor.CheckImageView.center"
+                android:src="@drawable/ico_border_line_05_selector" />
+    	
+            <com.infraware.common.control.custom.CheckImageView
+                android:id="@+id/hwp_border_line_06"
+                style="@style/PageBGPageColor.CheckImageView.right"
+                android:src="@drawable/ico_border_line_06_selector" />
+		</LinearLayout>	
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/border_line_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="41dip"
+            android:orientation="horizontal" >
+
+            <com.infraware.common.control.custom.CheckImageView
+                android:id="@+id/border_line_01"
+                style="@style/PageBGPageColor.CheckImageView.left"
+                android:src="@drawable/ico_border_line_01_selector" />
+
+            <com.infraware.common.control.custom.CheckImageView
+                android:id="@+id/border_line_02"
+                style="@style/PageBGPageColor.CheckImageView.center"
+                android:src="@drawable/ico_border_line_02_selector" />
+
+            <com.infraware.common.control.custom.CheckImageView
+                android:id="@+id/border_line_03"
+                style="@style/PageBGPageColor.CheckImageView.center"
+                android:src="@drawable/ico_border_line_03_selector" />
+
+            <com.infraware.common.control.custom.CheckImageView
+                android:id="@+id/border_line_04"
+                style="@style/PageBGPageColor.CheckImageView.center"
+                android:src="@drawable/ico_border_line_04_selector" />
+
+            <com.infraware.common.control.custom.CheckImageView
+                android:id="@+id/border_line_05"
+                style="@style/PageBGPageColor.CheckImageView.right"
+                android:src="@drawable/ico_border_line_05_selector" />
+        </LinearLayout>
+
+        <Space style="@style/PageBGPageColor.lineLayoutSpace" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="41dip"
+            android:orientation="horizontal" >
+
+            <com.infraware.common.control.custom.CheckImageView
+                android:id="@+id/border_line_06"
+                style="@style/PageBGPageColor.CheckImageView.left"
+                android:src="@drawable/ico_border_line_06_selector" />
+
+            <com.infraware.common.control.custom.CheckImageView
+                android:id="@+id/border_line_07"
+                style="@style/PageBGPageColor.CheckImageView.center"
+                android:src="@drawable/ico_border_line_07_selector" />
+
+            <com.infraware.common.control.custom.CheckImageView
+                android:id="@+id/border_line_08"
+                style="@style/PageBGPageColor.CheckImageView.center"
+                android:src="@drawable/ico_border_line_08_selector" />
+
+            <com.infraware.common.control.custom.CheckImageView
+                android:id="@+id/border_line_09"
+                style="@style/PageBGPageColor.CheckImageView.center"
+                android:src="@drawable/ico_border_line_09_selector" />
+
+            <com.infraware.common.control.custom.CheckImageView
+                android:id="@+id/border_line_10"
+                style="@style/PageBGPageColor.CheckImageView.right"
+                android:src="@drawable/ico_border_line_10_selector" />
+        </LinearLayout>
+
+        <Space style="@style/PageBGPageColor.lineLayoutSpace" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="41dip"
+            android:orientation="horizontal" >
+
+            <com.infraware.common.control.custom.CheckImageView
+                android:id="@+id/border_line_11"
+                style="@style/PageBGPageColor.CheckImageView.left"
+                android:src="@drawable/ico_border_line_11_selector" />
+
+            <com.infraware.common.control.custom.CheckImageView
+                android:id="@+id/border_line_12"
+                style="@style/PageBGPageColor.CheckImageView.center"
+                android:src="@drawable/ico_border_line_12_selector" />
+
+            <com.infraware.common.control.custom.CheckImageView
+                android:id="@+id/border_line_13"
+                style="@style/PageBGPageColor.CheckImageView.center"
+                android:src="@drawable/ico_border_line_13_selector" />
+
+            <com.infraware.common.control.custom.CheckImageView
+                android:id="@+id/border_line_14"
+                style="@style/PageBGPageColor.CheckImageView.center"
+                android:src="@drawable/ico_border_line_14_selector" />
+
+            <com.infraware.common.control.custom.CheckImageView
+                android:id="@+id/border_line_15"
+                style="@style/PageBGPageColor.CheckImageView.right"
+                android:src="@drawable/ico_border_line_15_selector" />
+        </LinearLayout>
+
+        <Space style="@style/PageBGPageColor.lineLayoutSpace" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="41dip"
+            android:orientation="horizontal" >
+
+            <com.infraware.common.control.custom.CheckImageView
+                android:id="@+id/border_line_16"
+                style="@style/PageBGPageColor.CheckImageView.left"
+                android:src="@drawable/ico_border_line_16_selector" />
+
+            <com.infraware.common.control.custom.CheckImageView
+                android:id="@+id/border_line_17"
+                style="@style/PageBGPageColor.CheckImageView.center"
+                android:src="@drawable/ico_border_line_17_selector" />
+
+            <com.infraware.common.control.custom.CheckImageView
+                android:id="@+id/border_line_18"
+                style="@style/PageBGPageColor.CheckImageView.center"
+                android:src="@drawable/ico_border_line_18_selector" />
+
+            <com.infraware.common.control.custom.CheckImageView
+                android:id="@+id/border_line_19"
+                style="@style/PageBGPageColor.CheckImageView.center"
+                android:src="@drawable/ico_border_line_19_selector" />
+
+            <com.infraware.common.control.custom.CheckImageView
+                android:id="@+id/border_line_20"
+                style="@style/PageBGPageColor.CheckImageView.right"
+                android:src="@drawable/ico_border_line_20_selector" />
+        </LinearLayout>
+    </LinearLayout>
+
+</merge>

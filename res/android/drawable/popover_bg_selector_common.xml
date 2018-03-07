@@ -1,0 +1,5 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:state_pressed="true"	  android:drawable="@drawable/popover_bg_common_p"/>	
+	<item android:state_focused="true"	  android:drawable="@drawable/common_common_f"/> 
+	<item android:state_selected="true"	  android:drawable="@drawable/common_common_f"/> 
+</selector>

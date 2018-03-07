@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <size android:width="1px" android:height="@dimen/memo_tsize" />
+    <solid android:color="@color/memo_tcolor"  />
+</shape>

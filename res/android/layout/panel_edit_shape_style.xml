@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel_edit_body_root"
+    android:layout_width="fill_parent"
+    android:layout_weight="1"
+    android:layout_height="match_parent" >
+
+        <com.infraware.polarisoffice6.panel.EditPanelBodyScrollView
+            android:id="@+id/panel_edit_scroll_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:id="@+id/panel_edit_content_linear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/panel_subtitle_margin_left_right"
+            	android:paddingRight="@dimen/panel_subtitle_margin_left_right"
+            	android:paddingTop ="@dimen/panel_subtitle_margin_bottom_h" 
+            	android:paddingBottom="@dimen/panel_subtitle_margin_bottom_h"
+                android:orientation="vertical" >
+
+                <!-- content start -->
+                <LinearLayout
+                    android:id="@+id/changestyle_layer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+ 					<LinearLayout 
+						android:layout_width="match_parent"
+						android:layout_height="40.00dp"
+						android:orientation="horizontal"
+						android:layout_marginBottom="@dimen/panel_subtitle_margin_bottom_h" >
+						<ImageButton
+							android:id="@+id/style1" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+							android:src="@drawable/ico_insert_shape_style_01" android:background="@drawable/panel_item_bg_selector_common" />
+						<ImageButton
+							android:id="@+id/style2" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+							android:src="@drawable/ico_insert_shape_style_02" android:background="@drawable/panel_item_bg_selector_common" />
+						<ImageButton
+							android:id="@+id/style3" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+							android:src="@drawable/ico_insert_shape_style_03" android:background="@drawable/panel_item_bg_selector_common" />              	    
+                	    <ImageButton
+							android:id="@+id/style4" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+							android:src="@drawable/ico_insert_shape_style_04" android:background="@drawable/panel_item_bg_selector_common" /> 
+                 	    <ImageButton
+							android:id="@+id/style5" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+							android:src="@drawable/ico_insert_shape_style_05" android:background="@drawable/panel_item_bg_selector_common" />
+               	    	<ImageButton
+							android:id="@+id/style6" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+							android:src="@drawable/ico_insert_shape_style_06" android:background="@drawable/panel_item_bg_selector_common" />
+                        <ImageButton
+                            android:id="@+id/style7" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+                            android:src="@drawable/ico_insert_shape_style_07" android:background="@drawable/panel_item_bg_selector_common" />
+                 	</LinearLayout>
+   					<LinearLayout 
+						android:layout_width="match_parent"
+						android:layout_height="40.00dp"
+						android:orientation="horizontal"
+						android:layout_marginBottom="@dimen/panel_subtitle_margin_bottom_h" >
+						<ImageButton
+							android:id="@+id/style8" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+							android:src="@drawable/ico_insert_shape_style_08" android:background="@drawable/panel_item_bg_selector_common" />
+						<ImageButton
+							android:id="@+id/style9" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+							android:src="@drawable/ico_insert_shape_style_09" android:background="@drawable/panel_item_bg_selector_common" />              	    
+                	    <ImageButton
+							android:id="@+id/style10" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+							android:src="@drawable/ico_insert_shape_style_10" android:background="@drawable/panel_item_bg_selector_common" /> 
+                 	    <ImageButton
+							android:id="@+id/style11" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+							android:src="@drawable/ico_insert_shape_style_11" android:background="@drawable/panel_item_bg_selector_common" />
+               	    	<ImageButton
+							android:id="@+id/style12" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+							android:src="@drawable/ico_insert_shape_style_12" android:background="@drawable/panel_item_bg_selector_common" />
+                        <ImageButton
+                            android:id="@+id/style13" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+                            android:src="@drawable/ico_insert_shape_style_13" android:background="@drawable/panel_item_bg_selector_common" />
+                        <ImageButton
+                            android:id="@+id/style14" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+                            android:src="@drawable/ico_insert_shape_style_14" android:background="@drawable/panel_item_bg_selector_common" />
+                 	</LinearLayout>
+               		<LinearLayout 
+						android:layout_width="match_parent"
+						android:layout_height="40.00dp"
+						android:orientation="horizontal"
+						android:layout_marginBottom="@dimen/panel_subtitle_margin_bottom_h" >
+						<ImageButton
+							android:id="@+id/style15" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+							android:src="@drawable/ico_insert_shape_style_15" android:background="@drawable/panel_item_bg_selector_common" />              	    
+                	    <ImageButton
+							android:id="@+id/style16" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+							android:src="@drawable/ico_insert_shape_style_16" android:background="@drawable/panel_item_bg_selector_common" /> 
+                 	    <ImageButton
+							android:id="@+id/style17" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+							android:src="@drawable/ico_insert_shape_style_17" android:background="@drawable/panel_item_bg_selector_common" />
+               	    	<ImageButton
+							android:id="@+id/style18" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+							android:src="@drawable/ico_insert_shape_style_18" android:background="@drawable/panel_item_bg_selector_common" />
+                        <ImageButton
+                            android:id="@+id/style19" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+                            android:src="@drawable/ico_insert_shape_style_19" android:background="@drawable/panel_item_bg_selector_common" />
+                        <ImageButton
+                            android:id="@+id/style20" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+                            android:src="@drawable/ico_insert_shape_style_20" android:background="@drawable/panel_item_bg_selector_common" />
+                        <ImageButton
+                            android:id="@+id/style21" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+                            android:src="@drawable/ico_insert_shape_style_21" android:background="@drawable/panel_item_bg_selector_common" />
+                 	</LinearLayout>
+                	<LinearLayout 
+						android:layout_width="match_parent"
+						android:layout_height="40.00dp"
+						android:orientation="horizontal"
+						android:layout_marginBottom="@dimen/panel_subtitle_margin_bottom_h" >
+                	    <ImageButton
+							android:id="@+id/style22" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+							android:src="@drawable/ico_insert_shape_style_22" android:background="@drawable/panel_item_bg_selector_common" /> 
+                 	    <ImageButton
+							android:id="@+id/style23" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+							android:src="@drawable/ico_insert_shape_style_23" android:background="@drawable/panel_item_bg_selector_common" />
+               	    	<ImageButton
+							android:id="@+id/style24" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+							android:src="@drawable/ico_insert_shape_style_24" android:background="@drawable/panel_item_bg_selector_common" />
+                        <ImageButton
+                            android:id="@+id/style25" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+                            android:src="@drawable/ico_insert_shape_style_25" android:background="@drawable/panel_item_bg_selector_common" />
+                        <ImageButton
+                            android:id="@+id/style26" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+                            android:src="@drawable/ico_insert_shape_style_26" android:background="@drawable/panel_item_bg_selector_common" />
+                        <ImageButton
+                            android:id="@+id/style27" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+                            android:src="@drawable/ico_insert_shape_style_27" android:background="@drawable/panel_item_bg_selector_common" />
+                        <ImageButton
+                            android:id="@+id/style28" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+                            android:src="@drawable/ico_insert_shape_style_28" android:background="@drawable/panel_item_bg_selector_common" />
+                 	</LinearLayout>
+					<LinearLayout 
+						android:layout_width="match_parent"
+						android:layout_height="40.00dp"
+						android:orientation="horizontal"
+						android:layout_marginBottom="@dimen/panel_subtitle_margin_bottom_h" >
+                 	    <ImageButton
+							android:id="@+id/style29" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+							android:src="@drawable/ico_insert_shape_style_29" android:background="@drawable/panel_item_bg_selector_common" />
+               	    	<ImageButton
+							android:id="@+id/style30" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+							android:src="@drawable/ico_insert_shape_style_30" android:background="@drawable/panel_item_bg_selector_common" />
+                        <ImageButton
+                            android:id="@+id/style31" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+                            android:src="@drawable/ico_insert_shape_style_31" android:background="@drawable/panel_item_bg_selector_common" />
+                        <ImageButton
+                            android:id="@+id/style32" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+                            android:src="@drawable/ico_insert_shape_style_32" android:background="@drawable/panel_item_bg_selector_common" />
+                        <ImageButton
+                            android:id="@+id/style33" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+                            android:src="@drawable/ico_insert_shape_style_33" android:background="@drawable/panel_item_bg_selector_common" />
+                        <ImageButton
+                            android:id="@+id/style34" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+                            android:src="@drawable/ico_insert_shape_style_34" android:background="@drawable/panel_item_bg_selector_common" />
+                        <ImageButton
+                            android:id="@+id/style35" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+                            android:src="@drawable/ico_insert_shape_style_35" android:background="@drawable/panel_item_bg_selector_common" />
+                    </LinearLayout>
+                 	<LinearLayout 
+						android:layout_width="match_parent"
+						android:layout_height="40.00dp"
+						android:orientation="horizontal"
+						android:layout_marginBottom="@dimen/panel_subtitle_margin_bottom_h" >
+						<ImageButton
+							android:id="@+id/style36" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+							android:src="@drawable/ico_insert_shape_style_36" android:background="@drawable/panel_item_bg_selector_common" />
+						<ImageButton
+							android:id="@+id/style37" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+							android:src="@drawable/ico_insert_shape_style_37" android:background="@drawable/panel_item_bg_selector_common" />
+						<ImageButton
+							android:id="@+id/style38" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+							android:src="@drawable/ico_insert_shape_style_38" android:background="@drawable/panel_item_bg_selector_common" />
+                	    <ImageButton
+							android:id="@+id/style39" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+							android:src="@drawable/ico_insert_shape_style_39" android:background="@drawable/panel_item_bg_selector_common" />
+                 	    <ImageButton
+							android:id="@+id/style40" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+							android:src="@drawable/ico_insert_shape_style_40" android:background="@drawable/panel_item_bg_selector_common" />
+               	    	<ImageButton
+							android:id="@+id/style41" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+							android:src="@drawable/ico_insert_shape_style_41" android:background="@drawable/panel_item_bg_selector_common" />
+                        <ImageButton
+                            android:id="@+id/style42" android:clickable="true" android:layout_weight="1" android:layout_width="0dip" android:layout_height="wrap_content"
+                            android:src="@drawable/ico_insert_shape_style_42" android:background="@drawable/panel_item_bg_selector_common" />
+                 	</LinearLayout>
+                 	<!-- content end -->               	
+               </LinearLayout>
+        </com.infraware.polarisoffice6.panel.EditPanelBodyScrollView>
+</LinearLayout>

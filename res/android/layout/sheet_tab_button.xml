@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/sheet_tab_btn_background"
+    android:orientation="horizontal"
+    android:focusable="true">
+
+    <LinearLayout
+        android:id="@+id/sheet_tab_indicator_front"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/sheet_tab_indicator_front_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-6dip"
+            android:src="@drawable/sheet_tap_move_icon_footer"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="17.67dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:minWidth="55dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_sheet_hold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dip"
+                android:background="@drawable/sheet_lock_img_selector"
+                android:duplicateParentState="true" />
+
+            <TextView
+                android:id="@+id/text_sheet_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:gravity="center"
+                android:textColor="@color/sheet_tab_tcolor_selector"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/sheet_tab_indicator_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/sheet_tab_indicator_back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="-6dip"
+            android:src="@drawable/sheet_tap_move_icon_footer" />
+    </LinearLayout>
+
+</LinearLayout>

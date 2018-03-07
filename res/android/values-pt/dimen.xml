@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="page_background_text_size_auto">10sp</dimen>
+    <dimen name="page_layout_margins_custom">7sp</dimen>
+
+</resources>

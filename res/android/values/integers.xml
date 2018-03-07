@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<integer name="dm_hyperlink_max">693</integer>
+	
+<!--	shadowDy 
+	<integer name="cm_shadow_dy_button">-1</integer>
+	<integer name="cm_shadow_dy_title_button">-1</integer>
+	<integer name="cm_shadow_dy_actionbar_button">-1</integer>
+	
+	<integer name="fm_shadow_dy_template_file">0</integer>
+	<integer name="fm_shadow_dy_file_list_info">-1</integer>
+	<integer name="fm_shadow_dy_index_file">2</integer>
+	<integer name="fm_shadow_dy_index_type">1</integer>
+	<integer name="fm_shadow_dy_index_folder">1</integer>
+	
+	<integer name="po_shadow_dy_home_icon">1</integer>
+	<integer name="po_shadow_dy_popup_item">-1</integer>
+	<integer name="po_shadow_dy_slide_page">1</integer>
+	<integer name="po_shadow_dy_market_color_picker_button">1</integer>
+	<integer name="po_shadow_dy_chart_data_activity">1</integer>
+
+	<integer name="po_shadow_dy_page_layout_radio_button_pressed">-1</integer>
+	<integer name="po_shadow_dy_page_layout_radio_button_unpressed">1</integer>
+	<integer name="po_shadow_dy_popup_menu_window">-1</integer>
+	<integer name="po_shadow_dy_edit_slidebutton">-1</integer>
+	<integer name="po_shadow_dy_panel_text_button">1</integer>
+	<integer name="po_shadow_dy_edit_panel_main">-1</integer>
+	<integer name="po_shadow_dy_page_layout_activity_checked">-1</integer>
+	<integer name="po_shadow_dy_page_layout_activity_unchecked">1</integer>	
+	
+	<integer name="shadow_dy_activie_done_button">1</integer>
+	<integer name="shadow_dy_button_color_picker">1</integer>
+	<integer name="shadow_dy_fontParaList_renumber_text">1</integer>
+	<integer name="shadow_dy_sheet_function_save_ok_button">1</integer>
+	<integer name="shadow_dy_transform_info_text1">1</integer>
+	<integer name="shadow_dy_word_pagelayout1">-1</integer>
+	<integer name="shadow_dy_word_pagelayout2">1</integer>
+	<integer name="shadow_dy_panel_anchor_title">1</integer>
+	<integer name="shadow_dy_panel_button_text">1</integer>
+	<integer name="shadow_dy_keypad">-1</integer> -->
+</resources>
+
+

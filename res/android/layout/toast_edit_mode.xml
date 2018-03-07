@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    	<Button 
+    	android:id= "@+id/toast_edit_text"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:background="@drawable/toast_mode_edit" 
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:textColor="@color/color_white"
+       	android:textSize="@dimen/toast_text_size"
+        android:text="@string/dm_edit_mode"
+        android:gravity="center_horizontal|bottom"
+        android:paddingBottom="9dp"
+        android:visibility="gone"
+	    />
+	    <!-- //20130814 khchoi To apply GUI change --> 
+    		
+	    <Button 
+    	android:id= "@+id/toast_view_text"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:background="@drawable/toast_mode_view" 
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:textColor="@color/color_white"
+       	android:textSize="@dimen/toast_text_size"
+        android:text="@string/dm_view_mode"
+        android:gravity="center_horizontal|bottom"
+        android:paddingBottom="9dp"
+        android:visibility="gone"
+	    />
+	    <!-- //20130814 khchoi To apply GUI change --> 
+ 	
+</RelativeLayout>

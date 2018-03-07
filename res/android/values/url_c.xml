@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="UpdateURL">https://doc1.infraware.net/update/PolarisOffice_SAMSUNG.xml</string>
+	<string name="SubUpdateURL">https://doc2.infraware.net/update/PolarisOffice_SAMSUNG.xml</string>
+    
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/cm_common_background" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17.33dp"
+        android:background="@color/cm_common_background"
+        android:orientation="vertical" >
+
+        <include layout="@layout/dv_action_title_bar" />
+
+        <com.infraware.polarisoffice6.common.ExEditText
+            android:id="@+id/po_account_id"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16.5dp"
+            android:layout_marginRight="16.5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textfield_selector_common"
+            android:drawableRight="@drawable/ico_email"
+            android:hint="@string/cm_hint_email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:paddingRight="2dp"
+            android:singleLine="true"
+            android:textColor="@color/cm_edit_text_normal"
+            android:textColorHighlight="@color/cm_edit_text_highlight"
+            android:textColorHint="@color/cm_edit_text_hint"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp" />
+
+        <com.infraware.polarisoffice6.common.ExEditText
+            android:id="@+id/po_account_password"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16.5dp"
+            android:layout_marginRight="16.5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textfield_selector_common"
+            android:drawableRight="@drawable/ico_password"
+            android:hint="@string/cm_hint_password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:paddingRight="2dp"
+            android:singleLine="true"
+            android:textColor="@color/cm_edit_text_normal"
+            android:textColorHint="@color/cm_edit_text_hint"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/po_account_error"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/po_account_error_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@drawable/ico_caution"
+                android:drawablePadding="5.5dp"
+                android:gravity="center"
+                android:text="@string/cm_err_invalid_account"
+                android:textColor="@color/cm_common_error_text"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

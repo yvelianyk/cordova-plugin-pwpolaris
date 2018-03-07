@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/insert01"
+        android:layout_width="@dimen/insert_shape_w"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/insert_shape_margin_h"
+        android:background="@drawable/panel_item_bg_selector_common"
+        android:clickable="true"
+        android:src="@drawable/ico_shape_line_01" />
+
+    <ImageButton
+        android:id="@+id/insert02"
+        android:layout_width="@dimen/insert_shape_w"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/insert_shape_margin_h"
+        android:background="@drawable/panel_item_bg_selector_common"
+        android:clickable="true"
+        android:src="@drawable/ico_shape_line_02" />
+
+    <ImageButton
+        android:id="@+id/insert03"
+        android:layout_width="@dimen/insert_shape_w"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/insert_shape_margin_h"
+        android:background="@drawable/panel_item_bg_selector_common"
+        android:clickable="true"
+        android:src="@drawable/ico_shape_line_03" />
+
+    <ImageButton
+        android:id="@+id/insert04"
+        android:layout_width="@dimen/insert_shape_w"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/insert_shape_margin_h"
+        android:background="@drawable/panel_item_bg_selector_common"
+        android:clickable="true"
+        android:src="@drawable/ico_shape_line_04" />
+
+    <ImageButton
+        android:id="@+id/insert05"
+        android:layout_width="@dimen/insert_shape_w"
+        android:layout_height="match_parent"
+        android:background="@drawable/panel_item_bg_selector_common"
+        android:clickable="true"
+        android:src="@drawable/ico_shape_line_05" />
+
+</LinearLayout>

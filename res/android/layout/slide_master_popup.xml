@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="40.00dp"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/slide_master_popup_cut"
+        android:layout_width="55.00dip"
+        android:layout_height="match_parent"
+        android:background="@drawable/inlinepopup_bg_left_selector_common"
+        android:gravity="center"
+        android:src="@drawable/ico_inline_slide_cut_selector" />
+
+    <ImageButton
+        android:id="@+id/slide_master_popup_copy"
+        android:layout_width="55.00dip"
+        android:layout_height="match_parent"
+        android:background="@drawable/inlinepopup_bg_center_selector_common"
+        android:gravity="center"
+        android:src="@drawable/ico_inline_slide_copy_selector" />
+
+    <ImageButton
+        android:id="@+id/slide_master_popup_paste"
+        android:layout_width="55.00dip"
+        android:layout_height="match_parent"
+        android:background="@drawable/inlinepopup_bg_center_selector_common"
+        android:gravity="center"
+        android:src="@drawable/ico_inline_slide_paste_selector" />
+
+    <ImageButton
+        android:id="@+id/slide_master_popup_delete"
+        android:layout_width="55.00dip"
+        android:layout_height="match_parent"
+        android:background="@drawable/inlinepopup_bg_center_selector_common"
+        android:gravity="center"
+        android:src="@drawable/ico_inline_slide_delete_selector" />
+
+    <ImageButton
+        android:id="@+id/slide_master_popup_more"
+        android:layout_width="47.33dip"
+        android:layout_height="match_parent"
+        android:background="@drawable/inlinepopup_bg_right_selector_common"
+        android:gravity="center"
+        android:src="@drawable/ico_inline_more_selector" />
+
+</LinearLayout>

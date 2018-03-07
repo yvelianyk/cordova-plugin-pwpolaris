@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_common_bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/mainLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/anchor_watermark_insert_image_title"
+                style="@style/PanelAnchorTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/page_background_sub_title_height" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="41dip"
+                android:layout_marginLeft="@dimen/page_background_margin_left_right"
+                android:layout_marginRight="@dimen/page_background_margin_left_right"
+                android:layout_marginTop="@dimen/page_background_user_watermark_tb_margin" >
+
+                <Button
+                    android:id="@+id/insert_camera"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_default_selector_common"
+                    android:textColor="@color/btn_default_tcolor_selector"
+                    android:textSize="@dimen/page_background_button_text_size" />
+
+                <Space
+                    android:id="@+id/insert_camera_space"
+                    android:layout_width="2.67dip"
+                    android:layout_height="fill_parent" />
+
+                <Button
+                    android:id="@+id/insert_gallery"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_default_selector_common"
+                    android:textColor="@color/btn_default_tcolor_selector"
+                    android:textSize="@dimen/page_background_button_text_size" />
+            </LinearLayout>
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.67dip"
+                android:layout_marginLeft="@dimen/page_background_margin_left_right"
+                android:layout_marginRight="@dimen/page_background_margin_left_right"
+                android:layout_marginTop="10.67dip"
+                layout="@layout/cm_panel_divider" />
+
+            <CheckBox
+                android:id="@+id/faintly_checkbox"
+                style="@style/PanelCheckBoxRight"
+                android:layout_width="fill_parent"
+                android:layout_height="34.67dip"
+                android:layout_marginBottom="@dimen/page_background_user_watermark_tb_margin"
+                android:layout_marginLeft="@dimen/page_background_margin_left_right"
+                android:layout_marginRight="@dimen/page_background_margin_left_right" />
+
+            <TextView
+                android:id="@+id/anchor_watermark_scale_title"
+                style="@style/PanelAnchorTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/page_background_sub_title_height" />
+
+            <RadioGroup
+                android:id="@+id/scale_group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/page_background_user_watermark_tb_margin"
+                android:layout_marginLeft="@dimen/page_background_margin_left_right"
+                android:layout_marginRight="@dimen/page_background_margin_left_right"
+                android:layout_marginTop="@dimen/page_background_user_watermark_tb_margin"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/scale_auto"
+                    style="@style/SelectionListItem.RadioButton.Top"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/scale_500"
+                    style="@style/SelectionListItem.RadioButton.Middle"
+                    android:text="@string/scale_500" />
+
+                <RadioButton
+                    android:id="@+id/scale_200"
+                    style="@style/SelectionListItem.RadioButton.Middle"
+                    android:text="@string/scale_200" />
+
+                <RadioButton
+                    android:id="@+id/scale_100"
+                    style="@style/SelectionListItem.RadioButton.Middle"
+                    android:text="@string/scale_100" />
+
+                <RadioButton
+                    android:id="@+id/scale_50"
+                    style="@style/SelectionListItem.RadioButton.Bottom"
+                    android:text="@string/scale_50" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

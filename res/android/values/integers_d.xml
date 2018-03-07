@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="cm_shadow_dy_actionbar">-1</integer>
+    <integer name="po_shadow_dy_common_numer_input_activity">-1</integer>
+</resources>

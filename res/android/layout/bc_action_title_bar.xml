@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/bc_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/title_bg"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/title_menu_mode_layout"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:background="@drawable/cm_title_bg_pressed_selector"
+                android:focusable="true"
+                android:gravity="center"
+                android:layout_marginLeft="1dp"
+                android:onClick="onButtonClick"
+                android:visibility="gone" >
+
+                <com.infraware.common.widget.marker.MarkerModeImageView
+                    android:id="@+id/title_menu_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/slide_show_tooltip_change_mode"
+                    android:src="@drawable/slideshow_mode_btn_slide_selector"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/title_menu_settings"
+                android:layout_width="48dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/cm_title_bg_pressed_selector"
+                android:onClick="onButtonClick"
+                android:src="@drawable/slideshow_settings_selector"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/title_menu_eraser"
+                android:layout_width="48dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/cm_title_bg_pressed_selector"
+                android:contentDescription="@string/cm_action_bar_pendraw_erase"
+                android:onClick="onButtonClick"
+                android:src="@drawable/slideshow_mode_eraser_selector"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/title_menu_eraseall"
+                android:layout_width="48dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/cm_title_bg_pressed_selector"
+                android:contentDescription="@string/cm_action_bar_pendraw_eraseall"
+                android:onClick="onButtonClick"
+                android:src="@drawable/slideshow_mode_eraserall_selector"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/title_menu_bluetooth"
+                android:layout_width="48dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/cm_title_bg_pressed_selector"
+                android:contentDescription="@string/bc_tooltip_room_search"
+                android:onClick="onButtonClick"
+                android:src="@drawable/bc_actionbar_bluetooth"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/title_menu_change"
+                android:layout_width="48dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/cm_title_bg_pressed_selector"
+                android:contentDescription="@string/bc_tooltip_change_document"
+                android:onClick="onButtonClick"
+                android:src="@drawable/bc_actionbar_change"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/title_menu_save"
+                android:layout_width="48dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/cm_title_bg_pressed_selector"
+                android:contentDescription="@string/dm_save"
+                android:onClick="onButtonClick"
+                android:src="@drawable/bc_actionbar_save"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/title_menu_alone"
+                android:layout_width="48dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/cm_title_bg_pressed_selector"
+                android:contentDescription="@string/bc_tooltip_alone_on"
+                android:onClick="onButtonClick"
+                android:src="@drawable/bc_actionbar_aloneon"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/title_menu_close"
+                android:layout_width="48dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/cm_title_bg_pressed_selector"
+                android:contentDescription="@string/bc_tooltip_close"
+                android:onClick="onButtonClick"
+                android:src="@drawable/bc_actionbar_close"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

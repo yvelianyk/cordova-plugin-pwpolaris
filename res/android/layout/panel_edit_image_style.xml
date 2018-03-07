@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel_edit_body_root"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1" >
+
+    <com.infraware.polarisoffice6.panel.EditPanelBodyScrollView
+        android:id="@+id/panel_edit_scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/panel_edit_content_linear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- content start -->
+
+            <RelativeLayout
+                android:id="@+id/relative_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/panel_common_content_area_margin_vertical"
+                android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical" >
+				<!-- Rule and margin control is EditPanelRelativeContentBase.class -->
+                <ImageButton
+                    android:id="@+id/style1"
+                    android:layout_width="@dimen/panel_image_style_width_height"
+                    android:layout_height="@dimen/panel_image_style_width_height"
+                    android:background="@drawable/panel_item_bg_selector_common"
+                    android:clickable="true"
+                    android:src="@drawable/ico_style_picture_01" />
+
+                <ImageButton
+                    android:id="@+id/style2"
+                    android:layout_width="@dimen/panel_image_style_width_height"
+                    android:layout_height="@dimen/panel_image_style_width_height"
+                    android:background="@drawable/panel_item_bg_selector_common"
+                    android:clickable="true"
+                    android:src="@drawable/ico_style_picture_02" />
+
+                <ImageButton
+                    android:id="@+id/style3"
+                    android:layout_width="@dimen/panel_image_style_width_height"
+                    android:layout_height="@dimen/panel_image_style_width_height"
+                    android:background="@drawable/panel_item_bg_selector_common"
+                    android:clickable="true"
+                    android:src="@drawable/ico_style_picture_03" />
+
+                <ImageButton
+                    android:id="@+id/style4"
+                    android:layout_width="@dimen/panel_image_style_width_height"
+                    android:layout_height="@dimen/panel_image_style_width_height"
+                    android:background="@drawable/panel_item_bg_selector_common"
+                    android:clickable="true"
+                    android:src="@drawable/ico_style_picture_04" />
+
+                <ImageButton
+                    android:id="@+id/style5"
+                    android:layout_width="@dimen/panel_image_style_width_height"
+                    android:layout_height="@dimen/panel_image_style_width_height"
+                    android:background="@drawable/panel_item_bg_selector_common"
+                    android:clickable="true"	
+                    android:src="@drawable/ico_style_picture_05" />
+
+                <ImageButton
+                    android:id="@+id/style6"
+                    android:layout_width="@dimen/panel_image_style_width_height"
+                    android:layout_height="@dimen/panel_image_style_width_height"
+                    android:background="@drawable/panel_item_bg_selector_common"
+                    android:clickable="true"
+                    android:src="@drawable/ico_style_picture_06" />
+
+                <ImageButton
+                    android:id="@+id/style7"
+                    android:layout_width="@dimen/panel_image_style_width_height"
+                    android:layout_height="@dimen/panel_image_style_width_height"
+                    android:background="@drawable/panel_item_bg_selector_common"
+                    android:clickable="true"
+                    android:src="@drawable/ico_style_picture_07" />
+
+                <ImageButton
+                    android:id="@+id/style8"
+                    android:layout_width="@dimen/panel_image_style_width_height"
+                    android:layout_height="@dimen/panel_image_style_width_height"
+                    android:background="@drawable/panel_item_bg_selector_common"
+                    android:clickable="true"
+                    android:src="@drawable/ico_style_picture_08" />
+
+                <ImageButton
+                    android:id="@+id/style9"
+                    android:layout_width="@dimen/panel_image_style_width_height"
+                    android:layout_height="@dimen/panel_image_style_width_height"
+                    android:background="@drawable/panel_item_bg_selector_common"
+                    android:clickable="true"
+                    android:src="@drawable/ico_style_picture_09" />
+                
+                <!-- //[2013.10.31][최경호] 40987 To add image style -->
+                <ImageButton
+                    android:id="@+id/style10"
+                    android:layout_width="@dimen/panel_image_style_width_height"
+                    android:layout_height="@dimen/panel_image_style_width_height"
+                    android:background="@drawable/panel_item_bg_selector_common"
+                    android:clickable="true"
+                    android:src="@drawable/ico_style_picture_10" />
+
+                <ImageButton
+                    android:id="@+id/style11"
+                    android:layout_width="@dimen/panel_image_style_width_height"
+                    android:layout_height="@dimen/panel_image_style_width_height"
+                    android:background="@drawable/panel_item_bg_selector_common"
+                    android:clickable="true"
+                    android:src="@drawable/ico_style_picture_11" />
+
+                <ImageButton
+                    android:id="@+id/style12"
+                    android:layout_width="@dimen/panel_image_style_width_height"
+                    android:layout_height="@dimen/panel_image_style_width_height"
+                    android:background="@drawable/panel_item_bg_selector_common"
+                    android:clickable="true"
+                    android:src="@drawable/ico_style_picture_12" />
+
+                <ImageButton
+                    android:id="@+id/style13"
+                    android:layout_width="@dimen/panel_image_style_width_height"
+                    android:layout_height="@dimen/panel_image_style_width_height"
+                    android:background="@drawable/panel_item_bg_selector_common"
+                    android:clickable="true"
+                    android:src="@drawable/ico_style_picture_13" />
+
+                <ImageButton
+                    android:id="@+id/style14"
+                    android:layout_width="@dimen/panel_image_style_width_height"
+                    android:layout_height="@dimen/panel_image_style_width_height"
+                    android:background="@drawable/panel_item_bg_selector_common"
+                    android:clickable="true"	
+                    android:src="@drawable/ico_style_picture_14" />
+
+                <ImageButton
+                    android:id="@+id/style15"
+                    android:layout_width="@dimen/panel_image_style_width_height"
+                    android:layout_height="@dimen/panel_image_style_width_height"
+                    android:background="@drawable/panel_item_bg_selector_common"
+                    android:clickable="true"
+                    android:src="@drawable/ico_style_picture_15" />
+
+                <ImageButton
+                    android:id="@+id/style16"
+                    android:layout_width="@dimen/panel_image_style_width_height"
+                    android:layout_height="@dimen/panel_image_style_width_height"
+                    android:background="@drawable/panel_item_bg_selector_common"
+                    android:clickable="true"
+                    android:src="@drawable/ico_style_picture_16" />
+
+                <ImageButton
+                    android:id="@+id/style17"
+                    android:layout_width="@dimen/panel_image_style_width_height"
+                    android:layout_height="@dimen/panel_image_style_width_height"
+                    android:background="@drawable/panel_item_bg_selector_common"
+                    android:clickable="true"
+                    android:src="@drawable/ico_style_picture_17" />
+
+                <ImageButton
+                    android:id="@+id/style18"
+                    android:layout_width="@dimen/panel_image_style_width_height"
+                    android:layout_height="@dimen/panel_image_style_width_height"
+                    android:background="@drawable/panel_item_bg_selector_common"
+                    android:clickable="true"
+                    android:src="@drawable/ico_style_picture_18" />
+                
+                <ImageButton
+                    android:id="@+id/style19"
+                    android:layout_width="@dimen/panel_image_style_width_height"
+                    android:layout_height="@dimen/panel_image_style_width_height"
+                    android:background="@drawable/panel_item_bg_selector_common"
+                    android:clickable="true"
+                    android:src="@drawable/ico_style_picture_19" />
+                
+                <ImageButton
+                    android:id="@+id/style20"
+                    android:layout_width="@dimen/panel_image_style_width_height"
+                    android:layout_height="@dimen/panel_image_style_width_height"
+                    android:background="@drawable/panel_item_bg_selector_common"
+                    android:clickable="true"
+                    android:src="@drawable/ico_style_picture_20" />
+                
+                <ImageButton
+                    android:id="@+id/style21"
+                    android:layout_width="@dimen/panel_image_style_width_height"
+                    android:layout_height="@dimen/panel_image_style_width_height"
+                    android:background="@drawable/panel_item_bg_selector_common"
+                    android:clickable="true"
+                    android:src="@drawable/ico_style_picture_21" />
+                
+                <ImageButton
+                    android:id="@+id/style22"
+                    android:layout_width="@dimen/panel_image_style_width_height"
+                    android:layout_height="@dimen/panel_image_style_width_height"
+                    android:background="@drawable/panel_item_bg_selector_common"
+                    android:clickable="true"
+                    android:src="@drawable/ico_style_picture_22" />
+                
+                <ImageButton
+                    android:id="@+id/style23"
+                    android:layout_width="@dimen/panel_image_style_width_height"
+                    android:layout_height="@dimen/panel_image_style_width_height"
+                    android:background="@drawable/panel_item_bg_selector_common"
+                    android:clickable="true"
+                    android:src="@drawable/ico_style_picture_23" />
+                
+                <ImageButton
+                    android:id="@+id/style24"
+                    android:layout_width="@dimen/panel_image_style_width_height"
+                    android:layout_height="@dimen/panel_image_style_width_height"
+                    android:background="@drawable/panel_item_bg_selector_common"
+                    android:clickable="true"
+                    android:src="@drawable/ico_style_picture_24" />                
+                <!-- //[2013.10.31][최경호] 40987 To add image style -->
+                
+            </RelativeLayout>
+        </LinearLayout>
+        <!-- content end -->
+    </com.infraware.polarisoffice6.panel.EditPanelBodyScrollView>
+
+</LinearLayout>

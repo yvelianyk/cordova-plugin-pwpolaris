@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="242.33dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="242.33dp"
+        android:layout_height="50.67dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="4.33dp"
+        android:paddingLeft="4.67dp"
+        android:paddingRight="4.67dp"
+        android:paddingTop="5.33dp"
+        android:visibility="visible" >
+
+        <ImageButton
+            android:id="@+id/sheet_function_button_sum"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_multi_left_selector_sheet"
+            android:src="@drawable/popover_btn_sum" />
+
+        <ImageButton
+            android:id="@+id/sheet_function_button_avg"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_multi_center_selector_sheet"
+            android:src="@drawable/popover_btn_avg" />
+
+        <ImageButton
+            android:id="@+id/sheet_function_button_count"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_multi_center_selector_sheet"
+            android:src="@drawable/popover_btn_count" />
+
+        <ImageButton
+            android:id="@+id/sheet_function_button_max"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_multi_center_selector_sheet"
+            android:src="@drawable/popover_btn_max" />
+
+        <ImageButton
+            android:id="@+id/sheet_function_button_min"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_multi_right_selector_sheet"
+            android:src="@drawable/popover_btn_min" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/sheet_function_popup_list"
+        android:layout_width="242.33dp"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparent"
+        android:dividerHeight="0.67dip"
+        android:listSelector="@android:color/transparent"
+        android:padding="0dp" />
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dialog_memo_width"
+    android:layout_height="@dimen/dialog_memo_height"
+    android:background="@drawable/popup_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/popup_title"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/memo_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="11dp"
+            android:paddingRight="11dp"
+            android:text="@string/dm_comment_edit"
+            android:textColor="#1e1e1e"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_width="144dp"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/memo_delete_btn"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ico_memo_delete_selector" />
+
+            <ImageButton
+                android:id="@+id/memo_prev_btn"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ico_memo_prev_selector" />
+
+            <ImageButton
+                android:id="@+id/memo_next_btn"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ico_memo_next_selector" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/dialog_memo_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="14dp"
+        android:layout_marginTop="13dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="208dp"
+            android:background="@android:color/transparent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/dialog_memo_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:textColor="#3d3d3d"
+                android:textSize="14sp" />
+
+            <com.infraware.polarisoffice6.common.ExEditText
+                android:id="@+id/dialog_memo_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="2dp"
+                android:background="@android:color/transparent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="left|top"
+                android:imeOptions="flagNoFullscreen"
+                android:lineSpacingExtra="3dp"
+                android:text=""
+                android:textColor="@color/memo_tcolor"
+                android:textCursorDrawable="@drawable/cursor_memo"
+                android:textSize="@dimen/memo_tsize" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

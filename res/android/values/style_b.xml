@@ -1,0 +1,153 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="SelectionListItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">42.67dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/btn_selection_tcolor_selector</item>
+    </style>
+    
+	<!-- Default Selection List Item Radio Button -->    
+    <style name="SelectionListItem.RadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:drawableLeft">@drawable/radio_selector_common</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    
+    <style name="SelectionListItem.RadioButton.Top">
+        <item name="android:background">@drawable/btn_multi_top_selector_common</item>
+    </style>
+    
+    <style name="SelectionListItem.RadioButton.Middle">
+        <item name="android:background">@drawable/btn_multi_middle_selector_common</item>
+    </style>
+    
+    <style name="SelectionListItem.RadioButton.Bottom">
+        <item name="android:background">@drawable/btn_multi_bottom_selector_common</item>
+    </style>
+    
+    <!-- Default Selection List Item Checked text View -->
+    <style name="SelectionListItem.CheckedTextView">
+        <item name="android:paddingLeft">12.33dp</item>
+        <item name="android:checkMark">@drawable/cm_checkbox_selector_common</item>
+        <item name="android:clickable">true</item>
+    </style>
+    
+    <style name="SelectionListItem.CheckedTextView.Normal">
+        <item name="android:background">@drawable/btn_default_selector_common</item>
+    </style>
+    
+    <style name="SelectionListItem.CheckedTextView.Top">
+        <item name="android:background">@drawable/btn_multi_top_selector_common</item>
+    </style>
+    
+    <style name="SelectionListItem.CheckedTextView.Middle">
+        <item name="android:background">@drawable/btn_multi_middle_selector_common</item>
+    </style>
+    
+    <style name="SelectionListItem.CheckedTextView.Bottom">
+        <item name="android:background">@drawable/btn_multi_bottom_selector_common</item>
+    </style>
+    
+    <!-- Custom Selection List Item  -->
+    <style name="SelectionCustomListItem"/>
+    <style name="SelectionCustomListItem.LinearLayout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">42.67dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+    
+    <style name="SelectionCustomListItem.LinearLayout.Top">
+        <item name="android:background">@drawable/btn_multi_top_selector_common</item>
+    </style>
+    
+    <style name="SelectionCustomListItem.LinearLayout.Middle">
+        <item name="android:background">@drawable/btn_multi_middle_selector_common</item>
+    </style>
+    
+    <style name="SelectionCustomListItem.LinearLayout.Bottom">
+        <item name="android:background">@drawable/btn_multi_bottom_selector_common</item>
+    </style>
+    
+    <style name="SelectionCustomListItem.View">
+        <item name="android:clickable">false</item>
+        <item name="android:duplicateParentState">true</item>
+    </style>
+    
+    <style name="SelectionCustomListItem.View.ImageView">
+        <item name="android:layout_width">42.67dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/radio_selector_common</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    
+    <style name="SelectionCustomListItem.View.Button">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textColor">@color/btn_selection_tcolor_selector</item>
+        <item name="android:background">@null</item>
+    </style>
+    
+    <style name="SelectionCustomListItem.View.Button.SheetRedText">
+        <item name="android:textColor">@color/negative_number_red_tcolor</item>
+    </style>
+    
+    <style name="SelectionCustomListItem.View.ButtonSheet">
+        <item name="android:layout_width">122dip</item>
+        <item name="android:layout_height">25.33dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:paddingLeft">4.33dp</item>
+        <item name="android:textSize">9.33dp</item>
+        <item name="android:textColor">@color/btn_selection_tcolor_selector</item>
+        <item name="android:background">@null</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    
+    <style name="SelectionCustomListItem.Divider">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.67dip</item>
+        <item name="android:background">#FFCCCCCC</item>
+    </style>
+
+    <style name="CommonTabButton">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">15.00sp</item>
+        <item name="android:textColor">@color/panel_tab_tcolor_selector_common</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CommonTabButton.Left">
+        <item name="android:background">@drawable/cm_tap_left_selector</item>
+    </style>
+
+    <style name="CommonTabButton.Center">
+        <item name="android:background">@drawable/cm_tap_center_selector</item>
+    </style>
+    
+    <style name="CommonTabButton.Right">
+        <item name="android:background">@drawable/cm_tap_right_selector</item>
+    </style>
+
+    <style name="CommonTabButton.ViewTogetherLeft">
+        <item name="android:background">@drawable/view_together_tap_left_selector</item>
+    </style>
+
+    <style name="CommonTabButton.ViewTogetherRight">
+        <item name="android:background">@drawable/view_together_tap_right_selector</item>
+    </style>
+    
+    <style name="CustomPopupAnimation">
+        <item name="android:windowEnterAnimation">@anim/custom_popup_show_anim_style</item>
+        <item name="android:windowExitAnimation">@anim/custom_popup_hide_anim_style</item>
+    </style>
+    
+</resources>

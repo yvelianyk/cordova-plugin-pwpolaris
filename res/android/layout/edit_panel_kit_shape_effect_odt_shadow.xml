@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/separate_line_01"
+        layout="@layout/cm_panel_divider"/>
+    
+    <CheckBox
+        android:id="@+id/shadowNone"
+        style="@style/PanelCheckBoxLeft"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/panel_button_height"
+        android:layout_gravity="left"
+        android:text="@string/dm_shadow_none" />
+
+    <include
+        android:id="@+id/separate_line_11"
+        layout="@layout/cm_panel_divider" />
+
+    <LinearLayout
+        android:id="@+id/shadowMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/outter_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/panel_button_title_h"
+                android:text="@string/dm_outter"
+                style="@style/PanelIconTitle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/shadowOut1"
+                    android:src="@drawable/panel_icon_shadow_outer_effect01_2003"
+                    style="@style/PanelIconItem" />
+
+                <ImageButton
+                    android:id="@+id/shadowOut3"
+                    android:src="@drawable/panel_icon_shadow_outer_effect02_2003"
+                    style="@style/PanelIconItem" />
+
+                <ImageButton
+                    android:id="@+id/shadowOut7"
+                    android:src="@drawable/panel_icon_shadow_outer_effect03_2003"
+                    style="@style/PanelIconItem" />
+
+                <ImageButton
+                    android:id="@+id/shadowOut9"
+                    android:src="@drawable/panel_icon_shadow_outer_effect04_2003"
+                    style="@style/PanelIconItem" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/shadowOut2"
+                    android:src="@drawable/panel_icon_shadow_outer_effect05_2003"
+                    style="@style/PanelIconItem" />
+
+                <ImageButton
+                    android:id="@+id/shadowOut8"
+                    android:src="@drawable/panel_icon_shadow_outer_effect06_2003"
+                    style="@style/PanelIconItem" />
+
+                <ImageButton
+                    android:id="@+id/shadowOut4"
+                    android:src="@drawable/panel_icon_shadow_outer_effect07_2003"
+                    style="@style/PanelIconItem" />
+
+                <ImageButton
+                    android:id="@+id/shadowOut6"
+                    android:src="@drawable/panel_icon_shadow_outer_effect08_2003"
+                    style="@style/PanelIconItem" />
+            </LinearLayout>
+
+            <!-- <View
+                android:id="@+id/separate_line_12"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginBottom="3.5dip"
+                android:layout_marginTop="3.5dip"
+                android:background="@drawable/img_divider_repeat" /> -->
+
+            <TextView
+                android:id="@+id/perspective_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/panel_button_title_h"
+                android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical"
+                android:text="@string/dm_perspective"
+                style="@style/PanelIconTitle" />
+
+            <LinearLayout
+                android:id="@+id/perspective_shadow_2003"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/pers1"
+                    android:src="@drawable/panel_icon_shadow_perspective_effect01_2003"
+                    style="@style/PanelIconItem" />
+
+                <ImageButton
+                    android:id="@+id/pers2"
+                    android:src="@drawable/panel_icon_shadow_perspective_effect02_2003"
+                    style="@style/PanelIconItem" />
+
+                <ImageButton
+                    android:id="@+id/pers4"
+                    android:src="@drawable/panel_icon_shadow_perspective_effect03_2003"
+                    style="@style/PanelIconItem" />
+
+                <ImageButton
+                    android:id="@+id/pers5"
+                    android:src="@drawable/panel_icon_shadow_perspective_effect04_2003"
+                    style="@style/PanelIconItem" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

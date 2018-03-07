@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/effrect_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/effrect_tab1"
+            android:background="@drawable/btn_multi_left_selector_common"
+            style="@style/PanelTab.LinearLayout"
+            android:focusable="true">
+
+            <ImageView
+                android:src="@drawable/panel_ico_tab_effect_shadow"
+                style="@style/PanelTab.Item.ImageView" />
+
+            <TextView
+                android:id="@+id/effrect_tab1_text"
+                android:text="@string/dm_shadow"
+                style="@style/PanelTab.Item.TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/effrect_tab2"
+            android:background="@drawable/btn_multi_center_selector_common"
+            style="@style/PanelTab.LinearLayout"
+            android:focusable="true">
+
+            <ImageView
+                android:src="@drawable/panel_ico_tab_effect_reflect"
+                style="@style/PanelTab.Item.ImageView" />
+
+            <TextView
+                android:id="@+id/effrect_tab2_text"
+                android:text="@string/dm_reflect"
+                style="@style/PanelTab.Item.TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/effrect_tab3"
+            android:background="@drawable/btn_multi_center_selector_common"
+            style="@style/PanelTab.LinearLayout"
+            android:focusable="true">
+
+            <ImageView
+                android:src="@drawable/panel_ico_tab_effect_neon"
+                style="@style/PanelTab.Item.ImageView" />
+
+            <TextView
+                android:id="@+id/effrect_tab3_text"
+                android:text="@string/dm_neon"
+                style="@style/PanelTab.Item.TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/effrect_tab4"
+            android:background="@drawable/btn_multi_center_selector_common"
+            style="@style/PanelTab.LinearLayout"
+            android:focusable="true">
+
+            <ImageView
+                android:src="@drawable/panel_ico_tab_effect_solid"
+                style="@style/PanelTab.Item.ImageView" />
+
+            <TextView
+                android:id="@+id/effrect_tab4_text"
+                android:text="@string/dm_solid"
+                style="@style/PanelTab.Item.TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/effrect_tab5"
+            android:background="@drawable/btn_multi_right_selector_common"
+            style="@style/PanelTab.LinearLayout"
+            android:focusable="true">
+
+            <ImageView
+                android:src="@drawable/panel_ico_tab_effect_3d"
+                style="@style/PanelTab.Item.ImageView" />
+
+            <TextView
+                android:id="@+id/effrect_tab5_text"
+                android:text="@string/dm_3d_rotate"
+                style="@style/PanelTab.Item.TextView" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" >
+
+        <ViewStub
+            android:id="@+id/stub_tab1_contents" 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/layout_shape_effect_tab1_contents"
+            />
+        
+        <ViewStub
+            android:id="@+id/stub_tab2_contents" 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/layout_shape_effect_tab2_contents"
+            />
+        
+        <ViewStub
+            android:id="@+id/stub_tab3_contents" 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/layout_shape_effect_tab3_contents"
+            />
+        
+		 <ViewStub
+            android:id="@+id/stub_tab4_contents" 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/layout_shape_effect_tab4_contents"
+            />
+        
+        <ViewStub
+            android:id="@+id/stub_tab5_contents" 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/layout_shape_effect_tab5_contents"
+            />
+        
+    </FrameLayout>
+
+</LinearLayout>

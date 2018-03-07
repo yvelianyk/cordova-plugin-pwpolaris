@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  file home -->
+    	
+    	<!--<dimen name="home_tiffany_height">304dp</dimen>-->
+    	<!--<dimen name="home_document_category_height">148dp</dimen>-->
+    	
+		    	
+    	
+    	
+    	<!--<dimen name="home_recent_thumbnailarea_height">492dp</dimen>-->
+    	<!--<dimen name="home_recent_pageicon_height">146dp</dimen>-->
+    	
+    	
+    	    	
+    	
+    	
+    	
+    	
+    	  
+    	
+    <!--  new file -->
+		<dimen name="new_file_port_image_frame_width">179dp</dimen>
+		<dimen name="new_file_port_image_frame_height">262dp</dimen>
+		<dimen name="new_file_port_image_view_height">208dp</dimen>
+		<dimen name="new_file_port_text_view_height">191dp</dimen>
+		<dimen name="new_file_land_image_view_height">178dp</dimen>
+		<dimen name="new_file_land_image_view_wide_height">140.5dp</dimen>
+		<dimen name="new_file_land_text_view_height">155dp</dimen>
+		
+		<dimen name="new_file_port_image_name_text_size">17dp</dimen>
+		
+	<!--  add account -->
+		<!--<dimen name="add_account_list_height">51dp</dimen>-->
+		<!--<dimen name="add_account_list_padding_top">3dp</dimen>-->
+		<!--<dimen name="add_account_list_padding_bottom">4dp</dimen>-->
+		
+	<!-- file manager -->
+		<dimen name="filemanager_foldertree_list_height">71.5dp</dimen>	
+		<dimen name="filemanager_foldertree_width">272dp</dimen>
+		<dimen name="filemanager_file_listview_width">835dp</dimen>		
+		<!--<dimen name="filemanager_foldertree_title_height">26dp</dimen>-->
+		<dimen name="filemanager_file_listview_height">51dp</dimen>
+		
+		<dimen name="filemanager_file_gridview_frame_width">835dp</dimen>
+		<dimen name="filemanager_file_gridview_frame_padding">2dp</dimen>
+
+		<dimen name="filemanager_file_gridview_width">156dp</dimen>
+		<dimen name="filemanager_file_gridview_height">170dp</dimen>
+		<dimen name="filemanager_file_gridview_inner_frame_width">156dp</dimen>
+		<dimen name="filemanager_file_gridview_inner_frame_height">140dp</dimen>
+		<!--<dimen name="filemanager_file_gridview_image_frame_width">150dp</dimen>-->
+		<!--<dimen name="filemanager_file_gridview_image_frame_height">168dp</dimen>-->
+		<!--<dimen name="filemanager_file_gridview_port_image_width">150dp</dimen>-->
+		<!--<dimen name="filemanager_file_gridview_port_image_height">184dp</dimen>-->
+		<!--<dimen name="filemanager_file_gridview_land_image_width">150dp</dimen>-->
+		<!--<dimen name="filemanager_file_gridview_land_image_height">130dp</dimen>-->
+		<dimen name="filemanager_file_gridview_checkbox_width">28dp</dimen>
+		<dimen name="filemanager_file_gridview_textview_width">156dp</dimen>
+				
+		<dimen name="filemanager_file_property_fragment_width">349dp</dimen>
+		<dimen name="filemanager_file_property_fragment_height">211dp</dimen>
+		<dimen name="filemanager_file_property_imageview_height">211dp</dimen>
+		<dimen name="filemanager_file_property_textview_textsize">14dp</dimen>
+		<dimen name="filemanager_file_property_thumbnail_width">171dp</dimen>
+		<dimen name="filemanager_file_property_thumbnail_height">171dp</dimen>
+		
+		<dimen name="filemanager_file_favorite_filelist_width">708dp</dimen>
+		<dimen name="filemanager_file_favorite_recent_width">190dp</dimen>
+		<dimen name="filemanager_file_favorite_recent_land_imageview_width">150dp</dimen>
+		<dimen name="filemanager_file_favorite_recent_land_imageview_height">173dp</dimen>
+		
+		<dimen name="filemanager_file_favorite_recent_land_imageview_margin_left">11dp</dimen>
+		<dimen name="filemanager_file_favorite_recent_land_imageview_margin_top">7dp</dimen>
+		<dimen name="filemanager_file_favorite_recent_land_imageview_margin_right">11dp</dimen>
+		<dimen name="filemanager_file_favorite_recent_land_imageview_margin_bottom">16dp</dimen>		
+
+		<dimen name="filemanager_file_favorite_recent_land_icon_margin_right">16dp</dimen>	
+		<dimen name="filemanager_file_favorite_recent_land_icon_margin_bottom">16dp</dimen>		
+					
+		<dimen name="filemanager_file_favorite_recent_port_imageview_width">169dp</dimen>
+		<dimen name="filemanager_file_favorite_recent_port_imageview_height">168dp</dimen>	
+		
+		<dimen name="filemanager_file_favorite_recent_port_imageview_margin_left">31dp</dimen>
+		<dimen name="filemanager_file_favorite_recent_port_imageview_margin_top">5dp</dimen>
+		<dimen name="filemanager_file_favorite_recent_port_imageview_margin_right">31dp</dimen>
+		<dimen name="filemanager_file_favorite_recent_port_imageview_margin_bottom">16dp</dimen>	
+		
+		<dimen name="filemanager_file_favorite_recent_port_icon_margin_right">16dp</dimen>	
+		<dimen name="filemanager_file_favorite_recent_port_icon_margin_bottom">16dp</dimen>	
+		
+		<dimen name="filemanager_file_favorite_recent_textveiw_width">141dp</dimen>	
+		
+		<dimen name="filemanager_gridview_favorites_width">25dp</dimen>
+		<dimen name="filemanager_gridview_favorites_height">25dp</dimen>		
+		
+		<dimen name="filemanager_checkholder_height">30dp</dimen>
+		
+		<!--<dimen name="filemanager_file_favorite_recent_namearea_width">30dp</dimen>	-->
+		
+		
+		<dimen name="filemanager_actionbar_search_width">200dp</dimen>
+		
+		<dimen name="recent_width">115dp</dimen>
+		<dimen name="recent_height">90dp</dimen>
+		<dimen name="recent_imageview_height">140dp</dimen>
+		<dimen name="recent_textview_height">30dp</dimen>
+		<dimen name="recent_icon_width">35dp</dimen>
+		<dimen name ="recent_file_item">12dp</dimen>
+		
+		<dimen name="actionbar_search_text_width">200dp</dimen>
+						
+	<!--  setting  -->
+		<!--<dimen name="setting_main_frame_height">442dp</dimen>-->
+		<dimen name="setting_menu_width">250dp</dimen>
+		<!--<dimen name="setting_list_item_main_layout_height">110dp</dimen>-->
+
+		
+	<!--  TIFFANY -->
+	  	<!--<dimen name="home_circularholder_width">3.6dp</dimen>-->
+	  	<!--<dimen name="home_circularholder_locate_x">0dp</dimen>-->
+	  	<!--<dimen name="home_circularholder_locate_y">-0.6dp</dimen>-->
+	  	<!--<dimen name="home_circularholder_locate_z">-2.0dp</dimen>-->
+	  	<!--<dimen name="home_linearholder_locate_x">0dp</dimen>-->
+	  	<!--<dimen name="home_linearholder_locate_y">-3.45dp</dimen>-->
+	  	<!--<dimen name="home_linearholder_locate_z">-11.0dp</dimen>-->
+	  	<!--<dimen name="home_linearholder_look">-17.0dp</dimen>-->
+	  	<dimen name="tabWidget_width">360dp</dimen>
+
+	<!--  NavigationList -->
+		<dimen name="navi_width">278dp</dimen>
+		<dimen name="navi_list_height">52dp</dimen>
+		<dimen name="navi_list_icon_width">64dp</dimen>
+		<dimen name="navi_list_text_width">194dp</dimen>
+	
+	<!--  NaviAddCloudListDialog -->
+		<dimen name="add_cloud_dialog_width">160.5dp</dimen>
+		<dimen name="add_cloud_listitem_height">52dp</dimen>
+		
+	<!-- message dialog content layout values -->
+		<dimen name="dialog_message_content_width">418dp</dimen>
+		
+	<!-- folder select dialog layout values -->		
+	<dimen name="dialog_folder_select_width">494dp</dimen>
+	<dimen name="dialog_folder_select_spinner_width">245dp</dimen>
+	
+	<dimen name="actionbar_dummy_width">62.5dp</dimen>
+	<dimen name="actionbar_popupmenu_dropdown_height">48dp</dimen>
+	<dimen name="actionbar_popupmenu_dropdown_width">279dp</dimen>	  	
+</resources>

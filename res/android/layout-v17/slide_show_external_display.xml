@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:gravity="bottom" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:gravity="bottom" >
+
+                    <RelativeLayout
+                        android:id="@+id/slide_show_slide"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@color/po_slide_show_background" >
+
+                        <com.infraware.document.slide.SlideShowSurfaceView
+                            android:id="@+id/slide_show_image"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true" />
+
+                        <com.infraware.office.docview.view.PointerDrawView
+                            android:id="@+id/slide_show_pointer_draw"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:clickable="true" />
+
+                        <ImageView
+                            android:id="@+id/slide_show_page_prev"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/cm_bg02_pressed_selector"
+                            android:onClick="onClickPage"
+                            android:src="@drawable/btn_preview_previous_portrait_n"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/slide_show_page_next"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/cm_bg02_pressed_selector"
+                            android:onClick="onClickPage"
+                            android:src="@drawable/btn_preview_next_portrait_n"
+                            android:visibility="invisible" />
+
+                        <LinearLayout
+                            android:id="@+id/slide_show_mode_option"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="2.67dp"
+                            android:background="@drawable/mode_bg"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:id="@+id/slide_show_mode_slide"
+                                android:layout_width="60.00dip"
+                                android:layout_height="45.00dip"
+                                android:contentDescription="@string/dm_slide"
+                                android:onClick="onClickMode"
+                                android:padding="0dip"
+                                android:src="@drawable/slideshow_mode_btn_slide_selector" />
+
+                            <ImageView
+                                android:id="@+id/slide_show_mode_pointer"
+                                android:layout_width="60.00dip"
+                                android:layout_height="45.00dip"
+                                android:contentDescription="@string/string_free_drawing_pointer"
+                                android:onClick="onClickMode"
+                                android:padding="0dip"
+                                android:src="@drawable/slideshow_mode_btn_pointer_selector" />
+
+                            <com.infraware.common.widget.marker.MarkerModeImageView
+                                android:id="@+id/slide_show_mode_marker"
+                                android:layout_width="60.00dip"
+                                android:layout_height="45.00dip"
+                                android:contentDescription="@string/cm_action_bar_pen"
+                                android:onClick="onClickMode"
+                                android:padding="0dip"
+                                android:src="@drawable/slideshow_mode_btn_pen_selector" />
+
+                            <FrameLayout
+                                android:id="@+id/broadcast_mode_ink_view"
+                                android:layout_width="60.00dip"
+                                android:layout_height="45.00dip"
+                                android:padding="0dip"
+                                android:scaleType="center" >
+
+                                <ImageView
+                                    android:id="@+id/slide_show_mode_ink"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:contentDescription="@string/string_free_drawing_pointer"
+                                    android:onClick="onClickMode"
+                                    android:src="@drawable/slideshow_mode_btn_inkonoff_selector" />
+
+                                <ImageView
+                                    android:id="@+id/slide_show_mode_ink_onoff"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top|right"
+                                    android:layout_marginRight="3dp"
+                                    android:layout_marginTop="3.67dp"
+                                    android:background="@drawable/ico_showpen_on" />
+                            </FrameLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/slide_show_option"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginTop="2.67dp"
+                            android:orientation="horizontal" >
+
+                            <com.infraware.common.widget.marker.MarkerModeImageView
+                                android:id="@+id/slide_show_mode"
+                                android:layout_width="56.00dip"
+                                android:layout_height="40.00dip"
+                                android:background="@drawable/cm_bg02_pressed_selector"
+                                android:contentDescription="@string/slide_show_tooltip_change_mode"
+                                android:onClick="onClickMode"
+                                android:src="@drawable/show_ico_general_n" />
+
+                            <ImageView
+                                android:id="@+id/slide_show_settings"
+                                android:layout_width="44.00dip"
+                                android:layout_height="40.00dip"
+                                android:layout_marginLeft="4dp"
+                                android:background="@drawable/cm_bg02_pressed_selector"
+                                android:onClick="onClickMode"
+                                android:scaleType="center"
+                                android:src="@drawable/white_slideshow_settings_selector" />
+
+                            <ImageView
+                                android:id="@+id/slide_show_eraser"
+                                android:layout_width="44.00dip"
+                                android:layout_height="40.00dip"
+                                android:layout_marginLeft="4dp"
+                                android:background="@drawable/cm_bg02_pressed_selector"
+                                android:contentDescription="@string/cm_action_bar_pendraw_erase"
+                                android:onClick="onClickMode"
+                                android:src="@drawable/white_slideshow_mode_eraser_selector" />
+
+                            <ImageView
+                                android:id="@+id/slide_show_eraserall"
+                                android:layout_width="44.00dip"
+                                android:layout_height="40.00dip"
+                                android:layout_marginLeft="4dp"
+                                android:background="@drawable/cm_bg02_pressed_selector"
+                                android:contentDescription="@string/cm_action_bar_pendraw_eraseall"
+                                android:onClick="onClickEraserAll"
+                                android:src="@drawable/white_slideshow_mode_eraserall_selector" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/slide_show_pointer_option"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="44.00dip"
+                            android:background="@drawable/popover_bg"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+
+                            <com.infraware.common.widget.marker.MarkerColorImageView
+                                android:id="@+id/slide_show_pointer_color01"
+                                android:layout_width="39.33dip"
+                                android:layout_height="38.67dip"
+                                android:layout_marginBottom="5.00dip"
+                                android:layout_marginLeft="5.00dip"
+                                android:layout_marginRight="3.00dip"
+                                android:layout_marginTop="5.00dip"
+                                android:contentDescription=" "
+                                android:onClick="onClickColor" />
+
+                            <com.infraware.common.widget.marker.MarkerColorImageView
+                                android:id="@+id/slide_show_pointer_color02"
+                                android:layout_width="39.33dip"
+                                android:layout_height="38.67dip"
+                                android:layout_marginBottom="5.00dip"
+                                android:layout_marginRight="3.00dip"
+                                android:layout_marginTop="5.00dip"
+                                android:contentDescription=" "
+                                android:onClick="onClickColor" />
+
+                            <com.infraware.common.widget.marker.MarkerColorImageView
+                                android:id="@+id/slide_show_pointer_color03"
+                                android:layout_width="39.33dip"
+                                android:layout_height="38.67dip"
+                                android:layout_marginBottom="5.00dip"
+                                android:layout_marginRight="3.00dip"
+                                android:layout_marginTop="5.00dip"
+                                android:contentDescription=" "
+                                android:onClick="onClickColor" />
+
+                            <com.infraware.common.widget.marker.MarkerColorImageView
+                                android:id="@+id/slide_show_pointer_color04"
+                                android:layout_width="39.33dip"
+                                android:layout_height="38.67dip"
+                                android:layout_marginBottom="5.00dip"
+                                android:layout_marginRight="3.00dip"
+                                android:layout_marginTop="5.00dip"
+                                android:contentDescription=" "
+                                android:onClick="onClickColor" />
+
+                            <com.infraware.common.widget.marker.MarkerColorImageView
+                                android:id="@+id/slide_show_pointer_color05"
+                                android:layout_width="39.33dip"
+                                android:layout_height="38.67dip"
+                                android:layout_marginBottom="5.00dip"
+                                android:layout_marginRight="5.00dip"
+                                android:layout_marginTop="5.00dip"
+                                android:contentDescription=" "
+                                android:onClick="onClickColor" />
+                        </LinearLayout>
+
+                        <com.infraware.common.widget.marker.PenDrawOptionsView
+                            android:id="@+id/slide_show_marker_option"
+                            android:layout_width="274.67dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="44.00dip"
+                            android:background="@drawable/popover_bg" />
+                    </RelativeLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/slide_show_controller"
+            android:layout_width="match_parent"
+            android:layout_height="41dip"
+            android:background="@drawable/tab_bg_center_n" >
+
+            <ImageView
+                android:id="@+id/slide_show_controller_previous"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/slideshow_controller_center_selector"
+                android:maxWidth="60dp"
+                android:onClick="onClickController"
+                android:src="@drawable/slideshow_divice_control_previous" />
+
+            <ImageView
+                android:id="@+id/slide_show_controller_next"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/slide_show_controller_previous"
+                android:background="@drawable/slideshow_controller_center_selector"
+                android:maxWidth="60dp"
+                android:onClick="onClickController"
+                android:src="@drawable/slideshow_divice_control_next" />
+
+            <ImageView
+                android:id="@+id/slide_show_note_close"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/slideshow_controller_close_selector"
+                android:maxWidth="60dp"
+                android:onClick="onClickNote" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/sec_slide_show_controller"
+            android:layout_width="match_parent"
+            android:layout_height="41dip"
+            android:background="@drawable/menubar_bg_center_n"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/sec_slide_show_controller_first"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/slideshow_controller_first_selector"
+                android:maxWidth="60dp"
+                android:onClick="onClickController"
+                android:src="@drawable/slideshow_divice_control_first" />
+
+            <ImageView
+                android:id="@+id/sec_slide_show_controller_previous"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/slideshow_controller_center_selector"
+                android:maxWidth="60dp"
+                android:onClick="onClickController"
+                android:src="@drawable/slideshow_divice_control_previous" />
+
+            <ImageView
+                android:id="@+id/sec_slide_show_controller_next"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/slideshow_controller_center_selector"
+                android:maxWidth="60dp"
+                android:onClick="onClickController"
+                android:src="@drawable/slideshow_divice_control_next" />
+
+            <ImageView
+                android:id="@+id/sec_slide_show_controller_last"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/slideshow_controller_center_selector"
+                android:maxWidth="60dp"
+                android:onClick="onClickController"
+                android:src="@drawable/slideshow_divice_control_last" />
+
+            <ImageView
+                android:id="@+id/sec_slide_show_controller_tvout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/slideshow_controller_last_selector"
+                android:maxWidth="60dp"
+                android:onClick="onClickController"
+                android:src="@drawable/slideshow_divice_control_tvpause" />
+
+            <ImageView
+                android:id="@+id/sec_slide_show_note_close"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/slideshow_controller_close_selector"
+                android:maxWidth="60dp"
+                android:onClick="onClickNote" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/slide_show_note"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="41.00dip"
+                android:background="@drawable/memo_title_bg"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="13.33dip"
+                android:text="@string/dm_view_slide_note"
+                android:textColor="@color/cm_memo_title_text"
+                android:textSize="15.00sp" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="192.67dip"
+                android:background="@color/panel_bg_full" >
+
+                <ScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:fadingEdge="none"
+                    android:fillViewport="true" >
+
+                    <com.infraware.polarisoffice6.common.ExEditText
+                        android:id="@+id/slide_show_note_edittext"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/memo_text_bg"
+                        android:gravity="left|top"
+                        android:hint="@string/dm_view_slide_note"
+                        android:textColorHint="@color/cm_edit_text_hint"
+                        android:imeOptions="actionDone"
+                        android:lineSpacingExtra="5.00dip"
+                        android:lineSpacingMultiplier="1"
+                        android:maxLength="1024"
+                        android:paddingBottom="12.00dip"
+                        android:paddingLeft="13.50dip"
+                        android:paddingRight="13.50dip"
+                        android:paddingTop="7.00dip"
+                        android:textColor="@color/cm_memo_content_text"
+                        android:textCursorDrawable="@null"
+                        android:textSize="14.00sp" />
+                </ScrollView>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

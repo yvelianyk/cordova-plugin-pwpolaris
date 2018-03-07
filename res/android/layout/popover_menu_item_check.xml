@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="42.50dip"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <CheckBox
+        android:id="@+id/after_check"
+        android:layout_width="@dimen/pop_over_check_width"
+        android:layout_height="@dimen/pop_over_check_width"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/pop_over_check_margin_left"
+        android:background="@null"
+        android:button="@drawable/cm_checkbox_selector_common"
+        android:gravity="right|center_vertical" />
+
+    <!-- paddingRight 48.50 == checkBox width -->
+    <!-- 글자 크기 아주 크게로 변경 했을 때, CheckBox와 TextView 겹치는 문제 -->
+     <!-- //20130816 khchoi To apply GUI change --> 
+    <TextView
+        android:id="@+id/middle_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/pop_over_margin_left"
+        android:paddingLeft="0dip"
+        android:paddingRight="48.50dip"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/popover_list_tcolor_selector"
+        android:textSize="14.00sp" />
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:state_focused="true" android:drawable="@drawable/popover_icon_viewmode_n"/> <!-- [2013.11.19][hjlee] Modify focus image for BT keybroad -->
+	<item android:state_enabled="false" android:drawable="@drawable/popover_icon_viewmode_d"/>
+	<item android:drawable="@drawable/popover_icon_viewmode_n" />   <!-- default --> 
+</selector>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- <item android:drawable="@drawable/title_ico_properties_n" android:state_selected="true"/>  -->
+    <!-- <item android:drawable="@drawable/title_ico_properties_n" android:state_focused="true"/> --><!--//[2013.11.15][최경호] To debug bt key focus selector-->
+    <item android:drawable="@drawable/title_ico_properties_p_whitetheme" android:state_enabled="false"/>
+    <item android:drawable="@drawable/title_ico_properties_p_whitetheme" android:state_pressed="true"/>   
+    <item android:drawable="@drawable/title_ico_properties_n_whitetheme"/>
+ <!-- default -->
+
+</selector>

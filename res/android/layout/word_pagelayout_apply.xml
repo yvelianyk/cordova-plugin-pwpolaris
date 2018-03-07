@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+	    android:id="@+id/word_pagelayout_apply"
+	    android:layout_width="match_parent"
+	    android:layout_height="18.67dip"
+	    android:gravity="left|top"
+	    android:text="@string/dm_wrod_pagelayout_apply_range"
+	    android:textColor="@color/panel_sub_title_tcolor"
+	    android:textSize="@dimen/pl_title_text_size" />
+    
+	<RadioGroup
+	    android:id="@+id/rg_apply_group"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:layout_marginTop="9.67dip"
+	    android:layout_marginBottom="14.00dp"
+	    android:orientation="vertical" >
+	
+	    <RadioButton
+	        android:id="@+id/pagelayout_button_current_section"
+	        android:text="@string/dm_current_section"
+	        style="@style/SelectionListItem.RadioButton.Top" />
+	
+	    <RadioButton
+	        android:id="@+id/pagelayout_button_current_page"
+	        android:text="@string/dm_current_page"
+	        style="@style/SelectionListItem.RadioButton.Middle" />
+	
+	    <RadioButton
+	        android:id="@+id/pagelayout_button_all_page"
+	        android:text="@string/dm_all_pages"
+	        style="@style/SelectionListItem.RadioButton.Bottom" />
+	</RadioGroup>
+</LinearLayout>

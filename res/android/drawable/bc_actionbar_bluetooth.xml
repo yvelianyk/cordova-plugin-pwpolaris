@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/title_ico_roomsearch_s" android:state_selected="true"/>
+    <item android:drawable="@drawable/title_ico_roomsearch_n" android:state_pressed="true"/>
+    <item android:drawable="@drawable/title_ico_roomsearch_n"/>
+
+</selector>

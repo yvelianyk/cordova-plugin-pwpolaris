@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_black">#FF000000</color>
+    <color name="transparent">#00000000</color>
+    
+    <color name="base_common_bg">#FFF5F5F5</color>
+    <color name="base_common_dialog_bg">#FFF5F5F5</color>
+    <color name="base_info_file_name">#FF282828</color>
+    <color name="base_info_item_content">#FF282828</color>
+    <color name="base_info_item_title">#FFA9A9A9</color>
+        
+    <color name="cm_common_background">#FFFFFFFF</color>
+    <color name="cm_common_error_text">#FFCF5959</color>
+    <color name="cm_common_message_text">#FF646464</color>
+    <color name="cm_edit_text_highlight">#FFB2DDF6</color>
+    <color name="cm_edit_text_hint">#FFC8C8C8</color>
+    <color name="cm_edit_text_normal">#FF282828</color>
+    <color name="cm_list_item_name_disabled">#FFB3B3B3</color>
+    <color name="cm_list_item_name_selected">#FFFFFFFF</color>
+    <color name="cm_list_item_name_pressed">#FFFFFFFF</color>
+    <color name="cm_list_item_name_normal">#FF282828</color>
+    <color name="cm_title_button_text_disabled">#FF586061</color>
+    <color name="cm_title_button_text_normal">#FF414750</color>
+    <color name="cm_list_item_info_disabled">#FFB3B3B3</color>
+    <color name="cm_list_item_info_selected">#FFA6D6FF</color>
+    <color name="cm_list_item_info_pressed">#FFA6D6FF</color>
+    <color name="cm_list_item_info_normal">#FF53A7F6</color>
+    <color name="cm_popup_item_normal">#FFF5F5F5</color>
+    <color name="cm_title_sub_text">#FF282828</color>
+    <color name="cm_memo_title_text">#414750</color>
+    <color name="cm_memo_content_text">#3d3d3d</color>
+        
+    <color name="fm_file_item_name_search_normal">#FF53A7F6</color>
+    <color name="fm_file_item_name_search_pressed">#FFA6D6FF</color>
+    <color name="fm_file_item_select_normal">#FFFFFFFF</color>
+   	<color name="fm_file_item_select_pressed">#FFFFFFFF</color>
+    <color name="fm_file_item_select_selected">#FFFFFFFF</color>
+    <color name="fm_file_item_up_selected">#FFFFFFFF</color>
+    <color name="fm_file_item_up_pressed">#FFFFFFFF</color>
+    <color name="fm_file_item_up_normal">#FF282828</color>
+    <color name="fm_info_bg">#FFDADADA</color>
+
+    <!-- //20130814 khchoi To apply GUI [start] -->  
+    <color name="cm_btn_color_n">#FF282828</color>
+    <color name="cm_btn_color_p">#FFFFFFFF</color>
+    <color name="cm_btn_color_d">#FFBEBEBE</color>
+    <color name="cm_btn_color_f">#FF282828</color>
+    <!-- //20130814 khchoi To apply GUI [end] -->
+    
+    <color name="cm_text_field_disabled">#FFC8C8C8</color>
+    <color name="cm_text_field_normal">#FF282828</color>
+    <color name="cm_popover_line">#FFEBEBEB</color>
+
+    <color name="cm_tap_normal">#FF4B5A66</color> 
+    <color name="cm_tap_pressed">#FF1184E6</color> 
+    
+    <color name="cm_menubar_nor_press">#FFFFFFFF</color>
+    <color name="cm_menubar_disabled">#FFA0ABB9</color>
+    
+    <color name="cm_list_second_text_normal">#FF53A7F6</color>
+    <color name="cm_list_second_text_pressed">#FFA6D6FF</color>
+    <color name="cm_list_bg_color">#FFFFFFFF</color>
+    
+    <color name="panel_default_text">#FF646464</color>
+    <color name="cm_menu_divider">#FFEBEBEB</color>
+    <color name="cm_list_divider">#FFEBEBEB</color>
+    <color name="panel_button_text_color_pressed">#ffffffff</color>
+    <color name="panel_button_text_color_normal">#ff282828</color>
+    <color name="panel_button_text_color_disabled">#ffbebebe</color>
+    <color name="po_listitem_chartfontsize_text_color">#ff323b4a</color>
+    <color name="po_listitem_1_btn_background">#202324</color>
+    <color name="actionbar_menu_text_color_selected">#ffffff</color>
+    <color name="actionbar_menu_text_color_disabled">#bebebe</color>
+    <color name="actionbar_menu_text_color_normal">#282828</color>
+
+    <color name="cm_menu_item_name_hovered">#FF499fed</color>
+
+</resources>

@@ -1,0 +1,3099 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_common_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/actiontitlebar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/slide_transtion_preview_layout"
+                android:layout_width="155dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/option_bg_landscape" >
+                  
+                <com.infraware.document.slide.SlideShowGLSurfaceView
+                    android:id="@+id/slide_preview_gl_image"
+                    android:layout_width="150dp"
+                    android:layout_height="113dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="8dip"
+                    android:layout_marginTop="8dip" />
+
+                <com.infraware.document.slide.SlideShowSurfaceView
+                    android:id="@+id/slide_preview_image"
+                    android:layout_width="150dp"
+                    android:layout_height="113dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="8dip"
+                    android:layout_marginTop="8dip" />
+                <!--
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/bottom_shadow" /> -->
+
+                <!-- <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/title_bg_shadow" /> -->
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/slide_animation_tap_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dip"
+                    android:background="@drawable/option_bg"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/slide_animation_appeal"
+                        style="@style/CommonTabButton.Left"
+                        android:textColor="@color/panel_tab_tcolor_selector_slide"
+                        android:onClick="onTabclick"
+                        android:text="@string/slide_ani_ico_entrance_01" />
+
+                    <Button
+                        android:id="@+id/slide_animation_emphasis"
+                        style="@style/CommonTabButton.Center"
+                        android:textColor="@color/panel_tab_tcolor_selector_slide"
+                        android:onClick="onTabclick"
+                        android:text="@string/dm_font_text_style_8" />
+
+                    <Button
+                        android:id="@+id/slide_animation_exit"
+                        style="@style/CommonTabButton.Center"
+                        android:textColor="@color/panel_tab_tcolor_selector_slide"
+                        android:onClick="onTabclick"
+                        android:text="@string/bc_tooltip_close" />
+
+                    <Button
+                        android:id="@+id/slide_animation_route"
+                        style="@style/CommonTabButton.Right"
+                        android:textColor="@color/panel_tab_tcolor_selector_slide"
+                        android:onClick="onTabclick"
+                        android:text="@string/slide_ani_title_route" 
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/base_common_bg" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="10dp" >
+
+                        <LinearLayout
+                            android:id="@+id/slide_animation_appeal_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="visible" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="2.5dip"
+                                    android:layout_marginLeft="25dip"
+                                    android:layout_marginRight="25dip"
+                                    android:orientation="horizontal" >
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_entrance_01"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_entrance_01" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_entrance_02"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_entrance_02" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_entrance_03"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/transition_option_selector"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_entrance_03" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_entrance_04"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/transition_option_selector"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_entrance_04" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_entrance_05"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/transition_option_selector"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_entrance_05" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dip"
+                                    android:layout_marginRight="25dip"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_entrance_01_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/slide_ani_ico_entrance_01"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_entrance_02_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/slide_ani_ico_entrance_02"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_entrance_03_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/slide_ani_ico_entrance_03"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_entrance_04_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/slide_ani_ico_entrance_04"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_entrance_05_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/dm_word_pagelayout_dividing"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dip"
+                                android:orientation="vertical" >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="2.5dip"
+                                    android:layout_marginLeft="25dip"
+                                    android:layout_marginRight="25dip"
+                                    android:orientation="horizontal" >
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_entrance_06"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/transition_option_selector"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_entrance_06" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_entrance_07"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/transition_option_selector"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_entrance_07" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_entrance_08"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/transition_option_selector"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_entrance_08" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_entrance_09"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/transition_option_selector"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_entrance_09" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_entrance_10"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_entrance_10" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dip"
+                                    android:layout_marginRight="25dip"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_entrance_06_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/slide_ani_ico_entrance_06"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_entrance_07_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/slide_ani_ico_entrance_07"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_entrance_08_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/slide_ani_ico_entrance_08"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_entrance_09_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/slide_ani_ico_entrance_09"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_entrance_10_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/slide_ani_ico_entrance_10"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dip"
+                                android:orientation="vertical" >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="2.5dip"
+                                    android:layout_marginLeft="25dip"
+                                    android:layout_marginRight="25dip"
+                                    android:orientation="horizontal" >
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_entrance_11"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/transition_option_selector"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_entrance_11" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_entrance_12"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_entrance_12" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_entrance_13"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_entrance_13" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <View
+                                        android:layout_width="50dip"
+                                        android:layout_height="48dip" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <View
+                                        android:layout_width="50dip"
+                                        android:layout_height="48dip" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dip"
+                                    android:layout_marginRight="25dip"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_entrance_11_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/dm_zoom"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_entrance_12_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/dm_rotate"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_entrance_13_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/slide_ani_ico_entrance_13"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <View
+                                        android:layout_width="50dip"
+                                        android:layout_height="9dip" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <View
+                                        android:layout_width="50dip"
+                                        android:layout_height="9dip" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/slide_animation_emphasis_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="2.5dip"
+                                    android:layout_marginLeft="25dip"
+                                    android:layout_marginRight="25dip"
+                                    android:orientation="horizontal" >
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_emphasis_01"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_emphasis_01" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_emphasis_02"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/transition_option_selector"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_emphasis_02" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_emphasis_03"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_emphasis_03" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_emphasis_04"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/transition_option_selector"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_emphasis_04" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_emphasis_05"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/transition_option_selector"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_emphasis_05" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dip"
+                                    android:layout_marginRight="25dip"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_emphasis_01_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/slide_ani_ico_emphasis_01"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_emphasis_02_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/slide_ani_ico_emphasis_02"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_emphasis_03_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/slide_ani_ico_emphasis_03"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_emphasis_04_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/dm_rotate"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_emphasis_05_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/slide_ani_ico_emphasis_05"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dip"
+                                android:orientation="vertical" >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="2.5dip"
+                                    android:layout_marginLeft="25dip"
+                                    android:layout_marginRight="25dip"
+                                    android:orientation="horizontal" >
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_emphasis_06"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_emphasis_06" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_emphasis_07"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_emphasis_07" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_emphasis_08"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_emphasis_08" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_emphasis_09"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/transition_option_selector"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_emphasis_09" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_emphasis_10"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/transition_option_selector"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_emphasis_10" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dip"
+                                    android:layout_marginRight="25dip"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_emphasis_06_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/slide_ani_ico_emphasis_06"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_emphasis_07_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/slide_ani_ico_emphasis_07"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_emphasis_08_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/slide_ani_ico_emphasis_08"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_emphasis_09_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/slide_ani_ico_emphasis_09"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_emphasis_10_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/slide_ani_ico_emphasis_10"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dip"
+                                android:orientation="vertical" >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="2.5dip"
+                                    android:layout_marginLeft="25dip"
+                                    android:layout_marginRight="25dip"
+                                    android:orientation="horizontal" >
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_emphasis_11"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_emphasis_11" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_emphasis_12"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/transition_option_selector"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_emphasis_12" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_emphasis_13"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/transition_option_selector"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_emphasis_13" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+                                    <View
+                                        android:layout_width="50dip"
+                                        android:layout_height="48dip" />
+									<!--  
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_emphasis_14"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/transition_option_selector"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_emphasis_14" />
+									-->
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+                                    <View
+                                        android:layout_width="50dip"
+                                        android:layout_height="48dip" />
+									<!--
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_emphasis_15"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/transition_option_selector"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_emphasis_15" />
+                                    -->
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dip"
+                                    android:layout_marginRight="25dip"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_emphasis_11_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/slide_ani_ico_emphasis_11"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_emphasis_12_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/slide_ani_ico_emphasis_12"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_emphasis_13_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/slide_ani_ico_emphasis_13"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+                                    <View
+                                        android:layout_width="50dip"
+                                        android:layout_height="9dip" />
+									<!--  
+                                    <TextView
+                                        android:id="@+id/ico_ani_emphasis_14_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/slide_ani_ico_emphasis_14"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+									-->
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+                                    <View
+                                        android:layout_width="50dip"
+                                        android:layout_height="9dip" />
+									<!--
+                                    <TextView
+                                        android:id="@+id/ico_ani_emphasis_15_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/dm_font_color"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+                                    -->
+                                </LinearLayout>
+                            </LinearLayout>
+<!--  
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dip"
+                                android:orientation="vertical" >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="2.5dip"
+                                    android:layout_marginLeft="25dip"
+                                    android:layout_marginRight="25dip"
+                                    android:orientation="horizontal" >
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_emphasis_16"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_emphasis_16" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_emphasis_17"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_emphasis_17" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_emphasis_18"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_emphasis_18" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_emphasis_19"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_emphasis_19" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <View
+                                        android:layout_width="50dip"
+                                        android:layout_height="48dip" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dip"
+                                    android:layout_marginRight="25dip"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_emphasis_16_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/dm_font_underline"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_emphasis_17_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/slide_ani_ico_emphasis_17"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_emphasis_18_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/slide_ani_ico_emphasis_18"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_emphasis_19_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/slide_ani_frame_waves"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <View
+                                        android:layout_width="50dip"
+                                        android:layout_height="9dip" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            -->
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/slide_animation_exit_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/base_common_bg"
+                            android:orientation="vertical"
+                            android:visibility="gone" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="2.5dip"
+                                    android:layout_marginLeft="25dip"
+                                    android:layout_marginRight="25dip"
+                                    android:orientation="horizontal" >
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_exit_01"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_exit_01" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_exit_02"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_exit_02" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_exit_03"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/transition_option_selector"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_exit_03" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_exit_04"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/transition_option_selector"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_exit_04" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_exit_05"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/transition_option_selector"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_exit_05" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dip"
+                                    android:layout_marginRight="25dip"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_exit_01_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/slide_ani_ico_exit_01"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_exit_02_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/slide_ani_ico_entrance_02"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_exit_03_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/slide_ani_ico_exit_03"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_exit_04_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/slide_ani_ico_exit_04"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_exit_05_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/dm_word_pagelayout_dividing"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dip"
+                                android:orientation="vertical" >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="2.5dip"
+                                    android:layout_marginLeft="25dip"
+                                    android:layout_marginRight="25dip"
+                                    android:orientation="horizontal" >
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_exit_06"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/transition_option_selector"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_exit_06" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_exit_07"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/transition_option_selector"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_exit_07" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_exit_08"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/transition_option_selector"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_exit_08" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_exit_09"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/transition_option_selector"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_exit_09" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_exit_10"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_exit_10" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dip"
+                                    android:layout_marginRight="25dip"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_exit_06_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/slide_ani_ico_entrance_06"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_exit_07_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/slide_ani_ico_entrance_07"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_exit_08_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/slide_ani_ico_entrance_08"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_exit_09_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/slide_ani_ico_entrance_09"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_exit_10_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/slide_ani_ico_exit_10"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dip"
+                                android:orientation="vertical" >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="2.5dip"
+                                    android:layout_marginLeft="25dip"
+                                    android:layout_marginRight="25dip"
+                                    android:orientation="horizontal" >
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_exit_11"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/transition_option_selector"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_exit_11" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_exit_12"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_exit_12" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_exit_13"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_exit_13" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <View
+                                        android:layout_width="50dip"
+                                        android:layout_height="48dip" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <View
+                                        android:layout_width="50dip"
+                                        android:layout_height="48dip" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dip"
+                                    android:layout_marginRight="25dip"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_exit_11_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/dm_zoom"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_exit_12_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/dm_rotate"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_exit_13_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/slide_ani_ico_entrance_13"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <View
+                                        android:layout_width="50dip"
+                                        android:layout_height="9dip" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <View
+                                        android:layout_width="50dip"
+                                        android:layout_height="9dip" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/slide_animation_route_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="2.5dip"
+                                    android:layout_marginLeft="25dip"
+                                    android:layout_marginRight="25dip"
+                                    android:orientation="horizontal" >
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_route_01"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_route_01" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_route_02"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_route_02" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_route_03"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_route_03" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_route_04"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_route_04" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="48dip"
+                                        android:layout_weight="1" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_route_05"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="onClicks"
+                                        android:src="@drawable/ico_ani_route_05" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dip"
+                                    android:layout_marginRight="25dip"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_route_01_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/dm_line"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_route_02_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/dm_PDFOval"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_route_03_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/dm_rotate"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_route_04_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/dm_shape"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+
+                                    <View
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="9dip"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:id="@+id/ico_ani_route_05_txt"
+                                        android:layout_width="50dip"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="@string/dm_repeat_video"
+                                        android:textColor="@color/panel_item_tcolor_selector"
+                                        android:textSize="8.00sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ico_ani_option_colorpicker_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone" >
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.67dip"
+                                android:layout_marginBottom="10dip"
+                                android:layout_marginLeft="17dip"
+                                android:layout_marginRight="17dip"
+                                android:layout_marginTop="10dip"
+                                android:background="@drawable/img_divider_repeat" />
+
+                            <TextView
+                                android:id="@+id/ico_slide_animation_option_colorpicker_txt"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dip"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginLeft="17dip"
+                                android:layout_marginRight="17dip"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="@string/dm_color"
+                                android:textColor="@color/panel_sub_title_tcolor"
+                                android:textSize="14.00sp" />
+
+                            <com.infraware.document.slide.SlideAnimationAddColorPalette
+                                android:id="@+id/slide_animation_color_palette"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="17dip"
+                                android:layout_marginRight="17dip" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ico_ani_option_direction_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone" >
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.67dip"
+                                android:layout_marginBottom="10dip"
+                                android:layout_marginLeft="17dip"
+                                android:layout_marginRight="17dip"
+                                android:layout_marginTop="10dip"
+                                android:background="@drawable/img_divider_repeat" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="17dp"
+                                android:layout_marginRight="17dp"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/ico_slide_animation_option_direction_txt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="left"
+                                    android:text="@string/dm_sort_direction"
+                                    android:textColor="@color/panel_sub_title_tcolor"
+                                    android:textSize="14.00sp" />
+
+                                <TextView
+                                    android:id="@+id/ico_slide_animation_option_diagram_txt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.25"
+                                    android:gravity="left"
+                                    android:text="@string/dm_shape"
+                                    android:textColor="@color/panel_sub_title_tcolor"
+                                    android:textSize="14.00sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ico_ani_option_8_fly_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="25dip"
+                                android:layout_marginRight="25dip"
+                                android:orientation="horizontal"
+                                android:visibility="gone" >
+
+                                <ImageButton
+                                    android:id="@+id/ico_ani_option_8_fly_01"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/panel_item_bg_selector_slide"
+                                    android:gravity="center"
+                                    android:onClick="OptionClicks"
+                                    android:src="@drawable/ico_ani_option_animation_fly_01" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <ImageButton
+                                    android:id="@+id/ico_ani_option_8_fly_02"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/panel_item_bg_selector_slide"
+                                    android:gravity="center"
+                                    android:onClick="OptionClicks"
+                                    android:src="@drawable/ico_ani_option_animation_fly_02" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <ImageButton
+                                    android:id="@+id/ico_ani_option_8_fly_03"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/panel_item_bg_selector_slide"
+                                    android:gravity="center"
+                                    android:onClick="OptionClicks"
+                                    android:src="@drawable/ico_ani_option_animation_fly_03" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <ImageButton
+                                    android:id="@+id/ico_ani_option_8_fly_04"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/panel_item_bg_selector_slide"
+                                    android:gravity="center"
+                                    android:onClick="OptionClicks"
+                                    android:src="@drawable/ico_ani_option_animation_fly_04" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <ImageButton
+                                    android:id="@+id/ico_ani_option_8_fly_05"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/panel_item_bg_selector_slide"
+                                    android:gravity="center"
+                                    android:onClick="OptionClicks"
+                                    android:src="@drawable/ico_ani_option_animation_fly_05" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <ImageButton
+                                    android:id="@+id/ico_ani_option_8_fly_06"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/panel_item_bg_selector_slide"
+                                    android:gravity="center"
+                                    android:onClick="OptionClicks"
+                                    android:src="@drawable/ico_ani_option_animation_fly_06" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <ImageButton
+                                    android:id="@+id/ico_ani_option_8_fly_07"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/panel_item_bg_selector_slide"
+                                    android:gravity="center"
+                                    android:onClick="OptionClicks"
+                                    android:src="@drawable/ico_ani_option_animation_fly_07" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <ImageButton
+                                    android:id="@+id/ico_ani_option_8_fly_08"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/panel_item_bg_selector_slide"
+                                    android:gravity="center"
+                                    android:onClick="OptionClicks"
+                                    android:src="@drawable/ico_ani_option_animation_fly_08" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ico_ani_option_2_fly_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginRight="25dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone" >
+
+                                <ImageButton
+                                    android:id="@+id/ico_ani_option_2_fly_01"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/panel_item_bg_selector_slide"
+                                    android:gravity="center"
+                                    android:onClick="OptionClicks"
+                                    android:src="@drawable/ico_ani_option_animation_fly_01" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <ImageButton
+                                    android:id="@+id/ico_ani_option_2_fly_02"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/panel_item_bg_selector_slide"
+                                    android:gravity="center"
+                                    android:onClick="OptionClicks"
+                                    android:src="@drawable/ico_ani_option_animation_fly_05" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="34dip"
+                                    android:layout_height="34dip" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="34dip"
+                                    android:layout_height="34dip" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="34dip"
+                                    android:layout_height="34dip" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="34dip"
+                                    android:layout_height="34dip" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="34dip"
+                                    android:layout_height="34dip" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="34dip"
+                                    android:layout_height="34dip" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ico_ani_option_4_fly_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginRight="25dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone" >
+
+                                <ImageButton
+                                    android:id="@+id/ico_ani_option_4_fly_01"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/panel_item_bg_selector_slide"
+                                    android:gravity="center"
+                                    android:onClick="OptionClicks"
+                                    android:src="@drawable/ico_ani_option_animation_fly_01" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <ImageButton
+                                    android:id="@+id/ico_ani_option_4_fly_02"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/panel_item_bg_selector_slide"
+                                    android:gravity="center"
+                                    android:onClick="OptionClicks"
+                                    android:src="@drawable/ico_ani_option_animation_fly_03" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <ImageButton
+                                    android:id="@+id/ico_ani_option_4_fly_03"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/panel_item_bg_selector_slide"
+                                    android:gravity="center"
+                                    android:onClick="OptionClicks"
+                                    android:src="@drawable/ico_ani_option_animation_fly_07" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <ImageButton
+                                    android:id="@+id/ico_ani_option_4_fly_04"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/panel_item_bg_selector_slide"
+                                    android:gravity="center"
+                                    android:onClick="OptionClicks"
+                                    android:src="@drawable/ico_ani_option_animation_fly_05" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="34dip"
+                                    android:layout_height="34dip" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="34dip"
+                                    android:layout_height="34dip" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="34dip"
+                                    android:layout_height="34dip" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="34dip"
+                                    android:layout_height="34dip" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ico_ani_option_split_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginRight="25dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone" >
+
+                                <ImageButton
+                                    android:id="@+id/ico_ani_option_split_01"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/panel_item_bg_selector_slide"
+                                    android:gravity="center"
+                                    android:onClick="OptionClicks"
+                                    android:src="@drawable/ico_ani_option_animation_split_01" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <ImageButton
+                                    android:id="@+id/ico_ani_option_split_02"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/panel_item_bg_selector_slide"
+                                    android:gravity="center"
+                                    android:onClick="OptionClicks"
+                                    android:src="@drawable/ico_ani_option_animation_split_02" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <ImageButton
+                                    android:id="@+id/ico_ani_option_split_03"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/panel_item_bg_selector_slide"
+                                    android:gravity="center"
+                                    android:onClick="OptionClicks"
+                                    android:src="@drawable/ico_ani_option_animation_split_03" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <ImageButton
+                                    android:id="@+id/ico_ani_option_split_04"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/panel_item_bg_selector_slide"
+                                    android:gravity="center"
+                                    android:onClick="OptionClicks"
+                                    android:src="@drawable/ico_ani_option_animation_split_04" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="34dip"
+                                    android:layout_height="34dip" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="34dip"
+                                    android:layout_height="34dip" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="34dip"
+                                    android:layout_height="34dip" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="34dip"
+                                    android:layout_height="34dip" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ico_ani_option_shape_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginRight="25dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone" >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal" >
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_option_shape_01"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="OptionClicks"
+                                        android:src="@drawable/ico_ani_option_animation_shape_01" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_option_shape_02"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="23dp"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="OptionClicks"
+                                        android:src="@drawable/ico_ani_option_animation_shape_02" />
+
+                                    <View
+                                        android:layout_width="34dp"
+                                        android:layout_height="34dp"
+                                        android:layout_marginLeft="23dp" />
+
+                                    <View
+                                        android:layout_width="34dp"
+                                        android:layout_height="34dp"
+                                        android:layout_marginLeft="23dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal" >
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_option_shape_03"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="Option2Clicks"
+                                        android:src="@drawable/ico_ani_option_animation_shape_03" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_option_shape_04"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="23dp"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="Option2Clicks"
+                                        android:src="@drawable/ico_ani_option_animation_shape_04" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_option_shape_05"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="23dp"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="Option2Clicks"
+                                        android:src="@drawable/ico_ani_option_animation_shape_05" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_option_shape_06"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="23dp"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="Option2Clicks"
+                                        android:src="@drawable/ico_ani_option_animation_shape_06" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ico_ani_option_wheel_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginRight="25dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone" >
+
+                                <ImageButton
+                                    android:id="@+id/ico_ani_option_wheel_01"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/panel_item_bg_selector_slide"
+                                    android:gravity="center"
+                                    android:onClick="OptionClicks"
+                                    android:src="@drawable/ico_ani_option_animation_wheel_01" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <ImageButton
+                                    android:id="@+id/ico_ani_option_wheel_02"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/panel_item_bg_selector_slide"
+                                    android:gravity="center"
+                                    android:onClick="OptionClicks"
+                                    android:src="@drawable/ico_ani_option_animation_wheel_02" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <ImageButton
+                                    android:id="@+id/ico_ani_option_wheel03"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/panel_item_bg_selector_slide"
+                                    android:gravity="center"
+                                    android:onClick="OptionClicks"
+                                    android:src="@drawable/ico_ani_option_animation_wheel_03" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <ImageButton
+                                    android:id="@+id/ico_ani_option_wheel_04"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/panel_item_bg_selector_slide"
+                                    android:gravity="center"
+                                    android:onClick="OptionClicks"
+                                    android:src="@drawable/ico_ani_option_animation_wheel_04" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <ImageButton
+                                    android:id="@+id/ico_ani_option_wheel_05"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/panel_item_bg_selector_slide"
+                                    android:gravity="center"
+                                    android:onClick="OptionClicks"
+                                    android:src="@drawable/ico_ani_option_animation_wheel_05" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="34dip"
+                                    android:layout_height="34dip" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="34dip"
+                                    android:layout_height="34dip" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="34dip"
+                                    android:layout_height="34dip" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ico_ani_option_randombar_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginRight="25dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone" >
+
+                                <ImageButton
+                                    android:id="@+id/ico_ani_option_randombar_01"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/panel_item_bg_selector_slide"
+                                    android:gravity="center"
+                                    android:onClick="OptionClicks"
+                                    android:src="@drawable/ico_ani_option_animation_randombar_02" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <ImageButton
+                                    android:id="@+id/ico_ani_option_randombar_02"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/panel_item_bg_selector_slide"
+                                    android:gravity="center"
+                                    android:onClick="OptionClicks"
+                                    android:src="@drawable/ico_ani_option_animation_randombar_01" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="34dip"
+                                    android:layout_height="34dip" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="34dip"
+                                    android:layout_height="34dip" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="34dip"
+                                    android:layout_height="34dip" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="34dip"
+                                    android:layout_height="34dip" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="34dip"
+                                    android:layout_height="34dip" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="34dip"
+                                    android:layout_height="34dip" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ico_ani_option_zoom_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginRight="25dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone" >
+
+                                <ImageButton
+                                    android:id="@+id/ico_ani_option_zoom_01"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/panel_item_bg_selector_slide"
+                                    android:gravity="center"
+                                    android:onClick="OptionClicks"
+                                    android:src="@drawable/ico_ani_option_animation_zoom_01" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <ImageButton
+                                    android:id="@+id/ico_ani_option_zoom_02"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/panel_item_bg_selector_slide"
+                                    android:gravity="center"
+                                    android:onClick="OptionClicks"
+                                    android:src="@drawable/ico_ani_option_animation_zoom_02" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="34dip"
+                                    android:layout_height="34dip" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="34dip"
+                                    android:layout_height="34dip" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="34dip"
+                                    android:layout_height="34dip" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="34dip"
+                                    android:layout_height="34dip" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="34dip"
+                                    android:layout_height="34dip" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="34dip"
+                                    android:layout_height="34dip" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ico_ani_option_rotate_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginRight="25dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone" >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal" >
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_option_rotate_01"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="OptionClicks"
+                                        android:src="@drawable/ico_ani_option_animation_rotate_01" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_option_rotate_02"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="23dp"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="OptionClicks"
+                                        android:src="@drawable/ico_ani_option_animation_rotate_02" />
+
+                                    <View
+                                        android:layout_width="34dp"
+                                        android:layout_height="34dp"
+                                        android:layout_marginLeft="23dp" />
+
+                                    <View
+                                        android:layout_width="34dp"
+                                        android:layout_height="34dp"
+                                        android:layout_marginLeft="23dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal" >
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_option_rotate_03"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="Option2Clicks"
+                                        android:src="@drawable/ico_ani_option_animation_rotate_03" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_option_rotate_04"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="23dp"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="Option2Clicks"
+                                        android:src="@drawable/ico_ani_option_animation_rotate_04" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_option_rotate_05"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="23dp"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="Option2Clicks"
+                                        android:src="@drawable/ico_ani_option_animation_rotate_05" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_option_rotate_06"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="23dp"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="Option2Clicks"
+                                        android:src="@drawable/ico_ani_option_animation_rotate_06" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ico_ani_option_scale_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginRight="25dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone" >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal" >
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_option_scale_01"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="OptionClicks"
+                                        android:src="@drawable/ico_ani_option_animation_scale_01" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_option_scale_02"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="23dp"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="OptionClicks"
+                                        android:src="@drawable/ico_ani_option_animation_scale_02" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_option_scale_03"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="23dp"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="OptionClicks"
+                                        android:src="@drawable/ico_ani_option_animation_scale_03" />
+
+                                    <View
+                                        android:layout_width="34dp"
+                                        android:layout_height="34dp"
+                                        android:layout_marginLeft="23dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal" >
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_option_scale_04"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="Option2Clicks"
+                                        android:src="@drawable/ico_ani_option_animation_scale_04" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_option_scale_05"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="23dp"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="Option2Clicks"
+                                        android:src="@drawable/ico_ani_option_animation_scale_05" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_option_scale_06"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="23dp"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="Option2Clicks"
+                                        android:src="@drawable/ico_ani_option_animation_scale_06" />
+
+                                    <ImageButton
+                                        android:id="@+id/ico_ani_option_scale_07"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="23dp"
+                                        android:background="@drawable/panel_item_bg_selector_slide"
+                                        android:gravity="center"
+                                        android:onClick="Option2Clicks"
+                                        android:src="@drawable/ico_ani_option_animation_scale_07" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ico_ani_option_opacity_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginRight="25dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone" >
+
+                                <ImageButton
+                                    android:id="@+id/ico_ani_option_opacity_01"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/panel_item_bg_selector_slide"
+                                    android:gravity="center"
+                                    android:onClick="OptionClicks"
+                                    android:src="@drawable/ico_ani_option_animation_opacity_01" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <ImageButton
+                                    android:id="@+id/ico_ani_option_opacity_02"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/panel_item_bg_selector_slide"
+                                    android:gravity="center"
+                                    android:onClick="OptionClicks"
+                                    android:src="@drawable/ico_ani_option_animation_opacity_02" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <ImageButton
+                                    android:id="@+id/ico_ani_option_opacity_03"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/panel_item_bg_selector_slide"
+                                    android:gravity="center"
+                                    android:onClick="OptionClicks"
+                                    android:src="@drawable/ico_ani_option_animation_opacity_03" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <ImageButton
+                                    android:id="@+id/ico_ani_option_opacity_04"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/panel_item_bg_selector_slide"
+                                    android:gravity="center"
+                                    android:onClick="OptionClicks"
+                                    android:src="@drawable/ico_ani_option_animation_opacity_04" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="34dip"
+                                    android:layout_height="34dip" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="34dip"
+                                    android:layout_height="34dip" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="34dip"
+                                    android:layout_height="34dip" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="34dip"
+                                    android:layout_height="34dip" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ico_ani_option_sequence_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginRight="25dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone" >
+
+                                <ImageButton
+                                    android:id="@+id/ico_ani_option_sequence_01"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/panel_item_bg_selector_slide"
+                                    android:gravity="center"
+                                    android:onClick="OptionClicks"
+                                    android:src="@drawable/ico_ani_option_animation_sequence_01" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <ImageButton
+                                    android:id="@+id/ico_ani_option_sequence_02"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/panel_item_bg_selector_slide"
+                                    android:gravity="center"
+                                    android:onClick="OptionClicks"
+                                    android:src="@drawable/ico_ani_option_animation_sequence_02" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <ImageButton
+                                    android:id="@+id/ico_ani_option_sequence_03"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/panel_item_bg_selector_slide"
+                                    android:gravity="center"
+                                    android:onClick="OptionClicks"
+                                    android:src="@drawable/ico_ani_option_animation_sequence_03" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="34dip"
+                                    android:layout_height="34dip" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="34dip"
+                                    android:layout_height="34dip" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="34dip"
+                                    android:layout_height="34dip" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="34dip"
+                                    android:layout_height="34dip" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dip"
+                                    android:layout_weight="1" />
+
+                                <View
+                                    android:layout_width="34dip"
+                                    android:layout_height="34dip" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.67dip"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="17dip"
+                            android:layout_marginRight="17dip"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/img_divider_repeat" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="17dip"
+                            android:layout_marginLeft="17dip"
+                            android:layout_marginRight="17dip"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/ico_slide_entrance_title_txt3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:gravity="left"
+                                android:text="@string/slide_ani_title_03"
+                                android:textColor="@color/panel_item_tcolor_selector"
+                                android:textSize="14.00sp" />
+
+                            <RadioGroup
+                                android:id="@+id/slide_ani_group"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical" >
+
+                                <RadioButton
+                                    android:id="@+id/slide_ani_effec1"
+                                    style="@style/SelectionListItem.RadioButton.Top"
+                                    android:drawableLeft="@drawable/radio_selector_slide"
+                                    android:background="@drawable/btn_multi_top_selector_slide"
+                                    android:checked="true"
+                                    android:text="@string/slide_ani_effect_01" />
+
+                                <RadioButton
+                                    android:id="@+id/slide_ani_effec2"
+                                    style="@style/SelectionListItem.RadioButton.Middle"
+                                    android:drawableLeft="@drawable/radio_selector_slide"
+                                    android:background="@drawable/btn_multi_middle_selector_slide"
+                                    android:text="@string/slide_ani_effect_02" />
+
+                                <RadioButton
+                                    android:id="@+id/slide_ani_effec3"
+                                    style="@style/SelectionListItem.RadioButton.Bottom"
+                                    android:drawableLeft="@drawable/radio_selector_slide"
+                                    android:background="@drawable/btn_multi_bottom_selector_slide"
+                                    android:text="@string/slide_ani_effect_03" />
+                            </RadioGroup>
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/title_bg_shadow" /> -->
+    </RelativeLayout>
+
+</LinearLayout>

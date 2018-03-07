@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewSwitcher xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/te_actionbar_switcher"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/te_actionbar_edit_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/text_actionbar_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <!-- ActionBar -->
+
+        <RelativeLayout
+            android:id="@+id/llActionBar"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/text_actionbar_height"
+            android:background="@drawable/title_bg_common"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+		        android:id="@+id/actionbar_view_right_layout"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:layout_alignParentRight="true"
+		        android:orientation="horizontal" >
+
+                <LinearLayout
+	                android:id="@+id/actionbar_undoredolayout"
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:layout_gravity="center_vertical"
+	                android:gravity="center_vertical" >
+	
+	                <ImageButton
+	                    android:id="@+id/btnUndo"
+	                    android:layout_width="48.00dip"
+	                    android:layout_height="fill_parent"
+	                    android:layout_marginLeft="4dp"
+	                    android:background="@drawable/actionbar_item_bg_selector_common"
+	                    android:contentDescription="@string/dm_undo"
+	                    android:src="@drawable/actionbar_undo"
+	                    android:visibility="gone" />
+	
+	                <ImageButton
+	                    android:id="@+id/btnRedo"
+	                    android:layout_width="48.00dip"
+	                    android:layout_height="fill_parent"
+	                    android:background="@drawable/actionbar_item_bg_selector_common"
+	                    android:contentDescription="@string/dm_redo"
+	                    android:src="@drawable/actionbar_redo"
+	                    android:visibility="gone" />
+	            </LinearLayout>
+
+	            <LinearLayout
+	                android:id="@+id/actionbar_rightlayout"
+	                android:layout_width="wrap_content"
+	                android:layout_height="fill_parent" >
+	
+	                <ImageButton
+	                    android:id="@+id/btnFind"
+	                    android:layout_width="48.00dip"
+	                    android:layout_height="fill_parent"
+	                    android:background="@drawable/actionbar_item_bg_selector_common"
+	                    android:contentDescription="@string/cm_action_bar_find_replace"
+	                    android:src="@drawable/actionbar_ico_find_selector_common" />
+	
+	                <ImageButton
+	                    android:id="@+id/btnProperties"
+	                    android:layout_width="48.00dip"
+	                    android:layout_height="fill_parent"
+	                    android:background="@drawable/actionbar_item_bg_selector_common"
+	                    android:contentDescription="@string/te_preferences"
+	                    android:src="@drawable/title_ico_setting" />
+	
+	                <ImageButton
+	                    android:id="@+id/btnFull"
+	                    android:layout_width="48.00dip"
+	                    android:layout_height="fill_parent"
+	                    android:background="@drawable/actionbar_item_bg_selector_common"
+	                    android:contentDescription="@string/cm_action_bar_fullview"
+	                    android:src="@drawable/title_ico_full" />
+	
+	                <ImageButton
+	                    android:id="@+id/btnMenu"
+	                    android:layout_width="48.00dip"
+	                    android:layout_height="fill_parent"
+	                    android:background="@drawable/actionbar_item_bg_selector_common"
+	                    android:contentDescription="@string/cm_action_bar_menu"
+	                    android:src="@drawable/actionbar_menu" />
+	                <ImageButton
+						android:id="@+id/btnUserMenu"
+						android:layout_width="48.00dip" 
+						android:layout_height="fill_parent"
+						android:src="@drawable/actionbar_user_menu"
+						android:background="@drawable/bg_pressed_selector"
+						android:contentDescription="@string/dm_etc"
+						android:visibility="gone"/>
+	            </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/actionbar_view_left_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@id/actionbar_view_right_layout"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/tvFormatIcon"
+                    android:layout_width="44.00dip"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/actionbar_item_bg_selector_common"
+                    android:contentDescription="@string/dm_file"
+                    android:src="@drawable/title_ico_edit_text_selector" />
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="10.5dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:textDirection="locale"
+                    android:gravity="center_vertical"
+                    android:maxLines="2"
+                    android:text="TextEditor"
+                    android:textColor="@color/actionbar_tcolor"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+     	<include layout = "@layout/te_findbar" />
+
+        <LinearLayout
+            android:id="@+id/llTTS"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/text_actionbar_height"
+            android:background="@drawable/title_bg_common"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tvTTSTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="13dip"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/dm_tts"
+                android:textColor="@color/actionbar_tcolor"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/btnTTS"
+                android:layout_width="48.00dip"
+                android:layout_height="fill_parent"
+                android:background="@drawable/actionbar_item_bg_selector_common"
+                android:contentDescription="@string/dm_tts"
+                android:src="@drawable/title_ico_tts"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/btnDone"
+                android:layout_width="48.00dip"
+                android:layout_height="fill_parent"
+                android:background="@drawable/actionbar_item_bg_selector_common"
+                android:contentDescription="@string/cm_btn_done"
+                android:src="@drawable/actionbar_ico_check" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ViewSwitcher>

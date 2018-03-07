@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/po_sheet_numbers_list_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/actiontitlebar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/sheet_format_activity_margin_top"
+            android:paddingBottom="@dimen/sheet_format_activity_margin_top"
+            android:layout_marginLeft="@dimen/sheet_format_activity_margin_left_right"
+            android:layout_marginRight="@dimen/sheet_format_activity_margin_left_right"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/text_decimalplaces"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/sheet_format_activity_sub_text_height"
+                android:layout_marginBottom="@dimen/sheet_format_activity_sub_text_margin_bottom"
+                android:gravity="left|center"
+                android:text="@string/dm_decimal_places"
+                android:textColor="@color/panel_sub_title_tcolor"
+                android:textSize="14sp" />
+
+            <com.infraware.common.widget.WheelButton
+                android:id="@+id/spin_decimalplaces"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/panel_button_height"
+                android:gravity="center" />
+
+            <LinearLayout
+                android:id="@+id/sheet_list_layer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sheet_format_activity_layout_margin_vertical_11_33"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <!-- line -->
+
+				<include
+				    android:id="@+id/line_number_divider1" 
+				    layout="@layout/cm_panel_divider"/>
+
+                <RelativeLayout
+                    android:id="@+id/relative_seperator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="47.00dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/text_seperator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/dm_number_1000_seperator"
+                        android:textColor="@color/panel_sub_title_tcolor"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/check_seperator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/checkbox_selector_sheet" />
+                </RelativeLayout>
+
+                <!-- line -->
+
+                <include
+				    android:id="@+id/line_number_divider2" 
+				    layout="@layout/cm_panel_divider"/>
+
+                <TextView
+                    android:id="@+id/txt_nagative"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/sheet_format_activity_sub_text_height"
+                    android:layout_marginBottom="@dimen/sheet_format_activity_sub_text_margin_bottom"
+                    android:layout_marginTop="@dimen/sheet_format_activity_layout_margin_vertical_11_33"
+                    android:gravity="left|center"
+                    android:text="@string/dm_number_negative_numbers"
+                    android:textColor="@color/panel_sub_title_tcolor"
+                    android:textSize="14sp" />
+
+                <com.infraware.polarisoffice6.panel.kit.PanelList
+                    android:id="@+id/sheetNumberList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

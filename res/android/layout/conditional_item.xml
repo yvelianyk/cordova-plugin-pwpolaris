@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/conditional_item_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/ib_conditional_icon"
+            android:layout_width="50dip"
+            android:layout_height="48dip"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/panel_item_bg_selector_sheet"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_conditional_text"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2.33dip"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:singleLine="false"
+            android:textColor="@color/panel_item_tcolor_selector"
+            android:textSize="8sp" />
+    </LinearLayout>
+
+</LinearLayout>

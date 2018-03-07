@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_guide_last_item_top"
+        android:layout_width="match_parent"
+        android:layout_height="55.00dp"
+        android:layout_marginLeft="27.33dp"
+        android:layout_marginRight="27.33dp"
+        android:layout_marginTop="17.33dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_guide_last_item_new_above"
+            android:layout_width="match_parent"
+            android:layout_height="27.00dp"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_guide_last_new_feature_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:text="@string/fm_office_guide_start_left"
+                android:textColor="@color/fm_office_guide_new_feature"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_guide_last_new_feature"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/tv_guide_last_new_feature_left"
+                android:src="@drawable/introduce_bi" />
+            
+            <TextView
+                android:id="@+id/tv_guide_last_new_feature_middle_ko"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/iv_guide_last_new_feature"
+                android:gravity="center_vertical|right"
+                android:text="@string/fm_office_guide_start_middle_ko"
+                android:textColor="@color/fm_office_guide_new_feature"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_guide_last_new_feature_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rl_guide_last_item_new_above"
+            android:gravity="center"
+            android:text="@string/fm_office_guide_start_right"
+            android:textColor="@color/fm_office_guide_new_feature"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_guide_last"
+        android:layout_width="match_parent"
+        android:layout_height="153.33dp"
+        android:layout_below="@id/rl_guide_last_item_top"
+        android:layout_gravity="center"
+        android:layout_marginLeft="27.33dp"
+        android:layout_marginRight="27.33dp"
+        android:src="@drawable/img_introduce_07" />
+
+    <Button
+        android:id="@+id/btn_guide_last_start"
+        android:layout_width="match_parent"
+        android:layout_height="41.00dp"
+        android:layout_below="@id/iv_guide_last"
+        android:layout_marginLeft="88.00dp"
+        android:layout_marginRight="88.00dp"
+        android:layout_marginTop="8.33dp"
+        android:layout_marginBottom="9.33dp"
+        android:background="@drawable/cm_btn_default"
+        android:gravity="center"
+        android:text="@string/fm_office_guide_start"
+        android:textColor="@color/cm_btn_text_color_default"
+        android:textSize="14sp" />
+
+</RelativeLayout>

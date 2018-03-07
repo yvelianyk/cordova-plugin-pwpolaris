@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel_edit_body_root"
+    android:layout_width="fill_parent"
+    android:layout_weight="1"
+    android:layout_height="match_parent" >
+
+        <com.infraware.polarisoffice6.panel.EditPanelBodyScrollView
+            android:id="@+id/panel_edit_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+           
+            <LinearLayout
+                android:id="@+id/panel_edit_content_linear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <!-- content start -->
+
+                <com.infraware.polarisoffice6.panel.kit.PanelList
+                    android:id="@+id/fontStyleList"
+                    android:focusable="true" 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/panel_subtitle_margin_bottom_h"
+            		android:layout_marginRight="@dimen/panel_subtitle_margin_left_right"
+            		android:layout_marginTop="@dimen/panel_subtitle_margin_bottom_h"
+                    android:layout_marginBottom="@dimen/panel_subtitle_margin_bottom_h"/>
+
+                <!-- content end -->
+
+            </LinearLayout>
+        </com.infraware.polarisoffice6.panel.EditPanelBodyScrollView>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- //20130819 khchoi To change edit move bar gui [start] -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:state_focused="true"  android:drawable="@drawable/titlesub_bg_p" />
+  <item android:state_selected="true" android:drawable="@drawable/titlesub_bg_p" />
+  <item android:state_pressed="true"  android:drawable="@drawable/titlesub_bg_p" />
+  <item android:drawable="@drawable/titlesub_bg_n" />
+</selector>

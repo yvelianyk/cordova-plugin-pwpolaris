@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:background="@drawable/memo_title_bg" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13.33dp"
+            android:gravity="center"
+            android:textColor="@color/memo_title_color"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/button_container"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@drawable/memo_text_bg"
+        android:paddingTop="13.33dp" >
+
+        <TextView
+            android:id="@+id/author_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="13.5dp"
+            android:textColor="@color/memo_tcolor"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/sub_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/author_name"
+            android:paddingLeft="5dp"
+            android:textColor="@color/memo_tcolor"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <com.infraware.polarisoffice6.common.ExEditText
+            android:id="@+id/content_text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/author_name"
+            android:background="@android:color/transparent"
+            android:gravity="top"
+            android:imeOptions="flagNoFullscreen"
+            android:minLines="8"
+            android:paddingLeft="13.5dp"
+            android:paddingRight="13.5dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/memo_tcolor"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>

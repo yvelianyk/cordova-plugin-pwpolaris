@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="26.67dip"
+        android:layout_marginBottom="15.33dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/column_number_title"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="13dip"
+            android:gravity="left|center_vertical"
+            android:singleLine="true"
+            android:text="@string/dm_wrod_pagelayout_etc_column_number"
+            android:textColor="@color/panel_default_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/column_number"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/cm_edit_text_normal"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- Wheel_group 의 Land Mode 전환에 따른 View 변경은 PageColumnItem 에서 처리. -->
+    <LinearLayout
+        android:id="@+id/wheel_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/width_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/column_width_title"
+                android:layout_width="fill_parent"
+                android:layout_height="25dip"
+                android:gravity="top|left"
+                android:singleLine="true"
+                android:text="@string/dm_width"
+                android:textColor="@color/panel_default_text"
+                android:textSize="14sp" />
+
+            <com.infraware.polarisoffice6.common.WheelButtonColumnCustom
+                android:id="@+id/column_width"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+
+        <Space
+            android:id="@+id/port_space"
+            android:layout_width="wrap_content"
+            android:layout_height="22dip" />
+        
+        <Space
+            android:id="@+id/land_space"
+            android:layout_width="23.33dip"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/space_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/column_space_title"
+                android:layout_width="fill_parent"
+                android:layout_height="25dip"
+                android:gravity="top|left"
+                android:singleLine="true"
+                android:text="@string/dm_spacing"
+                android:textColor="@color/panel_default_text"
+                android:textSize="14sp" />
+
+            <com.infraware.polarisoffice6.common.WheelButtonColumnCustom
+                android:id="@+id/column_space"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+    </LinearLayout> <!-- Wheel_group 의 Land Mode 전환에 따른 View 변경은 PageColumnItem 에서 처리. -->
+	
+    <Space
+        android:id="@+id/next_item_space"
+        android:layout_width="wrap_content"
+        android:layout_height="38.67dip" />
+
+</LinearLayout>

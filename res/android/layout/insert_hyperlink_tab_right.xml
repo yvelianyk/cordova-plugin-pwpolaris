@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cm_tap_right_selector" >
+
+    <TextView
+        android:id="@+id/tab_textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:singleLine="true"
+        android:text="@string/dm_bookmark"
+        android:textColor="@color/panel_tab_tcolor_selector_common"
+        android:textSize="15sp" />
+
+</RelativeLayout>

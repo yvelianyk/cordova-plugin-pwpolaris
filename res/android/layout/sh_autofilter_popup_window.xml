@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sheet_autofilter_popup_window"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popover_bg_01"
+    android:minWidth="212.66dp"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/button_autofilter_sort_acending"
+        android:layout_width="wrap_content"
+        android:layout_height="42.67dp"
+        android:background="@drawable/popover_bg_selector_sheet"
+        android:gravity="center_vertical"
+        android:paddingLeft="10.00dip"
+        android:paddingRight="10.00dip"
+        android:singleLine="true"
+        android:text="@string/sheet_sort_ascending"
+        android:textColor="@color/popover_list_tcolor_selector"
+        android:textSize="15sp" />
+
+    <!-- View
+        android:id="@+id/seperator_line1"
+        android:layout_width="match_parent"
+        android:layout_height="0.67dip"
+        android:background="@color/cm_popover_line" / -->
+
+    <Button
+        android:id="@+id/button_autofilter_sort_descending"
+        android:layout_width="wrap_content"
+        android:layout_height="42.67dp"
+        android:background="@drawable/popover_bg_selector_sheet"
+        android:gravity="center_vertical"
+        android:paddingLeft="10.00dip"
+        android:paddingRight="10.00dip"
+        android:singleLine="true"
+        android:text="@string/sheet_sort_descending"
+        android:textColor="@color/popover_list_tcolor_selector"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/seperator_line2"
+        android:layout_width="match_parent"
+        android:layout_height="0.67dip"
+        android:background="@color/common_base_list_divider2" />
+
+    <Button
+        android:id="@+id/button_autofilter_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="42.67dp"
+        android:background="@drawable/popover_bg_selector_sheet"
+        android:gravity="center_vertical"
+        android:paddingLeft="10.00dip"
+        android:paddingRight="10.00dip"
+        android:singleLine="true"
+        android:text="@string/dm_erase_filter"
+        android:textColor="@color/popover_list_tcolor_selector"
+        android:textSize="15sp" />
+
+    <!-- View
+        android:id="@+id/seperator_line3"
+        android:layout_width="match_parent"
+        android:layout_height="0.67dip"
+        android:background="@color/cm_popover_line" / -->
+
+    <ListView
+        android:id="@+id/list_data"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:minHeight="42.67dp" />
+    <!-- android:divider="@color/cm_popover_line"
+        android:dividerHeight="0.67dp" -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal"
+        android:paddingBottom="4.33dp"
+        android:paddingLeft="5.33dp"
+        android:paddingRight="5.33dp"
+        android:paddingTop="5.33dp" >
+
+        <Button
+            android:id="@+id/button_autofilter_cancel"
+            android:layout_width="0dp"
+            android:layout_height="41dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_multi_left_selector_sheet"
+            android:text="@string/cm_btn_cancel"
+            android:textColor="@color/popover_list_tcolor_selector"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button_autofilter_ok"
+            android:layout_width="0dp"
+            android:layout_height="41dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_multi_right_selector_sheet"
+            android:text="@string/cm_btn_ok"
+            android:textColor="@color/popover_list_tcolor_selector"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

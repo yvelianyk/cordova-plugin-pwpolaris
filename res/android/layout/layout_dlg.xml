@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/list_view_dialog"
+  android:orientation="vertical"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+
+	<ListView
+	    android:id="@android:id/list"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:cacheColorHint="@color/transparent"
+	    android:dividerHeight="0.5dip"
+	    android:divider="@color/dlg_divideline_color"
+	    android:listSelector="@drawable/list_view_dialog_selector" />
+
+</LinearLayout>

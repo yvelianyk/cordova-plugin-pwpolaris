@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel_edit_body_root"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+
+    <com.infraware.polarisoffice6.panel.EditPanelBodyScrollView
+        android:id="@+id/panel_edit_scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/panel_edit_content_linear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- content start -->
+
+            <TextView
+                android:id="@+id/anchor_chart_type"
+                style="@style/PanelAnchorTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/panel_subtitle_h"
+                android:text="@string/fm_property_item_type" />
+
+            <LinearLayout
+                android:id="@+id/chart_type_portait"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/panel_common_content_area_margin_vertical"
+                android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/panel_chart_vertical_space"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_01"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_01_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_02"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_02_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_03"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_03_selector" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/panel_chart_vertical_space"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_04"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_04_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_05"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_05_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_06"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_06_selector" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/panel_chart_vertical_space"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_07"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_07_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_08"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_08_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_09"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_09_selector" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/panel_chart_vertical_space"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_10"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_10_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_11"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_11_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_12"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_12_selector" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/panel_chart_vertical_space"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_13"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_13_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_14"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_14_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_15"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_15_selector" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/panel_chart_vertical_space"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_16"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_16_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_17"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_17_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_18"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_18_selector" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_19"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_19_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_20"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_20_selector" />
+
+                    <!-- [2013.10.28][ghchoi] 40432 To add chart list items [start] --> 
+                     <ImageButton
+                        android:id="@+id/ico_insert_chart_21"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_21_selector" />                    
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/panel_chart_vertical_space"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_22"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_22_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_23"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_23_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_24"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_24_selector" />
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/panel_chart_vertical_space"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_25"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_25_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_26"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_26_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_27"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_27_selector" />
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/panel_chart_vertical_space"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_28"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_28_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_29"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_29_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_30"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_30_selector" />
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/panel_chart_vertical_space"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_31"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_31_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_32"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_32_selector" />
+
+					 <ImageButton
+                        android:id="@+id/ico_insert_chart_33"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_33_selector" />
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/panel_chart_vertical_space"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_34"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_34_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_35"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_35_selector" />
+
+					 <View
+						android:layout_width="@dimen/panel_chart_item_width_height"
+						android:layout_height="@dimen/panel_chart_item_width_height" />
+                </LinearLayout>
+                <!-- [2013.10.28][ghchoi] 40432 To add chart list items [end] --> 
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chart_type_landscape"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/panel_common_content_area_margin_vertical"
+                android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/panel_chart_vertical_space"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_01_land"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_01_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_02_land"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_02_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_03_land"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_03_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_04_land"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_04_selector" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/panel_chart_vertical_space"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_05_land"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_05_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_06_land"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_06_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_07_land"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_07_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_08_land"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_08_selector" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/panel_chart_vertical_space"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_09_land"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_09_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_10_land"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_10_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_11_land"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_11_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_12_land"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_12_selector" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/panel_chart_vertical_space"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_13_land"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_13_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_14_land"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_14_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_15_land"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_15_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_16_land"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_16_selector" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_17_land"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_17_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_18_land"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_18_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_19_land"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_19_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_20_land"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_20_selector" />
+                </LinearLayout>
+                
+                <!-- [2013.10.28][ghchoi] 40432 To add chart list items [start] --> 
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_21_land"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_21_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_22_land"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_22_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_23_land"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_23_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_24_land"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_24_selector" />
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_25_land"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_25_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_26_land"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_26_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_27_land"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_27_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_28_land"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_28_selector" />
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_29_land"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_29_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_30_land"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_30_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_31_land"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_31_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_32_land"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_32_selector" />
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_33_land"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_33_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_34_land"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_34_selector" />
+
+                    <ImageButton
+                        android:id="@+id/ico_insert_chart_35_land"
+                        android:layout_width="@dimen/panel_chart_item_width_height"
+                        android:layout_height="@dimen/panel_chart_item_width_height"
+                        android:layout_marginRight="@dimen/panel_chart_horizontal_space"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:src="@drawable/ico_chart_35_selector" />
+
+                    <View
+						android:layout_width="@dimen/panel_chart_item_width_height"
+						android:layout_height="@dimen/panel_chart_item_width_height" />
+                </LinearLayout>
+                
+                <!-- [2013.10.28][ghchoi] 40432 To add chart list items [end] --> 
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/anchor_chart_data"
+                style="@style/PanelAnchorTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/panel_subtitle_h"
+                android:layout_marginBottom="@dimen/panel_subtitle_margin_bottom_h"
+                android:text="@string/dm_chart_data" />
+
+            <Button
+                android:id="@+id/chartChangeRowCol"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/panel_button_height"
+                android:layout_marginLeft="@dimen/panel_subtitle_margin_left_right"
+                android:layout_marginRight="@dimen/panel_subtitle_margin_left_right"
+                android:background="@drawable/btn_default_selector_common"
+                android:gravity="center"
+                android:text="@string/dm_chart_change_rowcol"
+                android:textColor="@color/btn_default_tcolor_selector"
+                android:textSize="@dimen/panel_button_text_size" />
+
+            <LinearLayout
+                android:id="@+id/linearDocPptMargin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/panel_common_content_area_margin_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/separate_line_01"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginBottom="3.5dip"
+                android:layout_marginLeft="10.5dip"
+                android:layout_marginRight="10.5dip"
+                android:layout_marginTop="3.5dip"
+                android:orientation="vertical" />
+
+            <RelativeLayout
+                android:id="@+id/checkShowDataHideCellForm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/panel_button_height"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/panel_subtitle_margin_bottom_h"
+                android:layout_marginLeft="@dimen/panel_subtitle_margin_left_right"
+                android:layout_marginRight="@dimen/panel_subtitle_margin_left_right" >
+
+                <CheckBox
+                    android:id="@+id/checkShowDataHideCell"
+                    android:layout_width="35dip"
+                    android:layout_height="35dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="2dip"
+                    android:background="@drawable/btn_check"
+                    android:button="@null" />
+
+                <TextView
+                    android:id="@+id/chartShowDataHideCell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/checkShowDataHideCell"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/dm_chart_show_hiddencell_data"
+                    android:textColor="@color/panel_sub_title_tcolor"
+                    android:textSize="@dimen/panel_check_text_size" />
+            </RelativeLayout>
+            <!-- content end -->
+        </LinearLayout>
+    </com.infraware.polarisoffice6.panel.EditPanelBodyScrollView>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content"
+	android:orientation="vertical" >
+<!-- <com.infraware.polarisoffice6.panel.kit.PanelButtonImage
+		android:id="@+id/fontParaIndent01" 
+ 		android:layout_width="match_parent"
+ 		android:layout_height="wrap_content"  
+ 		android:gravity="center_horizontal"	/>   -->
+
+	<LinearLayout 
+	    android:id="@+id/indent_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    
+	    <ImageButton 
+	        android:id="@+id/decreaseIndent"
+	        style="@style/PanelCommonImageButton"
+	        android:src="@drawable/panel_ico_indent01" />
+	    
+	    <Space 
+	        android:layout_width="4dip"
+	        android:layout_height="match_parent"/>
+	    
+	    <ImageButton 
+	        android:id="@+id/increaseIndent"
+	        style="@style/PanelCommonImageButton"
+	        android:src="@drawable/panel_ico_indent02" />
+	    
+	</LinearLayout>
+ 	
+	<com.infraware.common.widget.WheelButton
+		android:id="@+id/fontParaIndent02" 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical" /> 
+
+    <com.infraware.common.widget.WheelButton
+		android:id="@+id/fontParaIndent03" 
+		android:layout_width="match_parent" 
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical" />
+
+	<com.infraware.common.widget.WheelButton
+	   android:id="@+id/fontParaIndent04" 
+	   android:layout_height="wrap_content"  
+	   android:layout_width="match_parent"
+	   android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical" />	
+            
+</LinearLayout>

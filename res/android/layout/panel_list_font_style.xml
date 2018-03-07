@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/button_01"
+        style="@style/SelectionCustomListItem.LinearLayout.Top" >
+
+        <ImageView
+            android:id="@+id/button_01_check"
+            style="@style/SelectionCustomListItem.View.ImageView" />
+
+        <Button
+            android:id="@+id/button01center"
+            style="@style/SelectionCustomListItem.View.Button"
+            android:text="@string/dm_text_style_1"
+            android:textColor="@color/panel_item_tcolor_selector"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- <View style="@style/SelectionCustomListItem.Divider" /> -->
+
+    <LinearLayout
+        android:id="@+id/button_02"
+        style="@style/SelectionCustomListItem.LinearLayout.Middle" >
+
+        <ImageView
+            android:id="@+id/button_02_check"
+            style="@style/SelectionCustomListItem.View.ImageView" />
+
+        <Button
+            android:id="@+id/button02center"
+            style="@style/SelectionCustomListItem.View.Button"
+            android:text="@string/dm_spacing"
+            android:textColor="@color/panel_item_tcolor_selector"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- <View style="@style/SelectionCustomListItem.Divider" /> -->
+
+    <LinearLayout
+        android:id="@+id/button_03"
+        style="@style/SelectionCustomListItem.LinearLayout.Middle" >
+
+        <ImageView
+            android:id="@+id/button_03_check"
+            style="@style/SelectionCustomListItem.View.ImageView" />
+
+        <Button
+            android:id="@+id/button03center"
+            style="@style/SelectionCustomListItem.View.Button"
+            android:gravity="center|left"
+            android:text="@string/dm_font_text_style_3"
+            android:textColor="@color/panel_item_tcolor_selector"
+            android:textSize="19sp" />
+    </LinearLayout>
+
+    <!-- <View style="@style/SelectionCustomListItem.Divider" /> -->
+
+    <LinearLayout
+        android:id="@+id/button_04"
+        style="@style/SelectionCustomListItem.LinearLayout.Middle" >
+
+        <ImageView
+            android:id="@+id/button_04_check"
+            style="@style/SelectionCustomListItem.View.ImageView" />
+
+        <Button
+            android:id="@+id/button04center"
+            style="@style/SelectionCustomListItem.View.Button"
+            android:gravity="center|left"
+            android:text="@string/dm_font_text_style_4"
+            android:textColor="@color/panel_item_tcolor_selector"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- <View style="@style/SelectionCustomListItem.Divider" /> -->
+
+    <LinearLayout
+        android:id="@+id/button_05"
+        style="@style/SelectionCustomListItem.LinearLayout.Middle" >
+
+        <ImageView
+            android:id="@+id/button_05_check"
+            style="@style/SelectionCustomListItem.View.ImageView" />
+
+        <Button
+            android:id="@+id/button05center"
+            style="@style/SelectionCustomListItem.View.Button"
+            android:gravity="center"
+            android:text="@string/fm_property_item_title"
+            android:textColor="@color/panel_item_tcolor_selector"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- <View style="@style/SelectionCustomListItem.Divider" /> -->
+
+    <LinearLayout
+        android:id="@+id/button_06"
+        style="@style/SelectionCustomListItem.LinearLayout.Middle" >
+
+        <ImageView
+            android:id="@+id/button_06_check"
+            style="@style/SelectionCustomListItem.View.ImageView" />
+
+        <Button
+            android:id="@+id/button06center"
+            style="@style/SelectionCustomListItem.View.Button"
+            android:gravity="center"
+            android:text="@string/dm_font_text_style_6"
+            android:textColor="@color/panel_item_tcolor_selector"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <!-- <View style="@style/SelectionCustomListItem.Divider" /> -->
+
+    <LinearLayout
+        android:id="@+id/button_07"
+        style="@style/SelectionCustomListItem.LinearLayout.Middle" >
+
+        <ImageView
+            android:id="@+id/button_07_check"
+            style="@style/SelectionCustomListItem.View.ImageView" />
+
+        <Button
+            android:id="@+id/button07center"
+            style="@style/SelectionCustomListItem.View.Button"
+            android:gravity="center|left"
+            android:text="@string/dm_font_text_style_7"
+            android:textColor="@color/panel_list_gray_text_color_default"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <!-- <View style="@style/SelectionCustomListItem.Divider" /> -->
+
+    <LinearLayout
+        android:id="@+id/button_08"
+        style="@style/SelectionCustomListItem.LinearLayout.Middle" >
+
+        <ImageView
+            android:id="@+id/button_08_check"
+            style="@style/SelectionCustomListItem.View.ImageView" />
+
+        <Button
+            android:id="@+id/button08center"
+            style="@style/SelectionCustomListItem.View.Button"
+            android:gravity="center|left"
+            android:text="@string/dm_font_text_style_8"
+            android:textColor="@color/panel_item_tcolor_selector"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <!-- <View style="@style/SelectionCustomListItem.Divider" /> -->
+
+    <LinearLayout
+        android:id="@+id/button_09"
+        style="@style/SelectionCustomListItem.LinearLayout.Middle" >
+
+        <ImageView
+            android:id="@+id/button_09_check"
+            style="@style/SelectionCustomListItem.View.ImageView" />
+
+        <Button
+            android:id="@+id/button09center"
+            style="@style/SelectionCustomListItem.View.Button"
+            android:gravity="center|left"
+            android:text="@string/dm_text_style_6"
+            android:textColor="@color/panel_list_blue_text_color_default"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <!-- <View style="@style/SelectionCustomListItem.Divider" /> -->
+
+    <LinearLayout
+        android:id="@+id/button_10"
+        style="@style/SelectionCustomListItem.LinearLayout.Middle" >
+
+        <ImageView
+            android:id="@+id/button_10_check"
+            style="@style/SelectionCustomListItem.View.ImageView" />
+
+        <Button
+            android:id="@+id/button10center"
+            style="@style/SelectionCustomListItem.View.Button"
+            android:gravity="center|left"
+            android:text="@string/dm_font_text_style_10"
+            android:textColor="@color/panel_list_text_color_default"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- <View style="@style/SelectionCustomListItem.Divider" /> -->
+
+    <LinearLayout
+        android:id="@+id/button_11"
+        style="@style/SelectionCustomListItem.LinearLayout.Middle" >
+
+        <ImageView
+            android:id="@+id/button_11_check"
+            style="@style/SelectionCustomListItem.View.ImageView" />
+
+        <Button
+            android:id="@+id/button11center"
+            style="@style/SelectionCustomListItem.View.Button"
+            android:gravity="center"
+            android:text="@string/dm_font_text_style_11"
+            android:textColor="@color/panel_item_tcolor_selector"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <!-- <View style="@style/SelectionCustomListItem.Divider" /> -->
+
+    <LinearLayout
+        android:id="@+id/button_12"
+        style="@style/SelectionCustomListItem.LinearLayout.Middle" >
+
+        <ImageView
+            android:id="@+id/button_12_check"
+            style="@style/SelectionCustomListItem.View.ImageView" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/button12center_dummy"
+                style="@style/SelectionCustomListItem.View.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="right|center_vertical"
+                android:text="@string/dm_font_text_style_12"
+                android:textColor="@color/transparent"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+            
+            <Button
+                android:id="@+id/button12center"
+                style="@style/SelectionCustomListItem.View.Button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/dm_font_text_style_12"
+                android:textColor="@color/panel_list_blue_text_color_default"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+            
+            <View
+                android:layout_width="0dip"
+                android:layout_height="1dip"
+                android:layout_alignLeft="@id/button12center_dummy"
+                android:layout_alignRight="@id/button12center_dummy"
+                android:layout_marginTop="11dip"
+                android:background="@color/panel_list_blue_text_color_default"/>
+            <View
+                android:layout_width="0dip"
+                android:layout_height="1dip"
+                android:layout_alignLeft="@id/button12center_dummy"
+                android:layout_alignRight="@id/button12center_dummy"
+                android:layout_marginTop="29dip"
+                android:background="@color/panel_list_blue_text_color_default"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- <View style="@style/SelectionCustomListItem.Divider" /> -->
+
+    <LinearLayout
+        android:id="@+id/button_13"
+        style="@style/SelectionCustomListItem.LinearLayout.Middle" >
+
+        <ImageView
+            android:id="@+id/button_13_check"
+            style="@style/SelectionCustomListItem.View.ImageView" />
+
+        <Button
+            android:id="@+id/button13center"
+            style="@style/SelectionCustomListItem.View.Button"
+            android:gravity="center|left"
+            android:text="@string/dm_font_text_style_13"
+            android:textColor="@color/panel_list_gray_2_text_color_default"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- <View style="@style/SelectionCustomListItem.Divider" /> -->
+    
+    <LinearLayout
+        android:id="@+id/button_14"
+        style="@style/SelectionCustomListItem.LinearLayout.Middle" >
+
+        <ImageView
+            android:id="@+id/button_14_check"
+            style="@style/SelectionCustomListItem.View.ImageView" />
+
+        <Button
+            android:id="@+id/button14center"
+            style="@style/SelectionCustomListItem.View.Button"
+            android:gravity="center|left"
+            android:text="@string/dm_text_style_7"
+            android:textColor="@color/panel_list_blue_text_color_default"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- <View style="@style/SelectionCustomListItem.Divider" /> -->
+    
+    <LinearLayout
+        android:id="@+id/button_15"
+        style="@style/SelectionCustomListItem.LinearLayout.Middle" >
+
+        <ImageView
+            android:id="@+id/button_15_check"
+            style="@style/SelectionCustomListItem.View.ImageView" />
+
+        <Button
+            android:id="@+id/button15center"
+            style="@style/SelectionCustomListItem.View.Button"
+            android:gravity="center|left"
+            android:text="@string/dm_font_text_style_15"
+            android:textColor="@color/panel_item_tcolor_selector"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+    <!-- <View style="@style/SelectionCustomListItem.Divider" /> -->
+
+    <LinearLayout
+        android:id="@+id/button_16"
+        style="@style/SelectionCustomListItem.LinearLayout.Bottom" >
+
+        <ImageView
+            android:id="@+id/button_16_check"
+            style="@style/SelectionCustomListItem.View.ImageView" />
+
+        <Button
+            android:id="@+id/button16center"
+            style="@style/SelectionCustomListItem.View.Button"
+            android:text="@string/dm_font_text_style_16"
+            android:textColor="@color/panel_item_tcolor_selector"
+            android:textSize="16sp"
+            android:layout_marginLeft="13.67dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_17"
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:visibility="gone" />
+    
+    <LinearLayout
+        android:id="@+id/button_18"
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:visibility="gone" />
+    <LinearLayout
+        android:id="@+id/button_19"
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:visibility="gone" />
+    <LinearLayout
+        android:id="@+id/button_20"
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:visibility="gone" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/list_functioninfo"
+	android:layout_width="fill_parent" 
+	android:layout_height="53.33dip">
+	
+	<TextView android:id="@+id/TextFunctionDetail"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:textSize="12.00sp" 
+		android:textColor="@color/po_sheet_function_itemdetail_text_color"
+		android:gravity="left|top" 
+		android:layout_marginLeft="10.67dip"
+		android:layout_marginRight="10.67dip"
+		android:layout_marginTop="5.33dip"/>
+
+</LinearLayout>

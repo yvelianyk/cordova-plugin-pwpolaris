@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@color/cm_list_bg">
+	<include layout="@layout/cm_action_title_bar"/>
+	<ListView android:id="@+id/cm_setting_list"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:drawSelectorOnTop="false"
+		android:cacheColorHint="@color/transparent"
+		android:listSelector="@drawable/cm_list_item_selector"
+		android:divider="@color/cm_list_divider"
+		android:dividerHeight="0.0dp"
+		android:scrollbars="none"
+		android:layout_weight="1"/>
+</LinearLayout>

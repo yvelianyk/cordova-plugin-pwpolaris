@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@color/base_common_bg">
+  
+    <LinearLayout
+		android:layout_width = "fill_parent"
+		android:layout_height = "wrap_content"
+		android:orientation="horizontal"
+		android:id = "@+id/actiontitlebar_layout">
+	</LinearLayout>
+  	
+	<ListView android:id="@android:id/list"
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+        android:divider="@color/cm_list_divider"
+        android:dividerHeight="0.67dip"
+       	android:cacheColorHint="@color/transparent"
+       	android:listSelector="@drawable/list_selector_sheet"/>
+</LinearLayout>

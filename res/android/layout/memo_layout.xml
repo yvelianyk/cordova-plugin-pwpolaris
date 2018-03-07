@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="41dp"
+		android:background="@drawable/memo_title_bg">
+		<TextView
+		    android:id="@+id/title"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginLeft="13.33dp"
+		    android:gravity="center"
+		    android:textColor="@color/memo_title_color"
+		    android:textSize="15sp"
+		    />
+		
+		<ViewStub 
+		    android:id="@+id/stub_memo_button"
+		    android:layout="@layout/stub_memo_button"
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:layout_toLeftOf="@+id/prev_next_group"/>
+		
+		<LinearLayout
+		    android:id="@+id/prev_next_group"
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:layout_alignParentRight="true"
+		    android:orientation="horizontal">
+		    <ImageButton
+				android:background="@drawable/memo_bg_pressed_selector"
+				android:src="@drawable/ico_memo_prev_selector"
+				android:id="@+id/prev_btn"
+				android:layout_height="match_parent"
+				android:layout_width="48dp" />
+		    <ImageButton
+				android:background="@drawable/memo_bg_pressed_selector"
+				android:src="@drawable/ico_memo_next_selector"
+				android:id="@+id/next_btn"
+				android:layout_height="match_parent"
+				android:layout_width="48dp" />
+		</LinearLayout>
+	</RelativeLayout>
+	
+	<ScrollView
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+		android:background="@drawable/memo_text_bg" >
+		<com.infraware.polarisoffice6.common.ExEditText
+			android:id="@+id/content_text"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+            android:gravity="left|top"
+            android:imeOptions="flagNoFullscreen"
+            android:paddingBottom="12.00dip"
+            android:paddingLeft="13.50dip"
+            android:paddingRight="13.50dip"
+            android:paddingTop="12.00dip"
+			android:background="@null"
+			android:textSize="14sp"
+			android:textColor="@color/memo_tcolor"
+			android:textCursorDrawable="@null" />
+	</ScrollView>
+</LinearLayout>

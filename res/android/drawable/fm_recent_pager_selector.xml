@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- //[2013.11.28][ghchoi] To set focus at pager  -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">  
+  <item android:state_focused="true"  android:drawable="@drawable/common_common_f" /> 
+</selector>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:state_pressed="true" android:drawable="@drawable/keypad_p"/>
+	<item android:state_focused="true" android:drawable="@drawable/keypad_p"/> <!-- [2013.11.22][hjlee] focus 이미지 요청하여 변경요망 -->
+	<item android:state_selected="true" android:drawable="@drawable/keypad_p"/>
+	<item android:drawable="@drawable/keypad_light_n"/>
+</selector>

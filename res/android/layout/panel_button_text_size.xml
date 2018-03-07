@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   	android:layout_width="fill_parent" 
+	android:layout_height="@dimen/panel_button_height"
+	android:orientation="horizontal">
+	  
+	<Button 
+		android:id="@+id/button_01" 
+		android:layout_width="0dip"
+		android:layout_weight="1" 
+		android:layout_height="fill_parent"
+		android:background="@drawable/btn_multi_left_selector_common"
+		style="@style/PanelButtonTextSize"/>
+	
+	<Button 
+		android:id="@+id/button_02" 
+		android:layout_width="0dip"
+		android:layout_weight="1" 
+		android:layout_height="fill_parent"
+		android:background="@drawable/btn_multi_center_selector_common"
+		style="@style/PanelButtonTextSize"/>
+	
+	<Button 
+		android:id="@+id/button_03" 
+		android:layout_width="0dip"
+		android:layout_weight="1" 
+		android:layout_height="fill_parent"
+		android:background="@drawable/btn_multi_center_selector_common"
+		style="@style/PanelButtonTextSize"/>
+	
+	<Button 
+		android:id="@+id/button_04" 
+		android:layout_width="0dip"
+		android:layout_weight="1" 
+		android:layout_height="fill_parent"
+		android:background="@drawable/btn_multi_center_selector_common"
+		style="@style/PanelButtonTextSize"/>
+	
+	<Button 
+		android:id="@+id/button_05" 
+		android:layout_width="0dip"
+		android:layout_weight="1" 
+		android:layout_height="fill_parent"
+		android:background="@drawable/btn_multi_center_selector_common"
+		style="@style/PanelButtonTextSize"/>
+			
+	<Button 
+		android:id="@+id/button_06" 
+		android:layout_width="0dip"
+		android:layout_weight="1" 
+		android:layout_height="fill_parent"
+		android:background="@drawable/btn_multi_right_selector_common"
+		style="@style/PanelButtonTextSize"/>
+</LinearLayout>

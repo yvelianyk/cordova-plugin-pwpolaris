@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/word_bookmark_tab_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/word_if_insert_text_hyperlink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/word_text_showing_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dm_text"
+                android:textColor="@color/panel_sub_title_tcolor"
+                android:textSize="14sp" />
+
+            <com.infraware.polarisoffice6.common.ExEditText
+                android:id="@+id/word_text_showing_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="40.00dip"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/textfield_selector_common"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:inputType="text"
+                android:maxLength="@integer/dm_hyperlink_max"
+                android:paddingLeft="11.50dip"
+                android:paddingRight="11.50dip"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textColor="@color/cm_edit_text_normal"
+                android:textColorHighlight="@color/cm_edit_text_highlight"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/word_go_select_list_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dm_bookmark"
+            android:textColor="@color/panel_sub_title_tcolor"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/word_go_select_list_button"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/btn_more_selector_common"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="11.50dp"
+            android:paddingRight="39dp"
+            android:text="@string/dm_none"
+            android:textColor="@color/btn_more_tcolor_selector"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp" >
+
+            <Button
+                android:id="@+id/hyperlink_tab_delete_button"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginTop="23.33dp"
+                android:background="@drawable/btn_default_selector_common"
+                android:text="@string/dm_remove_hyperlink"
+                android:textColor="@color/btn_default_tcolor_selector"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

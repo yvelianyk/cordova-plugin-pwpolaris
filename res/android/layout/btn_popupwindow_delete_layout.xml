@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/popover_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/delete_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/popover_bg_selector_common"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/delete_current_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="42.67dip"
+                android:layout_gravity="left"
+                android:clickable="false"
+                android:duplicateParentState="true"
+                android:ellipsize="none"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:singleLine="true"
+                android:textColor="@color/popover_list_tcolor_selector"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/shown_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/popover_bg_selector_common"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/shown_delete_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="42.67dip"
+                android:layout_gravity="left"
+                android:clickable="false"
+                android:duplicateParentState="true"
+                android:ellipsize="none"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:singleLine="true"
+                android:textColor="@color/popover_list_tcolor_selector"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!--
+             <View
+            android:id="@+id/seperator_delete_current_page_all"
+            android:layout_width="match_parent"
+            android:layout_height="0.67dip"
+            android:background="@color/common_base_list_divider"
+            android:visibility="gone" />
+
+
+        -->
+
+        <LinearLayout
+            android:id="@+id/delete_current_page_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/popover_bg_selector_common"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/delete_current_page_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="42.67dip"
+                android:layout_gravity="left"
+                android:clickable="false"
+                android:duplicateParentState="true"
+                android:ellipsize="none"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:singleLine="true"
+                android:textColor="@color/popover_list_tcolor_selector"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <!--
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.67dip"
+            android:background="@color/common_base_list_divider" />
+
+
+        -->
+
+        <LinearLayout
+            android:id="@+id/delete_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/popover_bg_selector_common"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/delete_all_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="42.67dip"
+                android:layout_gravity="left"
+                android:clickable="false"
+                android:duplicateParentState="true"
+                android:ellipsize="none"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:singleLine="true"
+                android:textColor="@color/popover_list_tcolor_selector"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/delete_all_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/popover_bg_selector_common"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/delete_all_stop_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="42.67dip"
+                android:layout_gravity="left"
+                android:clickable="false"
+                android:duplicateParentState="true"
+                android:ellipsize="none"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:singleLine="true"
+                android:textColor="@color/popover_list_tcolor_selector"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

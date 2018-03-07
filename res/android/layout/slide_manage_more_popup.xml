@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="132.33dp"
+    android:background="@drawable/inlinepopup_bg_more_n"
+    android:orientation="vertical" >
+    
+     <Button
+        android:id="@+id/slide_manage_popup_duplication"
+        android:layout_width="match_parent"
+        android:layout_height="43.33dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="9.00dip"
+        android:paddingRight="9.00dip"
+   		android:background="@null"
+        android:text="@string/dm_duplicate_slide"
+        android:textColor="@color/inlinepopup_tcolor_selector"
+        android:textSize="14sp" />
+     
+      <!--View
+        android:id="@+id/slide_manage_popup_seperator_line01"
+        android:layout_width="match_parent"
+        android:layout_height="0.67dip"
+        android:background="@color/te_morepopup_divider" /-->
+    <Button
+        android:id="@+id/slide_manage_popup_hide"
+        android:layout_width="match_parent"
+        android:layout_height="42.67dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="9.00dip"
+        android:paddingRight="9.00dip"
+        android:text="@string/popup_str_slide_hide"
+        android:textColor="@color/inlinepopup_tcolor_selector"
+        android:background="@null"
+        android:textSize="14sp" />
+
+    <!-- View
+        android:id="@+id/slide_manage_popup_seperator_line02"
+        android:layout_width="match_parent"
+        android:layout_height="0.67dip"
+        android:background="@color/te_morepopup_divider" / -->
+
+    <Button
+        android:id="@+id/slide_manage_popup_layout"
+        android:layout_width="match_parent"
+        android:layout_height="42.67dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="9.00dip"
+        android:paddingRight="9.00dip"
+        android:text="@string/dm_layout"
+        android:textColor="@color/inlinepopup_tcolor_selector"
+        android:background="@null"
+        android:textSize="14sp" />
+
+    <!-- View
+        android:id="@+id/slide_manage_popup_seperator_line03"
+        android:layout_width="match_parent"
+        android:layout_height="0.67dip"
+        android:background="@color/te_morepopup_divider" / -->
+
+    <Button
+        android:id="@+id/slide_manage_popup_background"
+        android:layout_width="match_parent"
+        android:layout_height="43.33dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="9.00dip"
+        android:paddingRight="9.00dip"
+        android:text="@string/dm_word_page_background"
+        android:textColor="@color/inlinepopup_tcolor_selector"
+        android:background="@null"
+        android:textSize="14sp" />
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/selection_bg_bottom_common_p" android:state_pressed="true"/>
+    <item android:drawable="@drawable/common_common_f" android:state_focused="true"/> <!-- [2013.11.21][hjlee] Modify focus image for external keybroad -->
+    <item android:drawable="@drawable/selection_bg_bottom_n"/>
+
+</selector>

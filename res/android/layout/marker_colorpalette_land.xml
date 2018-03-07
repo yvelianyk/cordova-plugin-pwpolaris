@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popover_bg"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4.67dip"
+            android:layout_marginRight="4.67dip"
+            android:layout_marginTop="5.00dip"
+            android:orientation="horizontal" >
+
+            <com.infraware.common.widget.marker.MarkerColorImageView
+                android:id="@+id/marker_color01"
+                android:layout_width="40.67dip"
+                android:layout_height="40.00dip"
+                android:layout_marginRight="2.00dip"
+                android:contentDescription=" " />
+
+            <com.infraware.common.widget.marker.MarkerColorImageView
+                android:id="@+id/marker_color02"
+                android:layout_width="40.67dip"
+                android:layout_height="40.00dip"
+                android:layout_marginRight="2.00dip"
+                android:contentDescription=" " />
+
+            <com.infraware.common.widget.marker.MarkerColorImageView
+                android:id="@+id/marker_color03"
+                android:layout_width="40.67dip"
+                android:layout_height="40.00dip"
+                android:layout_marginRight="2.00dip"
+                android:contentDescription=" " />
+
+            <com.infraware.common.widget.marker.MarkerColorImageView
+                android:id="@+id/marker_color04"
+                android:layout_width="40.67dip"
+                android:layout_height="40.00dip"
+                android:layout_marginRight="2.00dip"
+                android:contentDescription=" " />
+
+            <com.infraware.common.widget.marker.MarkerColorImageView
+                android:id="@+id/marker_color05"
+                android:layout_width="40.67dip"
+                android:layout_height="40.00dip"
+                android:layout_marginRight="2.00dip"
+                android:contentDescription=" " />
+
+            <com.infraware.common.widget.marker.MarkerColorImageView
+                android:id="@+id/marker_color06"
+                android:layout_width="40.67dip"
+                android:layout_height="40.00dip"
+                android:contentDescription=" " />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5.00dip"
+            android:layout_marginLeft="4.67dip"
+            android:layout_marginRight="4.67dip"
+            android:layout_marginTop="2.00dip"
+            android:orientation="horizontal" >
+
+            <com.infraware.common.widget.marker.MarkerColorImageView
+                android:id="@+id/marker_color07"
+                android:layout_width="40.67dip"
+                android:layout_height="40.00dip"
+                android:layout_marginRight="2.00dip"
+                android:contentDescription=" " />
+
+            <com.infraware.common.widget.marker.MarkerColorImageView
+                android:id="@+id/marker_color08"
+                android:layout_width="40.67dip"
+                android:layout_height="40.00dip"
+                android:layout_marginRight="2.00dip"
+                android:contentDescription=" " />
+
+            <com.infraware.common.widget.marker.MarkerColorImageView
+                android:id="@+id/marker_color09"
+                android:layout_width="40.67dip"
+                android:layout_height="40.00dip"
+                android:layout_marginRight="2.00dip"
+                android:contentDescription=" " />
+
+            <com.infraware.common.widget.marker.MarkerColorImageView
+                android:id="@+id/marker_color10"
+                android:layout_width="40.67dip"
+                android:layout_height="40.00dip"
+                android:layout_marginRight="2.00dip"
+                android:contentDescription=" " />
+
+            <com.infraware.common.widget.marker.MarkerColorImageView
+                android:id="@+id/marker_color11"
+                android:layout_width="40.67dip"
+                android:layout_height="40.00dip"
+                android:layout_marginRight="2.00dip"
+                android:contentDescription=" " />
+
+            <com.infraware.common.widget.marker.MarkerColorImageView
+                android:id="@+id/marker_color12"
+                android:layout_width="40.67dip"
+                android:layout_height="40.00dip"
+                android:contentDescription=" " />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

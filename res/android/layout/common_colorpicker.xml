@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/colorpickerLinearlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_common_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/actiontitlebar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:orientation="vertical"
+            android:paddingLeft="16.33dp"
+            android:paddingRight="16.33dp"
+            android:paddingTop="16.33dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/colorpicker_bg"
+                android:baselineAligned="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="11dp"
+                android:paddingLeft="11dp"
+                android:paddingRight="16.67dp"
+                android:paddingTop="11dp" >
+
+                <LinearLayout
+                    android:layout_width="71dip"
+                    android:layout_height="51dip"
+                    android:background="@drawable/colorpicker_outline"
+                    android:orientation="vertical" >
+
+                    <com.infraware.component.colorpicker.ColorPickerColorView
+                        android:id="@+id/colorpicker_color"
+                        android:layout_width="70dip"
+                        android:layout_height="50dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/colorpicker_rgb"
+                        android:layout_width="48.5dip"
+                        android:layout_height="fill_parent"
+                        android:gravity="right|center_vertical"
+                        android:text="RGB"
+                        android:textColor="@color/common_colorpicker_rgb_text_color"
+                        android:textCursorDrawable="@null"
+                        android:textSize="16sp" />
+
+                    <com.infraware.polarisoffice6.common.ExEditText
+                        android:id="@+id/colorpicker_red_inputfield"
+                        android:layout_width="0dip"
+                        android:layout_height="40dip"
+                        android:layout_marginLeft="12.5dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/textfield_selector_common"
+                        android:digits="0123456789"
+                        android:gravity="center"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:maxLines="1"
+                        android:selectAllOnFocus="true"
+                        android:textColor="@color/common_inputbox_text"
+                        android:textColorHighlight="@color/cm_edit_text_highlight"
+                        android:textCursorDrawable="@null"
+                        android:textSize="16.00sp" />
+
+                    <com.infraware.polarisoffice6.common.ExEditText
+                        android:id="@+id/colorpicker_green_inputfield"
+                        android:layout_width="0dip"
+                        android:layout_height="40dip"
+                        android:layout_marginLeft="2.5dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/textfield_selector_common"
+                        android:digits="0123456789"
+                        android:gravity="center"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:maxLines="1"
+                        android:selectAllOnFocus="true"
+                        android:textColor="@color/common_inputbox_text"
+                        android:textColorHighlight="@color/cm_edit_text_highlight"
+                        android:textCursorDrawable="@null"
+                        android:textSize="16.00sp" />
+
+                    <com.infraware.polarisoffice6.common.ExEditText
+                        android:id="@+id/colorpicker_blue_inputfield"
+                        android:layout_width="0dip"
+                        android:layout_height="40dip"
+                        android:layout_marginLeft="2.50dip"
+                        android:layout_marginRight="5.50dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/textfield_selector_common"
+                        android:digits="0123456789"
+                        android:gravity="center"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:maxLines="1"
+                        android:selectAllOnFocus="true"
+                        android:textColor="@color/common_inputbox_text"
+                        android:textColorHighlight="@color/cm_edit_text_highlight"
+                        android:textCursorDrawable="@null"
+                        android:textSize="16.00sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/colorpicker_bg" >
+
+                <com.infraware.component.colorpicker.ColorPickerMainView
+                    android:id="@+id/colorpicker_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@drawable/colorpicker_outline_main" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/colorpicker_bg" >
+
+                <com.infraware.component.colorpicker.ColorPickerHueView
+                    android:id="@+id/colorpicker_hue"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:background="@drawable/colorpicker_outline_main" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

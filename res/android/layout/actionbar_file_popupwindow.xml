@@ -1,0 +1,14 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="#2a3341" >
+    
+    <ListView
+        android:id="@+id/actionbar_file_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent" />
+    
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="43.5dip"
+    android:gravity="center_vertical"
+    android:minWidth="167.0dip"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/before_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dip"
+        android:background="@drawable/popover_ico_image_d" />
+
+    <!-- //20130816 khchoi To apply GUI change -->
+
+    <TextView
+        android:id="@+id/middle_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingLeft="9.33dip"
+        android:paddingRight="9.33dip"
+        android:singleLine="true"
+        android:text="TextView"
+        android:textColor="@color/popover_list_tcolor_selector"
+        android:textSize="14.00sp"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/after_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4dip"
+        android:background="@drawable/cm_checkbox_selector_common" />
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.infraware.common.control.custom.CheckedTextView
+        android:id="@+id/checked_reviewer_listitem"
+        style="@style/SelectionListItem.CheckedTextView.Normal"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp"
+        android:focusable="true"
+        android:text="@string/word_trace_settings_all_reviewer" />
+
+</LinearLayout>

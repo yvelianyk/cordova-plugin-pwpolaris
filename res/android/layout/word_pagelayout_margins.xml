@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/word_pagelayout_margins"
+        android:layout_width="match_parent"
+        android:layout_height="18.67dip"
+        android:gravity="left|top"
+        android:text="@string/dm_word_pagelayout_margins"
+        android:textColor="@color/panel_sub_title_tcolor"
+        android:textSize="@dimen/pl_title_text_size" />
+
+    <LinearLayout
+        android:id="@+id/rg_margin"
+        android:layout_width="match_parent"
+        android:layout_height="60.67dip"
+        android:layout_marginBottom="11.33dip"
+        android:layout_marginTop="3.67dip"
+        android:orientation="horizontal" >
+
+        <com.infraware.polarisoffice6.common.PageLayoutRadioButton
+            android:id="@+id/pagelayout_margins_default"
+            android:layout_width="@dimen/pl_button_w"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pagelayout_margins_01_selectible_radiobtn_selector"
+            android:button="@null"
+            android:checked="true" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.infraware.polarisoffice6.common.PageLayoutRadioButton
+            android:id="@+id/pagelayout_margins_narrow"
+            android:layout_width="@dimen/pl_button_w"
+            android:layout_height="match_parent"
+            android:background="@drawable/pagelayout_margins_02_selectible_radiobtn_selector"
+            android:button="@null" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.infraware.polarisoffice6.common.PageLayoutRadioButton
+            android:id="@+id/pagelayout_margins_wide"
+            android:layout_width="@dimen/pl_button_w"
+            android:layout_height="match_parent"
+            android:background="@drawable/pagelayout_margins_03_selectible_radiobtn_selector"
+            android:button="@null" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.infraware.polarisoffice6.common.PageLayoutRadioButton
+            android:id="@+id/pagelayout_margins_custom"
+            android:layout_width="@dimen/pl_button_w"
+            android:layout_height="match_parent"
+            android:layout_gravity="fill_vertical|fill_horizontal"
+            android:layout_marginTop="0dip"
+            android:background="@drawable/pagelayout_margins_custom_selectible_radiobtn_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/dm_custom"
+            android:textColor="@color/panel_item_tcolor_selector"
+            android:textSize="@dimen/page_layout_margins_custom" />
+    </LinearLayout>
+
+</LinearLayout>

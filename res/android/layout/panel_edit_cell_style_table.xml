@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel_edit_body_root"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1" >
+
+    <com.infraware.polarisoffice6.panel.EditPanelBodyScrollView
+        android:id="@+id/panel_edit_scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/panel_edit_content_linear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/panel_common_content_area_margin_horizontal"
+            android:layout_marginRight="@dimen/panel_common_content_area_margin_horizontal"
+            android:orientation="vertical" >
+
+            <!-- content start -->
+            <!-- android:layout_marginLeft="@dimen/panel_subtitle_margin_left_right" -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/panel_button_height"
+                android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/checkTableHeadRow"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/cm_checkbox_selector_common"
+                    android:drawablePadding="@dimen/panel_check_box_margin_left"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/dm_head_row"
+                    android:textColor="@color/panel_sub_title_tcolor"
+                    android:textSize="@dimen/panel_check_text_size" />
+
+                <CheckBox
+                    android:id="@+id/checkTableSummaryRow"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/btn_check"
+                    android:drawablePadding="@dimen/panel_check_box_margin_left"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/dm_summary_row"
+                    android:textColor="@color/panel_sub_title_tcolor"
+                    android:textSize="@dimen/panel_check_text_size" />
+            </LinearLayout>
+
+            <include layout="@layout/cm_panel_divider" />
+
+            <!-- android:layout_marginLeft="@dimen/panel_subtitle_margin_left_right" -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/panel_button_height"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/checkTableBandRow"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/btn_check"
+                    android:drawablePadding="@dimen/panel_check_box_margin_left"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/dm_banded_row"
+                    android:textColor="@color/panel_sub_title_tcolor"
+                    android:textSize="@dimen/panel_check_text_size" />
+
+                <CheckBox
+                    android:id="@+id/checkTableFirstCol"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/btn_check"
+                    android:drawablePadding="@dimen/panel_check_box_margin_left"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/dm_first_col"
+                    android:textColor="@color/panel_sub_title_tcolor"
+                    android:textSize="@dimen/panel_check_text_size" />
+            </LinearLayout>
+
+            <include layout="@layout/cm_panel_divider" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/panel_common_content_area_margin_vertical"
+                android:orientation="vertical" >
+
+                <!-- content start -->
+
+                <LinearLayout
+                    android:id="@+id/changestyle_layer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/style1"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:clickable="true"
+                        android:src="@drawable/ico_insert_sheet_table_style_01_selector" />
+
+                    <ImageButton
+                        android:id="@+id/style2"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:clickable="true"
+                        android:src="@drawable/ico_insert_sheet_table_style_02_selector" />
+
+                    <ImageButton
+                        android:id="@+id/style3"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:clickable="true"
+                        android:src="@drawable/ico_insert_sheet_table_style_03_selector" />
+
+                    <ImageButton
+                        android:id="@+id/style4"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:clickable="true"
+                        android:src="@drawable/ico_insert_sheet_table_style_04_selector" />
+
+                    <ImageButton
+                        android:id="@+id/style5"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:clickable="true"
+                        android:src="@drawable/ico_insert_sheet_table_style_05_selector" />
+
+                    <ImageButton
+                        android:id="@+id/style6"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:clickable="true"
+                        android:src="@drawable/ico_insert_sheet_table_style_06_selector" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/style7"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:clickable="true"
+                        android:src="@drawable/ico_insert_sheet_table_style_07_selector" />
+
+                    <ImageButton
+                        android:id="@+id/style8"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:clickable="true"
+                        android:src="@drawable/ico_insert_sheet_table_style_08_selector" />
+
+                    <ImageButton
+                        android:id="@+id/style9"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:clickable="true"
+                        android:src="@drawable/ico_insert_sheet_table_style_09_selector" />
+
+                    <ImageButton
+                        android:id="@+id/style10"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:clickable="true"
+                        android:src="@drawable/ico_insert_sheet_table_style_10_selector" />
+
+                    <ImageButton
+                        android:id="@+id/style11"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:clickable="true"
+                        android:src="@drawable/ico_insert_sheet_table_style_11_selector" />
+
+                    <ImageButton
+                        android:id="@+id/style12"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:clickable="true"
+                        android:src="@drawable/ico_insert_sheet_table_style_12_selector" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/style13"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:clickable="true"
+                        android:src="@drawable/ico_insert_sheet_table_style_13_selector" />
+
+                    <ImageButton
+                        android:id="@+id/style14"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:clickable="true"
+                        android:src="@drawable/ico_insert_sheet_table_style_14_selector" />
+
+                    <ImageButton
+                        android:id="@+id/style15"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:clickable="true"
+                        android:src="@drawable/ico_insert_sheet_table_style_15_selector" />
+
+                    <ImageButton
+                        android:id="@+id/style16"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:clickable="true"
+                        android:src="@drawable/ico_insert_sheet_table_style_16_selector" />
+
+                    <ImageButton
+                        android:id="@+id/style17"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:clickable="true"
+                        android:src="@drawable/ico_insert_sheet_table_style_17_selector" />
+
+                    <ImageButton
+                        android:id="@+id/style18"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:clickable="true"
+                        android:src="@drawable/ico_insert_sheet_table_style_18_selector" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/style19"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:clickable="true"
+                        android:src="@drawable/ico_insert_sheet_table_style_19_selector" />
+
+                    <ImageButton
+                        android:id="@+id/style20"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:clickable="true"
+                        android:src="@drawable/ico_insert_sheet_table_style_20_selector" />
+
+                    <ImageButton
+                        android:id="@+id/style21"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:clickable="true"
+                        android:src="@drawable/ico_insert_sheet_table_style_21_selector" />
+
+                    <ImageButton
+                        android:id="@+id/style22"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:clickable="true"
+                        android:src="@drawable/ico_insert_sheet_table_style_22_selector" />
+
+                    <ImageButton
+                        android:id="@+id/style23"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:clickable="true"
+                        android:src="@drawable/ico_insert_sheet_table_style_23_selector" />
+
+                    <ImageButton
+                        android:id="@+id/style24"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/panel_item_bg_selector_common"
+                        android:clickable="true"
+                        android:src="@drawable/ico_insert_sheet_table_style_24_selector" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/style_delete"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/panel_button_height"
+                android:layout_marginBottom="@dimen/panel_common_content_area_margin_vertical"
+                android:background="@drawable/btn_default_selector_common"
+                android:gravity="center"
+                android:text="@string/dm_clear"
+                android:textColor="@color/btn_default_tcolor_selector"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </LinearLayout>
+        <!-- content end -->
+    </com.infraware.polarisoffice6.panel.EditPanelBodyScrollView>
+
+</LinearLayout>

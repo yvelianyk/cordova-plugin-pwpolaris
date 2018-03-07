@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:state_pressed="true"	  android:drawable="@drawable/bg01_xlsx_p"/>
+	<!-- [2013.11.22][dahlia][add state attribute used filemanager menu popup listSelector] start -->
+	<item android:state_focused="true"	  android:drawable="@drawable/common_common_f"/>
+	<item android:state_selected="true"	  android:drawable="@drawable/bg01_xlsx_p"/>
+	<!-- end -->
+</selector>

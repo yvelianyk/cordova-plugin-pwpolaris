@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:id="@+id/reflectoptionlist"
+        android:layout_width="match_parent"
+        android:layout_height="48.67dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="7.67dp"
+        android:visibility="visible"
+        >
+        <ImageButton
+            android:id="@+id/reflectoption1"
+            android:layout_width="56.67dp"
+        	android:layout_height="match_parent"
+        	android:layout_weight="1"
+        	android:src="@drawable/icon_reflect_effect01"
+        	android:background="@drawable/panel_item_bg_selector_common"
+            />
+        <ImageButton 
+            android:id="@+id/reflectoption2"
+            android:layout_width="56.67dp"
+        	android:layout_height="match_parent"
+        	android:layout_weight="1"
+        	android:src="@drawable/icon_reflect_effect02"
+        	android:background="@drawable/panel_item_bg_selector_common"
+            />
+        <ImageButton
+            android:id="@+id/reflectoption3"
+            android:layout_width="56.67dp"
+        	android:layout_height="match_parent"
+        	android:layout_weight="1"
+        	android:src="@drawable/icon_reflect_effect03"
+        	android:background="@drawable/panel_item_bg_selector_common"
+            />
+        <ImageButton
+            android:id="@+id/reflectoption4"
+            android:layout_width="56.67dp"
+        	android:layout_height="match_parent"
+        	android:layout_weight="1"
+        	android:src="@drawable/icon_reflect_effect04"
+        	android:background="@drawable/panel_item_bg_selector_common"
+            />
+        <ImageButton
+            android:id="@+id/reflectoption5"
+            android:layout_width="56.67dp"
+        	android:layout_height="match_parent"
+        	android:layout_weight="1"
+        	android:src="@drawable/icon_reflect_effect05"
+        	android:background="@drawable/panel_item_bg_selector_common"
+            />
+        <ImageButton
+            android:id="@+id/reflectoption6"
+            android:layout_width="56.67dp"
+        	android:layout_height="match_parent"
+        	android:layout_weight="1"
+        	android:src="@drawable/icon_reflect_effect06"
+        	android:background="@drawable/panel_item_bg_selector_common"
+            />
+        
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/reflectMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical"
+        android:orientation="vertical" >
+
+        <com.infraware.common.widget.WheelButton
+            android:id="@+id/reflectTrans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.infraware.common.widget.WheelButton
+            android:id="@+id/reflectSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical" />
+    </LinearLayout>
+
+</LinearLayout>

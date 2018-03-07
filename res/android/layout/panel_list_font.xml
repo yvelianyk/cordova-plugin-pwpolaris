@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/button_01"
+        style="@style/SelectionCustomListItem.LinearLayout.Top" >
+		<ImageView
+            android:id="@+id/button_01_check"
+            style="@style/SelectionCustomListItem.View.ImageView" />
+        <Button
+            android:id="@+id/button01center"
+            android:drawableLeft="@drawable/panel_ico_font_times_selector"
+            style="@style/SelectionCustomListItem.View.Button" />
+    </LinearLayout>
+    
+    <!-- <View style="@style/SelectionCustomListItem.Divider" /> -->
+
+    <LinearLayout
+        android:id="@+id/button_02"
+        style="@style/SelectionCustomListItem.LinearLayout.Middle" >
+        <ImageView
+            android:id="@+id/button_02_check"
+            style="@style/SelectionCustomListItem.View.ImageView" />
+        <Button
+            android:id="@+id/button02center"
+            android:drawableLeft="@drawable/panel_ico_font_arial_selector"
+            style="@style/SelectionCustomListItem.View.Button" />
+    </LinearLayout>
+    
+	<!-- <View style="@style/SelectionCustomListItem.Divider" /> -->
+	
+    <LinearLayout
+        android:id="@+id/button_03"
+        style="@style/SelectionCustomListItem.LinearLayout.Middle" >
+        <ImageView
+            android:id="@+id/button_03_check"
+            style="@style/SelectionCustomListItem.View.ImageView" />
+        <Button
+            android:id="@+id/button03center"
+            android:drawableLeft="@drawable/panel_ico_font_tahoma_selector"
+            style="@style/SelectionCustomListItem.View.Button" />
+    </LinearLayout>
+    
+    <!-- <View style="@style/SelectionCustomListItem.Divider" /> -->
+
+    <LinearLayout
+        android:id="@+id/button_04"
+        style="@style/SelectionCustomListItem.LinearLayout.Middle" >
+        <ImageView
+            android:id="@+id/button_04_check"
+            style="@style/SelectionCustomListItem.View.ImageView" />
+        <Button
+            android:id="@+id/button04center"
+            android:drawableLeft="@drawable/panel_ico_font_courier_selector"
+            style="@style/SelectionCustomListItem.View.Button" />
+    </LinearLayout>
+
+	<!-- <View style="@style/SelectionCustomListItem.Divider" /> -->
+
+    <LinearLayout
+        android:id="@+id/button_05"
+        style="@style/SelectionCustomListItem.LinearLayout.Middle" >
+        <ImageView
+            android:id="@+id/button_05_check"
+            style="@style/SelectionCustomListItem.View.ImageView" />
+        <Button
+            android:id="@+id/button05center"
+            android:drawableLeft="@drawable/panel_ico_font_verdana_selector"
+            style="@style/SelectionCustomListItem.View.Button" />
+    </LinearLayout>
+
+    <!-- <View style="@style/SelectionCustomListItem.Divider" /> -->
+
+    <LinearLayout
+        android:id="@+id/button_06"
+        style="@style/SelectionCustomListItem.LinearLayout.Middle" >
+		<ImageView
+            android:id="@+id/button_06_check"
+            style="@style/SelectionCustomListItem.View.ImageView" />
+        <Button
+            android:id="@+id/button06center"
+            android:drawableLeft="@drawable/panel_ico_font_gulim_hangul_selector"
+            style="@style/SelectionCustomListItem.View.Button" />
+    </LinearLayout>
+
+	<!-- <View style="@style/SelectionCustomListItem.Divider" /> -->
+
+    <LinearLayout
+        android:id="@+id/button_07"
+        style="@style/SelectionCustomListItem.LinearLayout.Middle" >
+        <ImageView
+            android:id="@+id/button_07_check"
+            style="@style/SelectionCustomListItem.View.ImageView" />
+        <Button
+            android:id="@+id/button07center"
+            android:drawableLeft="@drawable/panel_ico_font_dotum_hangul_selector"
+            style="@style/SelectionCustomListItem.View.Button" />
+    </LinearLayout>
+
+    <!-- <View style="@style/SelectionCustomListItem.Divider" /> -->
+
+    <LinearLayout
+        android:id="@+id/button_08"
+        style="@style/SelectionCustomListItem.LinearLayout.Bottom" >
+		<ImageView
+            android:id="@+id/button_08_check"
+            style="@style/SelectionCustomListItem.View.ImageView" />
+        <Button
+            android:id="@+id/button08center"
+            android:drawableLeft="@drawable/panel_ico_font_batang_hangul_selector"
+            style="@style/SelectionCustomListItem.View.Button" />        
+    </LinearLayout>
+
+</LinearLayout>

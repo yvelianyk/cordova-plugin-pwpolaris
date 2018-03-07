@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel_edit_body_root"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1" >
+
+    <com.infraware.polarisoffice6.panel.EditPanelBodyScrollView
+        android:id="@+id/panel_edit_scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/panel_edit_content_linear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- content start -->
+
+            <TextView
+                android:id="@+id/anchor_insert_shape_resent_text"
+                style="@style/PanelAnchorTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/panel_subtitle_h"
+                android:layout_marginBottom="@dimen/panel_subtitle_margin_bottom_h"
+                android:text="@string/dm_align" />
+
+            <com.infraware.polarisoffice6.panel.kit.PanelButtonImage
+                android:id="@+id/insert_shape_restent_img"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/panel_subtitle_margin_left_right"
+                android:layout_marginRight="@dimen/panel_subtitle_margin_left_right" />
+
+            <ExpandableListView
+                android:id="@+id/panelInsertShapeList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/panel_btn_list_normal"
+                android:cacheColorHint="@color/transparent"
+                android:divider="@color/common_edit_panel_divider2"
+                android:dividerHeight="0.5dip"
+                android:groupIndicator="@null"
+                android:listSelector="@drawable/panel_number_list_selector" />
+            
+            <!-- content end -->
+        </LinearLayout>
+    </com.infraware.polarisoffice6.panel.EditPanelBodyScrollView>
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_common_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/actiontitlebar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <RelativeLayout
+        android:id="@+id/docViewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/RInputBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/titlesub_bg_n"
+            android:orientation="horizontal" >
+
+            <com.infraware.polarisoffice6.common.ExEditText
+                android:id="@+id/bookclip_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4.33dp"
+                android:layout_weight="1"
+                android:background="@drawable/textfield_selector_common"
+                android:imeOptions="actionDone|flagNoFullscreen"
+                android:maxLength="40"
+                android:paddingBottom="4dp"
+                android:paddingLeft="11dp"
+                android:paddingRight="11dp"
+                android:paddingTop="4dp"
+                android:singleLine="true"
+                android:textColor="@color/po_main_text_color5"
+                android:textColorHighlight="@color/cm_edit_text_highlight"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/bookclip_add_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/cm_bg01_pressed_selector"
+                android:focusable="true"
+                android:src="@drawable/ico_bookmark" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bookmark_ll_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/RInputBar"
+            android:background="@color/color_white"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/file_empty_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/img_no_contents"
+                android:gravity="center"
+                android:text="@string/dm_no_bookmark"
+                android:textColor="@color/empty_tcolor"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/BookClipListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/RInputBar"
+            android:background="@color/cm_list_bg"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/cm_list_divider"
+            android:listSelector="@drawable/list_view_dialog_selector" />
+    </RelativeLayout>
+
+</LinearLayout>

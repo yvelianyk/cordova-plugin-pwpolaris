@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/te_preferences_background"
+    android:orientation="vertical" >
+
+    <!-- ActionBar -->
+
+    <LinearLayout
+        android:id="@+id/llActionBar"
+        android:layout_width="fill_parent"
+        android:layout_height="48.00dip"
+        android:background="@drawable/title_bg_common"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="13dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/te_preferences"
+            android:textColor="@color/actionbar_tcolor"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/btnDone"
+            android:layout_width="48.00dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/cm_title_bg_pressed_selector"
+            android:src="@drawable/actionbar_ico_check" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_te_Preference_fontsize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17.33dip"
+            android:gravity="left|center_vertical"
+            android:layout_marginLeft="17dip"
+            android:text="@string/dm_font_size"
+            android:textColor="@color/panel_sub_title_tcolor"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="17dip"
+            android:layout_marginRight="17dip"
+            android:layout_marginTop="6.67dip" >
+
+            <TextView
+                android:id="@+id/tv_fontsize1"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_multi_left_selector_common"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="8"
+                android:textColor="@color/btn_multi_tcolor_selector"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_fontsize2"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_multi_center_selector_common"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="9"
+                android:textColor="@color/btn_multi_tcolor_selector"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_fontsize3"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_multi_center_selector_common"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="10"
+                android:textColor="@color/btn_multi_tcolor_selector"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_fontsize4"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_multi_center_selector_common"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/btn_multi_tcolor_selector"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_fontsize5"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_multi_center_selector_common"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="14"
+                android:textColor="@color/btn_multi_tcolor_selector"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_fontsize6"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_multi_right_selector_common"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="16"
+                android:textColor="@color/btn_multi_tcolor_selector"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <com.infraware.document.text.control.TextWheelButton
+            android:id="@+id/fontwheelbtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dip"
+            android:layout_marginRight="17dip"
+            android:layout_marginTop="7.5dip"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/llDivider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dip"
+            android:layout_marginRight="17dip"
+            android:layout_marginTop="17.33dip"
+            android:background="@drawable/img_divider_repeat"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_te_preferences_Encoding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17.33dip"
+            android:gravity="left|center_vertical"
+            android:layout_marginLeft="17dip"
+            android:text="@string/string_texteditor_pref_encoding"
+            android:textColor="@color/panel_sub_title_tcolor"
+            android:textSize="14sp" />
+
+        <ListView
+            android:id="@+id/lvEncoding"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5.36dip"
+            android:layout_marginLeft="17dip"
+            android:layout_marginRight="17dip"
+            android:layout_marginTop="5.36dip"
+            android:cacheColorHint="@color/te_preferences_lvscroll"
+            android:fadingEdge="none"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+</LinearLayout>

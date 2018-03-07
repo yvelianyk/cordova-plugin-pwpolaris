@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cm_license_info_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/cm_action_title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/ll_user_register"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/popover_bg"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/cm_register_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="32.33dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="29.67dp"
+            android:src="@drawable/polaris_bi" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="65dp"
+            android:layout_marginTop="80.5dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                 >
+
+                <TextView
+                    android:id="@+id/tv_user_info_above"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="13dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="18.5dp"
+                    android:lineSpacingExtra="9dp"
+                    android:text="@string/cm_msg_regist_info"
+                    android:textColor="@color/cm_user_register_text"
+                    android:textSize="12sp" />
+
+                <com.infraware.polarisoffice6.common.ExEditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/tv_user_info_above"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/textfield_selector_common"
+                    android:hint="@string/cm_hint_email"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="60"
+                    android:paddingLeft="11dp"
+                    android:paddingRight="11dp"
+                    android:singleLine="true"
+                    android:textColor="@color/cm_edit_text_normal"
+                    android:textColorHint="@color/cm_edit_text_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_user_info_below"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_email"
+                    android:layout_marginBottom="13dip"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="13dip"
+                    android:text="@string/cm_msg_regist_info2"
+                    android:textColor="@color/cm_user_register_text"
+                    android:textColorLink="@color/cm_user_register_link"
+                    android:textSize="12sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_after_week"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/tv_user_info_below"
+                    android:layout_marginBottom="28dip"
+                    android:layout_marginLeft="30dp"
+                    android:button="@drawable/btn_check"
+                    android:gravity="center_vertical"
+                    android:text="@string/cm_msg_regist_not_show"
+                    android:textColor="@color/cm_user_register_week"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/cm_register_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="6.00dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_register_later"
+                android:layout_width="0dp"
+                android:layout_height="41.00dp"
+                android:layout_marginLeft="6.33dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/cm_btn_default"
+                android:text="@string/cm_btn_skip"
+                android:textColor="@color/cm_btn_text_color_default"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_register_register"
+                android:layout_width="0dp"
+                android:layout_height="41.00dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="6.33dp"
+                android:layout_weight="1"
+                android:background="@drawable/cm_btn_default"
+                android:text="@string/cm_btn_register"
+                android:textColor="@color/cm_btn_text_color_default"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

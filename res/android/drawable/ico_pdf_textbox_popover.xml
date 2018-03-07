@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+<!-- //[2013.10.11][ghchoi]To add Textbox menu at PDF[start]-->
+	<item android:drawable="@drawable/ico_pdf_textbox_popover_n" />	
+<!-- //[2013.10.11][ghchoi]To add Textbox menu at PDF[end]-->
+</selector>

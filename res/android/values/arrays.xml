@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="sort_type">
+        <item>@string/dm_sort_asc</item>
+        <item>@string/dm_sort_desc</item>
+    </string-array>
+    <string-array name="email_type_list">
+        <item>@string/dm_send_email_original</item>
+        <item>@string/dm_pdf</item>
+    </string-array>
+    <string-array name="email_type_list_no_pdf">
+        <item>@string/dm_send_email_original</item>
+    </string-array>
+    <string-array name="sort_direction">
+        <item>@string/dm_sort_direction_tb</item>
+        <item>@string/dm_sort_direction_lr</item>
+    </string-array>
+    <string-array name="sort_direction_rtl">
+        <item>@string/dm_sort_direction_tb</item>
+        <item>@string/dm_sort_direction_rl</item>
+    </string-array>
+
+    <integer-array name="drawable_sort_by">
+        <item>@drawable/sheet_sort_asc_btn</item>
+        <item>@drawable/sheet_sort_des_btn</item>
+    </integer-array>
+    <integer-array name="drawable_sort_by_background">
+        <item>@drawable/btn_multi_left_selector_common</item>
+        <item>@drawable/btn_multi_right_selector_common</item>
+    </integer-array>
+
+    <string-array name="layout_list">
+        <item>@string/str_insert_new_page</item>
+        <item>@string/dm_page_header_footer</item>
+        <item>@string/dm_hyperlink</item>
+        <item>@string/dm_bookmark</item>
+        <item>@string/dm_footnote</item>
+        <item>@string/dm_endnote</item>
+    </string-array>
+    <string-array name="insertcell_list">
+        <item>@string/dm_insert_row_above</item>
+        <item>@string/dm_insert_row_below</item>
+        <item>@string/dm_insert_col_left</item>
+        <item>@string/dm_insert_col_right</item>
+    </string-array>
+    <string-array name="deletecell_list">
+        <item>@string/dm_delete_rows</item>
+        <item>@string/dm_delete_columns</item>
+    </string-array>
+    <string-array name="selectcell_list">
+        <item>@string/dm_table</item>
+        <item>@string/dm_row</item>
+        <item>@string/dm_columns</item>
+        <item>@string/dm_cell</item>
+    </string-array>
+    <string-array name="numbers">
+        <item>@string/cm_setting_category_general</item>
+        <item>@string/dm_number</item>
+        <item>@string/dm_symbol_currency</item>
+        <item>@string/dm_format_accounting</item>
+        <item>@string/po_menu_item_sort_date</item>
+        <item>@string/dm_format_time</item>
+        <item>@string/dm_format_percentage</item>
+        <item>@string/dm_fraction</item>
+        <item>@string/dm_format_scientific</item>
+        <item>@string/dm_text</item>
+    </string-array>
+    <string-array name="fraction">
+        <item>@string/dm_format_fraction_upto_1_digit</item>
+        <item>@string/dm_format_fraction_upto_2_digit</item>
+        <item>@string/dm_format_fraction_upto_3_digit</item>
+        <item>@string/dm_format_fraction_by_2</item>
+        <item>@string/dm_format_fraction_by_4</item>
+        <item>@string/dm_format_fraction_by_8</item>
+        <item>@string/dm_format_fraction_by_16</item>
+        <item>@string/dm_format_fraction_by_10</item>
+        <item>@string/dm_format_fraction_by_100</item>
+    </string-array>
+    <string-array name="clear">
+        <item>@string/dm_clear_all</item>
+        <item>@string/dm_clear_contents</item>
+        <item>@string/dm_clear_formats</item>
+    </string-array>
+    <string-array name="delete_cell">
+        <item>@string/dm_shift_cells_left</item>
+        <item>@string/dm_shift_cells_up</item>
+        <item>@string/dm_delete_entire_row</item>
+        <item>@string/dm_delete_entire_col</item>
+    </string-array>
+    <string-array name="negative">
+        <item>(1234)</item>
+        <item>(1234)</item>
+        <item>1234</item>
+        <item>-1234</item>
+        <item>-1234</item>
+    </string-array>
+    <string-array name="symbol">
+        <item>@string/dm_none</item>
+        <item>￦</item>
+        <item>＄</item>
+        <item>￡</item>
+        <item>€</item>
+        <item>￥</item>
+        <item>元</item>
+    </string-array>
+    <string-array name="symbol_str">
+        <item>@string/dm_none</item>
+        <item>￦</item>
+        <item>＄</item>
+        <item>￡</item>
+        <item>€ (€ 123)</item>
+        <item>€ (123 €)</item>
+        <item>@string/dm_sheet_japanese</item>
+        <item>@string/dm_sheet_chinese</item>
+    </string-array>
+    <string-array name="legend">
+        <item>@string/dm_chart_no_legend</item>
+        <item>@string/dm_word_outline_options_left</item>
+        <item>@string/dm_word_outline_options_top</item>
+        <item>@string/dm_word_outline_options_right</item>
+        <item>@string/dm_word_outline_options_bottom</item>
+    </string-array>
+    <string-array name="insertcells">
+        <item>@string/dm_shift_cells_right</item>
+        <item>@string/dm_shift_cells_down</item>
+        <item>@string/dm_delete_entire_row</item>
+        <item>@string/dm_delete_entire_col</item>
+    </string-array>
+    <string-array name="line_style">
+        <item>@string/dm_none</item>
+        <item>@string/dm_font_normal</item>
+        <item>@string/dm_shape_thick</item>
+    </string-array>
+    <string-array name="border_style">
+        <item>@string/dm_none</item>
+        <item>@string/dm_border_style_thin</item>
+        <item>@string/dm_border_style_medium</item>
+    </string-array>
+
+    <integer-array name="edit_panel_color_list_default">
+        <item>@color/colorpalette_01</item>
+        <item>@color/colorpalette_02</item>
+        <item>@color/colorpalette_03</item>
+        <item>@color/colorpalette_04</item>
+        <item>@color/colorpalette_05</item>
+        <item>@color/colorpalette_06</item>
+        <item>@color/colorpalette_07</item>
+        <item>@color/colorpalette_08</item>
+        <item>@color/colorpalette_09</item>
+        <item>@color/colorpalette_10</item>
+        <item>@color/colorpalette_11</item>
+        <item>@color/colorpalette_12</item>
+        <item>@color/colorpalette_13</item>
+        <item>@color/colorpalette_14</item>
+        <item>@color/colorpalette_15</item>
+        <item>@color/colorpalette_16</item>
+        <item>@color/colorpalette_17</item>
+        <item>@color/colorpalette_18</item>
+        <item>@color/colorpalette_19</item>
+        <item>@color/colorpalette_20</item>
+        <item>@color/colorpalette_21</item>
+        <item>@color/colorpalette_22</item>
+        <item>@color/colorpalette_23</item>
+    </integer-array>
+    <integer-array name="slide_animation_color_list_default">
+        <item>@color/colorpalette_01</item>
+        <item>@color/colorpalette_02</item>
+        <item>@color/colorpalette_03</item>
+        <item>@color/colorpalette_04</item>
+        <item>@color/colorpalette_05</item>
+        <item>@color/colorpalette_06</item>
+        <item>@color/colorpalette_07</item>
+        <item>@color/colorpalette_08</item>
+        <item>@color/colorpalette_09</item>
+        <item>@color/colorpalette_10</item>
+        <item>@color/colorpalette_11</item>
+        <item>@color/colorpalette_12</item>
+        <item>@color/colorpalette_13</item>
+        <item>@color/colorpalette_14</item>
+        <item>@color/colorpalette_15</item>
+        <item>@color/colorpalette_16</item>
+        <item>@color/colorpalette_17</item>
+        <item>@color/colorpalette_18</item>
+        <item>@color/colorpalette_19</item>
+        <item>@color/colorpalette_20</item>
+        <item>@color/colorpalette_21</item>
+        <item>@color/colorpalette_22</item>
+        <item>@color/colorpalette_23</item>
+        <item>@color/colorpalette_24</item>
+    </integer-array>
+    <integer-array name="edit_panel_color_list_font_bg">
+        <item>@color/colorpalette_12</item>
+        <item>@color/colorpalette_00ff00</item>
+        <item>@color/colorpalette_00ffff</item>
+        <item>@color/colorpalette_ff00ff</item>
+        <item>@color/colorpalette_0000ff</item>
+        <item>@color/colorpalette_11</item>
+        <item>@color/colorpalette_c0c0c0</item>
+        <item>@color/colorpalette_02</item>
+
+        <item>@color/colorpalette_808000</item>
+        <item>@color/colorpalette_008000</item>
+        <item>@color/colorpalette_008080</item>
+        <item>@color/colorpalette_800080</item>
+        <item>@color/colorpalette_000080</item>
+        <item>@color/colorpalette_800000</item>
+        <item>@color/colorpalette_808080</item>
+    </integer-array>
+
+    <integer-array name="color_list">
+        <item>@color/transparent</item>
+    </integer-array>
+
+    <string-array name="fontposition_list">
+        <item>@string/dm_position_superscript</item>
+        <item>@string/dm_font_normal</item>
+        <item>@string/dm_position_subscript</item>
+    </string-array>
+    <string-array name="line_space_value">
+        <item>@string/dm_pt</item>
+        <item>@string/dm_percent</item>
+    </string-array>
+    <string-array name="insert_image_list">
+        <item>@string/dm_insert_gallery</item>
+        <item>@string/dm_camera</item>
+        <!-- <item>@string/dm_insert_googleimagesearch</item> -->
+    </string-array>
+    <string-array name="popup_search_menu">
+        <item>@string/dm_google</item>
+        <item>@string/dm_wikipedia</item>
+    </string-array>
+    <string-array name="insert_image_list_ico">
+        <item>ico_insertimg_gallery</item>
+        <item>ico_insertimg_camera</item>
+    </string-array>
+    <string-array name="te_fontsize_list">
+        <item>@string/te_font_8pt</item>
+        <item>@string/te_font_9pt</item>
+        <item>@string/te_font_10pt</item>
+        <item>@string/te_font_12pt</item>
+        <item>@string/te_font_16pt</item>
+    </string-array>
+    <string-array name="te_encoding_list">
+        <item>@string/te_encoding1</item>
+        <item>@string/te_encoding2</item>
+        <item>@string/te_encoding3</item>
+        <item>@string/te_encoding4</item>
+    </string-array>
+
+    <integer-array name="chart_grid_list">
+        <item>@drawable/ico_chart_01_selector</item>
+        <item>@drawable/ico_chart_02_selector</item>
+        <item>@drawable/ico_chart_03_selector</item>
+        <item>@drawable/ico_chart_04_selector</item>
+        <item>@drawable/ico_chart_05_selector</item>
+        <item>@drawable/ico_chart_06_selector</item>
+        <item>@drawable/ico_chart_07_selector</item>
+        <item>@drawable/ico_chart_08_selector</item>
+        <item>@drawable/ico_chart_09_selector</item>
+        <item>@drawable/ico_chart_10_selector</item>
+        <item>@drawable/ico_chart_11_selector</item>
+        <item>@drawable/ico_chart_12_selector</item>
+        <item>@drawable/ico_chart_13_selector</item>
+        <item>@drawable/ico_chart_14_selector</item>
+        <item>@drawable/ico_chart_15_selector</item>
+        <item>@drawable/ico_chart_16_selector</item>
+        <item>@drawable/ico_chart_17_selector</item>
+        <item>@drawable/ico_chart_18_selector</item>
+        <item>@drawable/ico_chart_19_selector</item>
+        <item>@drawable/ico_chart_20_selector</item>
+        <item>@drawable/ico_chart_21_selector</item>
+        <item>@drawable/ico_chart_22_selector</item>
+        <item>@drawable/ico_chart_23_selector</item>
+        <item>@drawable/ico_chart_24_selector</item>
+        <item>@drawable/ico_chart_25_selector</item>
+        <item>@drawable/ico_chart_26_selector</item>
+        <item>@drawable/ico_chart_27_selector</item>
+        <item>@drawable/ico_chart_28_selector</item>
+        <item>@drawable/ico_chart_29_selector</item>
+        <item>@drawable/ico_chart_30_selector</item>
+        <item>@drawable/ico_chart_31_selector</item>
+        <item>@drawable/ico_chart_32_selector</item>
+        <item>@drawable/ico_chart_33_selector</item>
+        <item>@drawable/ico_chart_34_selector</item>
+        <item>@drawable/ico_chart_35_selector</item>
+    </integer-array>
+
+    <!-- [2012.08.21] conditional format -->
+    <integer-array name="conditional_cell_highlight_image_list">
+        <item>@drawable/conditional_icon_type_01</item>
+        <item>@drawable/conditional_icon_type_02</item>
+        <item>@drawable/conditional_icon_type_03</item>
+        <item>@drawable/conditional_icon_type_04</item>
+        <item>@drawable/conditional_icon_type_05</item>
+        <item>@drawable/conditional_icon_type_06</item>
+        <item>@drawable/conditional_icon_type_07</item>
+    </integer-array>
+
+    <string-array name="conditional_cell_highlight_text_list">
+        <item>@string/dm_conditional_format_greater_than</item>
+        <item>@string/dm_conditional_format_less_than</item>
+        <item>@string/dm_conditional_format_between</item>
+        <item>@string/dm_conditional_format_equal</item>
+        <item>@string/dm_conditional_format_include_text</item>
+        <item>@string/dm_conditional_format_date_of_occurrence</item>
+        <item>@string/dm_conditional_format_duplicate_value</item>
+    </string-array>
+
+    <integer-array name="conditional_parent_child_rule_image_list">
+        <item>@drawable/conditional_icon_type_08</item>
+        <item>@drawable/conditional_icon_type_09</item>
+        <item>@drawable/conditional_icon_type_10</item>
+        <item>@drawable/conditional_icon_type_11</item>
+        <item>@drawable/conditional_icon_type_12</item>
+        <item>@drawable/conditional_icon_type_13</item>
+    </integer-array>
+
+    <string-array name="conditional_parent_child_rule_text_list">
+        <item>@string/dm_conditional_format_top_10</item>
+        <item>@string/dm_conditional_format_top_10_percent</item>
+        <item>@string/dm_conditional_format_bottom_10</item>
+        <item>@string/dm_conditional_format_bottom_10_percent</item>
+        <item>@string/dm_conditional_format_excess_average</item>
+        <item>@string/dm_conditional_format_under_average</item>
+    </string-array>
+
+    <integer-array name="conditional_data_bar_image_list">
+        <item>@drawable/conditional_icon_type_14</item>
+        <item>@drawable/conditional_icon_type_15</item>
+        <item>@drawable/conditional_icon_type_16</item>
+        <item>@drawable/conditional_icon_type_17</item>
+        <item>@drawable/conditional_icon_type_18</item>
+        <item>@drawable/conditional_icon_type_19</item>
+        <item>@drawable/conditional_icon_type_20</item>
+        <item>@drawable/conditional_icon_type_21</item>
+        <item>@drawable/conditional_icon_type_22</item>
+        <item>@drawable/conditional_icon_type_23</item>
+        <item>@drawable/conditional_icon_type_24</item>
+        <item>@drawable/conditional_icon_type_25</item>
+    </integer-array>
+    <integer-array name="conditional_hue_image_list">
+        <item>@drawable/conditional_icon_type_26</item>
+        <item>@drawable/conditional_icon_type_27</item>
+        <item>@drawable/conditional_icon_type_28</item>
+        <item>@drawable/conditional_icon_type_29</item>
+        <item>@drawable/conditional_icon_type_30</item>
+        <item>@drawable/conditional_icon_type_31</item>
+        <item>@drawable/conditional_icon_type_32</item>
+        <item>@drawable/conditional_icon_type_33</item>
+        <item>@drawable/conditional_icon_type_34</item>
+        <item>@drawable/conditional_icon_type_35</item>
+        <item>@drawable/conditional_icon_type_36</item>
+        <item>@drawable/conditional_icon_type_37</item>
+    </integer-array>
+    <integer-array name="conditional_icon_image_list">
+        <item>@drawable/ico_conditional_set_01</item>
+        <item>@drawable/ico_conditional_set_02</item>
+        <item>@drawable/ico_conditional_set_03</item>
+    </integer-array>
+
+    <string-array name="shape_title">
+        <item>@string/dm_line</item>
+        <item>@string/dm_shape_rectangle</item>
+        <item>@string/dm_shape_basic</item>
+        <item>@string/dm_arrow</item>
+        <item>@string/dm_shape_formulra</item>
+        <item>@string/dm_shape_flow</item>
+        <item>@string/dm_shape_banner</item>
+        <item>@string/dm_shape_explanation</item>
+        <item>@string/dm_shape_action</item>
+    </string-array>
+
+    <integer-array name="symbol_grid_list_shape">
+        <item>@drawable/symbol_shape_type01</item>
+        <item>@drawable/symbol_shape_type02</item>
+        <item>@drawable/symbol_shape_type03</item>
+        <item>@drawable/symbol_shape_type04</item>
+        <item>@drawable/symbol_shape_type05</item>
+        <item>@drawable/symbol_shape_type06</item>
+        <item>@drawable/symbol_shape_type10</item>
+        <item>@drawable/symbol_shape_type09</item>
+        <item>@drawable/symbol_shape_type14</item>
+        <item>@drawable/symbol_shape_type13</item>
+        <item>@drawable/symbol_shape_type16</item>
+        <item>@drawable/symbol_shape_type15</item>
+        <item>@drawable/symbol_shape_type12</item>
+        <item>@drawable/symbol_shape_type11</item>
+        <item>@drawable/symbol_shape_type08</item>
+        <item>@drawable/symbol_shape_type07</item>
+        <item>@drawable/symbol_shape_type17</item>
+        <item>@drawable/symbol_shape_type18</item>
+    </integer-array>
+    <integer-array name="symbol_grid_list_shape_value">
+        <item>9734</item>
+        <!-- 별 흰색 -->
+        <item>9733</item>
+        <!-- 별 검정 -->
+        <item>9675</item>
+        <!-- 원 흰색 -->
+        <item>9679</item>
+        <!-- 원 검정 -->
+        <item>9633</item>
+        <!-- 사각 흰색 -->
+        <item>9632</item>
+        <!-- 사각 검정 -->
+        <item>9650</item>
+        <!-- 위 검정 -->
+        <item>9651</item>
+        <!-- 위 흰색 -->
+        <item>9664</item>
+        <!-- 좌 검정 -->
+        <item>9665</item>
+        <!-- 좌 흰색 -->
+        <item>9654</item>
+        <!-- 우 검정 -->
+        <item>9655</item>
+        <!-- 우 흰색 -->
+        <item>9660</item>
+        <!-- 아래 검정 -->
+        <item>9661</item>
+        <!-- 아래 흰색 -->
+        <item>9670</item>
+        <!-- 마름모 흰색 -->
+        <item>9671</item>
+        <!-- 마름모 검정 -->
+        <item>9672</item>
+        <!-- 이중 마름모 -->
+        <item>9742</item>
+        <!-- 전화기 -->
+    </integer-array>
+    <integer-array name="symbol_grid_list_number">
+        <item>@drawable/symbol_number_type01</item>
+        <item>@drawable/symbol_number_type02</item>
+        <item>@drawable/symbol_number_type03</item>
+        <item>@drawable/symbol_number_type04</item>
+        <item>@drawable/symbol_number_type05</item>
+        <item>@drawable/symbol_number_type06</item>
+        <item>@drawable/symbol_number_type07</item>
+        <item>@drawable/symbol_number_type08</item>
+        <item>@drawable/symbol_number_type09</item>
+        <item>@drawable/symbol_number_type10</item>
+        <item>@drawable/symbol_number_type11</item>
+        <item>@drawable/symbol_number_type12</item>
+        <item>@drawable/symbol_number_type13</item>
+        <item>@drawable/symbol_number_type14</item>
+        <item>@drawable/symbol_number_type15</item>
+        <item>@drawable/symbol_number_type16</item>
+        <item>@drawable/symbol_number_type17</item>
+        <item>@drawable/symbol_number_type18</item>
+        <item>@drawable/symbol_number_type19</item>
+        <item>@drawable/symbol_number_type20</item>
+        <item>@drawable/symbol_number_type21</item>
+        <item>@drawable/symbol_number_type22</item>
+    </integer-array>
+    <integer-array name="symbol_grid_list_number_value">
+        <item>9312</item>
+        <item>9313</item>
+        <item>9314</item>
+        <item>9315</item>
+        <item>9316</item>
+        <item>9317</item>
+        <item>9318</item>
+        <item>9319</item>
+        <item>9320</item>
+        <item>9321</item>
+        <item>9322</item>
+        <item>9323</item>
+        <item>8544</item>
+        <item>8545</item>
+        <item>8546</item>
+        <item>8547</item>
+        <item>8548</item>
+        <item>8549</item>
+        <item>8550</item>
+        <item>8551</item>
+        <item>8552</item>
+        <item>8553</item>
+    </integer-array>
+    <integer-array name="symbol_grid_list_mark">
+        <item>@drawable/symbol_mark_type01</item>
+        <item>@drawable/symbol_mark_type02</item>
+        <item>@drawable/symbol_mark_type03</item>
+        <item>@drawable/symbol_mark_type04</item>
+        <item>@drawable/symbol_mark_type05</item>
+        <item>@drawable/symbol_mark_type06</item>
+    </integer-array>
+    <integer-array name="symbol_grid_list_mark_value">
+        <item>12302</item>
+        <item>12303</item>
+        <item>8482</item>
+        <item>12685</item>
+        <item>8251</item>
+        <item>167</item>
+    </integer-array>
+    <integer-array name="symbol_grid_list_etc">
+        <item>@drawable/symbol_etc_type01</item>
+        <item>@drawable/symbol_etc_type02</item>
+        <item>@drawable/symbol_etc_type03</item>
+        <item>@drawable/symbol_etc_type04</item>
+        <item>@drawable/symbol_etc_type05</item>
+        <item>@drawable/symbol_etc_type06</item>
+        <item>@drawable/symbol_etc_type07</item>
+        <item>@drawable/symbol_etc_type08</item>
+        <item>@drawable/symbol_etc_type09</item>
+        <item>@drawable/symbol_etc_type10</item>
+        <item>@drawable/symbol_etc_type11</item>
+        <item>@drawable/symbol_etc_type12</item>
+        <item>@drawable/symbol_etc_type13</item>
+        <item>@drawable/symbol_etc_type14</item>
+        <item>@drawable/symbol_etc_type15</item>
+        <item>@drawable/symbol_etc_type16</item>
+        <item>@drawable/symbol_etc_type17</item>
+        <item>@drawable/symbol_etc_type18</item>
+    </integer-array>
+    <integer-array name="symbol_grid_list_etc_value">
+        <item>8592</item>
+        <!-- left arrow -->
+        <item>8594</item>
+        <!-- right arrow -->
+        <item>8593</item>
+        <!-- top arrow -->
+        <item>8595</item>
+        <!-- bottom arrow -->
+        <item>9756</item>
+        <!-- left hand -->
+        <item>9758</item>
+        <!-- right hand -->
+
+        <item>186</item>
+        <!-- do -->
+        <item>8486</item>
+        <!-- omega -->
+        <item>8734</item>
+        <!-- 무한대 -->
+        <item>945</item>
+        <!-- 알파 -->
+        <item>946</item>
+        <!-- 베타 -->
+        <item>947</item>
+        <!-- 감마 -->
+
+        <item>8756</item>
+        <!-- 따라서 -->
+        <item>8757</item>
+        <!-- 왜냐하면 -->
+        <item>8800</item>
+        <!-- 다르다 -->
+
+        <item>8730</item>
+        <!-- 체크 -->
+        <item>9792</item>
+        <!-- 남자 -->
+        <item>9794</item>
+        <!-- 여자 -->
+    </integer-array>
+    <integer-array name="symbol_grid_list_currency">
+        <item>@drawable/symbol_currency_type01</item>
+        <item>@drawable/symbol_currency_type02</item>
+        <item>@drawable/symbol_currency_type03</item>
+        <item>@drawable/symbol_currency_type04</item>
+        <item>@drawable/symbol_currency_type05</item>
+        <item>@drawable/symbol_currency_type06</item>
+    </integer-array>
+    <integer-array name="symbol_grid_list_currency_value">
+        <item>163</item>
+        <item>8364</item>
+        <item>165</item>
+        <item>8355</item>
+        <item>8367</item>
+        <item>8368</item>
+        <!-- ₰ -->
+
+    </integer-array>
+
+    <string-array name="slide_link_position_list">
+        <item>@string/dm_none</item>
+        <item>@string/slide_link_position_first</item>
+        <item>@string/slide_link_position_last</item>
+        <item>@string/slide_link_position_prev</item>
+        <item>@string/slide_link_position_next</item>
+    </string-array>
+    
+    <string-array name="word_memo_delete_list">
+        <item>@string/memo_delete_current</item>
+        <item>@string/memo_delete_all</item>
+    </string-array>
+    
+    <string-array name="slide_memo_delete_list">
+        <item>@string/memo_delete_current</item>
+        <item>@string/memo_delete_current_slide</item>
+        <item>@string/memo_delete_all</item>
+    </string-array>
+    
+    <string-array name="word_trace_apply_list">
+        <item>@string/word_trace_current_apply</item>
+        <item>@string/word_trace_all_apply</item>
+    </string-array>
+    
+    <string-array name="word_trace_cancel_list">
+        <item>@string/word_trace_current_cancle</item>
+        <item>@string/word_trace_all_cancle</item>
+    </string-array>
+
+</resources>

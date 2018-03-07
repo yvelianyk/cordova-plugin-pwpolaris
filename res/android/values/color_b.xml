@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="cm_button_text_disabled">#FF8F9AA7</color>
+    <color name="cm_button_text_selected">#FFFFFFFF</color>
+    <color name="cm_button_text_pressed">#FFFFFFFF</color>
+    <color name="cm_button_text_normal">#FFE1E9F0</color>
+
+    
+    <color name="cm_edit_text_pressed">#FF282828</color>
+    <color name="cm_empty_bg">#FFF5F5F5</color>
+    <color name="cm_empty_text">#FF007CE9</color>
+    <color name="cm_list_bg">#FFFFFFFF</color>
+
+
+    <color name="cm_title_info_key_text">#FF007ce9</color>
+    <color name="cm_title_info_text">#FFF5F5F5</color>
+
+    <color name="cm_title_text">#FF414750</color>  <!-- //20130816 khchoi To apply GUI change from #FFFFFFFF to #FFF5F5F5--> 
+   	<color name="cm_select_button_text_normal">#FFFFFFFF</color>
+	<color name="cm_select_button_text_pressed">#FFFFFFFF</color>
+	<color name="cm_select_button_text_selected">#FFFFFFFF</color>
+	<color name="cm_select_button_text_disabled">#FF797F81</color>
+    
+    <color name="fm_file_item_file_index">#FF4D5663</color>
+    <color name="fm_file_item_folder_index">#FF654B17</color>
+
+
+    <color name="fm_file_path_pressed">#FFFFFFFF</color>
+    <color name="fm_file_path_normal">#FF2D3A56</color>
+    <color name="fm_file_search_word_normal">#FF282828</color>
+	<color name="fm_file_search_word_pressed">#FFFFFFFF</color>
+    
+	<color name="po_type_title_text">#FF282828</color>
+    <color name="po_common_dialog_text_color">#FFF5F5F5</color>
+    <color name="po_navi_sub_name_normal">#FFBDCBDD</color>
+    <color name="po_navi_sub_name_pressed">#FFFFFFFF</color>
+    <color name="po_navi_sub_name_selected">#FFFFFFFF</color>
+    <color name="po_navi_title_name_normal">#FFD3DDEA</color>
+    <color name="po_navi_title_name_pressed">#FFFFFFFF</color>
+    <color name="po_navi_title_name_selected">#FFFFFFFF</color>
+    <color name="po_navi_empth_bg">#FF334152</color>
+    
+	<color name="cm_list_line_color">#FFEDEDED</color> 
+
+	<color name="cm_sub_bar_point_text_color">#FF007CE9</color> 
+	<color name="cm_sub_bar_default_text_color">#FF282828</color>
+	
+    <color name="common_actionbar_name_disabled">#FFBEBEBE</color>
+    <color name="common_actionbar_name_normal">#FF3C3C3C</color>
+   	<color name="common_actionbar_name_selected">#FFFFFFFF</color>
+	<color name="common_actionbar_name_pressed">#FFFFFFFF</color>
+
+</resources>

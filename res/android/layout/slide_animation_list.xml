@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cm_common_background" >
+
+    <LinearLayout
+        android:id="@+id/slideanimationlist_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/actiontitlebar_layout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.infraware.document.slide.SlideAnimationDragNDropListView
+                android:id="@+id/android:list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@color/transparent"
+                android:divider="@color/cm_list_line_color"
+                android:dividerHeight="0.67dp"
+                android:drawSelectorOnTop="false" />
+
+            <ImageView
+                android:id="@+id/slide_list_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/list_move_line"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/common_menubar_delete" />
+
+</FrameLayout>

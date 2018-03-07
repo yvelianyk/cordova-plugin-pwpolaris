@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pdf_toc_rootview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/base_common_bg">
+
+   <fragment 
+       android:name="com.infraware.document.pdf.PdfBookmarkFragment"
+       android:id="@+id/pdf_bookmark_fragment"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
+</LinearLayout>

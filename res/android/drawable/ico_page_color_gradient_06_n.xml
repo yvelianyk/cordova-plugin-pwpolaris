@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape>
+            <gradient
+                android:angle="90"
+                android:endColor="@color/pagebackground_gradient_template_02_end"
+                android:startColor="@color/pagebackground_gradient_template_02_start" />
+
+            <corners android:radius="@dimen/page_background_color_gradient_corner" />
+        </shape>
+    </item>
+    <item>
+        <nine-patch android:src="@drawable/color_outline" />
+    </item>
+
+</layer-list>

@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel_edit_body_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <com.infraware.polarisoffice6.panel.EditPanelBodyScrollView
+        android:id="@+id/panel_edit_scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/panel_edit_content_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- content start -->
+
+
+            <!-- 좋음, 나쁨 및 보통 -->
+
+            <TextView
+                android:id="@+id/anchor_sheet_highlight"
+                style="@style/PanelAnchorTitle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/panel_subtitle_h"
+                android:layout_marginBottom="@dimen/panel_subtitle_margin_bottom_h"
+                android:text="@string/sheet_highlight" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7.67dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/cell_style_button_01"
+                    style="@style/SelectionCustomListItem.LinearLayout.Top"
+                    android:background="@drawable/btn_multi_top_selector_sheet"
+                    android:tag="0" >
+
+                    <ImageView
+                        android:id="@+id/cell_style_button_01_check"
+                        android:src="@drawable/radio_selector_sheet"
+                        style="@style/SelectionCustomListItem.View.ImageView"
+                         />
+
+                    <ImageButton
+                        android:id="@+id/sheet_highlight_button_1"
+                        style="@style/SelectionCustomListItem.View.ButtonSheet" 
+                        android:tag="0"/>
+                </LinearLayout>
+
+                <!--<View style="@style/SelectionCustomListItem.Divider" />-->
+
+                <LinearLayout
+                    android:id="@+id/cell_style_button_02"
+                    style="@style/SelectionCustomListItem.LinearLayout.Middle"
+                    android:background="@drawable/btn_multi_middle_selector_sheet"
+                    android:src="@drawable/radio_selector_sheet"
+                    android:tag="27" >
+
+                    <ImageView
+                        android:id="@+id/cell_style_button_02_check"
+                        android:src="@drawable/radio_selector_sheet"
+                        style="@style/SelectionCustomListItem.View.ImageView" />
+
+                    <ImageButton
+                        android:id="@+id/sheet_highlight_button_2"
+                        style="@style/SelectionCustomListItem.View.ButtonSheet" 
+                        android:tag="1"/>
+                </LinearLayout>
+
+                <!--<View style="@style/SelectionCustomListItem.Divider" />-->
+
+                <LinearLayout
+                    android:id="@+id/cell_style_button_03"
+                    style="@style/SelectionCustomListItem.LinearLayout.Middle"
+                    android:background="@drawable/btn_multi_middle_selector_sheet"
+                    android:tag="28" >
+
+                    <ImageView
+                        android:id="@+id/cell_style_button_03_check"
+                        android:src="@drawable/radio_selector_sheet"
+                        style="@style/SelectionCustomListItem.View.ImageView" />
+
+                    <ImageButton
+                        android:id="@+id/sheet_highlight_button_3"
+                        style="@style/SelectionCustomListItem.View.ButtonSheet" 
+                        android:tag="2"/>
+                </LinearLayout>
+
+                <!--<View style="@style/SelectionCustomListItem.Divider" />-->
+
+                <LinearLayout
+                    android:id="@+id/cell_style_button_04"
+                    style="@style/SelectionCustomListItem.LinearLayout.Bottom"
+                    android:background="@drawable/btn_multi_bottom_selector_sheet"
+                    android:tag="26" >
+
+                    <ImageView
+                        android:id="@+id/cell_style_button_04_check"
+                        android:src="@drawable/radio_selector_sheet"
+                        style="@style/SelectionCustomListItem.View.ImageView" />
+
+                    <ImageButton
+                        android:id="@+id/sheet_highlight_button_4"
+                        style="@style/SelectionCustomListItem.View.ButtonSheet" 
+                        android:tag="3"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- End of 좋음, 나쁨 및 보통 -->
+
+
+            <!-- 데이터 및 모델 -->
+
+            <TextView
+                android:id="@+id/anchor_sheet_highlight_border"
+                style="@style/PanelAnchorTitle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/panel_subtitle_h"
+                android:layout_marginBottom="@dimen/panel_subtitle_margin_bottom_h"
+                android:text="@string/sheet_highlight_border" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7.67dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/cell_style_button_05"
+                    style="@style/SelectionCustomListItem.LinearLayout.Top"
+                    android:background="@drawable/btn_multi_top_selector_sheet"
+                    android:tag="11" >
+
+                    <ImageView
+                        android:id="@+id/cell_style_button_05_check"
+                        android:src="@drawable/radio_selector_sheet"
+                        style="@style/SelectionCustomListItem.View.ImageView" />
+
+                    <ImageButton
+                        android:id="@+id/sheet_highlight_border_button_1"
+                        style="@style/SelectionCustomListItem.View.ButtonSheet"
+                        android:tag="4"/>
+                </LinearLayout>
+
+                <!--<View style="@style/SelectionCustomListItem.Divider" />-->
+
+                <LinearLayout
+                    android:id="@+id/cell_style_button_06"
+                    style="@style/SelectionCustomListItem.LinearLayout.Middle"
+                    android:background="@drawable/btn_multi_middle_selector_sheet"
+                    android:tag="22" >
+
+                    <ImageView
+                        android:id="@+id/cell_style_button_06_check"
+                        android:src="@drawable/radio_selector_sheet"
+                        style="@style/SelectionCustomListItem.View.ImageView" />
+
+                    <ImageButton
+                        android:id="@+id/sheet_highlight_border_button_2"
+                        style="@style/SelectionCustomListItem.View.ButtonSheet"
+                        android:tag="5"/>
+                </LinearLayout>
+
+                <!--<View style="@style/SelectionCustomListItem.Divider" />-->
+
+                <LinearLayout
+                    android:id="@+id/cell_style_button_07"
+                    style="@style/SelectionCustomListItem.LinearLayout.Middle"
+                    android:background="@drawable/btn_multi_middle_selector_sheet"
+                    android:tag="10" >
+
+                    <ImageView
+                        android:id="@+id/cell_style_button_07_check"
+                        android:src="@drawable/radio_selector_sheet"
+                        style="@style/SelectionCustomListItem.View.ImageView" />
+
+                    <ImageButton
+                        android:id="@+id/sheet_highlight_border_button_3"
+                        style="@style/SelectionCustomListItem.View.ButtonSheet"
+                        android:tag="6"/>
+                </LinearLayout>
+
+                <!--<View style="@style/SelectionCustomListItem.Divider" />-->
+
+                <LinearLayout
+                    android:id="@+id/cell_style_button_08"
+                    style="@style/SelectionCustomListItem.LinearLayout.Bottom"
+                    android:background="@drawable/btn_multi_bottom_selector_sheet"
+                    android:tag="20" >
+
+                    <ImageView
+                        android:id="@+id/cell_style_button_08_check"
+                        android:src="@drawable/radio_selector_sheet"
+                        style="@style/SelectionCustomListItem.View.ImageView" />
+
+                    <ImageButton
+                        android:id="@+id/sheet_highlight_border_button_4"
+                        style="@style/SelectionCustomListItem.View.ButtonSheet" 
+                        android:tag="10"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- End of 데이터 및 모델 -->
+
+
+            <!-- 제목 및 머리글 -->
+
+            <TextView
+                android:id="@+id/anchor_sheet_title_and_summary"
+                style="@style/PanelAnchorTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/panel_subtitle_margin_bottom_h"
+                android:text="@string/sheet_title_and_summary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7.67dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/cell_style_button_09"
+                    style="@style/SelectionCustomListItem.LinearLayout.Top"
+                    android:background="@drawable/btn_multi_top_selector_sheet"
+                    android:tag="25" >
+
+                    <ImageView
+                        android:id="@+id/cell_style_button_09_check"
+                        android:src="@drawable/radio_selector_sheet"
+                        style="@style/SelectionCustomListItem.View.ImageView" />
+
+                    <ImageButton
+                        android:id="@+id/sheet_title_and_summary_button_1"
+                        style="@style/SelectionCustomListItem.View.ButtonSheet"
+                        android:tag="12"/>
+                </LinearLayout>
+
+                <!--<View style="@style/SelectionCustomListItem.Divider" />-->
+
+                <LinearLayout
+                    android:id="@+id/cell_style_button_10"
+                    style="@style/SelectionCustomListItem.LinearLayout.Middle"
+                    android:background="@drawable/btn_multi_middle_selector_sheet"
+                    android:tag="16" >
+
+                    <ImageView
+                        android:id="@+id/cell_style_button_10_check"
+                        android:src="@drawable/radio_selector_sheet"
+                        style="@style/SelectionCustomListItem.View.ImageView" />
+
+                    <ImageButton
+                        android:id="@+id/sheet_title_and_summary_button_2"
+                        style="@style/SelectionCustomListItem.View.ButtonSheet"
+                        android:tag="14"/>
+                </LinearLayout>
+
+                <!--<View style="@style/SelectionCustomListItem.Divider" />-->
+
+                <LinearLayout
+                    android:id="@+id/cell_style_button_11"
+                    style="@style/SelectionCustomListItem.LinearLayout.Middle"
+                    android:background="@drawable/btn_multi_middle_selector_sheet"
+                    android:tag="17" >
+
+                    <ImageView
+                        android:id="@+id/cell_style_button_11_check"
+                        android:src="@drawable/radio_selector_sheet"
+                        style="@style/SelectionCustomListItem.View.ImageView" />
+
+                    <ImageButton
+                        android:id="@+id/sheet_title_and_summary_button_3"
+                        style="@style/SelectionCustomListItem.View.ButtonSheet" 
+                        android:tag="15"/>
+                </LinearLayout>
+
+                <!--<View style="@style/SelectionCustomListItem.Divider" />-->
+
+                <LinearLayout
+                    android:id="@+id/cell_style_button_12"
+                    style="@style/SelectionCustomListItem.LinearLayout.Bottom"
+                    android:background="@drawable/btn_multi_bottom_selector_sheet"
+                    android:tag="18" >
+
+                    <ImageView
+                        android:id="@+id/cell_style_button_12_check"
+                        android:src="@drawable/radio_selector_sheet"
+                        style="@style/SelectionCustomListItem.View.ImageView" />
+
+                    <ImageButton
+                        android:id="@+id/sheet_title_and_summary_button_4"
+                        style="@style/SelectionCustomListItem.View.ButtonSheet"
+                        android:tag="16"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- End of 제목 및 머리글 -->
+
+
+            <!-- 테마 셀 스타일 -->
+
+            <TextView
+                android:id="@+id/anchor_sheet_fill_the_cell"
+                style="@style/PanelAnchorTitle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/panel_subtitle_h"
+                android:layout_marginBottom="@dimen/panel_subtitle_margin_bottom_h"
+                android:text="@string/sheet_fill_the_cell" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7.67dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/cell_style_button_13"
+                    style="@style/SelectionCustomListItem.LinearLayout.Top"
+                    android:background="@drawable/btn_multi_top_selector_sheet"
+                    android:tag="30" >
+
+                    <ImageView
+                        android:id="@+id/cell_style_button_13_check"
+                        android:src="@drawable/radio_selector_sheet"
+                        style="@style/SelectionCustomListItem.View.ImageView" />
+
+                    <ImageButton
+                        android:id="@+id/sheet_fill_the_cell_button_1"
+                        style="@style/SelectionCustomListItem.View.ButtonSheet"
+                        android:tag="18"/>
+                </LinearLayout>
+
+                <!--<View style="@style/SelectionCustomListItem.Divider" />-->
+
+                <LinearLayout
+                    android:id="@+id/cell_style_button_14"
+                    style="@style/SelectionCustomListItem.LinearLayout.Middle"
+                    android:background="@drawable/btn_multi_middle_selector_sheet"
+                    android:tag="31" >
+
+                    <ImageView
+                        android:id="@+id/cell_style_button_14_check"
+                        android:src="@drawable/radio_selector_sheet"
+                        style="@style/SelectionCustomListItem.View.ImageView" />
+
+                    <ImageButton
+                        android:id="@+id/sheet_fill_the_cell_button_2"
+                        style="@style/SelectionCustomListItem.View.ButtonSheet"
+                        android:tag="24"/>
+                </LinearLayout>
+
+                <!--<View style="@style/SelectionCustomListItem.Divider" />-->
+
+                <LinearLayout
+                    android:id="@+id/cell_style_button_15"
+                    style="@style/SelectionCustomListItem.LinearLayout.Middle"
+                    android:background="@drawable/btn_multi_middle_selector_sheet"
+                    android:tag="29" >
+
+                    <ImageView
+                        android:id="@+id/cell_style_button_15_check"
+                        android:src="@drawable/radio_selector_sheet"
+                        style="@style/SelectionCustomListItem.View.ImageView" />
+
+                    <ImageButton
+                        android:id="@+id/sheet_fill_the_cell_button_3"
+                        style="@style/SelectionCustomListItem.View.ButtonSheet"
+                        android:tag="36"/>
+                </LinearLayout>
+
+                <!--<View style="@style/SelectionCustomListItem.Divider" />-->
+
+                <LinearLayout
+                    android:id="@+id/cell_style_button_16"
+                    style="@style/SelectionCustomListItem.LinearLayout.Middle"
+                    android:background="@drawable/btn_multi_middle_selector_sheet"
+                    android:tag="50" >
+
+                    <ImageView
+                        android:id="@+id/cell_style_button_16_check"
+                        android:src="@drawable/radio_selector_sheet"
+                        style="@style/SelectionCustomListItem.View.ImageView" />
+
+                    <ImageButton
+                        android:id="@+id/sheet_fill_the_cell_button_4"
+                        style="@style/SelectionCustomListItem.View.ButtonSheet"
+                        android:tag="23" />
+                </LinearLayout>
+
+                <!--<View style="@style/SelectionCustomListItem.Divider" />-->
+
+                <LinearLayout
+                    android:id="@+id/cell_style_button_17"
+                    style="@style/SelectionCustomListItem.LinearLayout.Middle"
+                    android:background="@drawable/btn_multi_middle_selector_sheet"
+                    android:tag="51" >
+
+                    <ImageView
+                        android:id="@+id/cell_style_button_17_check"
+                        android:src="@drawable/radio_selector_sheet"
+                        style="@style/SelectionCustomListItem.View.ImageView" />
+
+                    <ImageButton
+                        android:id="@+id/sheet_fill_the_cell_button_5"
+                        style="@style/SelectionCustomListItem.View.ButtonSheet"
+                        android:tag="29"/>
+                </LinearLayout>
+
+                <!--<View style="@style/SelectionCustomListItem.Divider" />-->
+
+                <LinearLayout
+                    android:id="@+id/cell_style_button_18"
+                    style="@style/SelectionCustomListItem.LinearLayout.Middle"
+                    android:background="@drawable/btn_multi_middle_selector_sheet"
+                    android:tag="49" >
+
+                    <ImageView
+                        android:id="@+id/cell_style_button_18_check"
+                        android:src="@drawable/radio_selector_sheet"
+                        style="@style/SelectionCustomListItem.View.ImageView" />
+
+                    <ImageButton
+                        android:id="@+id/sheet_fill_the_cell_button_6"
+                        style="@style/SelectionCustomListItem.View.ButtonSheet"
+                        android:tag="41"/>
+                </LinearLayout>
+
+                <!--<View style="@style/SelectionCustomListItem.Divider" />-->
+
+                <LinearLayout
+                    android:id="@+id/cell_style_button_19"
+                    style="@style/SelectionCustomListItem.LinearLayout.Middle"
+                    android:background="@drawable/btn_multi_middle_selector_sheet"
+                    android:tag="34" >
+
+                    <ImageView
+                        android:id="@+id/cell_style_button_19_check"
+                        android:src="@drawable/radio_selector_sheet"
+                        style="@style/SelectionCustomListItem.View.ImageView" />
+
+                    <ImageButton
+                        android:id="@+id/sheet_fill_the_cell_button_7"
+                        style="@style/SelectionCustomListItem.View.ButtonSheet"
+                        android:tag="19"/>
+                </LinearLayout>
+
+                <!--<View style="@style/SelectionCustomListItem.Divider" />-->
+
+                <LinearLayout
+                    android:id="@+id/cell_style_button_20"
+                    style="@style/SelectionCustomListItem.LinearLayout.Middle"
+                    android:background="@drawable/btn_multi_middle_selector_sheet"
+                    android:tag="35" >
+
+                    <ImageView
+                        android:id="@+id/cell_style_button_20_check"
+                        android:src="@drawable/radio_selector_sheet"
+                        style="@style/SelectionCustomListItem.View.ImageView" />
+
+                    <ImageButton
+                        android:id="@+id/sheet_fill_the_cell_button_8"
+                        style="@style/SelectionCustomListItem.View.ButtonSheet"
+                        android:tag="25"/>
+                </LinearLayout>
+
+                <!--<View style="@style/SelectionCustomListItem.Divider" />-->
+
+                <LinearLayout
+                    android:id="@+id/cell_style_button_21"
+                    style="@style/SelectionCustomListItem.LinearLayout.Middle"
+                    android:background="@drawable/btn_multi_middle_selector_sheet"
+                    android:tag="33" >
+
+                    <ImageView
+                        android:id="@+id/cell_style_button_21_check"
+                        android:src="@drawable/radio_selector_sheet"
+                        style="@style/SelectionCustomListItem.View.ImageView" />
+
+                    <ImageButton
+                        android:id="@+id/sheet_fill_the_cell_button_9"
+                        style="@style/SelectionCustomListItem.View.ButtonSheet"
+                        android:tag="37"/>
+                </LinearLayout>
+
+                <!--<View style="@style/SelectionCustomListItem.Divider" />-->
+
+                <LinearLayout
+                    android:id="@+id/cell_style_button_22"
+                    style="@style/SelectionCustomListItem.LinearLayout.Middle"
+                    android:background="@drawable/btn_multi_middle_selector_sheet"
+                    android:tag="42" >
+
+                    <ImageView
+                        android:id="@+id/cell_style_button_22_check"
+                        android:src="@drawable/radio_selector_sheet"
+                        style="@style/SelectionCustomListItem.View.ImageView" />
+
+                    <ImageButton
+                        android:id="@+id/sheet_fill_the_cell_button_10"
+                        style="@style/SelectionCustomListItem.View.ButtonSheet"
+                        android:tag="21"/>
+                </LinearLayout>
+
+                <!--<View style="@style/SelectionCustomListItem.Divider" />-->
+
+                <LinearLayout
+                    android:id="@+id/cell_style_button_23"
+                    style="@style/SelectionCustomListItem.LinearLayout.Middle"
+                    android:background="@drawable/btn_multi_middle_selector_sheet"
+                    android:tag="43" >
+
+                    <ImageView
+                        android:id="@+id/cell_style_button_23_check"
+                        android:src="@drawable/radio_selector_sheet"
+                        style="@style/SelectionCustomListItem.View.ImageView" />
+
+                    <ImageButton
+                        android:id="@+id/sheet_fill_the_cell_button_11"
+                        style="@style/SelectionCustomListItem.View.ButtonSheet"
+                        android:tag="27"/>
+                </LinearLayout>
+
+                <!--<View style="@style/SelectionCustomListItem.Divider" />--> 
+
+                <LinearLayout
+                    android:id="@+id/cell_style_button_24"
+                    style="@style/SelectionCustomListItem.LinearLayout.Bottom"
+                    android:background="@drawable/btn_multi_bottom_selector_sheet"
+                    android:tag="41" >
+
+                    <ImageView
+                        android:id="@+id/cell_style_button_24_check"
+                        android:src="@drawable/radio_selector_sheet"
+                        style="@style/SelectionCustomListItem.View.ImageView" />
+
+                    <ImageButton
+                        android:id="@+id/sheet_fill_the_cell_button_12"
+                        style="@style/SelectionCustomListItem.View.ButtonSheet"
+                        android:tag="39"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- End of 테마 셀 스타일 -->
+
+
+            <!-- content end -->
+
+        </LinearLayout>
+    </com.infraware.polarisoffice6.panel.EditPanelBodyScrollView>
+
+</LinearLayout>

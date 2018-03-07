@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@color/po_slide_show_background"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<com.infraware.document.slide.SlideShowGLSurfaceView
+		android:id="@+id/slide_preview_gl_image"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true" />
+	<com.infraware.document.slide.SlideShowSurfaceView
+		android:id="@+id/slide_preview_image"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true" />
+</RelativeLayout>

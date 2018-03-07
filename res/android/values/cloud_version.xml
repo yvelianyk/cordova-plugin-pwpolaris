@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<integer name="google_version_code">5</integer>
+	<integer name="dropbox_version_code">16</integer>
+	<integer name="box_version_code">5</integer>
+	<integer name="sugarsync_version_code">5</integer>
+</resources>

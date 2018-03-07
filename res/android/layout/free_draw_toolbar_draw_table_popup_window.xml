@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/free_draw_toolbar_erase_popup_window"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popover_bg"
+    android:minWidth="112.67dp"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/draw_table"
+        android:layout_width="wrap_content"
+        android:layout_height="42.67dp"
+        android:background="@drawable/popover_bg_selector_common"
+        android:gravity="center_vertical"
+        android:paddingLeft="10.00dip"
+        android:paddingRight="10.00dip"
+        android:singleLine="true"
+        android:text="@string/cm_action_bar_table_draw"
+        android:textColor="@color/popover_list_tcolor_selector"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/delete_table"
+        android:layout_width="wrap_content"
+        android:layout_height="42.67dp"
+        android:background="@drawable/popover_bg_selector_common"
+        android:gravity="center_vertical"
+        android:paddingLeft="10.00dip"
+        android:paddingRight="10.00dip"
+        android:singleLine="true"
+        android:text="@string/cm_action_bar_table_delete"
+        android:textColor="@color/popover_list_tcolor_selector"
+        android:textSize="15sp" />
+
+</LinearLayout>

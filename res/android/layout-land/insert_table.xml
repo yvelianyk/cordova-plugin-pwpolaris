@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_common_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/actiontitlebar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/inserttable_layer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <!-- <RelativeLayout
+                android:id="@+id/insert_table_change_style"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ts_h"
+                android:background="@drawable/cm_titlesub_bg_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="onOpenStyle" >
+
+                <ImageView
+                    android:id="@+id/ImgShapeStyle"
+                    android:layout_width="@dimen/ts_left_w"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:clickable="false"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/ico_style_table_01" />
+
+                <ImageButton
+                    android:layout_width="@dimen/ts_right_w"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:clickable="false"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/titlesub_ico_select" />
+            </RelativeLayout> -->
+
+            <!-- //20130819 khchoi To change insert table activity gui [start] -->
+
+            <LinearLayout
+                android:id="@+id/first_linear"
+                android:layout_width="wrap_content"
+                android:layout_height="41dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dip" >
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip" />
+
+                <com.infraware.common.widget.WheelButton
+                    android:id="@+id/InsertTable_Word_Cols"
+                    android:layout_width="213.5dip"
+                    android:layout_height="41dip"
+                    android:layout_marginLeft="10.5dip"
+                    android:layout_weight="1" >
+                </com.infraware.common.widget.WheelButton>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/second_linear"
+                android:layout_width="wrap_content"
+                android:layout_height="213.5dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6.67dip"
+                android:layout_marginBottom="7.33dip" >
+
+                <com.infraware.polarisoffice6.common.WheelButtonVertical
+                    android:id="@+id/InsertTable_Word_Rows"
+                    android:layout_width="40dip"
+                    android:layout_height="213.5dip" >
+                </com.infraware.polarisoffice6.common.WheelButtonVertical>
+
+                <com.infraware.polarisoffice6.common.InsertTableDrawView
+                    android:id="@+id/InsertTable_Word_DrawView"
+                    android:layout_width="213.5dip"
+                    android:layout_height="213.5dip"
+                    android:layout_marginLeft="7.67dip"
+                    android:background="@drawable/insert_table_preview_01" >
+                </com.infraware.polarisoffice6.common.InsertTableDrawView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/changestyle_layer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                chart style 1
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="26dip"
+                    android:orientation="horizontal" >
+
+                    <Space style="@style/tableStyleSpace.LeftAndRightLand"/>
+                    
+                    <ImageButton
+                        android:id="@+id/btn_style1"
+                        android:layout_width="@dimen/style_icon_w"
+                        android:layout_height="@dimen/style_icon_h"
+                        android:background="@drawable/cm_bg02_pressed_selector"
+                        android:clickable="true"
+                        android:onClick="onStyleClick"
+                        android:src="@drawable/ico_style_table_01" />
+
+                    <Space style="@style/tableStyleSpace.CenterLand"/>
+                    
+                    <Space style="@style/tableStyleSpace.dummyView"/>
+                    
+                    <Space style="@style/tableStyleSpace.CenterLand"/>
+                    
+                    <Space style="@style/tableStyleSpace.dummyView"/>
+                    
+                    <Space style="@style/tableStyleSpace.CenterLand"/>
+                    
+                    <Space style="@style/tableStyleSpace.dummyView"/>
+                    
+                    <Space style="@style/tableStyleSpace.CenterLand"/>
+                    
+                    <Space style="@style/tableStyleSpace.dummyView"/>
+                    
+                    <Space style="@style/tableStyleSpace.CenterLand"/>
+                    
+                    <Space style="@style/tableStyleSpace.dummyView"/>
+                    
+                    <Space style="@style/tableStyleSpace.LeftAndRightLand"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="22dip"
+                    android:orientation="horizontal" >
+
+                    <Space style="@style/tableStyleSpace.LeftAndRightLand"/>
+                    
+                    <ImageButton
+                        android:id="@+id/btn_style2"
+                        android:layout_width="@dimen/style_icon_w"
+                        android:layout_height="@dimen/style_icon_h"
+                        android:background="@drawable/cm_bg02_pressed_selector"
+                        android:clickable="true"
+                        android:onClick="onStyleClick"
+                        android:src="@drawable/ico_style_table_02" />
+
+                    <Space style="@style/tableStyleSpace.CenterLand"/>
+                    
+                    <ImageButton
+                        android:id="@+id/btn_style3"
+                        android:layout_width="@dimen/style_icon_w"
+                        android:layout_height="@dimen/style_icon_h"
+                        android:background="@drawable/cm_bg02_pressed_selector"
+                        android:clickable="true"
+                        android:onClick="onStyleClick"
+                        android:src="@drawable/ico_style_table_03" />
+                    
+					<Space style="@style/tableStyleSpace.CenterLand"/>
+                    
+                    <ImageButton
+                        android:id="@+id/btn_style4"
+                        android:layout_width="@dimen/style_icon_w"
+                        android:layout_height="@dimen/style_icon_h"
+                        android:background="@drawable/cm_bg02_pressed_selector"
+                        android:clickable="true"
+                        android:onClick="onStyleClick"
+                        android:src="@drawable/ico_style_table_04" />
+                    
+                    <Space style="@style/tableStyleSpace.CenterLand"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_style5"
+                        android:layout_width="@dimen/style_icon_w"
+                        android:layout_height="@dimen/style_icon_h"
+                        android:background="@drawable/cm_bg02_pressed_selector"
+                        android:clickable="true"
+                        android:onClick="onStyleClick"
+                        android:src="@drawable/ico_style_table_05" />
+                    
+                    <Space style="@style/tableStyleSpace.CenterLand"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_style6"
+                        android:layout_width="@dimen/style_icon_w"
+                        android:layout_height="@dimen/style_icon_h"
+                        android:background="@drawable/cm_bg02_pressed_selector"
+                        android:clickable="true"
+                        android:onClick="onStyleClick"
+                        android:src="@drawable/ico_style_table_06" />
+                    
+                    <Space style="@style/tableStyleSpace.CenterLand"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_style7"
+                        android:layout_width="@dimen/style_icon_w"
+                        android:layout_height="@dimen/style_icon_h"
+                        android:background="@drawable/cm_bg02_pressed_selector"
+                        android:clickable="true"
+                        android:onClick="onStyleClick"
+                        android:src="@drawable/ico_style_table_07" />
+                    
+                    <Space style="@style/tableStyleSpace.LeftAndRightLand"/>
+                </LinearLayout>
+                chart style 2
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="22dip"
+                    android:orientation="horizontal" >
+
+                    <Space style="@style/tableStyleSpace.LeftAndRightLand"/>
+                    
+                    <ImageButton
+                        android:id="@+id/btn_style8"
+                        android:layout_width="@dimen/style_icon_w"
+                        android:layout_height="@dimen/style_icon_h"
+                        android:background="@drawable/cm_bg02_pressed_selector"
+                        android:clickable="true"
+                        android:onClick="onStyleClick"
+                        android:src="@drawable/ico_style_table_08" />
+
+                    <Space style="@style/tableStyleSpace.CenterLand"/>
+                    
+                    <ImageButton
+                        android:id="@+id/btn_style9"
+                        android:layout_width="@dimen/style_icon_w"
+                        android:layout_height="@dimen/style_icon_h"
+                        android:background="@drawable/cm_bg02_pressed_selector"
+                        android:clickable="true"
+                        android:onClick="onStyleClick"
+                        android:src="@drawable/ico_style_table_09" />
+
+                    <Space style="@style/tableStyleSpace.CenterLand"/>
+                    
+                    <ImageButton
+                        android:id="@+id/btn_style10"
+                        android:layout_width="@dimen/style_icon_w"
+                        android:layout_height="@dimen/style_icon_h"
+                        android:background="@drawable/cm_bg02_pressed_selector"
+                        android:clickable="true"
+                        android:onClick="onStyleClick"
+                        android:src="@drawable/ico_style_table_10" />
+
+                    <Space style="@style/tableStyleSpace.CenterLand"/>
+                    
+                    <ImageButton
+                        android:id="@+id/btn_style11"
+                        android:layout_width="@dimen/style_icon_w"
+                        android:layout_height="@dimen/style_icon_h"
+                        android:background="@drawable/cm_bg02_pressed_selector"
+                        android:clickable="true"
+                        android:onClick="onStyleClick"
+                        android:src="@drawable/ico_style_table_11" />
+
+                    <Space style="@style/tableStyleSpace.CenterLand"/>
+                    
+                    <ImageButton
+                        android:id="@+id/btn_style12"
+                        android:layout_width="@dimen/style_icon_w"
+                        android:layout_height="@dimen/style_icon_h"
+                        android:background="@drawable/cm_bg02_pressed_selector"
+                        android:clickable="true"
+                        android:onClick="onStyleClick"
+                        android:src="@drawable/ico_style_table_12" />
+
+                    <Space style="@style/tableStyleSpace.CenterLand"/>
+                    
+                    <ImageButton
+                        android:id="@+id/btn_style13"
+                        android:layout_width="@dimen/style_icon_w"
+                        android:layout_height="@dimen/style_icon_h"
+                        android:background="@drawable/cm_bg02_pressed_selector"
+                        android:clickable="true"
+                        android:onClick="onStyleClick"
+                        android:src="@drawable/ico_style_table_13" />
+                    
+                    <Space style="@style/tableStyleSpace.LeftAndRightLand"/>
+                </LinearLayout>
+                chart style 3
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="22dip"
+                    android:orientation="horizontal" >
+
+                    <Space style="@style/tableStyleSpace.LeftAndRightLand"/>
+                    
+                    <ImageButton
+                        android:id="@+id/btn_style14"
+                        android:layout_width="@dimen/style_icon_w"
+                        android:layout_height="@dimen/style_icon_h"
+                        android:background="@drawable/cm_bg02_pressed_selector"
+                        android:clickable="true"
+                        android:onClick="onStyleClick"
+                        android:src="@drawable/ico_style_table_14" />
+
+                    <Space style="@style/tableStyleSpace.CenterLand"/>
+                    
+                    <ImageButton
+                        android:id="@+id/btn_style15"
+                        android:layout_width="@dimen/style_icon_w"
+                        android:layout_height="@dimen/style_icon_h"
+                        android:background="@drawable/cm_bg02_pressed_selector"
+                        android:clickable="true"
+                        android:onClick="onStyleClick"
+                        android:src="@drawable/ico_style_table_15" />
+
+                    <Space style="@style/tableStyleSpace.CenterLand"/>
+                    
+                    <ImageButton
+                        android:id="@+id/btn_style16"
+                        android:layout_width="@dimen/style_icon_w"
+                        android:layout_height="@dimen/style_icon_h"
+                        android:background="@drawable/cm_bg02_pressed_selector"
+                        android:clickable="true"
+                        android:onClick="onStyleClick"
+                        android:src="@drawable/ico_style_table_16" />
+
+                    <Space style="@style/tableStyleSpace.CenterLand"/>
+                    
+                    <ImageButton
+                        android:id="@+id/btn_style17"
+                        android:layout_width="@dimen/style_icon_w"
+                        android:layout_height="@dimen/style_icon_h"
+                        android:background="@drawable/cm_bg02_pressed_selector"
+                        android:clickable="true"
+                        android:onClick="onStyleClick"
+                        android:src="@drawable/ico_style_table_17" />
+
+                    <Space style="@style/tableStyleSpace.CenterLand"/>
+                    
+                    <ImageButton
+                        android:id="@+id/btn_style18"
+                        android:layout_width="@dimen/style_icon_w"
+                        android:layout_height="@dimen/style_icon_h"
+                        android:background="@drawable/cm_bg02_pressed_selector"
+                        android:clickable="true"
+                        android:onClick="onStyleClick"
+                        android:src="@drawable/ico_style_table_18" />
+
+                    <Space style="@style/tableStyleSpace.CenterLand"/>
+                    
+                    <ImageButton
+                        android:id="@+id/btn_style19"
+                        android:layout_width="@dimen/style_icon_w"
+                        android:layout_height="@dimen/style_icon_h"
+                        android:background="@drawable/cm_bg02_pressed_selector"
+                        android:clickable="true"
+                        android:onClick="onStyleClick"
+                        android:src="@drawable/ico_style_table_19" />
+                    
+                    <Space style="@style/tableStyleSpace.LeftAndRightLand"/>
+                </LinearLayout>
+                chart style 4
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="22dip"
+                    android:orientation="horizontal" >
+
+                    <Space style="@style/tableStyleSpace.LeftAndRightLand"/>
+                    
+                    <ImageButton
+                        android:id="@+id/btn_style20"
+                        android:layout_width="@dimen/style_icon_w"
+                        android:layout_height="@dimen/style_icon_h"
+                        android:background="@drawable/cm_bg02_pressed_selector"
+                        android:clickable="true"
+                        android:onClick="onStyleClick"
+                        android:src="@drawable/ico_style_table_20" />
+
+                    <Space style="@style/tableStyleSpace.CenterLand"/>
+                    
+                    <ImageButton
+                        android:id="@+id/btn_style21"
+                        android:layout_width="@dimen/style_icon_w"
+                        android:layout_height="@dimen/style_icon_h"
+                        android:background="@drawable/cm_bg02_pressed_selector"
+                        android:clickable="true"
+                        android:onClick="onStyleClick"
+                        android:src="@drawable/ico_style_table_21" />
+
+                    <Space style="@style/tableStyleSpace.CenterLand"/>
+                    
+                    <ImageButton
+                        android:id="@+id/btn_style22"
+                        android:layout_width="@dimen/style_icon_w"
+                        android:layout_height="@dimen/style_icon_h"
+                        android:background="@drawable/cm_bg02_pressed_selector"
+                        android:clickable="true"
+                        android:onClick="onStyleClick"
+                        android:src="@drawable/ico_style_table_22" />
+
+                    <Space style="@style/tableStyleSpace.CenterLand"/>
+                    
+                    <ImageButton
+                        android:id="@+id/btn_style23"
+                        android:layout_width="@dimen/style_icon_w"
+                        android:layout_height="@dimen/style_icon_h"
+                        android:background="@drawable/cm_bg02_pressed_selector"
+                        android:clickable="true"
+                        android:onClick="onStyleClick"
+                        android:src="@drawable/ico_style_table_23" />
+
+                    <Space style="@style/tableStyleSpace.CenterLand"/>
+                    
+                    <ImageButton
+                        android:id="@+id/btn_style24"
+                        android:layout_width="@dimen/style_icon_w"
+                        android:layout_height="@dimen/style_icon_h"
+                        android:background="@drawable/cm_bg02_pressed_selector"
+                        android:clickable="true"
+                        android:onClick="onStyleClick"
+                        android:src="@drawable/ico_style_table_24" />
+
+                    <Space style="@style/tableStyleSpace.CenterLand"/>
+                    
+                    <ImageButton
+                        android:id="@+id/btn_style25"
+                        android:layout_width="@dimen/style_icon_w"
+                        android:layout_height="@dimen/style_icon_h"
+                        android:background="@drawable/cm_bg02_pressed_selector"
+                        android:clickable="true"
+                        android:onClick="onStyleClick"
+                        android:src="@drawable/ico_style_table_25" />
+                    
+                    <Space style="@style/tableStyleSpace.LeftAndRightLand"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView> -->
+    </FrameLayout>
+
+</LinearLayout>

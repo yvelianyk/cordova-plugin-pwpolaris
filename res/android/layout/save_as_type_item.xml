@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal"
+  android:layout_width= "match_parent"
+  android:layout_height="match_parent"
+  >
+	<Button
+		android:id="@+id/button"
+		android:layout_width="63dip"
+		android:layout_height="41dip"
+		android:layout_marginBottom="5dip"
+		android:textColor="@color/btn_default_tcolor_selector"
+		android:textSize="15sp"
+		android:gravity="center"/>
+</LinearLayout>

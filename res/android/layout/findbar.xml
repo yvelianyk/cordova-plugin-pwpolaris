@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" >
+
+    <!-- id:find_bar LinearLayout의 layout_height를 "wrap_content"로 할 경우  높이 계산을 제대로 못함 -->
+    <!-- //20130816 khchoi To apply GUI change -->
+
+    <LinearLayout
+        android:id="@+id/find_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48.00dip"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/find_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/title_bg_common" >
+
+            <!-- 완료 버튼 부분, Don't use Phone. Only Tablet GUI -->
+            <LinearLayout
+                android:id="@+id/find_completion"
+                android:layout_width="108dip"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" 
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:visibility="gone" >
+                <ImageButton
+                    android:layout_width="44dip"
+                    android:layout_height="44dip"
+                    android:layout_marginLeft="11dip"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/title_ico_done_2depth_selector" 
+                    android:background="@drawable/title_bg_common"
+                    android:duplicateParentState="true" />
+                <TextView
+                    android:id="@+id/find_completion_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/dm_completion"
+                    android:textColor="@color/actionbar_find_replace_completion_color"
+                    android:duplicateParentState="true" />
+            </LinearLayout>
+            
+            <!-- scaleType 속성과 padding 속성을 사용하여 btn 내 이미지 크기를 줄인다. -->
+
+            <RelativeLayout
+                android:id="@+id/rfind_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/find_match_button"
+                    android:layout_width="48dip"
+                    android:layout_height="48.00dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/cm_title_bg_pressed_selector"
+                    android:contentDescription="@string/find_match_button"
+                    android:longClickable="true"
+                    android:src="@drawable/title_ico_setting_selector" />
+
+                <ImageButton
+                    android:id="@+id/find_next_button"
+                    android:layout_width="48dip"
+                    android:layout_height="48.00dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/cm_title_bg_pressed_selector"
+                    android:contentDescription="@string/cm_action_bar_next_find"
+                    android:longClickable="true"
+                    android:padding="4.00dip"
+                    android:src="@drawable/find_next" />
+
+                <ImageButton
+                    android:id="@+id/cm_action_bar_prev_find"
+                    android:layout_width="48dip"
+                    android:layout_height="48.00dip"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/find_next_button"
+                    android:background="@drawable/cm_title_bg_pressed_selector"
+                    android:contentDescription="@string/cm_action_bar_prev_find"
+                    android:longClickable="true"
+                    android:padding="4.00dip"
+                    android:src="@drawable/find_prev" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toLeftOf="@id/cm_action_bar_prev_find"
+                    android:layout_toRightOf="@id/find_match_button"
+                    android:orientation="horizontal" >
+
+                    <com.infraware.polarisoffice6.common.ExEditText
+                        android:id="@+id/find_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="40.00dip"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="4.00dip"
+                        android:layout_marginLeft="4.50dip"
+                        android:layout_marginRight="4.50dip"
+                        android:layout_marginTop="4.00dip"
+                        android:background="@drawable/textfield_selector_common"
+                        android:hint="@string/cm_action_bar_find"
+                        android:imeOptions="actionSearch|flagNoFullscreen"
+                        android:maxLength="40"
+                        android:paddingLeft="11dip"
+                        android:paddingRight="11dip"
+                        android:singleLine="true"
+                        android:textColor="@color/cm_edit_text_normal"
+                        android:textColorHighlight="@color/cm_edit_text_highlight"
+                        android:textColorHint="@color/cm_edit_text_hint"
+                        android:textCursorDrawable="@null"
+                        android:textSize="16sp" />
+
+                    <com.infraware.common.control.textfielddelete.DeleteImageButton
+                        android:id="@+id/find_delete_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="3.33dp"
+                        android:background="@drawable/textfield_delete"
+                        android:contentDescription="@string/cm_btn_delete"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/replace_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/replace_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/title_bg_common"
+            android:orientation="vertical" >
+			
+			<!-- 완료 버튼 부분, Don't use Phone. Only Tablet GUI -->
+            <LinearLayout
+                android:id="@+id/replace_completion"
+                android:layout_width="108dip"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" 
+                android:gravity="center_vertical"
+                android:clickable="true" 
+                android:visibility="gone">
+                <ImageButton
+                    android:layout_width="44dip"
+                    android:layout_height="44dip"
+                    android:layout_marginLeft="11dip"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/title_ico_done_2depth_selector" 
+                    android:background="@drawable/title_bg_common"
+                    android:duplicateParentState="true" />
+                <TextView
+                    android:id="@+id/replace_completion_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dip"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/dm_completion"
+                    android:textColor="@color/actionbar_find_replace_completion_color"
+                    android:duplicateParentState="true" />
+            </LinearLayout>
+            
+            <LinearLayout          
+                android:layout_width="match_parent"
+                android:layout_height="48.00dip" >
+
+                <RelativeLayout
+                    android:id="@+id/replace_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/dm_word_pagebackground_outline_applies_to_options"
+                        android:layout_width="48dip"
+                        android:layout_height="48.00dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/cm_title_bg_pressed_selector"
+                        android:contentDescription="@string/find_match_button"
+                        android:padding="4.00dip"
+                        android:src="@drawable/actionbar_ico_find_option_selector_common" />
+
+                    <ImageButton
+                        android:id="@+id/next_btn"
+                        android:layout_width="48dip"
+                        android:layout_height="48.00dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/cm_title_bg_pressed_selector"
+                        android:contentDescription="@string/cm_action_bar_next_find"
+                        android:padding="4.00dip"
+                        android:src="@drawable/find_next" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_toLeftOf="@id/next_btn"
+                        android:layout_toRightOf="@id/dm_word_pagebackground_outline_applies_to_options"
+                        android:orientation="horizontal" >
+
+                        <com.infraware.polarisoffice6.common.ExEditText
+                            android:id="@+id/replace_src_edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="40.00dip"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="4.00dip"
+                            android:layout_marginLeft="4.50dip"
+                            android:layout_marginRight="4.50dip"
+                            android:layout_marginTop="4.00dip"
+                            android:background="@drawable/textfield_selector_common"
+                            android:hint="@string/cm_action_bar_find"
+                            android:imeOptions="actionNext|flagNoFullscreen"
+                            android:maxLength="40"
+                            android:paddingLeft="11dip"
+                            android:paddingRight="11dip"
+                            android:singleLine="true"
+                            android:textColor="@color/cm_edit_text_normal"
+                            android:textColorHighlight="@color/cm_edit_text_highlight"
+                            android:textColorHint="@color/cm_edit_text_hint"
+                            android:textCursorDrawable="@null"
+                            android:textSize="16sp" />
+
+                        <com.infraware.common.control.textfielddelete.DeleteImageButton
+                            android:id="@+id/replace_src_delete_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="3.33dp"
+                            android:background="@drawable/textfield_delete"
+                            android:contentDescription="@string/cm_btn_delete"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/replace_layout_left"
+                android:layout_width="match_parent"
+                android:layout_height="48.00dip" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/replace_btn"
+                        android:layout_width="48dip"
+                        android:layout_height="48.00dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/cm_title_bg_pressed_selector"
+                        android:contentDescription="@string/dm_replace"
+                        android:padding="4.00dip"
+                        android:src="@drawable/findbar_change_btn_selector" />
+
+                    <ImageButton
+                        android:id="@+id/replaceall_btn"
+                        android:layout_width="48dip"
+                        android:layout_height="48.00dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/cm_title_bg_pressed_selector"
+                        android:contentDescription="@string/dm_replaceall"
+                        android:padding="4.00dip"
+                        android:src="@drawable/findbar_allchange_btn_selector" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_toLeftOf="@id/replaceall_btn"
+                        android:layout_toRightOf="@id/replace_btn"
+                        android:orientation="horizontal" >
+
+                        <com.infraware.polarisoffice6.common.ExEditText
+                            android:id="@+id/replace_dst_edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="40.00dip"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="4.00dip"
+                            android:layout_marginLeft="4.5dip"
+                            android:layout_marginRight="4.5dip"
+                            android:layout_marginTop="4.00dip"
+                            android:background="@drawable/textfield_selector_common"
+                            android:hint="@string/dm_replace"
+                            android:imeOptions="actionDone|flagNoFullscreen"
+                            android:maxLength="40"
+                            android:paddingLeft="11dip"
+                            android:paddingRight="11dip"
+                            android:singleLine="true"
+                            android:textColor="@color/cm_edit_text_normal"
+                            android:textColorHighlight="@color/cm_edit_text_highlight"
+                            android:textColorHint="@color/cm_edit_text_hint"
+                            android:textCursorDrawable="@null"
+                            android:textSize="16sp" />
+
+                        <com.infraware.common.control.textfielddelete.DeleteImageButton
+                            android:id="@+id/replace_dst_delete_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="3.33dp"
+                            android:background="@drawable/textfield_delete"
+                            android:contentDescription="@string/cm_btn_delete"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</merge>

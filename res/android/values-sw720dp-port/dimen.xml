@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  file home -->
+    	
+    	<!--<dimen name="home_tiffany_height">840px</dimen>-->
+    	<!--<dimen name="home_document_category_height">236px</dimen>-->
+    	
+		    	
+    	
+    	
+    	<!--<dimen name="home_recent_thumbnailarea_height">1004dp</dimen>    	-->
+    	<!--<dimen name="home_recent_pageicon_height">146dp</dimen>-->
+    	
+    	
+    	    	
+    	
+    	
+    	
+        <!--  new file -->
+
+		<!--  file manager -->		
+		<dimen name="filemanager_foldertree_width">272dp</dimen>
+		<dimen name="filemanager_file_listview_width">666dp</dimen>
+		
+		<dimen name="filemanager_file_gridview_frame_width">666dp</dimen>
+		<dimen name="filemanager_file_gridview_frame_padding">6dp</dimen>
+		
+		<dimen name="filemanager_file_favorite_filelist_width">500dp</dimen>
+		<dimen name="filemanager_checkholder_height">44dp</dimen>
+		
+		<dimen name="actionbar_search_text_width">280dp</dimen>
+    	<dimen name="filemanager_actionbar_search_width">280dp</dimen>
+    	<dimen name="tabWidget_width">500dp</dimen>
+		
+		<!--  setting  -->
+		
+		<dimen name="setting_menu_width">180dp</dimen>
+		<!--<dimen name="setting_main_frame_height">1122dp</dimen>-->
+		
+		<!--  gridview -->
+		<dimen name="filemanager_file_gridview_width">206dp</dimen>
+		<dimen name="filemanager_file_gridview_height">238dp</dimen>
+		
+		<dimen name="filemanager_file_gridview_inner_frame_width">206dp</dimen>
+		<dimen name="filemanager_file_gridview_inner_frame_height">194dp</dimen>
+		<!--<dimen name="filemanager_file_gridview_image_frame_width">206dp</dimen>-->
+		<!--<dimen name="filemanager_file_gridview_image_frame_height">194dp</dimen>-->
+		
+		<!--  find & replace -->
+		
+		<!-- message dialog content layout values -->
+		<dimen name="dialog_message_content_width">418dp</dimen>
+</resources>

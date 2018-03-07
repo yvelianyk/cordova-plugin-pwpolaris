@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   	<!--  file home -->
+    	
+    	<!--<dimen name="home_tiffany_height">662dp</dimen>-->
+    	<!--<dimen name="home_document_category_height">178dp</dimen>-->
+    	
+		    	
+    	
+    	
+    	<!--<dimen name="home_recent_thumbnailarea_height">1004dp</dimen>-->
+    	<!--<dimen name="home_recent_pageicon_height">146dp</dimen>-->
+
+    	
+    	    	
+    	
+    	
+    	
+    	
+    	 
+   
+    	
+		<!--  new file -->
+		<!--<dimen name="new_file_land_image_gridview_verticalSpacing">40dp</dimen>-->
+		
+		<!--  file manager -->
+		<dimen name="filemanager_file_listview_width">470dp</dimen>
+		
+		<dimen name="filemanager_foldertree_width">272dp</dimen>
+		<!--<dimen name="setting_main_frame_height">866dp</dimen>-->
+		<dimen name="filemanager_file_gridview_frame_width">470dp</dimen>
+		<dimen name="filemanager_file_gridview_width">145dp</dimen>
+	    <dimen name="filemanager_file_gridview_height">172dp</dimen>
+	    <dimen name="filemanager_file_gridview_inner_frame_width">145dp</dimen>
+	    <dimen name="filemanager_file_gridview_inner_frame_height">141dp</dimen>
+	    <!--<dimen name="filemanager_file_gridview_image_frame_width">145dp</dimen>-->
+	    <!--<dimen name="filemanager_file_gridview_image_frame_height">168dp</dimen>-->
+	    <!--<dimen name="filemanager_file_gridview_port_image_width">145dp</dimen>-->
+	    <!--<dimen name="filemanager_file_gridview_port_image_height">184dp</dimen>-->
+	    <!--<dimen name="filemanager_file_gridview_land_image_width">145dp</dimen>-->
+	    <!--<dimen name="filemanager_file_gridview_land_image_height">130dp</dimen>-->
+	    <dimen name="filemanager_file_gridview_checkbox_width">28dp</dimen>
+	    <dimen name="filemanager_file_gridview_textview_width">100dp</dimen>
+		
+		<dimen name="filemanager_checkholder_height">30dp</dimen>
+
+		<!-- type & favorites -->		
+		<dimen name="filemanager_file_favorite_filelist_width">360dp</dimen>
+		<dimen name="filemanager_file_favorite_recent_width">190dp</dimen>
+		
+		<!-- recent List -->
+		<!-- <dimen name="filemanager_file_favorite_recent_land_imageview_width">130dp</dimen> -->
+    
+		<!-- settting -->
+	    <dimen name="setting_menu_width">180dp</dimen>
+	    <!--<dimen name="setting_main_frame_height">1122dp</dimen>-->
+		
+    
+		<!--<dimen name="setting_list_item_main_layout_height">160dp</dimen>-->
+		
+		<dimen name="actionbar_search_text_width">200dp</dimen>
+		
+		<!--   setting_default_folder_fragment  -->
+   		<dimen name="dialog_filemanager_default_folder_width">350dp</dimen>
+		<dimen name="tabWidget_width">360dp</dimen>
+		
+		<dimen name="filemanager_actionbar_search_width">200dp</dimen>
+		
+		<!-- message dialog content layout values -->
+		<dimen name="dialog_message_content_width">418dp</dimen>		
+</resources>

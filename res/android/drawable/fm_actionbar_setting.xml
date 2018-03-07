@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- //20130816 khchoi To apply GUI change -->     
+<!-- 	<item android:state_selected="true"
+		  android:drawable="@drawable/title_ico_done_d"/>  
+		  	<item android:state_focused="true"
+		  android:drawable="@drawable/title_ico_done_d"/>	-->
+		  
+	<item android:state_pressed="true" android:drawable="@drawable/title_ico_done_p"/>
+	<item android:state_enabled="false" android:drawable="@drawable/title_ico_done_p"/>
+	<item android:drawable="@drawable/title_ico_done_n"/>
+</selector>

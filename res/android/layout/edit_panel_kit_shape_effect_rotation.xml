@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/separate_line_01"
+        layout="@layout/cm_panel_divider" />
+
+    <CheckBox
+        android:id="@+id/rotationNone"
+        style="@style/PanelCheckBoxLeft"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/panel_button_height"
+        android:layout_gravity="left"
+        android:text="@string/dm_3drotation_none" />
+
+    <include
+        android:id="@+id/separate_line_51"
+        layout="@layout/cm_panel_divider" />
+
+    <LinearLayout
+        android:id="@+id/rotationMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/ddde1"
+                android:src="@drawable/panel_icon_3d_effect01"
+                style="@style/PanelIconItem" />
+
+            <ImageButton
+                android:id="@+id/ddde2"
+                android:src="@drawable/panel_icon_3d_effect02"
+                style="@style/PanelIconItem" />
+
+            <ImageButton
+                android:id="@+id/ddde3"
+                android:src="@drawable/panel_icon_3d_effect03"
+                style="@style/PanelIconItem" />
+
+            <ImageButton
+                android:id="@+id/ddde4"
+                android:src="@drawable/panel_icon_3d_effect04"
+                style="@style/PanelIconItem" />
+
+            <ImageButton
+                android:id="@+id/ddde5"
+                android:src="@drawable/panel_icon_3d_effect05"
+                style="@style/PanelIconItem" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/panel_icon_3d_effect_item_vertical_space"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/ddde6"
+                android:src="@drawable/panel_icon_3d_effect06"
+                style="@style/PanelIconItem" />
+
+            <ImageButton
+                android:id="@+id/ddde7"
+                android:src="@drawable/panel_icon_3d_effect07"
+                style="@style/PanelIconItem" />
+
+            <ImageButton
+                android:id="@+id/ddde8"
+                android:src="@drawable/panel_icon_3d_effect08"
+                style="@style/PanelIconItem" />
+
+            <ImageButton
+                android:id="@+id/ddde9"
+                android:src="@drawable/panel_icon_3d_effect09"
+                style="@style/PanelIconItem" />
+
+            <ImageButton
+                android:id="@+id/ddde10"
+                android:src="@drawable/panel_icon_3d_effect10"
+                style="@style/PanelIconItem" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

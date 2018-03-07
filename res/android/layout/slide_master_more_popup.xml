@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/inlinepopup_bg_more_n"
+    android:orientation="vertical" >
+    
+     <Button
+        android:id="@+id/slide_master_popup_master_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="9.00dip"
+        android:paddingRight="9.00dip"
+        android:text="@string/dm_slide_master_layout"
+        android:singleLine="true"
+        android:background="@null"
+        android:textColor="@color/inlinepopup_tcolor_selector"
+        android:textSize="14sp" />
+     
+    <Button
+        android:id="@+id/slide_master_popup_object_insert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="9.00dip"
+        android:paddingRight="9.00dip"
+        android:text="@string/dm_slide_master_object_insert"
+        android:singleLine="true"
+        android:background="@null"
+        android:textColor="@color/inlinepopup_tcolor_selector"
+        android:textSize="14sp" />
+
+</LinearLayout>

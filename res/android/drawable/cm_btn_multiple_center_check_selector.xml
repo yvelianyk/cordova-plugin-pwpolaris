@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/btn_multiple_center_n" android:state_enabled="false"/>
+        <!-- [2013.11.21][hjlee] Modify focus image for external keybroad -->
+    <item android:drawable="@drawable/btn_multiple_center_common_s_f" android:state_pressed="true" android:state_focused="true" />
+    <item android:drawable="@drawable/btn_multiple_center_common_p" android:state_pressed="true" android:state_focused="false" />
+    <item android:drawable="@drawable/btn_multiple_center_common_s_f" android:state_focused="true" android:state_checked="true"/>
+    <item android:drawable="@drawable/btn_multiple_center_common_f" android:state_focused="true" android:state_checked="false"/>
+    
+    <item android:drawable="@drawable/btn_multiple_center_common_s_f" android:state_focused="true" android:state_selected="true"/>
+    <item android:drawable="@drawable/btn_multiple_center_common_f" android:state_focused="true" android:state_selected="false"/>
+    <item android:drawable="@drawable/btn_multiple_center_common_p" android:state_selected="true"/>
+    <item android:drawable="@drawable/btn_multiple_center_common_p" android:state_checked="true"/>
+    <item android:drawable="@drawable/btn_multiple_center_n"/>
+
+</selector>

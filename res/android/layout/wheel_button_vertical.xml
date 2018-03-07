@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wheel_btn"
+    android:layout_width="40dip"
+    android:layout_height="match_parent"
+    android:layout_margin="0dip"
+    android:orientation="vertical"
+    android:padding="0dp" >
+
+    <ImageButton
+        android:id="@+id/sb_prev"
+        android:layout_width="40dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@drawable/wheel_up_selector" />
+    
+    <LinearLayout
+            android:id="@+id/sb_gallery_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/wheel_btn_center_height"
+            android:padding="0dp" >
+    
+
+	    <com.infraware.polarisoffice6.common.WheelScrollVertical
+	        android:id="@+id/sb_gallery"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/bg_focused_selector"
+	        android:padding="0dp" >
+	
+	
+	        <LinearLayout
+	            android:id="@+id/wheel_line"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            android:padding="0dp" >
+	
+	            <com.infraware.polarisoffice6.common.WheelViewVertical
+	                android:id="@+id/wheel_view"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:gravity="center_horizontal"
+	                android:padding="0dip" />
+	        </LinearLayout>
+	    </com.infraware.polarisoffice6.common.WheelScrollVertical>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/sb_next"
+        android:layout_width="40dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@drawable/wheel_down_selector" />
+
+</LinearLayout>

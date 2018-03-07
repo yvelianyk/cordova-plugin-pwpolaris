@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/LinearLayout1"
+	android:orientation="horizontal"
+	android:layout_height="wrap_content"
+	android:layout_width="wrap_content"
+	android:gravity="center_vertical">
+
+    <LinearLayout
+        android:id="@+id/page_info"
+        android:layout_width="wrap_content"
+        android:layout_height="24.67dip"
+        android:background="@drawable/bubble_ruler"
+        android:gravity="center_vertical|center"
+        android:minWidth="44.33dp"
+         >
+
+		<LinearLayout
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:gravity="bottom|center_horizontal" >
+
+			<TextView
+			    android:id="@+id/current_page"
+			    android:layout_width="wrap_content"
+			    android:layout_height="16dip"
+			    android:text="16/"
+			    android:textColor="@color/bubble_tcolor"
+			    android:singleLine="true"
+			   	android:gravity="right"
+			   	android:ellipsize="none"
+			    android:textSize="14sp" />
+			
+			<TextView
+			    android:id="@+id/total_page"
+			    android:layout_width="wrap_content"
+			    android:layout_height="13dip"
+			    android:singleLine="true"
+			    android:gravity="left"
+			    android:text="42"
+			    android:ellipsize="none"
+			    android:textColor="@color/bubble_tcolor"
+			    android:textSize="11sp" />
+
+		</LinearLayout>
+	</LinearLayout>
+
+	<TextView
+	    android:id="@+id/zoom_percent"
+	    android:layout_width="50.67dip"
+	    android:layout_height="24.67dip"
+	    android:background="@drawable/bubble_ruler"
+	    android:gravity="center"
+	    android:singleLine="true"
+	    android:minWidth="44.33dip"
+	    android:paddingLeft="6dip"
+	    android:paddingRight="6dip"
+	    android:textColor="@color/bubble_tcolor"
+	    android:textSize="14sp"
+	    android:visibility="gone" >
+
+	</TextView>
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:id="@+id/fontEffectContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical"
+        android:layout_marginBottom="@dimen/panel_common_content_area_margin_vertical"
+        android:layout_marginLeft="@dimen/panel_common_content_area_margin_horizontal"
+        android:layout_marginRight="@dimen/panel_common_content_area_margin_horizontal"
+        android:orientation="vertical"> <!-- FontEffect Start -->
+	    <com.infraware.polarisoffice6.panel.kit.PanelButtonImage
+	        android:id="@+id/fontSizeEffect_1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:gravity="center_horizontal" />
+	
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        
+	        android:gravity="center_horizontal"
+	        android:layout_marginTop="5dip"
+	        android:orientation="horizontal">
+	        
+	        <com.infraware.polarisoffice6.panel.kit.PanelButtonImage
+		        android:id="@+id/fontSizeEffect_2"
+		        android:layout_width="0dip"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:layout_gravity="center"
+		        android:gravity="center_horizontal" />
+	        
+	        <Space 
+	            android:id="@+id/fontSizeEffect_Space_1"
+	            android:layout_height="wrap_content"
+	            android:layout_width="4dip"
+	            android:visibility="gone"/>
+	        
+	        <com.infraware.polarisoffice6.panel.kit.PanelButtonImage
+		        android:id="@+id/fontSizeEffect_3"
+		        android:layout_width="0dip"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:layout_gravity="center"
+		        android:gravity="center_horizontal"
+		        android:visibility="gone" />
+	        
+	        <Space 
+	            android:id="@+id/fontSizeEffect_Space_2"
+	            android:layout_height="wrap_content"
+	            android:layout_width="4dip"
+	            android:visibility="gone"/>
+	        
+	        <com.infraware.polarisoffice6.panel.kit.PanelButtonImage
+		        android:id="@+id/fontSizeEffect_4"
+		        android:layout_width="0dip"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:layout_gravity="center"
+		        android:gravity="center_horizontal"
+		        android:visibility="gone" />
+	    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/fontUnderlineSheetParent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/panel_bg_full"
+            android:visibility="gone" >
+            <com.infraware.polarisoffice6.panel.kit.PanelButtonImage
+                android:id="@+id/fontSizeEffect_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dip"
+                android:layout_marginBottom="1dip"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+    </LinearLayout> <!-- FontEffect End -->
+    
+    <FrameLayout
+        android:id="@+id/fontUnderlineParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/panel_option_bg">
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+            android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical"
+	        android:layout_marginBottom="@dimen/panel_common_content_area_margin_vertical"
+	        android:layout_marginLeft="@dimen/panel_common_content_area_margin_horizontal"
+			android:layout_marginRight="@dimen/panel_common_content_area_margin_horizontal"
+	        android:gravity="center_horizontal"
+	        android:orientation="vertical" >
+	        	        
+	        <LinearLayout
+	            android:id="@+id/fontUnderline"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:orientation="vertical"
+	            android:gravity="center_horizontal"
+	             >
+	
+	            <com.infraware.polarisoffice6.panel.kit.PanelButtonImage
+	                android:id="@+id/fontUnderline1"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:gravity="center_horizontal" />
+	
+	            <com.infraware.polarisoffice6.panel.kit.PanelButtonImage
+	                android:id="@+id/fontUnderline2"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:gravity="center_horizontal"
+	                android:layout_marginTop="@dimen/panel_common_content_button_vertical_space" />
+	
+	            <com.infraware.polarisoffice6.panel.kit.CommonPanelColor
+	                android:id="@+id/fontUnderlineColor"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:gravity="center_horizontal"
+	                android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical" />
+	        </LinearLayout>
+	    </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

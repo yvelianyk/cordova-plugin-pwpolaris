@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:state_focused="true" android:drawable="@drawable/popover_icon_capture_n"/>
+	<item android:state_enabled="false" android:drawable="@drawable/popover_icon_capture_d"/>
+	<item android:drawable="@drawable/popover_icon_capture_n" />   <!-- default --> 
+</selector>

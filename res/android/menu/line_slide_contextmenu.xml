@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/delete_contextmenu" android:title="@string/cm_btn_delete"></item>
+	<item android:id="@+id/forward_contextmenu" android:title="@string/dm_forward"></item>
+	<item android:id="@+id/backward_contextmenu" android:title="@string/dm_backward"></item>
+</menu>

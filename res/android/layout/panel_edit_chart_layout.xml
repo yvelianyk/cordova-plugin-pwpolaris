@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel_edit_body_root"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1" >
+
+    <com.infraware.polarisoffice6.panel.EditPanelBodyScrollView
+        android:id="@+id/panel_edit_scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/panel_edit_content_linear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- content start -->
+
+            <TextView
+                android:id="@+id/anchor_chart_layout_label"
+                style="@style/PanelAnchorTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/panel_subtitle_h"
+                android:text="@string/dm_label" />
+
+            <LinearLayout
+                android:id="@+id/label_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/panel_common_content_area_margin_vertical"
+                android:layout_marginLeft="@dimen/panel_common_content_area_margin_horizontal"
+                android:layout_marginRight="@dimen/panel_common_content_area_margin_horizontal"
+                android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/panel_button_height"
+                    android:layout_gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/chartLabelTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/fm_property_item_title"
+                        android:textColor="@color/panel_sub_title_tcolor"
+                        android:textSize="11sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkLabelTitle"
+                        android:layout_width="35dip"
+                        android:layout_height="35dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1dip"
+                        android:button="@drawable/cm_checkbox_selector_common" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/slide_text_label"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/panel_button_height"
+                    android:background="@drawable/btn_more_selector_common"
+                    android:gravity="left|center_vertical"
+                    android:hint="@string/dm_empty"
+                    android:paddingLeft="12dip"
+                    android:paddingRight="0dip"
+                    android:singleLine="true"
+                    android:textColor="@color/btn_more_tcolor_selector"
+                    android:textColorHint="@color/cm_edit_text_hint"
+                    android:textSize="16sp" />
+
+                <include
+                    android:id="@+id/separate_line_01"
+                    layout="@layout/cm_panel_divider" />
+
+                <RelativeLayout
+                    android:id="@+id/chart_layout_x_axis_form"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/panel_button_height"
+                    android:layout_gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/chart_layout_x_axis_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/dm_chart_x_axis"
+                        android:textColor="@color/panel_sub_title_tcolor"
+                        android:textSize="11sp" />
+
+                    <CheckBox
+                        android:id="@+id/check_layout_x_axis_title"
+                        android:layout_width="35dip"
+                        android:layout_height="35dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1dip"
+                        android:button="@drawable/cm_checkbox_selector_common" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/slide_text_label_x"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/panel_button_height"
+                    android:background="@drawable/btn_more_selector_common"
+                    android:gravity="left|center_vertical"
+                    android:hint="@string/dm_empty"
+                    android:paddingLeft="12dip"
+                    android:paddingRight="0dip"
+                    android:singleLine="true"
+                    android:textColor="@color/btn_more_tcolor_selector"
+                    android:textColorHint="@color/cm_edit_text_hint"
+                    android:textAllCaps="false"
+                    android:textSize="16sp" />
+
+                <include
+                    android:id="@+id/separate_line_02"
+                    layout="@layout/cm_panel_divider" />
+
+                <RelativeLayout
+                    android:id="@+id/chart_layout_y_axis_form"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/panel_button_height"
+                    android:layout_gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/chart_layout_y_axis_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/dm_chart_y_axis"
+                        android:textColor="@color/panel_sub_title_tcolor"
+                        android:textSize="11sp" />
+
+                    <CheckBox
+                        android:id="@+id/check_layout_y_axis_title"
+                        android:layout_width="35dip"
+                        android:layout_height="35dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1dip"
+                        android:button="@drawable/cm_checkbox_selector_common" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/slide_text_label_y"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/panel_button_height"
+                    android:background="@drawable/btn_more_selector_common"
+                    android:gravity="left|center_vertical"
+                    android:hint="@string/dm_empty"
+                    android:paddingLeft="12dip"
+                    android:paddingRight="0dip"
+                    android:singleLine="true"
+                    android:textAllCaps="false"
+                    android:textColor="@color/btn_more_tcolor_selector"
+                    android:textColorHint="@color/cm_edit_text_hint"
+                    android:textSize="16sp" />
+
+                <include
+                    android:id="@+id/separate_line_03"
+                    layout="@layout/cm_panel_divider" />
+
+                <com.infraware.polarisoffice6.panel.kit.PanelButtonImage
+                    android:id="@+id/btnchartlegend"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/anchor_chart_layout_axis"
+                style="@style/PanelAnchorTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/panel_subtitle_h"
+                android:text="@string/dm_axis" />
+
+            <LinearLayout
+                android:id="@+id/axis_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/panel_common_content_area_margin_vertical"
+                android:layout_marginLeft="@dimen/panel_common_content_area_margin_horizontal"
+                android:layout_marginRight="@dimen/panel_common_content_area_margin_horizontal"
+                android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical"
+                android:orientation="vertical" >
+
+                <com.infraware.polarisoffice6.panel.kit.PanelButtonImage
+                    android:id="@+id/btnchartaxis"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:id="@+id/layerchartDataLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/panel_button_height"
+                    android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical"
+                    android:layout_gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/chartDataLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/dm_chart_data_label"
+                        android:textColor="@color/panel_sub_title_tcolor"
+                        android:textSize="@dimen/panel_check_text_size" />
+
+                    <CheckBox
+                        android:id="@+id/checkChartDataLabel"
+                        android:layout_width="35dip"
+                        android:layout_height="35dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1dip"
+                        android:button="@drawable/cm_checkbox_selector_common" />
+                </RelativeLayout>
+
+                <include
+                    android:id="@+id/separate_line_04"
+                    layout="@layout/cm_panel_divider" />
+
+                <RelativeLayout
+                    android:id="@+id/layerAxisDataLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/panel_button_height"
+                    android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical"
+                    android:layout_gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/chartAxisDataLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/string_panel_chart_axis_label"
+                        android:textColor="@color/panel_sub_title_tcolor"
+                        android:textSize="@dimen/panel_check_text_size" />
+
+                    <CheckBox
+                        android:id="@+id/checkAxisDataLabel"
+                        android:layout_width="35dip"
+                        android:layout_height="35dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1dip"
+                        android:button="@drawable/cm_checkbox_selector_common" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/chartAxisLabelForm"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/panel_button_height"
+                    android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical"
+                    android:layout_gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/chartAxisLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/string_panel_chart_axis_label"
+                        android:textColor="@color/panel_sub_title_tcolor"
+                        android:textSize="@dimen/panel_check_text_size" />
+
+                    <CheckBox
+                        android:id="@+id/checkAxisLabel"
+                        android:layout_width="35dip"
+                        android:layout_height="35dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1dip"
+                        android:button="@drawable/cm_checkbox_selector_common" />
+                </RelativeLayout>
+
+                <include
+                    android:id="@+id/separate_line_05"
+                    layout="@layout/cm_panel_divider" />
+
+                <com.infraware.polarisoffice6.panel.kit.PanelButtonImage
+                    android:id="@+id/btnchartxlabelslope"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.infraware.polarisoffice6.panel.kit.PanelButtonImage
+                    android:id="@+id/btnchartylabelslope"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical" />
+
+                <include
+                    android:id="@+id/separate_line_06"
+                    layout="@layout/cm_panel_divider" />
+                
+                <RelativeLayout
+                    android:id="@+id/chartAxisLineForm"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/panel_button_height"
+                    android:layout_gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/chartAxisLine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/string_panel_chart_axis_line"
+                        android:textColor="@color/panel_sub_title_tcolor"
+                        android:textSize="@dimen/panel_check_text_size" />
+
+                    <CheckBox
+                        android:id="@+id/checkAxisLine"
+                        android:layout_width="35dip"
+                        android:layout_height="35dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1dip"
+                        android:button="@drawable/cm_checkbox_selector_common" />
+                </RelativeLayout>
+
+                <include
+                    android:id="@+id/separate_line_07"
+                    layout="@layout/cm_panel_divider" />
+
+                <RelativeLayout
+                    android:id="@+id/chartAxisYLogForm"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/panel_button_height"
+                    android:layout_gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/chartAxisYLog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/dm_chart_ygline"
+                        android:textColor="@color/panel_sub_title_tcolor"
+                        android:textSize="@dimen/panel_check_text_size" />
+
+                    <CheckBox
+                        android:id="@+id/checkAxisYLog"
+                        android:layout_width="35dip"
+                        android:layout_height="35dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1dip"
+                        android:button="@drawable/cm_checkbox_selector_common" />
+                </RelativeLayout>
+
+                <include
+                    android:id="@+id/separate_line_08"
+                    layout="@layout/cm_panel_divider" />
+
+                <RelativeLayout
+                    android:id="@+id/chartAxisMainLineForm"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/panel_button_height"
+                    android:layout_gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/chartAxisMajorTick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/dm_chart_main_tick"
+                        android:textColor="@color/panel_sub_title_tcolor"
+                        android:textSize="@dimen/panel_check_text_size" />
+
+                    <CheckBox
+                        android:id="@+id/checkAxisMajorTick"
+                        android:layout_width="35dip"
+                        android:layout_height="35dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1dip"
+                        android:button="@drawable/cm_checkbox_selector_common" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/anchor_chart_layout_guidelines"
+                style="@style/PanelAnchorTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/panel_subtitle_h"
+                android:text="@string/dm_chart_guideslines" />
+
+            <LinearLayout
+                android:id="@+id/guidelines_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/panel_common_content_area_margin_vertical"
+                android:layout_marginLeft="@dimen/panel_common_content_area_margin_horizontal"
+                android:layout_marginRight="@dimen/panel_common_content_area_margin_horizontal"
+                android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/chartGuideslinesXForm"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/panel_button_height"
+                    android:layout_gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/chartGuideslinesX"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/dm_chart_xgline"
+                        android:textColor="@color/panel_sub_title_tcolor"
+                        android:textSize="@dimen/panel_check_text_size" />
+
+                    <CheckBox
+                        android:id="@+id/checkGuideslinesX"
+                        android:layout_width="35dip"
+                        android:layout_height="35dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1dip"
+                        android:button="@drawable/cm_checkbox_selector_common" />
+                </RelativeLayout>
+
+                <include
+                    android:id="@+id/separate_line_09"
+                    layout="@layout/cm_panel_divider" />
+
+                <RelativeLayout
+                    android:id="@+id/chartGuideslinesYForm"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/panel_button_height"
+                    android:layout_gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/chartGuideslinesY"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/dm_chart_ygline"
+                        android:textColor="@color/panel_sub_title_tcolor"
+                        android:textSize="@dimen/panel_check_text_size" />
+
+                    <CheckBox
+                        android:id="@+id/checkGuideslinesY"
+                        android:layout_width="35dip"
+                        android:layout_height="35dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1dip"
+                        android:button="@drawable/cm_checkbox_selector_common" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- content end -->
+
+        </LinearLayout>
+    </com.infraware.polarisoffice6.panel.EditPanelBodyScrollView>
+
+</LinearLayout>

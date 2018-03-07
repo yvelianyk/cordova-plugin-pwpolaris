@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/linear_sheet_tab_popup"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_marginRight="2.5dip"
+	android:orientation="horizontal" >
+    
+    <ImageButton
+        android:id="@+id/sheettabpopupinsert"
+        android:layout_width="60dip"
+        android:layout_height="41dip"
+        android:gravity="center"
+        android:background="@drawable/focus_default_selector_sheet"
+        android:src="@drawable/ico_inline_sheet_insert_selector"/>
+    
+<!-- 	<LinearLayout
+    	android:layout_width="0.5dip"
+        android:layout_height="fill_parent"
+        android:background="#373c44" /> -->
+
+	 <ImageButton
+        android:id="@+id/sheettabpopupduplicate"
+		android:layout_width="60dip"
+        android:layout_height="41dip"
+        android:gravity="center"
+         android:background="@drawable/focus_default_selector_sheet"
+        android:src="@drawable/ico_inline_sheet_copy_selector"/>
+
+<!-- 	<LinearLayout
+    	android:layout_width="0.5dip"
+        android:layout_height="fill_parent"
+        android:background="#373c44" /> -->
+	
+ 	 <ImageButton
+        android:id="@+id/sheettabpopupdel"
+        android:layout_width="60dip"
+        android:layout_height="41dip"
+        android:gravity="center"
+         android:background="@drawable/focus_default_selector_sheet"
+        android:src="@drawable/ico_inline_sheet_delete_selector"/>
+</LinearLayout>

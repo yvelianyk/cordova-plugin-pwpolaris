@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/pdf_annot_view"
+   android:layout_width="fill_parent"
+   android:layout_height="wrap_content"
+   android:layout_alignParentBottom="true"
+   android:orientation="vertical"
+   android:visibility="gone" >
+
+   <RelativeLayout
+       android:id="@+id/titleAnnot"
+       android:layout_width="fill_parent"
+       android:layout_height="41.00dip"
+       android:background="@drawable/memo_title_bg" >
+
+       <TextView
+           android:id="@+id/pdf_annot_title"
+           android:layout_width="fill_parent"
+           android:layout_height="41.00dip"
+           android:gravity="left|center_vertical"
+           android:paddingLeft="13.50dip"
+           android:paddingRight="0dip"
+           android:text="@string/dm_pdf_note_title"
+           android:hint="@string/dm_pdf_note_title"
+            android:textColorHint="@color/cm_edit_text_hint"
+           android:textColor="@color/memo_title_color"
+           android:textSize="15.00sp" />
+
+       <ImageButton
+           android:id="@+id/annot_next_btn"
+           android:layout_width="30dip"
+           android:layout_height="30dip"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="14.00dip"
+           android:layout_marginTop="7.67dip"
+           android:background="@drawable/ico_memo_next_selector"
+           android:visibility="gone" >
+       </ImageButton>
+
+       <ImageButton
+           android:id="@+id/annot_prev_btn"
+           android:layout_width="30dip"
+           android:layout_height="30dip"
+           android:layout_marginRight="21.33dip"
+           android:layout_marginTop="7.67dip"
+           android:layout_toLeftOf="@id/annot_next_btn"
+           android:background="@drawable/ico_memo_prev_selector"
+           android:visibility="gone" >
+       </ImageButton>
+   </RelativeLayout>
+
+   <FrameLayout
+       android:id="@+id/editAnnot"
+       android:layout_width="fill_parent"
+       android:layout_height="175.50dip"
+       android:background="@drawable/memo_text_bg" >
+
+       <ScrollView
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:fadingEdge="none"
+           android:fillViewport="true" >
+
+           <com.infraware.polarisoffice6.common.ExEditText
+               android:id="@+id/pdf_annot_edittext"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:background="@null"
+               android:gravity="left|top"
+               android:hint="@string/dm_pdf_note_title"
+               android:textColorHint="@color/disable"
+               android:imeOptions="actionDone|flagNoFullscreen"
+               android:lineSpacingExtra="5.00dip"
+               android:lineSpacingMultiplier="1"
+               android:maxLength="3000"
+               android:paddingBottom="12.00dip"
+               android:paddingLeft="13.50dip"
+               android:paddingRight="13.50dip"
+               android:paddingTop="7.00dip"
+               android:textColor="@color/slide_note_text_color"
+               android:textCursorDrawable="@null"
+               android:textSize="14.00sp" />
+       </ScrollView>
+   </FrameLayout>
+</LinearLayout>

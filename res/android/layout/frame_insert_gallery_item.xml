@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="@drawable/panel_item_bg_selector_common"
+    android:orientation="horizontal" >
+
+	<ImageView
+		android:id="@+id/insert_gallery_item_image"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="10dp"
+        android:contentDescription="@string/dm_camera"
+        android:src="@drawable/popover_ico_camera" />
+	
+	<TextView
+		android:id="@+id/insert_gallery_item_text"
+		android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/btn_default_tcolor_selector"
+        android:text="@string/dm_camera">	    
+	</TextView>
+	
+	<ImageView
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"	
+	    android:layout_marginLeft="13dp"    
+        android:layout_marginRight="13dp"
+	    android:src="@drawable/ico_list_nextmove" />
+	    
+</LinearLayout>

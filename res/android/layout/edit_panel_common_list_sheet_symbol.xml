@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/button_01"
+        style="@style/SelectionCustomListItem.LinearLayout.Top"
+        android:background="@drawable/btn_multi_top_selector_sheet"
+         >
+
+        <include layout="@layout/edit_panel_common_list_sheet_number_item" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_02"
+        style="@style/SelectionCustomListItem.LinearLayout.Middle" 
+        android:background="@drawable/btn_multi_middle_selector_sheet">
+
+        <include layout="@layout/edit_panel_common_list_sheet_number_item" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_03"
+        style="@style/SelectionCustomListItem.LinearLayout.Middle"
+        android:background="@drawable/btn_multi_middle_selector_sheet" >
+
+        <include layout="@layout/edit_panel_common_list_sheet_number_item" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_04"
+        style="@style/SelectionCustomListItem.LinearLayout.Middle"
+        android:background="@drawable/btn_multi_middle_selector_sheet" >
+
+        <include layout="@layout/edit_panel_common_list_sheet_number_item" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_05"
+        style="@style/SelectionCustomListItem.LinearLayout.Middle"
+        android:background="@drawable/btn_multi_middle_selector_sheet" >
+
+        <include layout="@layout/edit_panel_common_list_sheet_number_item" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_06"
+        style="@style/SelectionCustomListItem.LinearLayout.Middle"
+        android:background="@drawable/btn_multi_middle_selector_sheet" >
+
+        <include layout="@layout/edit_panel_common_list_sheet_number_item" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_07"
+        style="@style/SelectionCustomListItem.LinearLayout.Middle"
+        android:background="@drawable/btn_multi_middle_selector_sheet" >
+
+        <include layout="@layout/edit_panel_common_list_sheet_number_item" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_08"
+        style="@style/SelectionCustomListItem.LinearLayout.Bottom"
+        android:background="@drawable/btn_multi_bottom_selector_sheet" >
+
+        <include layout="@layout/edit_panel_common_list_sheet_number_item" />
+    </LinearLayout>
+
+</LinearLayout>

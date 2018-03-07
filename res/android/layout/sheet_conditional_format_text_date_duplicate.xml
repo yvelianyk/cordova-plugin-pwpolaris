@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_common_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/actiontitlebar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/description_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#646464"
+        android:textSize="14sp"
+        android:visibility="gone"/>
+
+    <!--  Between two values -->
+
+    <LinearLayout
+        android:id="@+id/Between"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+        
+        <!-- tag - plus: "", minus: "-" -->
+        <ImageButton 
+            android:id="@+id/plus_minus_toggle_image_button_1"
+            android:tag=""
+            android:layout_width="55.33dp"
+            android:layout_height="41dp"
+            android:background="@drawable/btn_default_selector_sheet"
+            android:src="@drawable/btn_plus"
+            android:onClick="onClickPlusMinusToggleButton" />
+        
+        <com.infraware.polarisoffice6.common.ExEditText
+            android:id="@+id/between_edit_text_1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="6.67dp"
+            android:layout_weight="1"
+            android:background="@drawable/textfield_selector_sheet"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:maxLength="10"
+            android:paddingLeft="11dip"
+            android:paddingRight="11dip"
+            android:singleLine="true"
+            android:textColor="@color/cm_edit_text_normal"
+            android:textColorHighlight="@color/cm_edit_text_highlight"
+            android:textCursorDrawable="@null" />
+
+        <ImageView
+            android:layout_width="34.67dp"
+            android:layout_height="41dp"
+            android:scaleType="center"
+            android:src="@drawable/ico_comma" />
+
+        <!-- tag - plus: "", minus: "-" -->
+        <ImageButton
+            android:id="@+id/plus_minus_toggle_image_button_2"
+            android:tag=""
+            android:layout_width="55.33dp"
+            android:layout_height="41dp"
+            android:background="@drawable/btn_default_selector_sheet"
+            android:src="@drawable/btn_plus"
+            android:onClick="onClickPlusMinusToggleButton" />
+        
+        <com.infraware.polarisoffice6.common.ExEditText
+            android:id="@+id/between_edit_text_2"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="6.67dp"
+            android:layout_weight="1"
+            android:background="@drawable/textfield_selector_sheet"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:maxLength="10"
+            android:paddingLeft="11dip"
+            android:paddingRight="11dip"
+            android:singleLine="true"
+            android:textColor="@color/cm_edit_text_normal"
+            android:textColorHighlight="@color/cm_edit_text_highlight"
+            android:textCursorDrawable="@null" />
+
+    </LinearLayout>
+    
+    <!-- End of Between two values -->
+    
+    <!-- Include text -->
+    <com.infraware.polarisoffice6.common.ExEditText
+        android:id="@+id/include_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:paddingLeft="11dip"
+        android:paddingRight="11dip"
+        android:background="@drawable/textfield_selector_sheet"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:textColor="@color/cm_edit_text_normal"
+        android:textColorHighlight="@color/cm_edit_text_highlight"
+        android:textCursorDrawable="@null"
+        android:singleLine="true"
+        android:visibility="gone" />
+    <!-- End of Include text -->
+	
+	<!-- Date of occurrence -->
+	<ScrollView
+        android:id="@+id/date_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dip"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:orientation="vertical" >
+
+
+            <TextView
+                android:id="@+id/description_text_view_data_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="9dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginTop="15dp"
+                android:textColor="#646464"
+                android:textSize="14sp"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/date_button_01"
+                style="@style/SelectionCustomListItem.LinearLayout.Top"
+                android:background="@drawable/btn_multi_top_selector_sheet"
+                android:onClick="onClickDate"
+                android:tag="0" >
+
+                <ImageView
+                    android:id="@+id/date_button_01_check"
+                    style="@style/SelectionCustomListItem.View.ImageView"
+                    android:src="@drawable/radio_selector_sheet" />
+
+                <Button
+                    android:id="@+id/date_button_1"
+                    style="@style/SelectionCustomListItem.View.Button"
+                    android:text="@string/sheet_conditional_rule_yesterday" />
+            </LinearLayout>
+
+            <!--<View style="@style/SelectionCustomListItem.Divider" />-->
+
+            <LinearLayout
+                android:id="@+id/date_button_02"
+                style="@style/SelectionCustomListItem.LinearLayout.Middle"
+                android:background="@drawable/btn_multi_middle_selector_sheet"
+                android:onClick="onClickDate"
+                android:tag="1" >
+
+                <ImageView
+                    android:id="@+id/date_button_02_check"
+                    style="@style/SelectionCustomListItem.View.ImageView"
+                    android:src="@drawable/radio_selector_sheet" />
+
+                <Button
+                    android:id="@+id/date_button_2"
+                    style="@style/SelectionCustomListItem.View.Button"
+                    android:text="@string/sheet_conditional_rule_today" />
+            </LinearLayout>
+
+            <!--<View style="@style/SelectionCustomListItem.Divider" />-->
+
+            <LinearLayout
+                android:id="@+id/date_button_03"
+                style="@style/SelectionCustomListItem.LinearLayout.Middle"
+                android:background="@drawable/btn_multi_middle_selector_sheet"
+                android:onClick="onClickDate"
+                android:tag="2" >
+
+                <ImageView
+                    android:id="@+id/date_button_03_check"
+                    style="@style/SelectionCustomListItem.View.ImageView"
+                    android:src="@drawable/radio_selector_sheet" />
+
+                <Button
+                    android:id="@+id/date_button_3"
+                    style="@style/SelectionCustomListItem.View.Button"
+                    android:text="@string/sheet_conditional_rule_tomorrow" />
+            </LinearLayout>
+
+            <!--<View style="@style/SelectionCustomListItem.Divider" />-->
+
+            <LinearLayout
+                android:id="@+id/date_button_04"
+                style="@style/SelectionCustomListItem.LinearLayout.Middle"
+                android:background="@drawable/btn_multi_middle_selector_sheet"
+                android:onClick="onClickDate"
+                android:tag="3" >
+
+                <ImageView
+                    android:id="@+id/date_button_04_check"
+                    style="@style/SelectionCustomListItem.View.ImageView"
+                    android:src="@drawable/radio_selector_sheet" />
+
+                <Button
+                    android:id="@+id/date_button_4"
+                    style="@style/SelectionCustomListItem.View.Button"
+                    android:text="@string/sheet_conditional_rule_last7days" />
+            </LinearLayout>
+
+            <!--<View style="@style/SelectionCustomListItem.Divider" />-->
+
+            <LinearLayout
+                android:id="@+id/date_button_05"
+                style="@style/SelectionCustomListItem.LinearLayout.Middle"
+                android:background="@drawable/btn_multi_middle_selector_sheet"
+                android:onClick="onClickDate"
+                android:tag="4" >
+
+                <ImageView
+                    android:id="@+id/date_button_05_check"
+                    style="@style/SelectionCustomListItem.View.ImageView"
+                    android:src="@drawable/radio_selector_sheet" />
+
+                <Button
+                    android:id="@+id/date_button_5"
+                    style="@style/SelectionCustomListItem.View.Button"
+                    android:text="@string/sheet_conditional_rule_lastweek" />
+            </LinearLayout>
+
+            <!--<View style="@style/SelectionCustomListItem.Divider" />-->
+
+            <LinearLayout
+                android:id="@+id/date_button_06"
+                style="@style/SelectionCustomListItem.LinearLayout.Middle"
+                android:background="@drawable/btn_multi_middle_selector_sheet"
+                android:onClick="onClickDate"
+                android:tag="5" >
+
+                <ImageView
+                    android:id="@+id/date_button_06_check"
+                    style="@style/SelectionCustomListItem.View.ImageView"
+                    android:src="@drawable/radio_selector_sheet" />
+
+                <Button
+                    android:id="@+id/date_button_6"
+                    style="@style/SelectionCustomListItem.View.Button"
+                    android:text="@string/sheet_conditional_rule_thisweek" />
+            </LinearLayout>
+
+            <!--<View style="@style/SelectionCustomListItem.Divider" />-->
+
+            <LinearLayout
+                android:id="@+id/date_button_07"
+                style="@style/SelectionCustomListItem.LinearLayout.Middle"
+                android:background="@drawable/btn_multi_middle_selector_sheet"
+                android:onClick="onClickDate"
+                android:tag="6" >
+
+                <ImageView
+                    android:id="@+id/date_button_07_check"
+                    style="@style/SelectionCustomListItem.View.ImageView"
+                    android:src="@drawable/radio_selector_sheet" />
+
+                <Button
+                    android:id="@+id/date_button_7"
+                    style="@style/SelectionCustomListItem.View.Button"
+                    android:text="@string/sheet_conditional_rule_nextweek" />
+            </LinearLayout>
+
+            <!--<View style="@style/SelectionCustomListItem.Divider" />-->
+
+            <LinearLayout
+                android:id="@+id/date_button_08"
+                style="@style/SelectionCustomListItem.LinearLayout.Middle"
+                android:background="@drawable/btn_multi_middle_selector_sheet"
+                android:onClick="onClickDate"
+                android:tag="7" >
+
+                <ImageView
+                    android:id="@+id/date_button_08_check"
+                    style="@style/SelectionCustomListItem.View.ImageView"
+                    android:src="@drawable/radio_selector_sheet" />
+
+                <Button
+                    android:id="@+id/date_button_8"
+                    style="@style/SelectionCustomListItem.View.Button"
+                    android:text="@string/sheet_conditional_rule_lastmounth" />
+            </LinearLayout>
+
+            <!--<View style="@style/SelectionCustomListItem.Divider" />-->
+
+            <LinearLayout
+                android:id="@+id/date_button_09"
+                style="@style/SelectionCustomListItem.LinearLayout.Middle"
+                android:background="@drawable/btn_multi_middle_selector_sheet"
+                android:onClick="onClickDate"
+                android:tag="8" >
+
+                <ImageView
+                    android:id="@+id/date_button_09_check"
+                    style="@style/SelectionCustomListItem.View.ImageView"
+                    android:src="@drawable/radio_selector_sheet" />
+
+                <Button
+                    android:id="@+id/date_button_9"
+                    style="@style/SelectionCustomListItem.View.Button"
+                    android:text="@string/sheet_conditional_rule_thismounth" />
+            </LinearLayout>
+
+            <!--<View style="@style/SelectionCustomListItem.Divider" />-->
+
+            <LinearLayout
+                android:id="@+id/date_button_10"
+                style="@style/SelectionCustomListItem.LinearLayout.Bottom"
+                android:background="@drawable/btn_multi_bottom_selector_sheet"
+                android:onClick="onClickDate"
+                android:tag="9" >
+
+                <ImageView
+                    android:id="@+id/date_button_10_check"
+                    style="@style/SelectionCustomListItem.View.ImageView"
+                    android:src="@drawable/radio_selector_sheet" />
+
+                <Button
+                    android:id="@+id/date_button_10b"
+                    style="@style/SelectionCustomListItem.View.Button"
+                    android:text="@string/sheet_conditional_rule_nextmounth" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <!-- End of "Date of occurrence" -->
+
+	<!-- Duplicate value -->
+    <ScrollView
+        android:id="@+id/duplicate_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/duplicate_button_01"
+                style="@style/SelectionCustomListItem.LinearLayout.Top"
+                android:background="@drawable/btn_multi_top_selector_sheet"
+                android:onClick="onClickDuplicate"
+                android:tag="0" >
+
+                <ImageView
+                    android:id="@+id/duplicate_button_01_check"
+                    style="@style/SelectionCustomListItem.View.ImageView"
+                    android:src="@drawable/radio_selector_sheet" />
+
+                <Button
+                    android:id="@+id/duplicate_button_1"
+                    style="@style/SelectionCustomListItem.View.Button"
+                    android:text="@string/dm_duplicate_slide" />
+            </LinearLayout>
+
+<!--            <View style="@style/SelectionCustomListItem.Divider" />-->
+
+            <LinearLayout
+                android:id="@+id/duplicate_button_02"
+                style="@style/SelectionCustomListItem.LinearLayout.Bottom"
+                android:background="@drawable/btn_multi_bottom_selector_sheet"
+                android:onClick="onClickDuplicate"
+                android:tag="1" >
+
+                <ImageView
+                    android:id="@+id/duplicate_button_02_check"
+                    style="@style/SelectionCustomListItem.View.ImageView"
+                    android:src="@drawable/radio_selector_sheet" />
+
+                <Button
+                    android:id="@+id/duplicate_button_2"
+                    style="@style/SelectionCustomListItem.View.Button"
+                    android:text="@string/sheet_conditional_format_duplicate_value_item_2" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <!-- End of Duplicate value -->
+    
+    
+    
+</LinearLayout>

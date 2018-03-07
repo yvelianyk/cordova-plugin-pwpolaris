@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/word_pagelayout_column"
+        android:layout_width="match_parent"
+        android:layout_height="18.67dip"
+        android:gravity="left|top"
+        android:text="@string/dm_columns"
+        android:textColor="@color/panel_sub_title_tcolor"
+        android:textSize="@dimen/pl_title_text_size" />
+
+    <RadioGroup
+        android:id="@+id/rg_column"
+        android:layout_width="match_parent"
+        android:layout_height="60.67dip"
+        android:layout_marginBottom="11.33dip"
+        android:layout_marginTop="3.67dip"
+        android:orientation="horizontal" >
+
+        <com.infraware.polarisoffice6.common.PageLayoutRadioButton
+            android:id="@+id/pagelayout_columns_1"
+            android:layout_width="@dimen/pl_button_w"
+            android:layout_height="59.5dip"
+            android:background="@drawable/pagelayout_column_01_selectible_radiobtn_selector"
+            android:button="@null"
+            android:checked="true" />
+
+        <Space 
+	        android:layout_width="@dimen/page_layout_land_item_space"
+	        android:layout_height="wrap_content"/>
+
+        <com.infraware.polarisoffice6.common.PageLayoutRadioButton
+            android:id="@+id/pagelayout_columns_2"
+            android:layout_width="@dimen/pl_button_w"
+            android:layout_height="match_parent"
+            android:background="@drawable/pagelayout_column_02_selectible_radiobtn_selector"
+            android:button="@null" />
+
+        <Space 
+	        android:layout_width="@dimen/page_layout_land_item_space"
+	        android:layout_height="wrap_content"/>
+
+        <com.infraware.polarisoffice6.common.PageLayoutRadioButton
+            android:id="@+id/pagelayout_columns_3"
+            android:layout_width="@dimen/pl_button_w"
+            android:layout_height="match_parent"
+            android:background="@drawable/pagelayout_column_03_selectible_radiobtn_selector"
+            android:button="@null" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/pagelayout_columns_custom"
+        android:layout_width="fill_parent"
+        android:layout_height="41dip"
+        android:layout_gravity="fill_vertical|fill_horizontal"
+        android:layout_marginBottom="7.67dip"
+        android:background="@drawable/btn_default_selector_common"
+        android:button="@null"
+        android:gravity="center"
+        android:text="@string/dm_word_pagebackground_outline_applies_to_options"
+        android:textColor="@color/btn_default_tcolor_selector"
+        android:textSize="@dimen/page_background_button_text_size" />
+
+</LinearLayout>

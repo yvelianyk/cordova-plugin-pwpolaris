@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel_edit_body_root"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1" >
+
+    <com.infraware.polarisoffice6.panel.EditPanelBodyScrollView
+        android:id="@+id/panel_edit_scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/panel_edit_content_linear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/panel_common_content_area_margin_horizontal"
+            android:layout_marginRight="@dimen/panel_common_content_area_margin_horizontal"
+            android:orientation="vertical" >
+
+            <!-- content start -->
+            <!-- android:layout_marginLeft="@dimen/panel_subtitle_margin_left_right" -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/panel_button_height"
+                android:layout_marginTop="@dimen/panel_common_content_area_margin_vertical"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/checkTableHeadRow"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/cm_checkbox_selector_common"
+                    android:drawablePadding="@dimen/panel_check_box_margin_left"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/dm_head_row"
+                    android:textColor="@color/panel_sub_title_tcolor"
+                    android:textSize="@dimen/panel_check_text_size" />
+
+                <CheckBox
+                    android:id="@+id/checkTableSummaryRow"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/btn_check"
+                    android:drawablePadding="@dimen/panel_check_box_margin_left"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/dm_summary_row"
+                    android:textColor="@color/panel_sub_title_tcolor"
+                    android:textSize="@dimen/panel_check_text_size" />
+            </LinearLayout>
+
+            <include layout="@layout/cm_panel_divider" />
+
+            <!-- android:layout_marginLeft="@dimen/panel_subtitle_margin_left_right" -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/panel_button_height"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/checkTableBandRow"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/btn_check"
+                    android:drawablePadding="@dimen/panel_check_box_margin_left"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/dm_banded_row"
+                    android:textColor="@color/panel_sub_title_tcolor"
+                    android:textSize="@dimen/panel_check_text_size" />
+
+                <CheckBox
+                    android:id="@+id/checkTableFirstCol"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/btn_check"
+                    android:drawablePadding="@dimen/panel_check_box_margin_left"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/dm_first_col"
+                    android:textColor="@color/panel_sub_title_tcolor"
+                    android:textSize="@dimen/panel_check_text_size" />
+            </LinearLayout>
+
+            <include layout="@layout/cm_panel_divider" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/panel_common_content_area_margin_vertical"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <com.infraware.common.control.custom.ExpandableGridView
+                    android:id="@+id/panel_edit_table_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:choiceMode="singleChoice"
+                    android:columnWidth="56.67dip"
+                    android:listSelector="@color/transparent"
+                    android:gravity="center_horizontal"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="7.67dip"
+                    android:horizontalSpacing="7.67dip"
+                    />
+            </LinearLayout>
+            <!-- content end -->
+        </LinearLayout>
+    </com.infraware.polarisoffice6.panel.EditPanelBodyScrollView>
+
+</LinearLayout>
