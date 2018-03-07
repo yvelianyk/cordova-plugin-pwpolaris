@@ -4077,7 +4077,6 @@
         <source-file src="res/android/drawable-ko/panel_ico_font_batang_hangul_selector.xml" target-dir="res/drawable-ko/" />
         <source-file src="res/android/values-uk-land/dimen.xml" target-dir="res/values-uk-land/" />
         <source-file src="res/android/values-ar/strings.xml" target-dir="res/values-ar/" />
-        <source-file src="res/android/xml/provider_paths.xml" target-dir="res/xml/" />
         <source-file src="res/android/xml/searchable.xml" target-dir="res/xml/" />
         <source-file src="res/android/values-mr/strings.xml" target-dir="res/values-mr/" />
         <source-file src="res/android/anim/custom_left_popup_hide_anim_style.xml" target-dir="res/anim/" />
