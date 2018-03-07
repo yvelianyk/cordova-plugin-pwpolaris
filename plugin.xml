@@ -18,6 +18,22 @@
 
     <!-- ios -->
     <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="PolarisOffice">
+                <param name="ios-package" value="PolarisOffice" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/PolarisOffice.h"/>
+        <source-file src="src/ios/PolarisOffice.m"/>
+        <resource-file src="src/ios/PolarisOfficeSDK.bundle" />
+        <resource-file src="src/ios/libcrypto.a" />
+        <resource-file src="src/ios/libssl.a" />
+        <resource-file src="src/ios/PolarisOption.plist" />
+        <framework src="/Library/Frameworks/PolarisOfficeSDK.framework" custom="true"/>
+        <framework src="libc++.tbd"/>
+        <framework src="libz.tbd"/>
+        <framework src="libiconv.2.4.0.tbd"/>
     </platform>
 
     <!-- android -->

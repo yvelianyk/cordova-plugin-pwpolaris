@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>commentAuthorName</key>
+	<string>POLARIS OFFICE</string>
+	<key>isDisableSaving</key>
+	<false/>
+	<key>isDisableSaveAs</key>
+	<false/>
+	<key>isDisableExport</key>
+	<false/>
+	<key>isDisableEditing</key>
+	<false/>
+	<key>isDisableDocumentShare</key>
+	<false/>
+	<key>isDisableDocumentShareEmail</key>
+	<false/>
+	<key>isDisableDocumentShareOpenIn</key>
+	<false/>
+	<key>isDisablePrint</key>
+	<false/>
+	<key>isDisableShare</key>
+	<false/>
+	<key>isDisableWebSearch</key>
+	<false/>
+	<key>isDisableCopyMenuInViewMode</key>
+	<false/>
+	<key>isDisableHyperlink</key>
+	<false/>
+	<key>isDisablePhoto</key>
+	<false/>
+	<key>isDisableCamera</key>
+	<false/>
+	<key>isDisableInfo</key>
+	<false/>
+	<key>isDisableMemoShow</key>
+	<false/>
+	<key>isDisableEditAddComment</key>
+	<false/>
+	<key>isDisableRuller</key>
+	<false/>
+	<key>isDisableTrackChange</key>
+	<false/>
+	<key>isDisableEditModeInPasswordDocument</key>
+	<false/>
+	<key>isDisableCopyCutMenuInEditMode</key>
+	<false/>
+	<key>isDisableBookMarkInPDF</key>
+	<true/>
+	<key>isMemoryOpen</key>
+	<false/>
+	<key>defaultViewMode</key>
+	<false/>
+	<key>customFontPath</key>
+	<string>/Custom/Library/Fonts/</string>
+	<key>leftMoreMenuName</key>
+	<array/>
+	<key>rightMoreMenuName</key>
+	<array/>
+	<key>watermarkAlpha</key>
+	<real>0.5</real>
+	<key>zoomStatus</key>
+	<integer>0</integer>
+	<key>logType</key>
+	<integer>0</integer>
+	<key>maximumAttachmentSize</key>
+	<integer>20</integer>
+	<key>maximumFileOpenSize</key>
+	<integer>100</integer>
+	<key>displayUnit</key>
+	<integer>1</integer>
+</dict>
+</plist>
