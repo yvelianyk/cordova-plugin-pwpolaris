@@ -1,0 +1,31 @@
+<plugin
+  xmlns="http://www.phonegap.com/ns/plugins/1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  id="cordova-plugin-pwpolaris"
+  version="1.0.0">
+
+  <name>Polaris Plugin</name>
+
+  <description>Powwow plugin for Polaris Office</description>
+
+  <js-module src="www/PolarisOffice.js" name="PolarisOffice">
+      <clobbers target="window.PolarisOffice" />
+  </js-module>
+
+  <engines>
+    <engine name="cordova" version=">=3.0.0" />
+  </engines>
+
+    <!-- ios -->
+    <platform name="ios">
+    </platform>
+
+    <!-- android -->
+    <platform name="android">
+    </platform>
+
+    <!-- browser -->
+    <platform name="browser">
+    </platform>
+
+</plugin>

@@ -1,0 +1,27 @@
+{
+  "name": "cordova-plugin-pwpolaris",
+  "version": "1.0.0",
+  "description": "Powwow plugin for Polarise Office",
+  "cordova": {
+    "id": "cordova-plugin-pwpolaris",
+    "platforms": [
+      "ios",
+      "android",
+      "browser"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android",
+    "cordova-browser"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "",
+  "license": "MIT"
+}
