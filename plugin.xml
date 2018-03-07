@@ -3572,7 +3572,7 @@
         <source-file src="res/android/values/ids.xml" target-dir="res/values/" />
         <source-file src="res/android/values/style_d.xml" target-dir="res/values/" />
         <source-file src="res/android/values/arrays_recent.xml" target-dir="res/values/" />
-        <source-file src="res/android/values/strings.xml" target-dir="res/values/" />
+        <source-file src="res/android/values/polaris-strings.xml" target-dir="res/values/" />
         <source-file src="res/android/values/integers_a.xml" target-dir="res/values/" />
         <source-file src="res/android/values/themes.xml" target-dir="res/values/" />
         <source-file src="res/android/values/cloud_version.xml" target-dir="res/values/" />
