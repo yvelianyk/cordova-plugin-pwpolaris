@@ -470,15 +470,15 @@
         <resource-file src="jniLibs/android/armeabi/libEX_Engine7.so" target="jniLibs/armeabi/libEX_Engine7.so"/>
         <resource-file src="jniLibs/android/armeabi/libcrypto.so" target="jniLibs/armeabi/libcrypto.so"/>
         <resource-file src="jniLibs/android/armeabi/libNativeCrashHandler.so" target="jniLibs/armeabi/libNativeCrashHandler.so"/>
-        <resource-file src="libs/android/IDioDict3Service.jar" target="libs/IDioDict3Service.jar"/>
-        <resource-file src="libs/android/polarisoffice6_e.filemanager.jar" target="libs/polarisoffice6_e.filemanager.jar"/>
-        <resource-file src="libs/android/polarisoffice6_a.commonres.jar" target="libs/polarisoffice6_a.commonres.jar"/>
-        <resource-file src="libs/android/polarisoffice6_a.officeengine.jar" target="libs/polarisoffice6_a.officeengine.jar"/>
-        <resource-file src="libs/android/polarisoffice6_d.officeview.jar" target="libs/polarisoffice6_d.officeview.jar"/>
-        <resource-file src="libs/android/polarisoffice6_base.jar" target="libs/polarisoffice6_base.jar"/>
-        <resource-file src="libs/android/polarisoffice6_a.enterpriseconfig.jar" target="libs/polarisoffice6_a.enterpriseconfig.jar"/>
-        <resource-file src="libs/android/polarisoffice6_b.officeapi.jar" target="libs/polarisoffice6_b.officeapi.jar"/>
-        <resource-file src="libs/android/polarisoffice6_b.docview.jar" target="libs/polarisoffice6_b.docview.jar"/>
+        <lib-file src="libs/android/IDioDict3Service.jar" target-dir="libs" framework="true"/>
+        <lib-file src="libs/android/polarisoffice6_e.filemanager.jar" target-dir="libs" framework="true"/>
+        <lib-file src="libs/android/polarisoffice6_a.commonres.jar" target-dir="libs" framework="true"/>
+        <lib-file src="libs/android/polarisoffice6_a.officeengine.jar" target-dir="libs" framework="true"/>
+        <lib-file src="libs/android/polarisoffice6_d.officeview.jar" target-dir="libs" framework="true"/>
+        <lib-file src="libs/android/polarisoffice6_base.jar" target-dir="libs" framework="true"/>
+        <lib-file src="libs/android/polarisoffice6_a.enterpriseconfig.jar" target-dir="libs" framework="true"/>
+        <lib-file src="libs/android/polarisoffice6_b.officeapi.jar" target-dir="libs" framework="true"/>
+        <lib-file src="libs/android/polarisoffice6_b.docview.jar" target-dir="libs" framework="true"/>
         <resource-file src="res/android/layout-sr/fm_export_fragment.xml" target="res/layout-sr/fm_export_fragment.xml"/>
         <resource-file src="res/android/menu/table_contextmenu.xml" target="res/menu/table_contextmenu.xml"/>
         <resource-file src="res/android/menu/line_slide_contextmenu.xml" target="res/menu/line_slide_contextmenu.xml"/>
